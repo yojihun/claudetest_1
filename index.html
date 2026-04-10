@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>바이브 코딩 강의 | 코드 없이 시작하는 AI 개발</title>
+  <meta name="description" content="코딩 경험이 없어도 괜찮아요. 바이브 코딩으로 아이디어를 현실로 만드세요. 500명이 선택한 AI 개발 강의." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__logo">⚡ 바이브 코딩</div>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" class="nav__link">강의 소개</a>
+        <a href="#curriculum" class="nav__link">커리큘럼</a>
+        <a href="#pricing" class="nav__link">수강료</a>
+        <a href="#instructor" class="nav__link">강사 소개</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+      <div class="nav__right">
+        <a href="https://forms.gle/Ddj742DqPZ5Eb8j79" target="_blank" class="btn btn--nav">수강 신청</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+    </div>
+    <div class="hero__content">
+      <span class="hero__badge">🚀 2025년 가장 핫한 개발 트렌드</span>
+      <h1 class="hero__title">
+        AI와 함께라면<br />
+        <span class="gradient-text">누구나 개발자</span>가 됩니다
+      </h1>
+      <p class="hero__desc">
+        코딩 경험이 전혀 없어도 괜찮아요.<br />
+        바이브 코딩으로 아이디어를 현실로 만드세요.
+      </p>
+      <div class="hero__cta">
+        <a href="https://forms.gle/Ddj742DqPZ5Eb8j79" target="_blank" class="btn btn--primary btn--lg">
+          지금 바로 수강 신청 →
+        </a>
+        <a href="#about" class="btn btn--ghost btn--lg">강의 더 알아보기</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num" data-count="500">0</span><span class="stat__num">+</span>
+          <span class="stat__label">수강생</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">4.9★</span>
+          <span class="stat__label">수강 만족도</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">0원</span>
+          <span class="stat__label">사전 지식 필요</span>
+        </div>
+      </div>
+
+      <!-- Urgency countdown -->
+      <div class="hero__urgency">
+        <span class="urgency__label">⏰ 얼리버드 마감까지</span>
+        <div class="urgency__timer" id="countdown">
+          <div class="urgency__unit"><span id="cdDays">--</span><small>일</small></div>
+          <div class="urgency__sep">:</div>
+          <div class="urgency__unit"><span id="cdHours">--</span><small>시간</small></div>
+          <div class="urgency__sep">:</div>
+          <div class="urgency__unit"><span id="cdMins">--</span><small>분</small></div>
+          <div class="urgency__sep">:</div>
+          <div class="urgency__unit"><span id="cdSecs">--</span><small>초</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="code-window">
+        <div class="code-window__bar">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="code-window__title">vibe_coding.py</span>
+        </div>
+        <div class="code-window__body" id="codeBody">
+          <div class="code-line"><span class="c-comment"># 이런 생각을 해본 적 있나요?</span></div>
+          <div class="code-line"></div>
+          <div class="code-line"><span class="c-keyword">idea</span> <span class="c-op">=</span> <span class="c-string">"나만의 앱을 만들고 싶다"</span></div>
+          <div class="code-line"><span class="c-keyword">skill</span> <span class="c-op">=</span> <span class="c-string">"코딩 경험 없음"</span></div>
+          <div class="code-line"></div>
+          <div class="code-line"><span class="c-comment"># 바이브 코딩이라면?</span></div>
+          <div class="code-line"><span class="c-keyword">result</span> <span class="c-op">=</span> <span class="c-fn">vibe_code</span>(idea, skill)</div>
+          <div class="code-line"></div>
+          <div class="code-line"><span class="c-fn">print</span>(result)</div>
+          <div class="code-line code-output"><span class="c-string"># ✅ 앱 완성! 배포까지 완료!</span></div>
+          <div class="cursor-blink">|</div>
+        </div>
+      </div>
+      <!-- Floating badges around code window -->
+      <div class="float-badge float-badge--1">🎉 배포 성공!</div>
+      <div class="float-badge float-badge--2">⚡ 10배 빠름</div>
+      <div class="float-badge float-badge--3">🤖 AI 파워</div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <div class="ticker__inner" id="ticker">
+        <span class="ticker__item">🎉 김지수님이 방금 수강 신청했습니다</span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🚀 박민준님이 첫 앱을 배포했습니다</span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">⭐ 이수연님이 5점 만점 후기를 남겼습니다</span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">💼 최현우님이 개발자로 이직했습니다</span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🎉 정다은님이 방금 수강 신청했습니다</span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">🚀 강준혁님이 사이드 프로젝트를 런칭했습니다</span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">⭐ 윤서아님이 5점 만점 후기를 남겼습니다</span>
+        <span class="ticker__sep">•</span>
+        <span class="ticker__item">💼 홍길동님이 스타트업 CTO가 됐습니다</span>
+        <span class="ticker__sep">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">바이브 코딩이란?</span>
+        <h2 class="section__title">코드를 외우는 시대는 끝났습니다</h2>
+        <p class="section__desc">
+          바이브 코딩(Vibe Coding)은 AI에게 원하는 것을 말하면 AI가 코드를 작성하는 새로운 개발 패러다임입니다.<br />
+          이제 개발자의 역할은 <strong>무엇을 만들지 정확히 설명하는 것</strong>입니다.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card card--feature">
+          <div class="card__icon">💬</div>
+          <h3>말로 하는 개발</h3>
+          <p>자연어로 아이디어를 설명하면 AI가 코드로 변환해줍니다. 프로그래밍 문법을 몰라도 됩니다.</p>
+        </div>
+        <div class="card card--feature">
+          <div class="card__icon">⚡</div>
+          <h3>10배 빠른 개발</h3>
+          <p>기존 개발 대비 압도적으로 빠른 속도로 프로덕트를 완성할 수 있습니다.</p>
+        </div>
+        <div class="card card--feature">
+          <div class="card__icon">🎯</div>
+          <h3>아이디어가 곧 제품</h3>
+          <p>머릿속의 아이디어를 실제 동작하는 서비스로 빠르게 구현할 수 있습니다.</p>
+        </div>
+        <div class="card card--feature">
+          <div class="card__icon">🔧</div>
+          <h3>실전 프로젝트 중심</h3>
+          <p>이론이 아닌 실제로 배포 가능한 프로젝트를 처음부터 끝까지 만들어봅니다.</p>
+        </div>
+      </div>
+
+      <!-- Tool logos strip -->
+      <div class="tools-strip">
+        <span class="tools-strip__label">함께 사용하는 AI 도구</span>
+        <div class="tools-strip__logos">
+          <div class="tool-chip">Claude Code</div>
+          <div class="tool-chip">Cursor</div>
+          <div class="tool-chip">Windsurf</div>
+          <div class="tool-chip">Vercel v0</div>
+          <div class="tool-chip">GitHub Copilot</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="section section--dark" id="curriculum">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">커리큘럼</span>
+        <h2 class="section__title">단계별로 배우는 바이브 코딩</h2>
+        <p class="section__desc">기초부터 실전 프로젝트까지, 체계적으로 구성된 커리큘럼을 경험하세요.</p>
+      </div>
+      <div class="curriculum">
+        <div class="curriculum__item">
+          <div class="curriculum__num">WEEK 1</div>
+          <div class="curriculum__content">
+            <h3>바이브 코딩 입문</h3>
+            <p>AI 개발 도구 소개 및 환경 설정, 첫 번째 프로젝트 만들기</p>
+            <ul class="curriculum__list">
+              <li>Claude Code / Cursor / Windsurf 소개</li>
+              <li>프롬프트 엔지니어링 기초</li>
+              <li>첫 웹페이지 만들기</li>
+            </ul>
+          </div>
+        </div>
+        <div class="curriculum__item">
+          <div class="curriculum__num">WEEK 2</div>
+          <div class="curriculum__content">
+            <h3>AI와 협업하는 법</h3>
+            <p>효과적인 프롬프트 작성법과 AI를 활용한 디버깅 전략</p>
+            <ul class="curriculum__list">
+              <li>정확한 요구사항 작성법</li>
+              <li>AI 디버깅 &amp; 에러 해결</li>
+              <li>반복적 개선 (이터레이션)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="curriculum__item">
+          <div class="curriculum__num">WEEK 3</div>
+          <div class="curriculum__content">
+            <h3>풀스택 앱 만들기</h3>
+            <p>프론트엔드부터 백엔드까지, 완전한 웹 애플리케이션 구축</p>
+            <ul class="curriculum__list">
+              <li>데이터베이스 연동</li>
+              <li>사용자 인증 구현</li>
+              <li>API 연동 및 통합</li>
+            </ul>
+          </div>
+        </div>
+        <div class="curriculum__item">
+          <div class="curriculum__num">WEEK 4</div>
+          <div class="curriculum__content">
+            <h3>배포 &amp; 실전 프로젝트</h3>
+            <p>완성된 프로젝트를 실제 인터넷에 배포하고 포트폴리오 완성</p>
+            <ul class="curriculum__list">
+              <li>Vercel / Netlify 배포</li>
+              <li>도메인 연결 &amp; 운영</li>
+              <li>최종 프로젝트 발표</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">수강생 후기</span>
+        <h2 class="section__title">실제 수강생들의 이야기</h2>
+        <p class="section__desc">500명 이상의 수강생이 바이브 코딩으로 새로운 가능성을 발견했습니다.</p>
+      </div>
+      <div class="reviews">
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">"코딩을 배운다는 게 이렇게 재밌을 수 있는지 몰랐어요. 3주 만에 제 서비스를 런칭했습니다!"</p>
+          <div class="review__author">
+            <div class="review__avatar">김</div>
+            <div>
+              <strong>김지수</strong>
+              <span>마케터 → 1인 개발자</span>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">"비개발자 창업자로서 아이디어를 직접 구현할 수 있게 됐습니다. 개발자 고용 비용을 절약했어요."</p>
+          <div class="review__author">
+            <div class="review__avatar">박</div>
+            <div>
+              <strong>박민준</strong>
+              <span>스타트업 대표</span>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">"강의가 끝날 때쯤엔 포트폴리오 사이트를 직접 만들었어요. 취업에 큰 도움이 됐습니다."</p>
+          <div class="review__author">
+            <div class="review__avatar">이</div>
+            <div>
+              <strong>이수연</strong>
+              <span>취업 준비생</span>
+            </div>
+          </div>
+        </div>
+        <div class="review review--highlight">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__text">"개발자 없이 사이드 프로젝트를 런칭했어요. 첫 달에 유료 고객 50명을 확보했습니다."</p>
+          <div class="review__author">
+            <div class="review__avatar">최</div>
+            <div>
+              <strong>최현우</strong>
+              <span>직장인 → 사이드 프로젝트 운영</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review aggregate -->
+      <div class="review-agg fade-up">
+        <div class="review-agg__score">4.9</div>
+        <div class="review-agg__detail">
+          <div class="review-agg__stars">★★★★★</div>
+          <div class="review-agg__count">500명+ 수강생 기준</div>
+        </div>
+        <div class="review-agg__bars">
+          <div class="agg-bar"><span>5점</span><div class="agg-bar__track"><div class="agg-bar__fill" style="width:88%"></div></div><span>88%</span></div>
+          <div class="agg-bar"><span>4점</span><div class="agg-bar__track"><div class="agg-bar__fill" style="width:9%"></div></div><span>9%</span></div>
+          <div class="agg-bar"><span>3점</span><div class="agg-bar__track"><div class="agg-bar__fill agg-bar__fill--low" style="width:3%"></div></div><span>3%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section--dark" id="pricing">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">수강료</span>
+        <h2 class="section__title">합리적인 가격으로 시작하세요</h2>
+        <p class="section__desc">얼리버드 기간 한정 특가! 지금 바로 신청하면 더 저렴하게 수강할 수 있습니다.</p>
+      </div>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="pricing-card__name">베이직</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__original">299,000원</span>
+            <span class="pricing-card__amount">199,000<small>원</small></span>
+            <span class="pricing-card__discount">34% 할인</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>✅ 4주 라이브 강의</li>
+            <li>✅ 녹화본 무기한 제공</li>
+            <li>✅ 커뮤니티(Discord) 입장</li>
+            <li>✅ 실전 프로젝트 1개</li>
+            <li class="disabled">❌ 1:1 코드 리뷰</li>
+            <li class="disabled">❌ 취업/창업 멘토링</li>
+          </ul>
+          <a href="https://forms.gle/Ddj742DqPZ5Eb8j79" target="_blank" class="btn btn--ghost btn--full">신청하기</a>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">가장 인기</div>
+          <div class="pricing-card__name">프리미엄</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__original">499,000원</span>
+            <span class="pricing-card__amount">329,000<small>원</small></span>
+            <span class="pricing-card__discount">34% 할인</span>
+          </div>
+          <ul class="pricing-card__features">
+            <li>✅ 4주 라이브 강의</li>
+            <li>✅ 녹화본 무기한 제공</li>
+            <li>✅ 커뮤니티(Discord) 입장</li>
+            <li>✅ 실전 프로젝트 3개</li>
+            <li>✅ 1:1 코드 리뷰 (2회)</li>
+            <li>✅ 취업/창업 멘토링 (1회)</li>
+          </ul>
+          <a href="https://forms.gle/Ddj742DqPZ5Eb8j79" target="_blank" class="btn btn--primary btn--full">지금 신청하기 →</a>
+        </div>
+      </div>
+      <p class="pricing-note">* 환불 정책: 강의 시작 후 7일 이내 100% 환불 가능합니다.</p>
+    </div>
+  </section>
+
+  <!-- INSTRUCTOR -->
+  <section class="section" id="instructor">
+    <div class="container">
+      <div class="instructor">
+        <div class="instructor__visual">
+          <div class="instructor__img-wrap">
+            <div class="instructor__img">👨‍💻</div>
+          </div>
+          <div class="instructor__badges">
+            <span class="badge">AI 개발 전문가</span>
+            <span class="badge">현직 개발자</span>
+            <span class="badge">500+ 수강생</span>
+          </div>
+        </div>
+        <div class="instructor__info">
+          <span class="section__tag">강사 소개</span>
+          <h2>바이브 코딩의 선구자</h2>
+          <p>안녕하세요! 저는 AI 도구를 활용한 바이브 코딩을 국내에 알리고 있는 강사입니다. 현업에서 직접 바이브 코딩으로 수십 개의 프로젝트를 완성하며 쌓은 실전 노하우를 전달합니다.</p>
+          <p>"코딩을 못해도 괜찮아요. 아이디어가 있다면 누구나 개발자가 될 수 있습니다."</p>
+          <ul class="instructor__career">
+            <li>🏢 현직 소프트웨어 엔지니어 (5년+)</li>
+            <li>🎓 바이브 코딩 강의 누적 수강생 500명+</li>
+            <li>🚀 AI 도구를 활용한 사이드 프로젝트 20개+ 런칭</li>
+            <li>✍️ 바이브 코딩 관련 기술 블로그 운영</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--dark" id="faq">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">FAQ</span>
+        <h2 class="section__title">자주 묻는 질문</h2>
+      </div>
+      <div class="faq">
+        <div class="faq__item">
+          <button class="faq__q" onclick="toggleFaq(this)">
+            코딩 경험이 전혀 없어도 수강할 수 있나요?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">네, 가능합니다! 이 강의는 코딩 경험이 전혀 없는 분들을 위해 설계되었습니다. 컴퓨터 기본 사용 능력만 있으면 충분합니다.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" onclick="toggleFaq(this)">
+            강의는 어떤 방식으로 진행되나요?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">온라인 라이브 강의 + 녹화본 제공 방식으로 진행됩니다. 바쁜 일정에도 언제든 복습할 수 있습니다.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" onclick="toggleFaq(this)">
+            강의를 완료하면 어떤 것을 만들 수 있나요?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">실제로 인터넷에 배포되는 웹 애플리케이션을 만들 수 있습니다. 간단한 랜딩 페이지부터 데이터베이스가 연결된 풀스택 앱까지 구현 가능합니다.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" onclick="toggleFaq(this)">
+            수강료는 얼마인가요?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">베이직 플랜 199,000원 (얼리버드), 프리미엄 플랜 329,000원 (얼리버드)으로 수강하실 수 있습니다. 얼리버드 기간 이후에는 정가로 변경됩니다.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" onclick="toggleFaq(this)">
+            수강 후 질문은 어떻게 하나요?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">전용 커뮤니티(Discord)를 통해 강사에게 직접 질문하고 다른 수강생들과 소통할 수 있습니다. 강의 종료 후에도 커뮤니티는 계속 이용 가능합니다.</div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" onclick="toggleFaq(this)">
+            환불은 가능한가요?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">강의 시작 후 7일 이내에는 전액 환불이 가능합니다. 7일 이후에는 환불이 불가하오니 신중하게 결정해 주세요.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg">
+      <div class="blob blob--cta1"></div>
+      <div class="blob blob--cta2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-banner__content">
+        <p class="cta-banner__eyebrow">바이브 코딩과 함께 도파민 터지는 코딩을 배워보세요</p>
+        <h2>지금 바로 시작하세요</h2>
+        <p>선착순 마감! 다음 기수가 언제 열릴지 모릅니다.</p>
+        <a href="https://forms.gle/Ddj742DqPZ5Eb8j79" target="_blank" class="btn btn--primary btn--xl">
+          수강 신청하러 가기 →
+        </a>
+        <p class="cta-banner__sub">신청 후 48시간 이내 안내 드립니다</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__logo">⚡ 바이브 코딩</span>
+          <p>AI와 함께하는 새로운 개발의 시작</p>
+        </div>
+        <div class="footer__links">
+          <a href="#about">강의 소개</a>
+          <a href="#curriculum">커리큘럼</a>
+          <a href="#pricing">수강료</a>
+          <a href="#instructor">강사 소개</a>
+          <a href="https://forms.gle/Ddj742DqPZ5Eb8j79" target="_blank">수강 신청</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 바이브 코딩. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="맨 위로">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
