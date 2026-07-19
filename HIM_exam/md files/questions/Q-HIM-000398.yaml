@@ -1,0 +1,23 @@
+id: Q-HIM-000398
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C01-S04-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "결합모음은 다음에 오는 접미사가 자음으로 시작할 때 유지되고, 모음으로 시작할 때는 생략되는 것이 기본 규칙이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 접미사가 자음으로 시작하면 결합모음을 유지하고, 모음으로 시작하면 생략하는 것이 기본 규칙이다.
+distractor_explanations:
+  X: 결합모음 규칙을 정확히 이해한 서술을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

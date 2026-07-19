@@ -1,0 +1,29 @@
+id: Q-HIM-000445
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C05-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "혈액검사 결과지에서 비정상적으로 높게 나타나 감염이나 백혈병을 의심하게 하는 혈액 성분은?"
+options:
+  - id: A
+    text: 적혈구
+  - id: B
+    text: 백혈구
+  - id: C
+    text: 혈소판
+  - id: D
+    text: 혈장 단백질
+answer:
+  - B
+explanation: 백혈구는 면역 방어를 담당하며, 수치 이상은 감염이나 백혈병 등 면역·조혈계 이상을 시사할 수 있다.
+distractor_explanations:
+  A: 적혈구는 산소 운반을 담당하며 감염·백혈병과 직접적인 수치 이상 지표로 다루지 않는다.
+  C: 혈소판은 혈액 응고를 담당하며 이 문제의 상황과는 다른 지표이다.
+  D: 혈장 단백질은 혈액의 액체 성분으로 이 문제에서 다룬 세포 성분과 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

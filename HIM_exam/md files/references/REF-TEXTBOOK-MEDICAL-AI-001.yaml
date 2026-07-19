@@ -1,0 +1,15 @@
+id: REF-TEXTBOOK-MEDICAL-AI-001
+type: textbook
+title: 의료 AI 개념 개괄(머신러닝, 편향과 공정성, 설명가능성, AI 거버넌스)
+publisher: null
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: ko
+status: located
+notes: >
+  지도학습·비지도학습, 편향(bias)과 공정성, 설명가능성(explainability), AI 거버넌스 등은 의료 AI
+  분야에서 널리 통용되는 정설 개념이다. 이 세션에서는 특정 교재·논문의 정확한 서지사항을 원문
+  대조하지 않았으므로 status를 located로 둔다. 국내 의료 AI 관련 제도·가이드라인은 빠르게
+  변화하므로, 구체적 법령·인증 절차는 이 참고문헌만으로는 확정하지 않는다.

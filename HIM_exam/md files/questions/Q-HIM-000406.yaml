@@ -1,0 +1,23 @@
+id: Q-HIM-000406
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C01-S08-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "하나의 의무기록 문장 안에 검사명, 진단명, 처치명이 함께 등장할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: "gastroscopy(검사), gastritis(진단), gastrectomy(처치)"의 예시처럼 한 문장 안에 여러 범주의 용어가 함께 등장할 수 있다.
+distractor_explanations:
+  X: 한 문장에는 한 범주의 용어만 등장한다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000371
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C16-S05-T001
+subject_area: medical_ai
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "흉부 X-ray AI가 실제로는 병변이 없는 영상을 병변이 있다고 판단한 경우, 이 오류 유형은?"
+options:
+  - id: A
+    text: 위양성(False Positive)
+  - id: B
+    text: 위음성(False Negative)
+  - id: C
+    text: 데이터 유출
+  - id: D
+    text: 과적합
+answer:
+  - A
+explanation: 실제로 병변이 없는데 있다고 판단하는 오류는 위양성이다.
+distractor_explanations:
+  B: 위음성은 병변이 있는데 없다고 판단하는 반대 오류이다.
+  C: 데이터 유출은 학습·시험 데이터가 섞이는 문제로 이 상황과 무관하다.
+  D: 과적합은 학습 데이터에만 지나치게 맞춰지는 현상으로 이 오류 유형과 직접 관련이 없다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000358
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C15-S10-T001
+subject_area: health_insurance
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: "특정 처치의 청구가 반복 삭감되었는데, 처치 자체는 타당했으나 그 필요성을 뒷받침하는 임상 소견이 기록에 충분하지 않았다. 가장 적절한 개선 방향은?"
+options:
+  - id: A
+    text: 해당 처치를 더 이상 시행하지 않는다.
+  - id: B
+    text: CDI 등을 통해 진료 기록의 구체성을 높인다.
+  - id: C
+    text: 청구 금액을 임의로 낮춘다.
+  - id: D
+    text: 심사기관에 항의만 반복한다.
+answer:
+  - B
+explanation: 근본 원인이 기록 미비이므로 CDI를 통해 기록을 구체화하는 것이 적절한 개선 방향이다.
+distractor_explanations:
+  A: 처치 자체는 타당했으므로 중단할 이유가 없다.
+  C: 임의로 금액을 낮추는 것은 근본 해결이 아니다.
+  D: 근거 보완 없는 반복 항의는 효과적이지 않다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false

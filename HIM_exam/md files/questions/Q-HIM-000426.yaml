@@ -1,0 +1,23 @@
+id: Q-HIM-000426
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C03-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "의무기록에 'Arthritis'라고만 기록되어 있어도 골관절염과 류마티스관절염을 구분할 필요 없이 동일하게 코딩할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 골관절염과 류마티스관절염은 기전이 전혀 다른 질환이므로 구체적 병명을 확인해 구분하여 코딩해야 한다.
+distractor_explanations:
+  O: 두 질환을 구분하지 않고 코딩해도 된다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

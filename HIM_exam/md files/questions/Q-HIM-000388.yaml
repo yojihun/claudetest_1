@@ -1,0 +1,23 @@
+id: Q-HIM-000388
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S13-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "AI 거버넌스는 AI 도입 시점의 심의뿐 아니라 도입 이후의 지속적인 성능 모니터링도 포함한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: AI 거버넌스는 도입 전 심의부터 도입 후 지속 모니터링까지 전 과정을 포괄한다.
+distractor_explanations:
+  X: AI 거버넌스의 범위를 도입 시점으로만 한정한 오해이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

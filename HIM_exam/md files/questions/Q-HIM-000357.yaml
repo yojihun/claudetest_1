@@ -1,0 +1,23 @@
+id: Q-HIM-000357
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C15-S09-T001
+subject_area: health_insurance
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "청구자료의 질병분류 코드 오류는 개별 병원 청구뿐 아니라 국가 통계에도 영향을 줄 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 청구자료가 누적되어 국가 통계의 기초가 되므로 코드 오류는 양쪽에 영향을 준다.
+distractor_explanations:
+  X: 청구자료의 2차 활용 영향을 간과한 응답이다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false

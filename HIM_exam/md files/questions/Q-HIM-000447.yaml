@@ -1,0 +1,29 @@
+id: Q-HIM-000447
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C05-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "petechia와 ecchymosis의 가장 핵심적인 구분 기준은?"
+options:
+  - id: A
+    text: 발생 부위(상지 vs 하지)
+  - id: B
+    text: 출혈 크기(작은 점 vs 넓게 퍼진 멍)
+  - id: C
+    text: 발생 원인(감염 vs 종양)
+  - id: D
+    text: 색깔(붉은색 vs 검은색)
+answer:
+  - B
+explanation: petechia는 매우 작은 점 모양, ecchymosis는 그보다 크고 넓게 퍼진 멍 형태로 크기가 핵심 구분 기준이다.
+distractor_explanations:
+  A: 발생 부위는 두 용어의 구분 기준이 아니다.
+  C: 두 용어 모두 다양한 원인(외상, 혈소판 이상 등)으로 발생할 수 있어 원인 자체가 구분 기준은 아니다.
+  D: 색깔은 두 용어를 구분하는 핵심 기준이 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

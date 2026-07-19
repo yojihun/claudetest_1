@@ -1,0 +1,29 @@
+id: Q-HIM-000461
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C06-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "흉부 X-ray에서 흉막강에 액체가 고인 소견이 확인되었다. 이 상태를 가리키는 용어는?"
+options:
+  - id: A
+    text: 기흉(Pneumothorax)
+  - id: B
+    text: 흉수(Pleural Effusion)
+  - id: C
+    text: 폐색전증(Pulmonary Embolism)
+  - id: D
+    text: 무기폐(Atelectasis)
+answer:
+  - B
+explanation: 흉막강에 액체가 고인 상태는 흉수(Pleural Effusion)이다.
+distractor_explanations:
+  A: 기흉은 흉막강에 액체가 아닌 공기가 찬 상태이다.
+  C: 폐색전증은 혈전이 폐동맥을 막는 질환으로 흉막강 내 물질과는 다르다.
+  D: 무기폐는 폐 조직이 쭈그러들어 공기가 들어가지 못하는 상태로 흉막강 삼출과는 다른 개념이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

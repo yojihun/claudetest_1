@@ -1,0 +1,29 @@
+id: Q-HIM-000387
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C16-S13-T001
+subject_area: medical_ai
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "각 부서가 개별적으로 AI 도구를 도입하던 병원이 모든 신규 AI 도구가 조직 차원의 심의를 거치도록 절차를 표준화했다. 이러한 조직적 관리 체계를 무엇이라 하는가?"
+options:
+  - id: A
+    text: AI 거버넌스
+  - id: B
+    text: 개체명 인식
+  - id: C
+    text: 외부 검증
+  - id: D
+    text: 데이터 유출 관리
+answer:
+  - A
+explanation: AI 도구의 도입부터 폐기까지 전 과정을 조직 차원에서 관리하는 정책 체계를 AI 거버넌스라 한다.
+distractor_explanations:
+  B: 개체명 인식은 NLP 기법으로 조직 관리 체계와 무관하다.
+  C: 외부 검증은 모델 성능을 다른 기관 데이터로 재확인하는 절차로, 조직 전반의 관리 체계와는 다른 개념이다.
+  D: 데이터 유출 관리는 학습·시험 데이터셋 구성 문제로 이 상황과 관련이 없다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000448
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C05-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "림프절병증(Lymphadenopathy)은 그 자체만으로 특정 원인(감염, 염증, 혈액암 등)을 확정할 수 있는 특이적 징후이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 림프절병증은 감염, 염증, 혈액암 등 다양한 원인으로 나타날 수 있는 비특이적 징후로, 추가 검사가 필요하다.
+distractor_explanations:
+  O: 림프절병증의 비특이적 성격을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

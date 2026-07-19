@@ -1,0 +1,23 @@
+id: Q-HIM-000356
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C15-S08-T001
+subject_area: health_insurance
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "포괄수가제와 행위별수가제 중 어느 하나가 모든 상황에서 항상 더 우월하다고 단정할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 두 제도는 각각 장단점(과소 진료 vs. 과잉 진료 위험)이 있어 상황에 따라 병행 운영된다.
+distractor_explanations:
+  O: 한 제도의 절대적 우월성을 단정한 응답이다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false

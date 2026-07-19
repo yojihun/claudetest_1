@@ -1,0 +1,29 @@
+id: Q-HIM-000383
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C16-S11-T001
+subject_area: medical_ai
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "AI 모델을 개발하지 않은 다른 병원의 환자 데이터로 모델 성능을 재확인하는 절차를 무엇이라 하는가?"
+options:
+  - id: A
+    text: 내부 검증
+  - id: B
+    text: 외부 검증
+  - id: C
+    text: 데이터 유출 점검
+  - id: D
+    text: 개체명 인식
+answer:
+  - B
+explanation: 모델을 개발하지 않은 다른 기관·환자군 데이터로 성능을 재확인하는 절차는 외부 검증이다.
+distractor_explanations:
+  A: 내부 검증은 모델을 개발한 기관 자체 데이터로 성능을 확인하는 절차로 이 상황과 다르다.
+  C: 데이터 유출 점검은 학습·시험 데이터셋 구성 문제를 확인하는 절차로 이 상황과 무관하다.
+  D: 개체명 인식은 NLP에서 사용되는 기법으로 모델 성능 검증과 관련이 없다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

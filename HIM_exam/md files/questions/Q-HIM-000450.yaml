@@ -1,0 +1,23 @@
+id: Q-HIM-000450
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C05-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "혈우병은 백혈병이나 림프종과 마찬가지로 세포의 악성 증식이 원인인 질환이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 혈우병은 응고 인자의 선천적 결핍으로 인한 출혈 경향 질환으로, 악성 종양과는 기전이 다르다.
+distractor_explanations:
+  O: 혈우병의 기전을 악성 종양과 혼동한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

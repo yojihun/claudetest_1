@@ -1,0 +1,23 @@
+id: Q-HIM-000428
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C03-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "Arthrocentesis와 Arthroscopy는 접미사가 달라 서로 다른 성격(체액 채취 vs 내부 관찰)의 처치를 의미한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: -centesis(천자술)와 -scopy(내시경검사)는 서로 다른 접미사로, 각각 체액 채취와 내부 관찰이라는 다른 성격의 처치를 나타낸다.
+distractor_explanations:
+  X: 두 용어의 접미사 차이와 성격 차이를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000459
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C06-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "기침과 함께 선홍색 피가 섞인 가래를 뱉어내는 증상을 가리키는 용어는?"
+options:
+  - id: A
+    text: Hematemesis(토혈)
+  - id: B
+    text: Hemoptysis(객혈)
+  - id: C
+    text: Melena(흑색변)
+  - id: D
+    text: Hematochezia(혈변)
+answer:
+  - B
+explanation: 기도·폐에서 유래해 기침과 함께 뱉어내는 출혈은 객혈(Hemoptysis)이다.
+distractor_explanations:
+  A: 토혈은 위장관에서 유래해 구토와 함께 나오는 출혈로 이 상황과 출처가 다르다.
+  C: 흑색변은 상부 위장관 출혈이 소화되어 대변으로 배출되는 증상으로 이 상황과 다르다.
+  D: 혈변은 하부 위장관 출혈이 대변에 섞여 나오는 증상으로 이 상황과 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

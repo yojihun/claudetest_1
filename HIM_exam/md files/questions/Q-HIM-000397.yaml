@@ -1,0 +1,29 @@
+id: Q-HIM-000397
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C01-S04-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: apply
+importance: B
+stem: "어근 Arthr(관절)에 접미사 -algia(통증, 모음 a로 시작)를 결합할 때 올바른 형태는?"
+options:
+  - id: A
+    text: Arthralgia
+  - id: B
+    text: Arthroalgia
+  - id: C
+    text: Arthrsalgia
+  - id: D
+    text: Arthr-o-algia
+answer:
+  - A
+explanation: 접미사가 모음(a)으로 시작하므로 결합모음 o를 생략하고 Arthralgia로 결합한다.
+distractor_explanations:
+  B: 접미사가 모음으로 시작하는데도 결합모음 o를 넣은 잘못된 형태이다.
+  C: 결합모음 규칙에 맞지 않는 임의의 철자이다.
+  D: 하이픈을 사용하는 것은 의학용어 결합 방식이 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

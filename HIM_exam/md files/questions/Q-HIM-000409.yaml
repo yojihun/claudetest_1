@@ -1,0 +1,29 @@
+id: Q-HIM-000409
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C02-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "위, 소장, 대장, 간, 췌장이 공통된 목적(소화)을 위해 함께 작동하는 단위를 무엇이라 하는가?"
+options:
+  - id: A
+    text: 세포
+  - id: B
+    text: 조직
+  - id: C
+    text: 기관
+  - id: D
+    text: 계통
+answer:
+  - D
+explanation: 여러 기관이 공통 목적을 위해 함께 작동하는 집합을 계통이라 하며, 이 경우 소화기계에 해당한다.
+distractor_explanations:
+  A: 세포는 가장 작은 기본 단위로 이 문제의 규모와 다르다.
+  B: 조직은 비슷한 세포의 집합으로 기관보다 작은 단위이다.
+  C: 기관은 위나 간처럼 개별 장기 하나를 가리키며, 여러 기관의 집합인 계통과 구분된다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

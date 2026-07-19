@@ -1,0 +1,29 @@
+id: Q-HIM-000407
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C02-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "결합조직에서 발생한 악성 종양을 가리키는 병리학 용어는?"
+options:
+  - id: A
+    text: Carcinoma
+  - id: B
+    text: Sarcoma
+  - id: C
+    text: Adenoma
+  - id: D
+    text: Lipoma
+answer:
+  - B
+explanation: 결합조직·근육조직 등에서 발생한 악성 종양은 Sarcoma(육종)로 부른다.
+distractor_explanations:
+  A: Carcinoma는 상피조직에서 발생한 악성 종양을 가리킨다.
+  C: Adenoma는 선(gland) 조직에서 발생한 양성 종양을 가리키는 용어로 이 문제의 범주와 다르다.
+  D: Lipoma는 지방조직에서 발생한 양성 종양을 가리키는 용어로 악성 종양과 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

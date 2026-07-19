@@ -1,0 +1,29 @@
+id: Q-HIM-000441
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C04-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'Pt with h/o CAD and HTN presents with chest pain, r/o MI'라는 문장에서 CAD가 의미하는 것은?"
+options:
+  - id: A
+    text: 관상동맥질환
+  - id: B
+    text: 울혈심부전
+  - id: C
+    text: 심부정맥혈전증
+  - id: D
+    text: 관상동맥우회술
+answer:
+  - A
+explanation: CAD는 Coronary Artery Disease의 약자로 관상동맥질환을 의미한다.
+distractor_explanations:
+  B: 울혈심부전은 CHF로 축약되며 CAD와 다르다.
+  C: 심부정맥혈전증은 DVT로 축약되며 CAD와 다르다.
+  D: 관상동맥우회술은 CABG로 축약되며 진단명이 아닌 수술명이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

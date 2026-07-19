@@ -1,0 +1,29 @@
+id: Q-HIM-000369
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C16-S04-T001
+subject_area: medical_ai
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "임상예측 모델을 도입한 병원에서 특이도가 낮아 불필요한 경보가 남발되어 의료진이 경보를 무시하게 되는 현상을 가리키는 용어는?"
+options:
+  - id: A
+    text: 데이터 유출
+  - id: B
+    text: 경보 피로
+  - id: C
+    text: 과적합
+  - id: D
+    text: 데이터 편향
+answer:
+  - B
+explanation: 잦은 오경보로 의료진이 경보 자체를 무시하게 되는 현상을 경보 피로(Alert Fatigue)라 한다.
+distractor_explanations:
+  A: 데이터 유출은 학습·시험 데이터가 섞이는 문제로 이 상황과 다르다.
+  C: 과적합은 모델이 학습 데이터에만 지나치게 맞춰지는 현상으로 이 상황과 직접 관련이 없다.
+  D: 데이터 편향은 학습데이터의 대표성 문제로 이 상황의 핵심 원인이 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000425
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C03-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "다음 중 자가면역 반응으로 인해 여러 관절에 대칭적으로 나타나는 염증성 질환은?"
+options:
+  - id: A
+    text: 골관절염(Osteoarthritis)
+  - id: B
+    text: 류마티스관절염(Rheumatoid Arthritis)
+  - id: C
+    text: 골다공증(Osteoporosis)
+  - id: D
+    text: 통풍(Gout)
+answer:
+  - B
+explanation: 류마티스관절염은 자가면역 반응으로 인해 여러 관절에 대칭적으로 나타나는 염증성 질환이다.
+distractor_explanations:
+  A: 골관절염은 관절 연골의 퇴행성 마모로 발생하는 질환으로 자가면역과는 기전이 다르다.
+  C: 골다공증은 뼈 밀도가 감소하는 대사성 질환으로 관절 염증과는 다른 개념이다.
+  D: 통풍은 요산 결정 축적으로 인한 대사성 질환으로 자가면역 기전과는 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

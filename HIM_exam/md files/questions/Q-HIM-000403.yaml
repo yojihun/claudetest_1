@@ -1,0 +1,29 @@
+id: Q-HIM-000403
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C01-S07-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "영상 판독지에 '병변이 대퇴골의 distal 부위에 있다'고 기록되어 있을 때, 이는 병변이 어디에 위치함을 의미하는가?"
+options:
+  - id: A
+    text: 몸통에서 먼 쪽(무릎에 가까운 쪽)
+  - id: B
+    text: 몸통에 가까운 쪽(엉덩이에 가까운 쪽)
+  - id: C
+    text: 정중선에 가까운 쪽
+  - id: D
+    text: 신체 표면에 가까운 쪽
+answer:
+  - A
+explanation: Distal은 '몸통에서 먼'을 의미하므로, 대퇴골에서 몸통에서 먼 쪽인 무릎에 가까운 부위를 가리킨다.
+distractor_explanations:
+  B: 몸통에 가까운 쪽은 Proximal이 나타내는 위치이다.
+  C: 정중선에 가까운 쪽은 Medial이 나타내는 위치이다.
+  D: 신체 표면에 가까운 쪽은 Superficial이 나타내는 위치이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

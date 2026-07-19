@@ -1,0 +1,23 @@
+id: Q-HIM-000386
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S12-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "AI 도입이 늘어나면 데이터 구조와 코딩 체계에 대한 보건의료정보관리사의 전문성은 그 중요성이 줄어든다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: AI는 데이터에 의존하므로 데이터 전문성의 중요성은 오히려 높아진다.
+distractor_explanations:
+  O: AI 도입이 데이터 전문성의 필요성을 감소시킨다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

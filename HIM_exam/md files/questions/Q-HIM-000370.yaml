@@ -1,0 +1,23 @@
+id: Q-HIM-000370
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S04-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "임상예측 모델의 예측 결과는 확정 진단이 아니라 확률적 위험도로 해석해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 임상예측 모델의 결과는 확률적 위험도이며 최종 진단·치료 결정은 의료진의 몫이다.
+distractor_explanations:
+  X: 임상예측 모델의 성격을 확정 진단으로 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000439
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C04-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "여러 관상동맥이 심하게 막혀 새로운 우회 혈관을 이식하는 수술적 치료법은?"
+options:
+  - id: A
+    text: 경피적관상동맥성형술(PTCA)
+  - id: B
+    text: 관상동맥우회술(CABG)
+  - id: C
+    text: 심전도(ECG)
+  - id: D
+    text: 심초음파(Echocardiography)
+answer:
+  - B
+explanation: CABG는 심하게 막힌 관상동맥을 우회하는 새로운 혈관을 이식하는 수술이다.
+distractor_explanations:
+  A: PTCA는 풍선·스텐트를 이용한 비수술적 시술로 경미한 협착에 사용된다.
+  C: 심전도는 전기 신호를 기록하는 검사로 수술적 치료가 아니다.
+  D: 심초음파는 심장 구조·기능을 확인하는 검사로 수술적 치료가 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

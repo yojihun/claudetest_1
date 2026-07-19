@@ -1,0 +1,29 @@
+id: Q-HIM-000401
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C01-S06-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "다음 중 발음이 비슷하지만 전혀 다른 신체 부위를 가리켜 의무기록 작성 시 혼동 위험이 큰 용어 쌍은?"
+options:
+  - id: A
+    text: Ilium과 Ileum
+  - id: B
+    text: Gastritis와 Gastrectomy
+  - id: C
+    text: Hyperglycemia와 Hypoglycemia
+  - id: D
+    text: Nephr/o와 Ren/o
+answer:
+  - A
+explanation: Ilium(장골)과 Ileum(회장)은 발음이 비슷하지만 전혀 다른 신체 부위를 가리켜 받아쓰기 오류 위험이 크다.
+distractor_explanations:
+  B: Gastritis와 Gastrectomy는 접미사가 명확히 달라 발음상 혼동 위험이 상대적으로 낮다.
+  C: Hyperglycemia와 Hypoglycemia는 접두사가 뚜렷이 구분되어 이 Topic에서 다룬 발음 혼동 사례와 다르다.
+  D: Nephr/o와 Ren/o는 같은 의미(신장)를 가진 동의어 어근으로 혼동 위험 사례가 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000427
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C03-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "통풍이 의심되는 환자에게 관절액을 채취해 요산 결정을 확인하고자 할 때 시행하는 검사·처치는?"
+options:
+  - id: A
+    text: 관절경검사(Arthroscopy)
+  - id: B
+    text: 관절강천자(Arthrocentesis)
+  - id: C
+    text: 인공관절치환술(Arthroplasty)
+  - id: D
+    text: 근전도검사(EMG)
+answer:
+  - B
+explanation: 관절강천자는 접미사 -centesis(천자술)가 결합된 용어로, 관절강 내 체액을 채취하는 검사·처치이다.
+distractor_explanations:
+  A: 관절경검사는 내시경으로 관절 내부를 직접 관찰하는 검사로 체액 채취와는 다르다.
+  C: 인공관절치환술은 손상된 관절을 대체하는 수술로 검사가 아니다.
+  D: 근전도검사는 근육의 전기적 활동을 측정하는 검사로 관절액 채취와는 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

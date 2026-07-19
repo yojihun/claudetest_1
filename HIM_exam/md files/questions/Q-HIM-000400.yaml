@@ -1,0 +1,23 @@
+id: Q-HIM-000400
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C01-S05-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "그리스어·라틴어 기원 의학용어의 복수형은 대부분 영어의 일반 규칙대로 '-s'만 붙이면 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 의학용어의 복수형은 -a→-ae, -is→-es 등 고유한 불규칙 변환 규칙을 따르는 경우가 많다.
+distractor_explanations:
+  O: 의학용어 복수형의 불규칙성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

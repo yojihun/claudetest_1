@@ -1,0 +1,23 @@
+id: Q-HIM-000418
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C02-S06-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "'특발성(Idiopathic)'은 질병의 원인이 전혀 존재하지 않는다는 의미이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 특발성은 원인이 명확히 밝혀지지 않았다는 의미이며, 원인이 존재하지 않는다는 뜻이 아니다.
+distractor_explanations:
+  O: 특발성의 의미를 "원인 없음"으로 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

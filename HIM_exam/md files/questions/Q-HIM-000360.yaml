@@ -1,0 +1,29 @@
+id: Q-HIM-000360
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C15-S11-T001
+subject_area: health_insurance
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "청구자료의 심사를 담당하는 기관은?"
+options:
+  - id: A
+    text: 국민건강보험공단(NHIS)
+  - id: B
+    text: 건강보험심사평가원(HIRA)
+  - id: C
+    text: 보건복지부
+  - id: D
+    text: 통계청
+answer:
+  - B
+explanation: HIRA가 청구자료의 심사와 요양기관 평가를 담당한다.
+distractor_explanations:
+  A: NHIS는 보험료 징수와 급여 지급을 담당한다.
+  C: 보건복지부는 정책 기관으로 개별 청구 심사를 직접 수행하지 않는다.
+  D: 통계청은 국가 통계를 담당하는 기관이다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false

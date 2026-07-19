@@ -1,0 +1,29 @@
+id: Q-HIM-000463
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C06-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "흉수가 확인된 환자에게 증상 완화와 검사를 위해 액체를 바늘로 뽑아내는 처치는?"
+options:
+  - id: A
+    text: 흉강천자술(Thoracentesis)
+  - id: B
+    text: 기관조루술(Tracheostomy)
+  - id: C
+    text: 폐엽절제술(Lobectomy)
+  - id: D
+    text: 기관지내시경(Bronchoscopy)
+answer:
+  - A
+explanation: 흉강천자술은 흉막강에 고인 액체(흉수)를 바늘로 뽑아내는 처치이다.
+distractor_explanations:
+  B: 기관조루술은 장기간 인공호흡이 필요할 때 목에 통로를 만드는 처치로 흉수 제거와는 다르다.
+  C: 폐엽절제술은 폐의 특정 엽을 절제하는 수술로 흉수 제거와는 다른 목적이다.
+  D: 기관지내시경은 기관지 내부를 관찰하는 검사로 흉수 제거와는 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

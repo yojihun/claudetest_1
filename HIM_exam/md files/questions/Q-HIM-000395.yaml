@@ -1,0 +1,29 @@
+id: Q-HIM-000395
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C01-S03-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "'Colostomy'라는 용어의 접미사 -ostomy가 나타내는 범주는?"
+options:
+  - id: A
+    text: 증상·상태
+  - id: B
+    text: 수술·처치
+  - id: C
+    text: 검사·진단
+  - id: D
+    text: 색상
+answer:
+  - B
+explanation: -ostomy(조루술, 문합술)는 수술·처치를 나타내는 접미사이다.
+distractor_explanations:
+  A: 증상·상태 접미사에는 -itis, -oma 등이 있으며 -ostomy는 해당하지 않는다.
+  C: 검사·진단 접미사에는 -scopy, -gram 등이 있으며 -ostomy는 해당하지 않는다.
+  D: 색상은 접두사 범주(erythro-, cyano- 등)에 해당하며 접미사와 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

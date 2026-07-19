@@ -1,0 +1,23 @@
+id: Q-HIM-000464
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C06-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "기관조루술(Tracheostomy)은 장기간 인공호흡기가 필요한 환자에게 목을 통해 기관에 직접 통로를 만드는 처치이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 기관조루술은 장기간 인공호흡이 필요한 환자에게 목에 구멍을 내어 기관과 직접 연결하는 처치가 맞다.
+distractor_explanations:
+  X: 기관조루술의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

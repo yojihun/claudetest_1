@@ -1,0 +1,23 @@
+id: Q-HIM-000410
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C02-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "기관과 계통은 같은 수준의 개념으로, 서로 바꾸어 사용해도 무방하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 기관은 개별 장기를, 계통은 여러 기관의 집합을 가리키는 서로 다른 수준의 개념이다.
+distractor_explanations:
+  O: 기관과 계통의 위계 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

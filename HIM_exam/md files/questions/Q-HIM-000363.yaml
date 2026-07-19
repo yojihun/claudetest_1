@@ -1,0 +1,23 @@
+id: Q-HIM-000363
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S01-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "의료 AI의 대표적 활용 영역에는 임상예측, 의료영상 AI, 자연어처리, 생성형 AI가 포함된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 이 네 영역이 의료 AI의 대표적 활용 분야로 다루어진다.
+distractor_explanations:
+  X: 의료 AI 활용 영역을 축소해 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

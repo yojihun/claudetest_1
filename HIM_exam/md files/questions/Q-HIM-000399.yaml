@@ -1,0 +1,29 @@
+id: Q-HIM-000399
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C01-S05-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: apply
+importance: B
+stem: "'Diagnosis'의 올바른 복수형은?"
+options:
+  - id: A
+    text: Diagnosises
+  - id: B
+    text: Diagnoses
+  - id: C
+    text: Diagnosis's
+  - id: D
+    text: Diagnosia
+answer:
+  - B
+explanation: -is로 끝나는 의학용어는 -es로 바뀌는 규칙에 따라 Diagnosis의 복수형은 Diagnoses이다.
+distractor_explanations:
+  A: 영어의 일반적인 "-s" 규칙을 잘못 적용한 형태이다.
+  C: 소유격 형태로 복수형과 무관하다.
+  D: 의학용어 복수형 규칙에 맞지 않는 임의의 철자이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

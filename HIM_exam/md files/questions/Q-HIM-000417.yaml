@@ -1,0 +1,29 @@
+id: Q-HIM-000417
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C02-S06-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "퇴원요약지에 'Chronic kidney disease with acute exacerbation'이라고 기록되어 있다. 이 진단명이 의미하는 것은?"
+options:
+  - id: A
+    text: 만성 신질환을 앓던 환자에게 급성 악화가 겹쳐 나타났다.
+  - id: B
+    text: 원인 불명의 신질환이 새로 발생했다.
+  - id: C
+    text: 신질환 증상이 완전히 사라졌다.
+  - id: D
+    text: 신질환이 갑자기 발생해 빠르게 완치되었다.
+answer:
+  - A
+explanation: Chronic(만성)과 acute exacerbation(급성 악화)이 결합되어, 만성 신질환에 급성 악화가 겹친 상태를 의미한다.
+distractor_explanations:
+  B: 원인 불명을 나타내는 용어는 Idiopathic이며 이 문장에는 포함되어 있지 않다.
+  C: 증상 완화를 나타내는 용어는 Remission(관해)이며 이 문장과 반대되는 의미이다.
+  D: 완치를 의미하는 표현이 아니며, 만성질환의 급성 악화 상태를 나타낸다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

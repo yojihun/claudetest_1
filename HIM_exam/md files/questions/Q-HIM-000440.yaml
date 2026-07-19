@@ -1,0 +1,23 @@
+id: Q-HIM-000440
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C04-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "PTCA는 개흉 수술 없이 풍선이나 스텐트를 이용해 좁아진 관상동맥을 넓히는 비수술적 시술이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: PTCA는 경피적(피부를 통한) 방식으로 풍선·스텐트를 이용해 혈관을 넓히는 비수술적 시술이 맞다.
+distractor_explanations:
+  X: PTCA의 비수술적 특성을 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

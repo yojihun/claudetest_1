@@ -1,0 +1,23 @@
+id: Q-HIM-000460
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C06-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "기좌호흡(Orthopnea)은 누운 자세에서 호흡곤란이 심해져 앉아야 편해지는 증상으로, 심부전과 관련이 깊다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 기좌호흡은 누운 자세에서 폐로 가는 혈류가 늘어나 심부전 환자의 호흡곤란이 악화되는 증상이 맞다.
+distractor_explanations:
+  X: 기좌호흡의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

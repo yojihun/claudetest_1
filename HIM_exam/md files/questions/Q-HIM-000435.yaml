@@ -1,0 +1,29 @@
+id: Q-HIM-000435
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C04-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "정상보다 심박수가 느린 상태를 가리키는 용어는?"
+options:
+  - id: A
+    text: Tachycardia
+  - id: B
+    text: Bradycardia
+  - id: C
+    text: Palpitation
+  - id: D
+    text: Murmur
+answer:
+  - B
+explanation: Bradycardia는 접두사 brady-(느린)와 어근 Cardi/o(심장)가 결합된 용어로 서맥을 의미한다.
+distractor_explanations:
+  A: Tachycardia는 접두사 tachy-(빠른)가 결합된 용어로 빈맥을 의미한다.
+  C: Palpitation은 심계항진으로, 심박수의 빠르기 자체보다 두근거림을 환자가 자각하는 증상이다.
+  D: Murmur는 심잡음으로 심박수와는 다른 청진 소견이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

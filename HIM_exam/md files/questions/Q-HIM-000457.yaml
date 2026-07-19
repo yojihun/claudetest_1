@@ -1,0 +1,29 @@
+id: Q-HIM-000457
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C06-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "다음 중 하기도(Lower Respiratory Tract)에 속하는 구조는?"
+options:
+  - id: A
+    text: 코
+  - id: B
+    text: 인두
+  - id: C
+    text: 기관지
+  - id: D
+    text: 후두
+answer:
+  - C
+explanation: 기관지는 기관, 폐와 함께 하기도에 속하는 구조이다.
+distractor_explanations:
+  A: 코는 상기도에 속하는 구조이다.
+  B: 인두는 상기도에 속하는 구조이다.
+  D: 후두는 상기도에 속하는 구조이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000462
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C06-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "천식은 기도 협착이 비가역적이라는 점에서 COPD와 동일한 질환군으로 취급된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 천식은 기도 협착이 가역적(발작성)인 반면, COPD는 비가역적 기도 협착을 특징으로 하는 별개의 질환군이다.
+distractor_explanations:
+  O: 천식과 COPD의 가역성 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

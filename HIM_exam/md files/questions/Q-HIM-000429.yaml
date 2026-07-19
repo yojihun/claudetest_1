@@ -1,0 +1,29 @@
+id: Q-HIM-000429
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C03-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'MRI shows HNP at L4-5'라는 문장에서 HNP가 의미하는 것은?"
+options:
+  - id: A
+    text: 추간판탈출증
+  - id: B
+    text: 골관절염
+  - id: C
+    text: 관혈적정복내고정술
+  - id: D
+    text: 근전도검사
+answer:
+  - A
+explanation: HNP는 Herniated Nucleus Pulposus의 약자로 추간판탈출증을 의미한다.
+distractor_explanations:
+  B: 골관절염은 Osteoarthritis로 이 약어와 다르다.
+  C: 관혈적정복내고정술은 ORIF로 축약되며 HNP와 다르다.
+  D: 근전도검사는 EMG로 축약되며 HNP와 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

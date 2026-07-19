@@ -13,6 +13,14 @@ type TopicSection = {
 };
 
 const hiddenSectionTitles = new Set(["연습문제", "참고문헌"]);
+const emptySectionPatterns = [
+  /^이 topic은 .*특정 .*근거하지 않는다\.?$/i,
+  /^이 topic은 .*관련 내용이 없다\.?$/i,
+  /^이 topic은 .*해당 내용이 없다\.?$/i,
+  /^해당 내용 없음\.?$/i,
+  /^해당 없음\.?$/i,
+  /^없음\.?$/i,
+];
 
 function slugifySectionTitle(title: string) {
   return title
@@ -20,6 +28,22 @@ function slugifySectionTitle(title: string) {
     .replace(/[^a-z0-9가-힣\s-]/g, "")
     .trim()
     .replace(/\s+/g, "-");
+}
+
+function isEffectivelyEmptySection(body: string) {
+  const normalized = body
+    .replace(/\*\*/g, "")
+    .replace(/`/g, "")
+    .replace(/\[(.*?)\]\((.*?)\)/g, "$1")
+    .replace(/^[-*]\s+/gm, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (!normalized) {
+    return true;
+  }
+
+  return emptySectionPatterns.some((pattern) => pattern.test(normalized));
 }
 
 function parseTopicSections(markdown: string): TopicSection[] {
@@ -51,7 +75,10 @@ function parseTopicSections(markdown: string): TopicSection[] {
         body: sectionBody,
       };
     })
-    .filter((section) => !hiddenSectionTitles.has(section.title));
+    .filter(
+      (section) =>
+        !hiddenSectionTitles.has(section.title) && !isEffectivelyEmptySection(section.body),
+    );
 }
 
 export function TopicArticle({

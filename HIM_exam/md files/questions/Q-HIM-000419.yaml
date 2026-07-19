@@ -1,0 +1,29 @@
+id: Q-HIM-000419
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C02-S07-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "'Acute appendicitis due to bacterial infection'이라는 진단명에서 염증과 감염의 관계를 가장 정확히 설명한 것은?"
+options:
+  - id: A
+    text: 세균 감염이 원인이 되어 충수에 염증이 발생했다.
+  - id: B
+    text: 염증과 감염은 완전히 동일한 현상이다.
+  - id: C
+    text: 염증이 원인이 되어 세균 감염이 발생했다.
+  - id: D
+    text: 이 진단명은 종양을 의미한다.
+answer:
+  - A
+explanation: 이 진단명은 세균 감염(bacterial infection)이 원인이 되어 충수에 급성 염증(appendicitis)이 발생했음을 나타낸다.
+distractor_explanations:
+  B: 염증과 감염은 서로 연관되지만 동일한 개념이 아니다.
+  C: 인과관계가 반대로 서술되어 있다. 감염이 염증의 원인이 되는 경우이다.
+  D: 이 진단명은 종양이 아니라 감염에 의한 염증을 나타낸다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

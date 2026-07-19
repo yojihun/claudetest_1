@@ -1,0 +1,29 @@
+id: Q-HIM-000413
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C02-S04-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "CT 영상 판독지에 'Axial image shows a mass'라고 기록되어 있을 때, 이 영상은 어떤 면을 기준으로 촬영된 것인가?"
+options:
+  - id: A
+    text: 시상면(좌우로 나눈 단면)
+  - id: B
+    text: 관상면(앞뒤로 나눈 단면)
+  - id: C
+    text: 횡단면(위아래로 나눈 단면)
+  - id: D
+    text: 해부학적 자세
+answer:
+  - C
+explanation: Axial(횡단면)은 신체를 위아래로 나눈 가로 단면을 의미한다.
+distractor_explanations:
+  A: 시상면은 좌우로 나눈 세로 단면으로 Sagittal view에 해당한다.
+  B: 관상면은 앞뒤로 나눈 세로 단면으로 Coronal view에 해당한다.
+  D: 해부학적 자세는 방향 용어의 기준이 되는 표준 자세로 신체면과는 다른 개념이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,8 +1,9 @@
-import { cache } from "react";
+import "server-only";
 
-import dataset from "@/generated/learning-dataset.json";
+import { cache } from "react";
 import type { LearningDataset } from "@/lib/types";
 
 export const getLearningDataset = cache(async (): Promise<LearningDataset> => {
-  return dataset as unknown as LearningDataset;
+  const module = await import("../../scripts/content-loader.mjs");
+  return module.buildLearningDataset() as Promise<LearningDataset>;
 });

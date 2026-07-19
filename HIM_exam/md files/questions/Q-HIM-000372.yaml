@@ -1,0 +1,23 @@
+id: Q-HIM-000372
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S05-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "의료영상 AI 판독 보조 도구가 병변을 검출하면, 영상의학과 전문의의 재확인 없이 곧바로 확정 진단으로 사용할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 의료영상 AI는 판독 보조 도구이며 최종 판독과 진단 책임은 자격을 갖춘 의료진에게 있다.
+distractor_explanations:
+  O: 의료영상 AI의 역할을 확정 진단으로 오인한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

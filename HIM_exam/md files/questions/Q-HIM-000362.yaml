@@ -1,0 +1,23 @@
+id: Q-HIM-000362
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C15-S07-T001
+  - HIM-V1-C15-S10-T001
+subject_area: health_insurance
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  포괄수가제(DRG) 적용 수술의 청구가 일부 삭감되었다. 수술 자체는 적절했으나 수술 후 합병증이
+  퇴원요약에 명확히 기재되지 않아 DRG 분류에 합병증 유무가 반영되지 못한 것이 원인이었다.
+  이 사례의 근본 원인과 재발 방지 방안을 설명하시오.
+answer:
+  - "근본 원인: 퇴원요약의 기록 미비로 DRG 분류에 필요한 합병증 정보가 누락됨. 재발 방지: CDI(임상문서개선) 절차를 통해 퇴원요약 작성 시 합병증 여부를 명확히 기재하도록 질의·확인 절차를 강화"
+explanation: >
+  포괄수가제 환경에서는 합병증 유무가 DRG 분류와 지급액에 직접 영향을 준다. 기록 미비는 실제
+  진료의 적절성과 무관하게 재정적 손실로 이어질 수 있으므로, CDI를 통한 기록 구체화가 재발
+  방지의 핵심이다.
+distractor_explanations: {}
+references: []
+verified: false

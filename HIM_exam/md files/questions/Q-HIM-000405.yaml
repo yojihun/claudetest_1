@@ -1,0 +1,29 @@
+id: Q-HIM-000405
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C01-S08-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'Patient underwent gastroscopy, which revealed gastritis; subsequent gastrectomy was performed.'라는 문장에서 처치(수술)에 해당하는 용어는?"
+options:
+  - id: A
+    text: gastroscopy
+  - id: B
+    text: gastritis
+  - id: C
+    text: gastrectomy
+  - id: D
+    text: patient
+answer:
+  - C
+explanation: gastrectomy는 어근 Gastr/o에 접미사 -ectomy(절제술)가 결합된 치료·처치 용어이다.
+distractor_explanations:
+  A: gastroscopy는 접미사 -scopy(내시경검사)가 결합된 검사 용어이다.
+  B: gastritis는 접미사 -itis(염증)가 결합된 진단(증상·상태) 용어이다.
+  D: patient는 의학용어 조합과 무관한 일반 명사이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

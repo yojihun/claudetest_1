@@ -1,0 +1,23 @@
+id: Q-HIM-000396
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C01-S03-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "-otomy와 -ostomy는 완전히 같은 의미를 가진 접미사이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: -otomy는 절개술(incision)을, -ostomy는 조루술·문합술(창구 형성)을 의미하는 서로 다른 접미사이다.
+distractor_explanations:
+  O: 형태가 비슷한 두 접미사를 같은 의미로 혼동한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

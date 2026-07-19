@@ -1,0 +1,29 @@
+id: Q-HIM-000415
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C02-S05-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "위, 소장, 대장, 간이 위치하는 체강은?"
+options:
+  - id: A
+    text: 두개강
+  - id: B
+    text: 흉강
+  - id: C
+    text: 복강
+  - id: D
+    text: 골반강
+answer:
+  - C
+explanation: 위, 소장, 대장, 간 등 소화기 장기는 복강에 위치한다.
+distractor_explanations:
+  A: 두개강에는 뇌가 위치한다.
+  B: 흉강에는 심장, 폐가 위치한다.
+  D: 골반강에는 방광, 생식기관, 직장이 위치한다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000393
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C01-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "Polyuria(다뇨)와 Oliguria(핍뇨)의 의미 차이를 만드는 요소는?"
+options:
+  - id: A
+    text: 접두사(poly- vs oligo-)
+  - id: B
+    text: 어근(-uria)
+  - id: C
+    text: 결합모음
+  - id: D
+    text: 접미사(-uria)의 위치
+answer:
+  - A
+explanation: 두 용어는 동일한 어근 -uria(소변의 상태)에 서로 다른 접두사 poly-(많은)와 oligo-(적은)가 결합되어 의미가 달라진다.
+distractor_explanations:
+  B: -uria는 두 용어에서 동일하게 사용된 어근으로 차이를 만드는 요소가 아니다.
+  C: 이 두 용어에는 결합모음이 사용되지 않았다.
+  D: -uria는 접미사이며 그 위치는 두 용어에서 동일하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

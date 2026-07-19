@@ -1,0 +1,23 @@
+id: Q-HIM-000434
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C04-S01-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "폐동맥과 폐정맥은 일반적인 동맥·정맥의 혈액 산소 함량 규칙과 반대로 작동한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 폐동맥은 산소가 부족한 혈액을, 폐정맥은 산소가 풍부한 혈액을 운반해 일반적인 동맥·정맥 규칙과 반대로 작동한다.
+distractor_explanations:
+  X: 폐순환의 예외적 특성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

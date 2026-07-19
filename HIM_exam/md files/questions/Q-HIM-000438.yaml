@@ -1,0 +1,23 @@
+id: Q-HIM-000438
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C04-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "협심증과 심근경색증은 응급도와 조직 손상의 가역성 측면에서 차이가 없어 동일하게 취급해도 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 협심증은 가역적인 일시적 혈류 부족이고 심근경색증은 비가역적인 조직 괴사로, 응급도와 치료 접근이 크게 다르다.
+distractor_explanations:
+  O: 두 질환의 가역성·응급도 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

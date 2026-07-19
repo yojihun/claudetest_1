@@ -1,0 +1,29 @@
+id: Q-HIM-000451
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C05-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "CBC 검사에서 전혈구 감소가 확인되어 백혈병 여부를 확진하고자 할 때 시행하는 검사는?"
+options:
+  - id: A
+    text: 골수생검
+  - id: B
+    text: 림프절곽청술
+  - id: C
+    text: 수혈
+  - id: D
+    text: 심전도
+answer:
+  - A
+explanation: 백혈병 등 조혈 이상은 CBC만으로 확진하기 어려워 골수생검으로 골수 내 비정상 세포를 직접 확인해야 한다.
+distractor_explanations:
+  B: 림프절곽청술은 림프절 전이 확인·치료를 위한 처치로 백혈병 확진과는 다른 목적이다.
+  C: 수혈은 치료 목적의 처치로 확진 검사가 아니다.
+  D: 심전도는 심장의 전기 신호를 확인하는 검사로 조혈계 질환과는 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

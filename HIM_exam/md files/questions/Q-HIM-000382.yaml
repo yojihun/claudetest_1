@@ -1,0 +1,23 @@
+id: Q-HIM-000382
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S10-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "학습데이터를 비식별화했다면 AI 모델 자체에 대한 접근 통제나 출력 모니터링은 별도로 고려하지 않아도 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 모델 역추론과 같은 AI 특유의 위험이 있으므로 학습데이터 비식별화와 별개로 모델 접근 통제와 출력 모니터링도 함께 필요하다.
+distractor_explanations:
+  O: 학습데이터 비식별화만으로 충분하다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

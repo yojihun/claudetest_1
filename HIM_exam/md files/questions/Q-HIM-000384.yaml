@@ -1,0 +1,23 @@
+id: Q-HIM-000384
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S11-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "개발 기관의 내부 검증에서 좋은 성능을 보인 AI 모델은 다른 병원에서도 동일한 성능을 보장한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 환자 구성이나 검사 장비 등 환경 차이로 성능이 달라질 수 있어 별도의 외부 검증이 필요하다.
+distractor_explanations:
+  O: 내부 검증만으로 모든 환경에서 성능이 보장된다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

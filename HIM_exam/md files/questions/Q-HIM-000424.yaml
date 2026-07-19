@@ -1,0 +1,23 @@
+id: Q-HIM-000424
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C03-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "파행(Claudication)은 오직 근골격계 문제로만 발생하며 혈관계와는 무관하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 파행은 주로 혈류 부족과 관련되어 발생하는 증상으로 혈관계 질환과도 연결된다.
+distractor_explanations:
+  O: 파행의 원인을 근골격계 문제로만 한정한 오해이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

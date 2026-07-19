@@ -1,0 +1,29 @@
+id: Q-HIM-000431
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C03-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "의무기록에 'Degenerative joint disease of the knee'라고 기록된 경우, 코딩 담당자가 가장 먼저 해야 할 일은?"
+options:
+  - id: A
+    text: 이 표현이 Osteoarthritis(골관절염)의 동의어임을 인식하고 표준 용어로 정리한다.
+  - id: B
+    text: 이 표현을 무시하고 다른 진단명을 찾는다.
+  - id: C
+    text: 이 표현을 류마티스관절염으로 임의로 해석한다.
+  - id: D
+    text: 이 표현을 그대로 새로운 진단명으로 등록한다.
+answer:
+  - A
+explanation: 코딩 담당자는 동의어·유사 표현을 표준 용어로 정리한 후 분류 규칙을 적용해야 한다.
+distractor_explanations:
+  B: 표현을 무시하는 것은 올바른 코딩 절차가 아니다.
+  C: 류마티스관절염으로 임의 해석하는 것은 기전이 다른 질환으로 잘못 분류하는 오류이다.
+  D: 표준화 없이 그대로 등록하면 동일 질환이 여러 이름으로 흩어져 통계·분류의 일관성이 깨진다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

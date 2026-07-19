@@ -1,0 +1,23 @@
+id: Q-HIM-000458
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C06-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "기관(Trachea)과 기관지(Bronchus)는 동일한 하나의 구조를 가리키는 같은 용어이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 기관과 기관지는 서로 다른 구조로, 기관이 좌우로 갈라진 것이 기관지이다.
+distractor_explanations:
+  O: 기관과 기관지를 동일한 구조로 혼동한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

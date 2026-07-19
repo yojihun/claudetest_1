@@ -1,0 +1,29 @@
+id: Q-HIM-000367
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C16-S03-T001
+subject_area: medical_ai
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "정답(라벨) 없이 데이터 안에서 유사한 환자군을 발견하는 데 사용하는 학습 방식은?"
+options:
+  - id: A
+    text: 지도학습
+  - id: B
+    text: 비지도학습
+  - id: C
+    text: 강화학습
+  - id: D
+    text: 전이학습
+answer:
+  - B
+explanation: 라벨 없이 데이터의 구조나 군집을 탐색하는 방식은 비지도학습이다.
+distractor_explanations:
+  A: 지도학습은 라벨(정답)이 있는 데이터로 예측 모델을 학습하는 방식이다.
+  C: 강화학습은 보상을 통해 행동을 학습하는 방식으로 이 Topic에서 다루지 않는다.
+  D: 전이학습은 기존에 학습된 모델을 다른 과제에 재활용하는 방식으로 이 문제의 상황과 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

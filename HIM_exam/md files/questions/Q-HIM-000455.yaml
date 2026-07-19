@@ -1,0 +1,29 @@
+id: Q-HIM-000455
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C05-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "백혈병이 위암 같은 고형암과 달리 암등록에서 원발부위 개념을 그대로 적용하기 어려운 이유는?"
+options:
+  - id: A
+    text: 골수 전체에 걸쳐 비정상 세포가 퍼져 있어 하나의 부위로 특정하기 어렵기 때문
+  - id: B
+    text: 백혈병은 암으로 분류되지 않기 때문
+  - id: C
+    text: 백혈병은 항상 완치되어 등록이 필요 없기 때문
+  - id: D
+    text: 백혈병은 병리검사가 필요 없기 때문
+answer:
+  - A
+explanation: 백혈병은 골수 전체에 걸쳐 비정상 세포가 퍼져 있어, 위암처럼 명확한 하나의 원발부위를 특정하기 어렵다.
+distractor_explanations:
+  B: 백혈병은 혈액암으로 분류되는 질환이다.
+  C: 백혈병이 항상 완치된다는 것은 사실이 아니며 등록 필요성과도 무관한 서술이다.
+  D: 백혈병 진단에는 골수생검 등 병리검사가 필요하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

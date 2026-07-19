@@ -1,0 +1,29 @@
+id: Q-HIM-000389
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C16-S14-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "AI 학습데이터의 대표성과 정확성을 지속적으로 점검·개선하는 신규 직무는?"
+options:
+  - id: A
+    text: AI 학습데이터 큐레이터
+  - id: B
+    text: 영상의학과 전문의
+  - id: C
+    text: 시스템 네트워크 관리자
+  - id: D
+    text: 병원 총무 담당자
+answer:
+  - A
+explanation: 학습데이터의 대표성·정확성 등을 지속적으로 점검·개선하는 역할은 AI 학습데이터 큐레이터이다.
+distractor_explanations:
+  B: 영상의학과 전문의는 영상 판독의 최종 책임자로 학습데이터 관리 직무와는 다르다.
+  C: 시스템 네트워크 관리자는 IT 인프라를 담당하는 역할로 학습데이터 품질 관리와는 다르다.
+  D: 병원 총무 담당자는 행정 지원 업무를 담당하며 이 신규 직무와 관련이 없다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000416
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C02-S05-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "복강과 골반강은 뚜렷한 경계 없이 이어져 있어 임상에서 '복강·골반강'으로 함께 표현하기도 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 복강과 골반강은 명확한 경계 없이 이어져 있어 Abdominopelvic cavity로 함께 표현되는 경우가 많다.
+distractor_explanations:
+  X: 복강과 골반강의 연결 관계를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

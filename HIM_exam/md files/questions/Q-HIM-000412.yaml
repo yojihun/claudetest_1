@@ -1,0 +1,23 @@
+id: Q-HIM-000412
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C02-S03-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "해부학적 자세에서는 신체가 직립하여 정면을 바라보고, 손바닥은 뒤쪽을 향한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 해부학적 자세에서 손바닥은 앞쪽(전방)을 향한다.
+distractor_explanations:
+  O: 손바닥의 방향을 반대로 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000454
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C05-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "CBC는 하나의 개별 수치 항목이며, WBC와 같은 층위의 약어이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: CBC는 검사명이며, 그 안에 WBC, RBC, Hgb 등 여러 세부 수치 항목이 포함되는 상위 개념이다.
+distractor_explanations:
+  O: CBC와 WBC를 같은 층위의 개념으로 혼동한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

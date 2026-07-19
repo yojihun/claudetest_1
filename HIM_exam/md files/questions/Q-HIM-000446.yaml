@@ -1,0 +1,23 @@
+id: Q-HIM-000446
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C05-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "림프계는 혈관계와 동일한 관 체계로, 별도로 구분할 필요가 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 림프계는 혈관계와 별개의 관 체계로, 체액 순환과 면역 기능을 함께 수행한다.
+distractor_explanations:
+  O: 림프계를 혈관계와 동일시한 오해이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

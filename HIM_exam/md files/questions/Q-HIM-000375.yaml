@@ -1,0 +1,29 @@
+id: Q-HIM-000375
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C16-S07-T001
+subject_area: medical_ai
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "생성형 AI가 실제로 존재하지 않는 검사 결과를 그럴듯하게 지어내어 퇴원요약 초안에 포함시켰다. 이 현상을 가리키는 용어는?"
+options:
+  - id: A
+    text: 환각(Hallucination)
+  - id: B
+    text: 데이터 유출
+  - id: C
+    text: 과적합
+  - id: D
+    text: 위양성
+answer:
+  - A
+explanation: 생성형 AI가 사실이 아닌 정보를 그럴듯하게 만들어내는 현상을 환각이라 한다.
+distractor_explanations:
+  B: 데이터 유출은 학습·시험 데이터가 섞이는 문제로 이 상황과 무관하다.
+  C: 과적합은 모델이 학습 데이터에만 지나치게 맞춰지는 현상으로 이 상황과 다르다.
+  D: 위양성은 영상 AI 등에서 실제로 없는 이상을 있다고 판단하는 오류 유형으로 이 상황을 정확히 설명하지 않는다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

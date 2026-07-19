@@ -1,0 +1,29 @@
+id: Q-HIM-000391
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C01-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "다음 중 '신장(kidney)'을 의미하는 어근이 아닌 것은?"
+options:
+  - id: A
+    text: Nephr/o
+  - id: B
+    text: Ren/o
+  - id: C
+    text: Hepat/o
+  - id: D
+    text: (해당 없음 — Nephr/o, Ren/o 모두 신장을 의미함)
+answer:
+  - C
+explanation: Hepat/o는 간을 의미하는 어근이며, 신장을 의미하는 어근은 Nephr/o와 Ren/o이다.
+distractor_explanations:
+  A: Nephr/o는 신장을 의미하는 어근이 맞다.
+  B: Ren/o도 신장을 의미하는 어근이 맞다.
+  D: 정답은 Hepat/o이므로 이 선택지는 해당하지 않는다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

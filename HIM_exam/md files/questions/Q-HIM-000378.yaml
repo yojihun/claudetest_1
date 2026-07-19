@@ -1,0 +1,23 @@
+id: Q-HIM-000378
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S08-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "공정성(Fairness)이란 AI 모델이 여러 집단에 걸쳐 고르게 정확한 성능을 내는 것을 의미한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 공정성은 모델이 특정 집단에 편중되지 않고 여러 집단에서 고르게 정확한 성능을 내는 것을 의미한다.
+distractor_explanations:
+  X: 공정성의 정의를 부정확하게 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

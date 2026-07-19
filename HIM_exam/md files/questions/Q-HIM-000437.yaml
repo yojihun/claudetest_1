@@ -1,0 +1,29 @@
+id: Q-HIM-000437
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C04-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "관상동맥이 완전히 막혀 심장 근육 조직이 괴사하는 비가역적 상태는?"
+options:
+  - id: A
+    text: 협심증(Angina Pectoris)
+  - id: B
+    text: 심근경색증(Myocardial Infarction)
+  - id: C
+    text: 부정맥(Arrhythmia)
+  - id: D
+    text: 고혈압(Hypertension)
+answer:
+  - B
+explanation: 심근경색증은 관상동맥이 완전히 막혀 심장 근육 조직이 괴사하는 비가역적 상태이다.
+distractor_explanations:
+  A: 협심증은 관상동맥이 부분적으로 좁아져 일시적으로 혈류가 부족한 가역적 상태이다.
+  C: 부정맥은 전기 신호 이상으로 인한 박동 리듬 문제로 조직 괴사와는 다른 기전이다.
+  D: 고혈압은 혈압이 정상 범위보다 높은 상태로 이 문제의 조직 괴사 기전과 직접 관련이 없다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

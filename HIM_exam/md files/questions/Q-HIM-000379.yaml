@@ -1,0 +1,29 @@
+id: Q-HIM-000379
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C16-S09-T001
+subject_area: medical_ai
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "폐렴 진단 영상 AI의 판단 근거를 시각화했더니, 모델이 실제 병변이 아닌 촬영 장비 표식을 근거로 판단하고 있음이 드러났다. 이를 발견하는 데 활용된 개념은?"
+options:
+  - id: A
+    text: 설명가능성
+  - id: B
+    text: 데이터 유출
+  - id: C
+    text: 생성형 AI 환각
+  - id: D
+    text: 개체명 인식
+answer:
+  - A
+explanation: 모델의 판단 근거를 시각화해 이해할 수 있게 하는 것이 설명가능성이며, 이를 통해 편향 등 숨겨진 문제를 발견할 수 있다.
+distractor_explanations:
+  B: 데이터 유출은 학습·시험 데이터가 섞이는 문제로 이 상황과 무관하다.
+  C: 생성형 AI 환각은 텍스트 생성 과정의 문제로 영상 판단 근거 시각화와 다른 개념이다.
+  D: 개체명 인식은 NLP에서 사용되는 기법으로 영상 판단 근거와 관련이 없다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

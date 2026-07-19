@@ -1,0 +1,29 @@
+id: Q-HIM-000355
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C15-S08-T001
+subject_area: health_insurance
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "행위별수가제의 대표적 위험으로 알려진 것은?"
+options:
+  - id: A
+    text: 과소 진료
+  - id: B
+    text: 과잉 진료
+  - id: C
+    text: 청구 지연
+  - id: D
+    text: 기록 미비
+answer:
+  - B
+explanation: 시행한 만큼 지급받는 구조는 불필요한 진료를 늘리는 과잉 진료 유인이 될 수 있다.
+distractor_explanations:
+  A: 과소 진료는 포괄수가제의 위험으로 더 자주 언급된다.
+  C: 청구 지연과 직접 관련이 적다.
+  D: 기록 미비와 직접 관련이 적다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false

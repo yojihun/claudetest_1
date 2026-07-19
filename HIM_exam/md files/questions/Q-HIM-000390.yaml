@@ -1,0 +1,23 @@
+id: Q-HIM-000390
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S14-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "의료 AI 시대의 신규 직무들은 기존 보건의료정보관리 업무와 무관한 완전히 별개의 기술직이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 이런 신규 직무는 기존 보건의료정보관리 전문성의 연장선에 있는 역할이다.
+distractor_explanations:
+  O: 신규 직무를 기존 업무와 완전히 단절된 것으로 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

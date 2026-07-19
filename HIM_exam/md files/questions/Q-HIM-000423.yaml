@@ -1,0 +1,29 @@
+id: Q-HIM-000423
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C03-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "'Arthralgia'라는 용어를 어근과 접미사로 분해했을 때 그 의미는?"
+options:
+  - id: A
+    text: 관절(Arthr/o) + 통증(-algia) = 관절통
+  - id: B
+    text: 근육(My/o) + 통증(-algia) = 근육통
+  - id: C
+    text: 관절(Arthr/o) + 염증(-itis) = 관절염
+  - id: D
+    text: 뼈(Oste/o) + 통증(-algia) = 뼈 통증
+answer:
+  - A
+explanation: Arthralgia는 어근 Arthr/o(관절)와 접미사 -algia(통증)가 결합되어 관절통을 의미한다.
+distractor_explanations:
+  B: 근육통(Myalgia)은 어근 My/o가 사용되며 Arthralgia와는 다른 용어이다.
+  C: 관절염(Arthritis)은 접미사 -itis(염증)가 결합된 용어로 -algia(통증)와 다르다.
+  D: Arthralgia에는 어근 Oste/o(뼈)가 아닌 Arthr/o(관절)가 사용된다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

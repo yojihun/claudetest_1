@@ -1,0 +1,23 @@
+id: Q-HIM-000456
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C05-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "빈혈은 원인(철결핍성, 재생불량성, 용혈성 등)에 관계없이 항상 동일한 분류 코드가 적용된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 빈혈은 원인에 따라 서로 다른 분류 코드가 적용되므로 구체적 원인 확인이 필요하다.
+distractor_explanations:
+  O: 빈혈의 원인별 분류 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

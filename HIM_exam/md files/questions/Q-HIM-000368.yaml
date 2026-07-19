@@ -1,0 +1,23 @@
+id: Q-HIM-000368
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C16-S03-T001
+subject_area: medical_ai
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "지도학습은 입력 데이터와 정답(라벨)이 쌍으로 주어진 데이터를 사용해 모델을 학습시킨다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 지도학습은 라벨이 있는 데이터로 학습하는 방식이 맞다.
+distractor_explanations:
+  X: 지도학습의 정의를 부정확하게 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-AI-001
+verified: false

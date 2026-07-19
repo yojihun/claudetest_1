@@ -1,0 +1,23 @@
+id: Q-HIM-000394
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C01-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "tachy-는 '느린'을, brady-는 '빠른'을 의미하는 접두사이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: tachy-는 '빠른'을, brady-는 '느린'을 의미하며 문제 설명은 반대로 서술되어 있다.
+distractor_explanations:
+  O: 두 접두사의 의미를 반대로 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

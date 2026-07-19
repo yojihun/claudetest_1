@@ -1,0 +1,29 @@
+id: Q-HIM-000453
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C05-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'Hgb 7.5, s/p transfusion 2 units PRBC'라는 문장에서 Hgb가 의미하는 것은?"
+options:
+  - id: A
+    text: 헤모글로빈 수치
+  - id: B
+    text: 백혈구 수치
+  - id: C
+    text: 혈소판 수치
+  - id: D
+    text: 적혈구 용적률
+answer:
+  - A
+explanation: Hgb는 Hemoglobin의 약자로 헤모글로빈 수치를 의미한다.
+distractor_explanations:
+  B: 백혈구 수치는 WBC로 표기된다.
+  C: 혈소판 수치는 PLT로 표기된다.
+  D: 적혈구 용적률은 Hct로 표기된다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false
