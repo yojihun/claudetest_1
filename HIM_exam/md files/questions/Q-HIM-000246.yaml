@@ -1,0 +1,23 @@
+id: Q-HIM-000246
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C09-S07-T001
+subject_area: data_quality
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "형식과 범위가 정상인 값이라도 실제 사실과 다르면 정확성은 훼손될 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 유효성 통과와 정확성은 별개의 문제이며, 형식·범위가 정상이어도 사실과 다를 수 있다.
+distractor_explanations:
+  X: 유효성과 정확성을 동일시한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

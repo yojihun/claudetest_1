@@ -1,0 +1,23 @@
+id: Q-HIM-000144
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S02-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "부득이하게 늦게 작성한 기록은 '늦은 기록'임을 명시하고 실제 작성 시점을 함께 기재해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 늦은 기록임을 명시하지 않으면 기록의 시점이 왜곡되어 신뢰성이 훼손될 수 있다.
+distractor_explanations:
+  X: 늦은 기록 표시의 필요성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

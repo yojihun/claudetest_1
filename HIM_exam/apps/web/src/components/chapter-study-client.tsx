@@ -78,18 +78,22 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[20rem_minmax(0,1fr)]">
       <aside className="space-y-4">
-        <section className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
-          <h2 className="text-xl font-semibold tracking-tight text-slate-950">
+        <section className="app-panel-strong rounded-[2rem] p-6">
+          <p className="app-kicker">Navigator</p>
+          <h2 className="mt-2 text-xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
             단원 선택
           </h2>
+          <p className="mt-2 text-sm leading-7 app-subtle">
+            회독 중인 볼륨과 챕터를 빠르게 전환하면서 동일 주제 문제를 반복 훈련합니다.
+          </p>
 
           <div className="mt-5 space-y-4">
-            <label className="block text-sm font-medium text-slate-700">
+            <label className="block text-sm font-medium text-[rgba(16,32,51,0.72)]">
               Volume
               <select
                 value={selectedVolume}
                 onChange={(event) => handleVolumeChange(Number(event.target.value))}
-                className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3"
+                className="app-input mt-2 w-full rounded-2xl px-4 py-3"
               >
                 {dataset.volumes.map((volume) => (
                   <option key={volume} value={volume}>
@@ -99,12 +103,12 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
               </select>
             </label>
 
-            <label className="block text-sm font-medium text-slate-700">
+            <label className="block text-sm font-medium text-[rgba(16,32,51,0.72)]">
               Chapter
               <select
                 value={selectedChapterKey}
                 onChange={(event) => handleChapterChange(event.target.value)}
-                className="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3"
+                className="app-input mt-2 w-full rounded-2xl px-4 py-3"
               >
                 {chapterOptions.map((chapter) => (
                   <option key={chapter.key} value={chapter.key}>
@@ -116,8 +120,9 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
           </div>
         </section>
 
-        <section className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
-          <h3 className="text-lg font-semibold text-slate-950">Topic 목록</h3>
+        <section className="app-panel rounded-[2rem] p-6">
+          <p className="app-kicker">Topics</p>
+          <h3 className="mt-2 text-lg font-semibold text-[var(--navy)]">Topic 목록</h3>
           <div className="mt-4 space-y-2">
             {topicsInChapter.map((topic) => (
               <button
@@ -126,8 +131,8 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
                 onClick={() => setActiveTopicId(topic.id)}
                 className={`w-full rounded-2xl px-4 py-3 text-left text-sm transition ${
                   topic.id === activeTopic?.id
-                    ? "bg-emerald-50 text-emerald-900"
-                    : "bg-slate-50 text-slate-700 hover:bg-slate-100"
+                    ? "border border-[rgba(36,91,219,0.18)] bg-[linear-gradient(135deg,rgba(231,238,255,0.98),rgba(221,251,243,0.94))] text-[var(--blue)] shadow-[0_18px_30px_-24px_rgba(36,91,219,0.42)]"
+                    : "border border-transparent bg-white/56 text-[rgba(16,32,51,0.78)] hover:border-[rgba(36,91,219,0.12)] hover:bg-white/88"
                 }`}
               >
                 {topic.title}
@@ -141,11 +146,12 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
         {activeTopic ? <TopicArticle topic={activeTopic} /> : null}
 
         <section className="space-y-4">
-          <div className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
-            <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+          <div className="app-panel rounded-[2rem] p-6">
+            <p className="app-kicker">Practice</p>
+            <h3 className="mt-2 text-xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
               연습문제
             </h3>
-            <p className="mt-2 text-sm text-slate-600">
+            <p className="mt-2 text-sm app-subtle">
               선택한 Topic과 연결된 문제를 랜덤 순서로 보여줍니다.
             </p>
           </div>
@@ -162,7 +168,7 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
               />
             ))
           ) : (
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-6 text-sm text-slate-600">
+            <div className="app-panel rounded-[2rem] p-6 text-sm app-subtle">
               이 Topic과 직접 연결된 문제가 아직 없습니다.
             </div>
           )}

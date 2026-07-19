@@ -1,0 +1,23 @@
+id: Q-HIM-000155
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S08-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "여러 환자의 신체검진 기록이 토씨 하나 다르지 않게 동일한 것은 '클로닝' 문제의 사례가 될 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 템플릿 기본값이 실제 소견과 대조 없이 그대로 반복되면 클로닝 문제로 볼 수 있다.
+distractor_explanations:
+  X: 클로닝 문제의 정의를 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

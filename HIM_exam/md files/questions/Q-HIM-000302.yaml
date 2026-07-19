@@ -1,0 +1,23 @@
+id: Q-HIM-000302
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S03-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "처벌 없는 보고 문화는 근접오류의 적극적인 보고를 가능하게 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 보고 시 불이익이 없어야 직원들이 근접오류를 숨기지 않고 적극적으로 보고하게 된다.
+distractor_explanations:
+  X: 보고 문화의 중요성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

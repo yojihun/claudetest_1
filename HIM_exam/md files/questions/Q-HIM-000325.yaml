@@ -1,0 +1,23 @@
+id: Q-HIM-000325
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C13-S07-T001
+subject_area: accreditation
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "정보관리 기준 준비는 정보전산 부서만의 업무이며 보건의료정보관리 부서와는 무관하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 보건의료정보관리 부서가 완결률, 감사로그 등 자료를 정리해 준비를 주도하는 경우가 많다.
+distractor_explanations:
+  O: 보건의료정보관리 부서의 역할을 배제한 응답이다.
+references:
+  - REF-LAW-HEALTHCARE-ACCREDITATION-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000342
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C14-S11-T001
+subject_area: healthcare_law
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "보건의료정보관리사 국가시험 응시자격 결격사유의 법적 근거는?"
+options:
+  - id: A
+    text: 「의료기사 등에 관한 법률」 제4조
+  - id: B
+    text: 「의료기사 등에 관한 법률」 제7조
+  - id: C
+    text: 「개인정보 보호법」 제7조
+  - id: D
+    text: 「의료법」 제7조
+answer:
+  - B
+explanation: 결격사유는 「의료기사 등에 관한 법률」 제7조에 근거하며, 이는 국시원 공고 제2025-54호 원문으로 확인되었다.
+distractor_explanations:
+  A: 제4조는 자격 요건(응시자격 부여) 조문이다.
+  C: 개인정보 보호법과는 무관하다.
+  D: 의료법이 아닌 의료기사 등에 관한 법률의 조문이다.
+references:
+  - REF-KUKSIWON-EXAM-2025-054
+verified: false

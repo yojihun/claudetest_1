@@ -1,0 +1,29 @@
+id: Q-HIM-000201
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C07-S11-T001
+subject_area: health_information_systems
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "CPOE가 OCS와 구별되는 핵심 특징은?"
+options:
+  - id: A
+    text: 처방을 전자적으로 전달한다는 점
+  - id: B
+    text: 실시간으로 약물 상호작용·알레르기 등을 경고한다는 점
+  - id: C
+    text: 검사 결과를 저장한다는 점
+  - id: D
+    text: 영상을 저장한다는 점
+answer:
+  - B
+explanation: CPOE는 OCS의 전달 기능에 실시간 안전 검증 기능을 더한 것이 핵심 차이다.
+distractor_explanations:
+  A: 전자적 전달은 OCS와 CPOE 모두의 공통 기능이다.
+  C: 검사 결과 저장은 LIS의 역할이다.
+  D: 영상 저장은 PACS의 역할이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

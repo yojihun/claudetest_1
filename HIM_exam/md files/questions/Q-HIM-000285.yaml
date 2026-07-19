@@ -1,0 +1,29 @@
+id: Q-HIM-000285
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C11-S05-T001
+subject_area: quality_management
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "다음 중 과정지표에 해당하는 것은?"
+options:
+  - id: A
+    text: 30일 사망률
+  - id: B
+    text: 재입원율
+  - id: C
+    text: 특정 질환에서 권고되는 검사의 시행률
+  - id: D
+    text: 합병증률
+answer:
+  - C
+explanation: 권고된 진료행위의 준수 여부를 측정하는 것은 과정지표다.
+distractor_explanations:
+  A: 사망률은 결과지표다.
+  B: 재입원율은 결과지표다.
+  D: 합병증률은 결과지표다.
+references:
+  - REF-TEXTBOOK-QUALITY-MANAGEMENT-001
+verified: false

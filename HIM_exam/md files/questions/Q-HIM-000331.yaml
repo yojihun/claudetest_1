@@ -1,0 +1,23 @@
+id: Q-HIM-000331
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C14-S01-T001
+subject_area: healthcare_law
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "법규 학습에서는 주체(누가), 의무(무엇을), 예외(언제 다르게 적용되는가)를 구분해 이해하는 것이 효과적이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 이 세 요소로 구조화하면 개정에도 흔들리지 않는 이해가 가능하다.
+distractor_explanations:
+  X: 구조적 학습법의 효과를 부정한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

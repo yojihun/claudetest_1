@@ -1,0 +1,23 @@
+id: Q-HIM-000276
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C10-S06-T001
+  - HIM-V1-C10-S11-T001
+  - HIM-V1-C10-S13-T001
+subject_area: information_use
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  한 병원이 특정 연구 목적으로 승인받은 가명 데이터를, 별도 승인 없이 이후 마케팅 분석에도
+  활용하려 했다. 이 상황에서 위반되는 2차 활용 윤리 원칙과 그 이유를 설명하시오.
+answer:
+  - "목적 제한 원칙 위반 — 승인된 연구 목적 범위를 벗어난 활용은 환자가 예상·동의하지 않은 방식의 정보 이용이므로 허용되지 않는다."
+explanation: >
+  2차 활용의 네 가지 원칙(최소 필요 범위, 비식별·가명처리, 투명성, 목적 제한) 중 목적 제한은
+  승인된 목적을 벗어난 활용을 금지한다. 데이터가 가명처리되어 있더라도 목적 제한 원칙은
+  별개로 지켜야 한다.
+distractor_explanations: {}
+references: []
+verified: false

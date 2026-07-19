@@ -1,0 +1,23 @@
+id: Q-HIM-000300
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S02-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "위해사건은 예방 가능한 위해사건과 예방 불가능한 위해사건으로 구분할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 이 구분은 이후 원인 분석의 초점을 결정하는 중요한 기준이다.
+distractor_explanations:
+  X: 위해사건 분류 기준을 부정한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

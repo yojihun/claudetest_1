@@ -1,0 +1,23 @@
+id: Q-HIM-000184
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S11-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "스캔된 문서가 잘못된 환자 폴더에 색인화되면 새로운 형태의 기록 오류가 발생할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 색인화 오류는 스캔 자체와 별개로 기록 연결 오류를 만들 수 있다.
+distractor_explanations:
+  X: 색인화 오류의 위험을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

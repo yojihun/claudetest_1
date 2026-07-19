@@ -1,0 +1,23 @@
+id: Q-HIM-000167
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S02-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "연속번호제는 방문마다 새 번호를 부여해 같은 환자의 기록이 여러 번호로 분산될 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 연속번호제의 대표적 단점은 기록이 여러 번호에 흩어져 전체 이력 파악이 어렵다는 점이다.
+distractor_explanations:
+  X: 연속번호제의 특징을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

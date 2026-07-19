@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "generate-content": "node scripts/generate-content.mjs",
+    "predev": "npm run generate-content",
     "dev": "next dev",
+    "prebuild": "npm run generate-content",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

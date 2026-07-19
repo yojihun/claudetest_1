@@ -1,0 +1,14 @@
+id: REF-STANDARD-HL7-001
+type: standard
+title: HL7(Health Level Seven) 표준군 개괄
+publisher: HL7 International
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: en
+status: located
+notes: >
+  HL7은 의료정보 교환을 위한 국제 표준화 기구 및 그 표준군을 가리킨다. HL7 v2, CDA, FHIR 등 여러
+  버전·형식이 존재하는 것으로 널리 알려져 있다. 이 세션에서는 각 버전의 정확한 명세와 최신 개정
+  버전을 원문 대조하지 않았으므로, 본문에서는 일반적으로 통용되는 개념 수준으로만 서술한다.

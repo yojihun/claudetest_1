@@ -1,0 +1,23 @@
+id: Q-HIM-000339
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C14-S08-T001
+subject_area: healthcare_law
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "수집 목적과 다른 목적으로 건강정보를 이용하려면 별도의 요건(동의, 법적 근거 등)이 필요하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 목적 외 이용 제한 원칙에 따라 별도 요건 없이는 다른 목적으로 이용할 수 없다.
+distractor_explanations:
+  X: 목적 외 이용 제한 원칙을 간과한 응답이다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000143
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S02-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "아직 수행하지 않은 처치를 미리 기록해두는 사전 기록(pre-charting)은 허용된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 사전 기록은 실제와 다른 내용이 기록될 위험이 있어 금지된다.
+distractor_explanations:
+  O: 사전 기록의 위험성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

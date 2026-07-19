@@ -1,0 +1,13 @@
+id: REF-STANDARD-DICOM-001
+type: standard
+title: DICOM(Digital Imaging and Communications in Medicine) 표준 개괄
+publisher: DICOM Standards Committee
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: en
+status: located
+notes: >
+  DICOM은 의료영상과 관련 정보의 저장·전송 형식을 정의하는 표준으로 PACS와 함께 널리 쓰인다.
+  최신 개정 사항은 이 세션에서 원문 대조하지 않았다.

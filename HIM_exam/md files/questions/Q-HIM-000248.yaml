@@ -1,0 +1,29 @@
+id: Q-HIM-000248
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C09-S09-T001
+subject_area: data_quality
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "나이 항목의 값 분포를 확인해 음수나 200세 같은 비상식적 값을 찾아내는 분석은?"
+options:
+  - id: A
+    text: 누락률 분석
+  - id: B
+    text: 분포 분석
+  - id: C
+    text: 패턴 분석
+  - id: D
+    text: 정성분석
+answer:
+  - B
+explanation: 값의 분포가 상식적 범위에 있는지 확인하는 것은 분포 분석이다.
+distractor_explanations:
+  A: 누락률 분석은 값이 비어 있는 비율을 확인한다.
+  C: 패턴 분석은 형식의 일관성을 확인한다.
+  D: 정성분석은 기록 간 논리적 타당성을 다루는 별개의 개념이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

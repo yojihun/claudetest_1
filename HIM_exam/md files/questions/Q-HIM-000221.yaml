@@ -1,0 +1,23 @@
+id: Q-HIM-000221
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C08-S05-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "CDA는 개별 이벤트 메시지가 아니라 퇴원요약 같은 완결된 문서 전체를 표준화하는 데 초점을 둔다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: CDA는 문서 단위 구조화에 초점을 두며 이 점에서 HL7 v2의 이벤트 메시지 방식과 다르다.
+distractor_explanations:
+  X: CDA의 초점을 잘못 이해한 응답이다.
+references:
+  - REF-STANDARD-HL7-001
+verified: false

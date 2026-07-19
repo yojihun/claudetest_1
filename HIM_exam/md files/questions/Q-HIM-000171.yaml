@@ -1,0 +1,23 @@
+id: Q-HIM-000171
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S04-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "MPI에 오탈자로 인한 중복 항목이 생기면 이전 진료 이력이 새 방문 시 조회되지 않을 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 같은 환자가 서로 다른 항목으로 등록되면 이전 기록과의 연결이 끊어질 수 있다.
+distractor_explanations:
+  X: MPI 오류의 영향을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

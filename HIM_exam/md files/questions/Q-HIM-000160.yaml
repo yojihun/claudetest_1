@@ -1,0 +1,23 @@
+id: Q-HIM-000160
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S10-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "AI가 작성한 기록 초안이라도 최종 확정·서명자가 그 내용에 대한 책임을 진다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: AI가 생성한 초안이라도 확인 후 서명한 사람이 최종 책임을 진다.
+distractor_explanations:
+  X: AI 활용이 책임을 면제한다고 오해한 응답이다.
+references:
+  - REF-SECONDARY-DIGITAL-HEALTH-001
+verified: false

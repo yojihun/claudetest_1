@@ -53,14 +53,14 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
   return (
     <div className="space-y-6">
       <section className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
-        <div className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-emerald-700">
+        <div className="app-panel-strong rounded-[2rem] p-6">
+          <p className="app-kicker">
             Settings
           </p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-950">
+          <h2 className="mt-2 text-3xl font-extrabold tracking-[-0.05em] text-[var(--navy)]">
             집중학습 설정
           </h2>
-          <p className="mt-2 text-sm text-slate-600">
+          <p className="mt-2 text-sm leading-7 app-subtle">
             매일 학습 첫 화면과 랜덤 문제 노출에 반영됩니다.
           </p>
 
@@ -68,18 +68,18 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
             <button
               type="button"
               onClick={() => updateFocusSettings({ mode: "none" })}
-              className={`rounded-2xl px-4 py-4 text-left ${
+              className={`rounded-[1.6rem] border px-4 py-4 text-left transition ${
                 focusSettings.mode === "none"
-                  ? "bg-emerald-50 text-emerald-900"
-                  : "bg-slate-50 text-slate-700"
+                  ? "border-[rgba(36,91,219,0.18)] bg-[linear-gradient(135deg,rgba(231,238,255,0.98),rgba(221,251,243,0.92))] text-[var(--blue)] shadow-[0_18px_30px_-24px_rgba(36,91,219,0.42)]"
+                  : "border-[rgba(16,32,51,0.08)] bg-white/65 text-[rgba(16,32,51,0.74)] hover:border-[rgba(36,91,219,0.16)] hover:bg-white/88"
               }`}
             >
-              <strong className="block text-sm">기본 랜덤</strong>
-              <span className="mt-2 block text-sm">전체 범위에서 고르게 출제</span>
+              <strong className="block text-sm font-semibold">기본 랜덤</strong>
+              <span className="mt-2 block text-sm leading-6">전체 범위에서 고르게 출제</span>
             </button>
 
-            <div className="rounded-2xl bg-slate-50 px-4 py-4">
-              <strong className="block text-sm text-slate-900">Volume 집중</strong>
+            <div className="rounded-[1.6rem] border border-[rgba(16,32,51,0.08)] bg-white/68 px-4 py-4">
+              <strong className="block text-sm text-[var(--navy)]">Volume 집중</strong>
               <select
                 value={focusSettings.mode === "volume" ? focusSettings.volume : ""}
                 onChange={(event) =>
@@ -88,7 +88,7 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
                     volume: Number(event.target.value),
                   })
                 }
-                className="mt-3 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm"
+                className="app-input mt-3 w-full rounded-xl px-3 py-2 text-sm"
               >
                 <option value="" disabled>
                   Volume 선택
@@ -101,8 +101,8 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
               </select>
             </div>
 
-            <div className="rounded-2xl bg-slate-50 px-4 py-4">
-              <strong className="block text-sm text-slate-900">Chapter 집중</strong>
+            <div className="rounded-[1.6rem] border border-[rgba(16,32,51,0.08)] bg-white/68 px-4 py-4">
+              <strong className="block text-sm text-[var(--navy)]">Chapter 집중</strong>
               <select
                 value={focusSettings.mode === "chapter" ? focusSettings.chapterKey : ""}
                 onChange={(event) =>
@@ -111,7 +111,7 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
                     chapterKey: event.target.value,
                   })
                 }
-                className="mt-3 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm"
+                className="app-input mt-3 w-full rounded-xl px-3 py-2 text-sm"
               >
                 <option value="" disabled>
                   Chapter 선택
@@ -126,10 +126,13 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
           </div>
         </div>
 
-        <aside className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
-          <h3 className="text-lg font-semibold text-slate-950">현재 상태</h3>
-          <p className="mt-4 text-sm text-slate-600">오답노트 저장 문제</p>
-          <p className="mt-2 text-3xl font-semibold tracking-tight text-slate-950">
+        <aside className="app-panel rounded-[2rem] p-6">
+          <p className="app-kicker">Status</p>
+          <h3 className="mt-2 text-lg font-extrabold tracking-[-0.03em] text-[var(--navy)]">
+            현재 상태
+          </h3>
+          <p className="mt-4 text-sm app-subtle">오답노트 저장 문제</p>
+          <p className="mt-2 app-metric">
             {savedQuestionIds.length}
           </p>
         </aside>
@@ -137,12 +140,13 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
 
       <section
         id="review-notes"
-        className="rounded-[2rem] border border-slate-200 bg-white/90 p-6"
+        className="app-panel-strong rounded-[2rem] p-6"
       >
-        <h3 className="text-2xl font-semibold tracking-tight text-slate-950">
+        <p className="app-kicker">Review Notes</p>
+        <h3 className="mt-2 text-2xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
           오답노트 다시 풀기
         </h3>
-        <p className="mt-2 text-sm text-slate-600">
+        <p className="mt-2 text-sm leading-7 app-subtle">
           틀렸거나 다시 보고 싶은 문제를 여기에서 다시 풀 수 있습니다.
         </p>
       </section>
@@ -166,7 +170,7 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
             ) : null;
           })
         ) : (
-          <div className="rounded-[2rem] border border-dashed border-slate-300 bg-white/70 px-6 py-10 text-sm text-slate-600">
+          <div className="rounded-[2rem] border border-dashed border-[rgba(16,32,51,0.16)] bg-white/60 px-6 py-10 text-sm app-subtle">
             아직 오답노트에 저장된 문제가 없습니다. 매일 학습이나 단원별 학습에서
             문제를 보관하면 여기에 쌓입니다.
           </div>

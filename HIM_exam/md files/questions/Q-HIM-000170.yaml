@@ -1,0 +1,23 @@
+id: Q-HIM-000170
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S04-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "MPI는 병원의 모든 환자 조회와 기록 연결의 중앙 색인 역할을 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: MPI는 환자 식별 정보와 등록번호를 연결해 모든 진료 기록 조회의 기준점이 된다.
+distractor_explanations:
+  X: MPI의 역할을 과소평가한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

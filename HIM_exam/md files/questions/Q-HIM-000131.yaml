@@ -1,0 +1,29 @@
+id: Q-HIM-000131
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C04-S10-T001
+subject_area: healthcare_organization
+difficulty: intermediate
+cognitive_level: apply
+importance: B
+stem: "EMR 시스템이 다운되어 접속이 되지 않는 문제를 1차적으로 담당하는 부서는?"
+options:
+  - id: A
+    text: 보건의료정보관리 부서
+  - id: B
+    text: 정보전산 부서
+  - id: C
+    text: 보험심사부
+  - id: D
+    text: 원무·행정부
+answer:
+  - B
+explanation: 시스템 자체의 기술적 장애는 정보전산 부서의 담당 영역이다.
+distractor_explanations:
+  A: 보건의료정보관리 부서는 정보의 내용·품질을 다루며 시스템 장애 자체의 기술적 해결 주체는 아니다.
+  C: 보험심사부는 청구·심사 업무 담당이다.
+  D: 원무·행정부는 접수·수납 업무 담당이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

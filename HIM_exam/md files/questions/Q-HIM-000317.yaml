@@ -1,0 +1,23 @@
+id: Q-HIM-000317
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C13-S01-T001
+subject_area: accreditation
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "의료기관 인증의 목적은 인증서를 취득하는 것 자체이며 그 이후의 지속적 관리는 중요하지 않다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 인증의 실질적 목적은 지속적인 질 개선 문화를 정착시키는 것이다.
+distractor_explanations:
+  O: 인증의 목적을 취득 자체로 좁게 이해한 응답이다.
+references:
+  - REF-LAW-HEALTHCARE-ACCREDITATION-001
+verified: false

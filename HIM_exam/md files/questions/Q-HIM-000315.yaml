@@ -1,0 +1,23 @@
+id: Q-HIM-000315
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S11-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "환자안전 사고의 원인은 항상 사람의 실수이며 시스템 설계 결함은 원인이 될 수 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 경고 로직 결함, 화면 구성 오류 등 시스템 자체의 설계 결함도 환자안전 위험의 원인이 될 수 있다.
+distractor_explanations:
+  O: 시스템 설계 결함의 가능성을 배제한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

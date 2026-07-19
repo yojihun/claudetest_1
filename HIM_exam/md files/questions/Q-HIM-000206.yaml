@@ -1,0 +1,29 @@
+id: Q-HIM-000206
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C07-S14-T001
+subject_area: health_information_systems
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "인증(Authentication)과 권한 부여(Authorization)의 차이에 대한 설명으로 가장 적절한 것은?"
+options:
+  - id: A
+    text: 인증은 접근 범위를 설정하고, 권한 부여는 본인 확인을 한다.
+  - id: B
+    text: 인증은 본인 확인을, 권한 부여는 직무에 맞는 접근 범위 설정을 한다.
+  - id: C
+    text: 두 개념은 완전히 동일하다.
+  - id: D
+    text: 인증은 전자기록에만, 권한 부여는 종이 기록에만 적용된다.
+answer:
+  - B
+explanation: 인증은 사용자가 실제로 본인인지 확인하는 단계이고, 권한 부여는 확인된 사용자에게 접근 범위를 설정하는 단계다.
+distractor_explanations:
+  A: 역할이 반대로 서술되었다.
+  C: 두 개념은 서로 다른 단계다.
+  D: 매체와 무관하게 두 개념 모두 적용된다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

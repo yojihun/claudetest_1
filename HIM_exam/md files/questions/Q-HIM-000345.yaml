@@ -1,0 +1,22 @@
+id: Q-HIM-000345
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C14-S13-T001
+subject_area: healthcare_law
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "출처를 찾았지만 아직 본문과 대조하지 않은 정보는 'verified' 수준으로 표시해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 출처를 찾았으나 대조 전인 상태는 'located' 수준이며, 'verified'는 본문과 대조까지 완료한 경우에 사용한다.
+distractor_explanations:
+  O: 검증 수준 구분을 혼동한 응답이다.
+references: []
+verified: false

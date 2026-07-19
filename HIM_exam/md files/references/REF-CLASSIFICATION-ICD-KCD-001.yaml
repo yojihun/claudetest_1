@@ -1,0 +1,16 @@
+id: REF-CLASSIFICATION-ICD-KCD-001
+type: classification
+title: ICD(국제질병분류) 및 KCD(한국표준질병·사인분류) 개괄
+publisher: WHO(ICD), 통계청(KCD)
+version: KCD-8(국시원 제42회 실기 지참도서 기준, REF-KUKSIWON-EXAM-2025-054로 확인됨)
+effective_date: null
+accessed_date: 2026-07-19
+url: null
+language: ko
+status: located
+notes: >
+  ICD는 WHO가 관리하는 국제질병분류이며, KCD는 이를 기반으로 국내에 맞게 조정한 한국표준질병·
+  사인분류다. 국시원 공고(REF-KUKSIWON-EXAM-2025-054)를 통해 제42회 실기시험 지참도서가
+  KCD-8(제1권·제3권)임을 확인했다. 다만 KCD의 상세 구조·개정 이력·정확한 발행 주체(통계청 고시
+  여부 등)는 이 세션에서 원문 대조하지 않았으므로, verified 승격 전 통계청·국가법령정보센터 원문
+  확인이 필요하다.

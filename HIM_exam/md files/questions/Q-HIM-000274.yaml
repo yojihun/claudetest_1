@@ -1,0 +1,23 @@
+id: Q-HIM-000274
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C10-S12-T001
+subject_area: information_use
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "각 기관의 가명 데이터가 개별적으로 안전하다면 결합해도 항상 안전하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 여러 데이터셋을 결합하면 조합을 통해 재식별 위험이 커질 수 있어 별도의 위험 평가가 필요하다.
+distractor_explanations:
+  O: 결합의 재식별 위험을 간과한 응답이다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

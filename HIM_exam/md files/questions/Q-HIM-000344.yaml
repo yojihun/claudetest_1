@@ -1,0 +1,23 @@
+id: Q-HIM-000344
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C14-S05-T001
+  - HIM-V1-C14-S07-T001
+subject_area: healthcare_law
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  퇴직한 전직 직원이 재직 중 알게 된 환자의 진료 사실을 지인에게 이야기했다. 또한 그 환자의
+  가족이라고 주장하는 사람이 위임장 없이 전화로 진료 정보를 요청했다. 각 상황에서 위반되거나
+  위반될 수 있는 법 원칙을 설명하시오.
+answer:
+  - "퇴직 직원의 누설: 비밀누설 금지 위반(퇴직 후에도 의무 유지) / 위임장 없는 전화 요청: 제공 시 열람·사본 제공 원칙 위반(제3자 권한 미확인 상태에서 제공하면 위반)"
+explanation: >
+  비밀누설 금지 의무는 퇴직 후에도 유지되므로 첫 번째 상황은 명백한 위반이다. 두 번째 상황은
+  아직 정보를 제공하지 않았다면 위반이 발생한 것은 아니지만, 위임장 확인 없이 제공하면 제3자
+  제공 원칙을 위반하게 된다.
+distractor_explanations: {}
+references: []
+verified: false

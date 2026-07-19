@@ -1,0 +1,23 @@
+id: Q-HIM-000326
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C13-S08-T001
+subject_area: accreditation
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "인증 준비는 조사 직전 몇 주간 집중적으로 자료를 정리하면 충분하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 실제 기록은 평소의 흔적을 담고 있어 직전에 급조할 수 없으므로 평소 관리가 핵심이다.
+distractor_explanations:
+  O: 인증 준비를 직전 집중 작업으로 오해한 응답이다.
+references:
+  - REF-LAW-HEALTHCARE-ACCREDITATION-001
+verified: false

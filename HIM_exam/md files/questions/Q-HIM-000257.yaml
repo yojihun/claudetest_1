@@ -1,0 +1,23 @@
+id: Q-HIM-000257
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C09-S13-T001
+subject_area: data_quality
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "품질지표의 개선 우선순위는 점수가 가장 낮은 지표만 기계적으로 선택하면 충분하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 점수뿐 아니라 안전·업무에 미치는 영향의 크기도 함께 고려해 우선순위를 정해야 한다.
+distractor_explanations:
+  O: 우선순위 결정 기준을 단순화해 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

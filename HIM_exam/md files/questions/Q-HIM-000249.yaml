@@ -1,0 +1,23 @@
+id: Q-HIM-000249
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C09-S09-T001
+subject_area: data_quality
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "데이터 프로파일링은 오류를 확정하는 단계가 아니라 자세히 살펴볼 후보를 찾는 단계다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 프로파일링은 이상치 후보를 찾고, 실제 오류 확정은 다음 단계(오류 탐지)에서 이루어진다.
+distractor_explanations:
+  X: 프로파일링과 오류 탐지 단계를 혼동한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

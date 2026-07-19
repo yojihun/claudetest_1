@@ -1,0 +1,23 @@
+id: Q-HIM-000132
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S11-T001
+subject_area: healthcare_organization
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "큰 병원일수록 보건의료정보관리 부서가 기록관리, 분류·코딩, 통계, 암등록 등으로 세분화되는 경향이 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 병원 규모가 커질수록 업무량이 늘어 세부 파트로 나뉘어 운영되는 경우가 흔하다.
+distractor_explanations:
+  X: 부서 세분화 경향을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

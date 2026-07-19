@@ -1,0 +1,23 @@
+id: Q-HIM-000251
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C09-S10-T001
+subject_area: data_quality
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "자동 오류 탐지 도구가 오류로 표시한 값은 검토 없이 즉시 수정해도 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 자동 탐지된 이상치라도 실제로는 정상인 극단값일 수 있어 사람의 검토가 필요하다.
+distractor_explanations:
+  O: 자동 탐지 결과의 한계를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

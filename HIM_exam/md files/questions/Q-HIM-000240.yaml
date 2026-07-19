@@ -1,0 +1,23 @@
+id: Q-HIM-000240
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C09-S03-T001
+subject_area: data_quality
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "전체 평균 완전성률이 높다면 모든 개별 항목의 완전성도 항상 높다고 볼 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 전체 평균이 높아도 특정 항목만 유독 낮을 수 있으므로 항목별 세분화가 필요하다.
+distractor_explanations:
+  O: 전체 평균과 개별 항목을 동일시한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

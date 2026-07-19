@@ -1,0 +1,23 @@
+id: Q-HIM-000304
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S04-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "효과적인 보고체계는 보고자가 고의나 중대한 과실이 아닌 이상 불이익을 받지 않도록 하는 비처벌 원칙을 포함한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 비처벌 원칙은 보고 문화를 활성화하는 핵심 요건이다.
+distractor_explanations:
+  X: 비처벌 원칙의 필요성을 부정한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

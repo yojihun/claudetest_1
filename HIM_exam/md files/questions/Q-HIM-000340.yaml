@@ -1,0 +1,23 @@
+id: Q-HIM-000340
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C14-S09-T001
+subject_area: healthcare_law
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "후향적 데이터 분석 연구와 전향적 임상시험은 항상 동일한 수준의 연구윤리 심의가 요구된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 연구 유형에 따라 심의 요건이 다르거나 간소화될 수 있어 항상 동일하지는 않다.
+distractor_explanations:
+  O: 연구 유형별 심의 요건 차이를 간과한 응답이다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

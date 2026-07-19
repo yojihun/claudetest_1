@@ -1,0 +1,23 @@
+id: Q-HIM-000223
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C08-S06-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "FHIR은 웹 개발자들에게 익숙한 REST API 방식을 활용해 상대적으로 쉽게 연동할 수 있다는 장점이 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: FHIR은 웹 기술을 활용해 병원 전산 담당자뿐 아니라 일반 개발자도 쉽게 연동할 수 있게 설계되었다.
+distractor_explanations:
+  X: FHIR의 장점을 간과한 응답이다.
+references:
+  - REF-STANDARD-FHIR-001
+verified: false

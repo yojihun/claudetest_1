@@ -1,0 +1,29 @@
+id: Q-HIM-000245
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C09-S07-T001
+subject_area: data_quality
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "체온 항목에 '150℃'라는 값이 입력되었다. 이는 어떤 품질 차원의 문제인가?"
+options:
+  - id: A
+    text: 정확성
+  - id: B
+    text: 유효성
+  - id: C
+    text: 적시성
+  - id: D
+    text: 유일성
+answer:
+  - B
+explanation: 인체 체온으로 불가능한 범위의 값이므로 유효성(범위 규칙) 위반이다.
+distractor_explanations:
+  A: 정확성은 실제 사실과의 일치 여부를 다루며, 이 값은 애초에 유효 범위를 벗어나 정확성 판단 이전 단계의 문제다.
+  C: 시점의 문제가 아니다.
+  D: 중복 레코드 문제가 아니다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

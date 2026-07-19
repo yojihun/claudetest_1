@@ -1,0 +1,23 @@
+id: Q-HIM-000334
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C14-S04-T001
+subject_area: healthcare_law
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "진료기록 작성은 의료인의 재량적 관행일 뿐 법적 의무는 아니다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 진료기록 작성은 의료법상 의무이며 위반 시 법적 책임이 따를 수 있다.
+distractor_explanations:
+  O: 법적 의무성을 부정한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

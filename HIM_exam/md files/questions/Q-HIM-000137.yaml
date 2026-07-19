@@ -1,0 +1,23 @@
+id: Q-HIM-000137
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S13-T001
+subject_area: healthcare_organization
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "환자 흐름의 한 단계에서 발생한 지연은 이후 단계나 통계 지표에 연쇄적으로 영향을 줄 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 검사 결과 지연이 입원 결정을 늦추고 재원일수 통계에 영향을 준 사례처럼, 단계 간 영향은 연쇄적일 수 있다.
+distractor_explanations:
+  X: 단계 간 연쇄적 영향을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

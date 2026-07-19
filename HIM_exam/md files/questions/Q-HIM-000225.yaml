@@ -1,0 +1,29 @@
+id: Q-HIM-000225
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C08-S08-T001
+subject_area: health_information_standards
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "ICD/KCD와 SNOMED CT의 목적 차이에 대한 설명으로 가장 적절한 것은?"
+options:
+  - id: A
+    text: ICD/KCD는 임상 개념을 세밀하게, SNOMED CT는 통계·청구용으로 사용된다.
+  - id: B
+    text: ICD/KCD는 통계·청구 분류에, SNOMED CT는 임상 개념의 정교한 표현에 초점을 둔다.
+  - id: C
+    text: 두 표준은 완전히 동일한 목적을 가진다.
+  - id: D
+    text: SNOMED CT는 영상저장 표준이다.
+answer:
+  - B
+explanation: ICD/KCD는 통계·청구를 위한 분류이고, SNOMED CT는 임상 기록을 세밀하게 코드화하는 데 초점을 둔다.
+distractor_explanations:
+  A: 목적이 반대로 서술되었다.
+  C: 두 표준은 목적이 다르다.
+  D: 영상저장 표준은 DICOM이다.
+references:
+  - REF-STANDARD-SNOMEDCT-001
+verified: false

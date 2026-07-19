@@ -1,0 +1,23 @@
+id: Q-HIM-000172
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S05-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "이름과 생년월일이 비슷하다는 이유만으로 충분한 확인 없이 두 환자 레코드를 병합해도 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 잘못된 병합은 서로 다른 환자의 정보가 섞이는 심각한 안전 문제를 일으킬 수 있으므로 여러 식별자를 교차 확인해야 한다.
+distractor_explanations:
+  O: 병합의 위험성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

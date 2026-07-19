@@ -1,0 +1,28 @@
+id: Q-HIM-000279
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C11-S02-T001
+subject_area: quality_management
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'적절한 시점에 항생제를 투여했는가'는 Donabedian 모델의 어느 요소에 해당하는가?"
+options:
+  - id: A
+    text: 구조
+  - id: B
+    text: 과정
+  - id: C
+    text: 결과
+  - id: D
+    text: 어디에도 해당하지 않음
+answer:
+  - B
+explanation: 실제로 수행된 진료행위(투여 시점 준수 여부)는 과정에 해당한다.
+distractor_explanations:
+  A: 구조는 자원·환경에 관한 것으로 이 사례와 다르다.
+  C: 결과는 건강 상태 변화를 다루며 이 사례는 행위 자체를 다룬다.
+references:
+  - REF-TEXTBOOK-QUALITY-MANAGEMENT-001
+verified: false

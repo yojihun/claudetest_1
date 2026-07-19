@@ -1,0 +1,24 @@
+id: Q-HIM-000316
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C12-S03-T001
+  - HIM-V1-C12-S05-T001
+  - HIM-V1-C12-S12-T001
+subject_area: patient_safety
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  신입 간호사가 수술 타임아웃 중 수술 부위 표시가 예정된 부위와 다르다는 것을 발견했지만,
+  집도의에게 말하기 주저했다. 이 상황이 보여주는 안전문화의 문제와, 이를 개선하기 위한 조직
+  차원의 조치를 설명하시오.
+answer:
+  - "문제: 위계 때문에 하급자가 우려를 제기하기 어려운 개방적 의사소통 부족 문화. 조치: 위계와 무관하게 누구나 문제를 제기할 수 있도록 타임아웃 절차에서 전 구성원의 발언을 명시적으로 요청하는 규칙을 마련하고, 문제 제기에 대한 긍정적 피드백 문화를 조성"
+explanation: >
+  타임아웃 같은 다층 방어 절차가 있어도, 개방적 의사소통 문화가 없으면 실제로 발견된 문제가
+  제기되지 못해 절차가 형식화된다. 안전문화 개선은 절차 자체보다 그 절차를 실질적으로 작동시키는
+  조직 문화의 변화가 핵심이다.
+distractor_explanations: {}
+references: []
+verified: false

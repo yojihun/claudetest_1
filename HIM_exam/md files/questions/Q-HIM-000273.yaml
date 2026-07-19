@@ -1,0 +1,23 @@
+id: Q-HIM-000273
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C10-S11-T001
+subject_area: information_use
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "가명처리된 데이터의 매핑 키(원본과의 연결 정보)는 접근 권한을 엄격히 통제해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 매핑 키에 대한 접근 통제가 느슨하면 재식별 위험이 커진다.
+distractor_explanations:
+  X: 매핑 키 관리의 중요성을 간과한 응답이다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

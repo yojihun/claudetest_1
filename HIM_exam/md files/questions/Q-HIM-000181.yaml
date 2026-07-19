@@ -1,0 +1,23 @@
+id: Q-HIM-000181
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S10-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "보존기간이 지난 종이 기록을 파쇄 없이 일반 폐지로 배출해도 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 파쇄 없이 폐기하면 개인정보 유출 위험이 있으므로 안전한 폐기 방법을 거쳐야 한다.
+distractor_explanations:
+  O: 안전한 폐기 방법의 필요성을 간과한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

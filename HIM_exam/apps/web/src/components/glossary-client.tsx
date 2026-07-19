@@ -98,17 +98,18 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
 
   return (
     <div className="space-y-6">
-      <section className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
-        <h2 className="text-3xl font-semibold tracking-tight text-slate-950">
+      <section className="app-panel-strong rounded-[2rem] p-6">
+        <p className="app-kicker">Glossary Lab</p>
+        <h2 className="mt-2 text-3xl font-extrabold tracking-[-0.05em] text-[var(--navy)]">
           의학용어 사전
         </h2>
-        <p className="mt-2 text-sm text-slate-600">
+        <p className="mt-2 text-sm leading-7 app-subtle">
           카드를 눌러 의미를 확인하고, 모르는 용어는 저장해둘 수 있습니다.
         </p>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_22rem]">
-        <div className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
+        <div className="app-panel-strong rounded-[2rem] p-6">
           <div
             role="button"
             tabIndex={0}
@@ -119,25 +120,25 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
                 setRevealed((current) => !current);
               }
             }}
-            className="min-h-80 cursor-pointer rounded-[1.75rem] border border-slate-200 bg-[linear-gradient(160deg,_rgba(240,249,244,0.95),_rgba(255,255,255,0.98))] p-7 shadow-[0_24px_80px_-52px_rgba(15,23,42,0.45)] outline-none transition hover:border-emerald-300"
+            className="min-h-80 cursor-pointer rounded-[1.75rem] border border-[rgba(36,91,219,0.14)] bg-[linear-gradient(145deg,rgba(16,32,51,0.98),rgba(36,91,219,0.9)_52%,rgba(2,140,116,0.88))] p-7 text-white shadow-[0_30px_80px_-38px_rgba(16,32,51,0.8)] outline-none transition hover:border-[rgba(255,255,255,0.24)]"
           >
             {activeEntry ? (
               <div className="flex h-full flex-col justify-between">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[rgba(255,255,255,0.72)]">
                     랜덤 카드
                   </p>
-                  <h3 className="mt-5 text-4xl font-semibold tracking-tight text-slate-950">
+                  <h3 className="mt-5 text-4xl font-extrabold tracking-[-0.05em] text-white">
                     {activeEntry.term}
                   </h3>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {activeEntry.abbreviation !== "-" ? (
-                      <span className="rounded-full bg-white px-3 py-1 text-sm font-semibold text-emerald-800">
+                      <span className="rounded-full bg-[rgba(255,255,255,0.18)] px-3 py-1 text-sm font-semibold text-white">
                         {activeEntry.abbreviation}
                       </span>
                     ) : null}
                     {activeEntry.english ? (
-                      <span className="rounded-full bg-white px-3 py-1 text-sm text-slate-600">
+                      <span className="rounded-full bg-[rgba(255,255,255,0.12)] px-3 py-1 text-sm text-[rgba(255,255,255,0.8)]">
                         {activeEntry.english}
                       </span>
                     ) : null}
@@ -146,21 +147,21 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
 
                 <div className="mt-8">
                   {revealed ? (
-                    <div className="rounded-[1.5rem] bg-white/85 p-5">
-                      <p className="text-sm font-semibold text-slate-500">의미</p>
-                      <p className="mt-3 text-lg leading-8 text-slate-800">
+                    <div className="rounded-[1.5rem] bg-[rgba(255,255,255,0.92)] p-5">
+                      <p className="text-sm font-semibold text-[rgba(16,32,51,0.54)]">의미</p>
+                      <p className="mt-3 text-lg leading-8 text-[var(--navy)]">
                         {activeEntry.description}
                       </p>
                     </div>
                   ) : (
-                    <div className="rounded-[1.5rem] border border-dashed border-slate-300 bg-white/55 px-5 py-6 text-sm text-slate-500">
+                    <div className="rounded-[1.5rem] border border-dashed border-[rgba(255,255,255,0.28)] bg-[rgba(255,255,255,0.08)] px-5 py-6 text-sm text-[rgba(255,255,255,0.72)]">
                       카드를 클릭하면 의미가 보입니다.
                     </div>
                   )}
                 </div>
               </div>
             ) : (
-              <p className="text-sm text-slate-500">표시할 용어가 없습니다.</p>
+              <p className="text-sm text-[rgba(255,255,255,0.72)]">표시할 용어가 없습니다.</p>
             )}
           </div>
 
@@ -168,7 +169,7 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
             <button
               type="button"
               onClick={showNextTerm}
-              className="rounded-full bg-slate-950 px-5 py-3 text-sm font-medium text-white transition hover:bg-emerald-800"
+              className="app-button-primary rounded-full px-5 py-3 text-sm font-semibold transition"
             >
               다음
             </button>
@@ -176,21 +177,22 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
               type="button"
               onClick={saveCurrentTerm}
               disabled={!activeEntry || isSaved}
-              className="rounded-full bg-slate-100 px-5 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-200 disabled:cursor-not-allowed disabled:bg-slate-100 disabled:text-slate-400"
+              className="app-button-secondary rounded-full px-5 py-3 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-45"
             >
               {isSaved ? "저장됨" : "저장"}
             </button>
           </div>
         </div>
 
-        <aside className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
-          <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+        <aside className="app-panel rounded-[2rem] p-6">
+          <p className="app-kicker">Saved Terms</p>
+          <h3 className="mt-2 text-xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
             저장한 용어
           </h3>
-          <p className="mt-2 text-sm text-slate-600">
+          <p className="mt-2 text-sm app-subtle">
             나중에 다시 보고 싶은 용어
           </p>
-          <p className="mt-4 text-3xl font-semibold tracking-tight text-slate-950">
+          <p className="mt-4 app-metric">
             {savedEntries.length}
           </p>
 
@@ -201,13 +203,13 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
                 return (
                   <div
                     key={termId}
-                    className="rounded-2xl bg-slate-50 px-4 py-3"
+                    className="rounded-2xl border border-[rgba(16,32,51,0.08)] bg-white/72 px-4 py-3"
                   >
                     <div className="flex items-start justify-between gap-3">
                       <div>
-                        <p className="font-semibold text-slate-950">{entry.term}</p>
+                        <p className="font-semibold text-[var(--navy)]">{entry.term}</p>
                         {entry.english ? (
-                          <p className="mt-1 text-sm text-slate-500">
+                          <p className="mt-1 text-sm text-[rgba(16,32,51,0.52)]">
                             {entry.english}
                           </p>
                         ) : null}
@@ -215,7 +217,7 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
                       <button
                         type="button"
                         onClick={() => removeSavedTerm(termId)}
-                        className="text-sm text-slate-500 transition hover:text-rose-700"
+                        className="text-sm text-[rgba(16,32,51,0.52)] transition hover:text-[var(--rose)]"
                       >
                         제거
                       </button>
@@ -224,7 +226,7 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
                 );
               })
             ) : (
-              <div className="rounded-2xl border border-dashed border-slate-300 px-4 py-5 text-sm text-slate-500">
+              <div className="rounded-2xl border border-dashed border-[rgba(16,32,51,0.16)] px-4 py-5 text-sm text-[rgba(16,32,51,0.52)]">
                 아직 저장한 용어가 없습니다.
               </div>
             )}
@@ -232,8 +234,9 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
         </aside>
       </section>
 
-      <section className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
-        <h3 className="text-2xl font-semibold tracking-tight text-slate-950">
+      <section className="app-panel rounded-[2rem] p-6">
+        <p className="app-kicker">Search</p>
+        <h3 className="mt-2 text-2xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
           사전 검색
         </h3>
 
@@ -241,7 +244,7 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="예: HIM, EHR, 무결성"
-          className="mt-5 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm outline-none focus:border-emerald-400"
+          className="app-input mt-5 w-full rounded-2xl px-4 py-4 text-sm outline-none"
         />
       </section>
 
@@ -249,22 +252,22 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
         {filteredEntries.map((entry) => (
           <article
             key={`${entry.term}-${entry.abbreviation}`}
-            className="rounded-[2rem] border border-slate-200 bg-white/90 p-5"
+            className="app-panel rounded-[2rem] p-5"
           >
             <div className="flex items-start justify-between gap-3">
               <div>
-                <h3 className="text-lg font-semibold text-slate-950">{entry.term}</h3>
+                <h3 className="text-lg font-semibold text-[var(--navy)]">{entry.term}</h3>
                 {entry.english ? (
-                  <p className="mt-1 text-sm text-slate-500">{entry.english}</p>
+                  <p className="mt-1 text-sm text-[rgba(16,32,51,0.52)]">{entry.english}</p>
                 ) : null}
               </div>
               {entry.abbreviation !== "-" ? (
-                <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800">
+                <span className="app-chip rounded-full px-3 py-1 text-[var(--teal)]">
                   {entry.abbreviation}
                 </span>
               ) : null}
             </div>
-            <p className="mt-4 text-sm leading-7 text-slate-700">
+            <p className="mt-4 text-sm leading-7 text-[rgba(16,32,51,0.76)]">
               {entry.description}
             </p>
           </article>

@@ -1,0 +1,23 @@
+id: Q-HIM-000142
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S01-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "의무기록은 원칙적으로 해당 진료행위를 직접 수행하거나 관찰한 의료인이 작성한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 작성 주체의 기본 원칙은 실제로 수행·관찰한 사람이 기록하는 것이다.
+distractor_explanations:
+  X: 작성 주체 원칙을 부정한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

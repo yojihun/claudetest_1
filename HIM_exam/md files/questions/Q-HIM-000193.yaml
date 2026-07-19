@@ -1,0 +1,23 @@
+id: Q-HIM-000193
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S03-T001
+subject_area: health_information_systems
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "기술적 표준(HL7, FHIR 등)만 갖추면 기관 간 정책 합의 없이도 EHR이 자동으로 완성된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: EHR 구현에는 기술적 표준뿐 아니라 참여 기관 간 정보 공유 범위·조건에 대한 정책 합의도 필요하다.
+distractor_explanations:
+  O: 기술적 표준만으로 충분하다고 오해한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

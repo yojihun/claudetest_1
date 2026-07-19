@@ -1,0 +1,23 @@
+id: Q-HIM-000208
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S15-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "감사로그는 문제가 발생하지 않는 한 굳이 정기적으로 점검할 필요가 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 정기 점검을 통해 문제가 드러나기 전에 비정상 접근 패턴을 조기에 발견할 수 있다.
+distractor_explanations:
+  O: 정기 점검의 필요성을 간과한 응답이다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

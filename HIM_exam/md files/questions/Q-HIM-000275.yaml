@@ -1,0 +1,23 @@
+id: Q-HIM-000275
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C10-S12-T001
+subject_area: information_use
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "데이터 결합은 일반적으로 지정된 절차·기관을 통해 이루어지고 결합 후 재식별 위험을 재평가한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 데이터 결합은 개별 기관이 임의로 수행하지 않고 통제된 절차를 거치는 경우가 많다.
+distractor_explanations:
+  X: 데이터 결합 절차의 통제 필요성을 간과한 응답이다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000291
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C11-S08-T001
+subject_area: quality_management
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "PDCA의 네 단계는 계획(Plan), 실행(Do), 점검(Check), 조치(Act)이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 이 네 단계가 PDCA 순환 모델을 구성한다.
+distractor_explanations:
+  X: PDCA 단계 구성을 잘못 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-QUALITY-MANAGEMENT-001
+verified: false

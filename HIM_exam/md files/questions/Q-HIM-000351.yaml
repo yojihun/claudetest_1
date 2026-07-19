@@ -1,0 +1,23 @@
+id: Q-HIM-000351
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C15-S05-T001
+subject_area: health_insurance
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "분류 코드의 정확성은 진료비 청구의 성공 여부에 직접 영향을 준다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 청구자료의 핵심 구성 요소인 진단·처치 코드가 부정확하면 반려·삭감될 수 있다.
+distractor_explanations:
+  X: 분류와 청구의 연결을 간과한 응답이다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false

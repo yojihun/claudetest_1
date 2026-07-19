@@ -1,0 +1,29 @@
+id: Q-HIM-000294
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C11-S10-T001
+subject_area: quality_management
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: "손위생 준수율이 낮게 나타났는데, 실제로는 손위생을 수행했지만 기록으로 남기지 않은 것이 원인이었다. 이 상황이 보여주는 것은?"
+options:
+  - id: A
+    text: 실제 의료의 질이 낮다는 것
+  - id: B
+    text: 기록 미비가 지표를 실제보다 낮게 왜곡할 수 있다는 것
+  - id: C
+    text: 손위생 자체가 효과가 없다는 것
+  - id: D
+    text: 과정지표는 신뢰할 수 없다는 것
+answer:
+  - B
+explanation: 기록되지 않은 수행은 지표에 반영되지 않아 실제보다 낮게 나타나는 왜곡을 일으킨다.
+distractor_explanations:
+  A: 실제 수행은 이루어졌으므로 질 저하로 단정할 수 없다.
+  C: 손위생 효과와 무관한 사례다.
+  D: 과정지표 자체가 아니라 기록 완결성이 문제였다.
+references:
+  - REF-TEXTBOOK-QUALITY-MANAGEMENT-001
+verified: false

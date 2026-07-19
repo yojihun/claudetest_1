@@ -1,0 +1,23 @@
+id: Q-HIM-000213
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S18-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "클라우드 EMR을 도입하면 개인정보 보호 책임은 전적으로 클라우드 사업자에게 넘어간다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 병원은 클라우드 도입 후에도 개인정보 보호에 대한 책임을 사업자와 공유한다.
+distractor_explanations:
+  O: 책임 소재를 잘못 이해한 응답이다.
+references:
+  - REF-SECONDARY-DIGITAL-HEALTH-001
+verified: false

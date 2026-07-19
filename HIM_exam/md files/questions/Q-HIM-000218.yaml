@@ -1,0 +1,23 @@
+id: Q-HIM-000218
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C08-S03-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "HL7 v2, CDA, FHIR은 모두 HL7이라는 하나의 표준화 기구에서 나온 표준들이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 세 표준 모두 HL7이라는 국제 표준화 기구가 서로 다른 시기에 만든 표준이다.
+distractor_explanations:
+  X: HL7과 하위 표준의 관계를 잘못 이해한 응답이다.
+references:
+  - REF-STANDARD-HL7-001
+verified: false

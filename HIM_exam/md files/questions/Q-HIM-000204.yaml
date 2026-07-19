@@ -1,0 +1,23 @@
+id: Q-HIM-000204
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S12-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "CPOE의 약물 상호작용 경고는 임상의사결정지원(CDS)의 한 형태로 볼 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 규칙 기반으로 참고 정보를 제공한다는 점에서 CPOE의 경고 기능은 CDS의 한 형태다.
+distractor_explanations:
+  X: CPOE와 CDS의 관계를 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

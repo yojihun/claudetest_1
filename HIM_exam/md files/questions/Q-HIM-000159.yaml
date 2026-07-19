@@ -1,0 +1,23 @@
+id: Q-HIM-000159
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S10-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "생성형 AI가 만든 기록 초안은 실제 대화에 없던 내용을 그럴듯하게 포함할 위험이 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 확인되지 않은 내용 생성은 생성형 AI 활용의 대표적 위험이다.
+distractor_explanations:
+  X: 생성형 AI의 위험을 간과한 응답이다.
+references:
+  - REF-SECONDARY-DIGITAL-HEALTH-001
+verified: false

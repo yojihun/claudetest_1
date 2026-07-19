@@ -1,0 +1,29 @@
+id: Q-HIM-000250
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C09-S10-T001
+subject_area: data_quality
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "'체온은 30~45℃ 사이여야 한다'는 규칙을 벗어난 값을 자동으로 표시하는 방법은?"
+options:
+  - id: A
+    text: 규칙 기반 탐지
+  - id: B
+    text: 통계 기반 탐지
+  - id: C
+    text: 정성분석
+  - id: D
+    text: 완결성 점검
+answer:
+  - A
+explanation: 미리 정의된 규칙을 벗어나는 값을 탐지하는 것은 규칙 기반 탐지다.
+distractor_explanations:
+  B: 통계 기반 탐지는 정상 범위에서 벗어난 값을 통계적으로 탐지하는 방식이다.
+  C: 정성분석은 기록 간 논리적 타당성 검토를 의미한다.
+  D: 완결성 점검은 필요한 정보의 누락 여부를 확인한다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

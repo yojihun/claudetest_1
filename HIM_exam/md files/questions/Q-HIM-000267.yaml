@@ -1,0 +1,23 @@
+id: Q-HIM-000267
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C10-S06-T001
+subject_area: information_use
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "연구 목적으로 데이터를 활용할 때는 개인정보 보호 원칙이 완화되어 적용된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 연구 활용에서도 개인정보 보호 원칙은 그대로 적용되며 비식별·가명처리 등 보호조치가 필요하다.
+distractor_explanations:
+  O: 연구 목적이 개인정보 보호를 면제한다고 오해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

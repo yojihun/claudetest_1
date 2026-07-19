@@ -1,0 +1,23 @@
+id: Q-HIM-000337
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C14-S07-T001
+subject_area: healthcare_law
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "퇴직하면 재직 중 알게 된 환자 비밀에 대한 누설 금지 의무도 자동으로 소멸한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 비밀누설 금지 의무는 퇴직 후에도 유지되는 경우가 많은 것으로 알려져 있다.
+distractor_explanations:
+  O: 의무의 지속 효력을 간과한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

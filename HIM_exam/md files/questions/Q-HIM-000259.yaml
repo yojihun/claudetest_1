@@ -1,0 +1,23 @@
+id: Q-HIM-000259
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C09-S15-T001
+subject_area: data_quality
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "보건의료정보관리사는 일반적으로 데이터 오너가 아니라 데이터 스튜어드 역할을 수행하는 경우가 많다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 보건의료정보관리사는 대개 정책 결정(오너)보다 실무 관리(스튜어드)를 수행한다.
+distractor_explanations:
+  X: 두 역할을 혼동한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

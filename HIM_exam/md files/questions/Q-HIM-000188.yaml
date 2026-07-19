@@ -1,0 +1,23 @@
+id: Q-HIM-000188
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S13-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "완결률 지표를 진료과별로 추적하면 어느 진료과에서 완결 지연이 반복되는지 파악할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 완결률 지표는 병목 지점(지연이 반복되는 진료과·문서 유형)을 파악하는 데 활용된다.
+distractor_explanations:
+  X: 완결률 지표의 활용 목적을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000297
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S01-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "현대 환자안전 관리는 실수한 개인을 찾아 징계하는 것보다 시스템적 방어장치를 강화하는 접근을 우선한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 환자안전 관리는 시스템적 관점에서 다층 방어를 설계하는 것을 우선한다.
+distractor_explanations:
+  X: 시스템적 접근의 우선순위를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

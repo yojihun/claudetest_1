@@ -1,0 +1,29 @@
+id: Q-HIM-000313
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C12-S10-T001
+subject_area: patient_safety
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: "템플릿의 정상 소견 기본값이 실제 알레르기 여부와 대조 없이 그대로 저장되는 '클로닝' 문제가 이어질 수 있는 환자안전 위험은?"
+options:
+  - id: A
+    text: 개별 환자의 위험 요인(알레르기 등)이 기록에서 누락되는 것
+  - id: B
+    text: 병상이용률 통계 왜곡
+  - id: C
+    text: 청구 삭감
+  - id: D
+    text: 시스템 장애
+answer:
+  - A
+explanation: 클로닝으로 인해 실제 알레르기 같은 개별 위험 요인이 기록에 반영되지 않으면 환자안전 사고로 이어질 수 있다.
+distractor_explanations:
+  B: 통계 왜곡과 직접 관련이 적다.
+  C: 청구 삭감과 직접 관련이 적다.
+  D: 시스템 장애와 무관한 기록 관행 문제다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

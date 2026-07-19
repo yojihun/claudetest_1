@@ -1,0 +1,23 @@
+id: Q-HIM-000180
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S09-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "응급 전원 상황에서는 정보 전달의 신속성이 특히 중요하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 응급 상황에서는 핵심 안전 정보를 신속히 전달하는 것이 중요하다.
+distractor_explanations:
+  X: 응급 전원의 특수성을 간과한 응답이다.
+references:
+  - REF-AHIMA-ROI-001
+verified: false

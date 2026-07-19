@@ -1,0 +1,23 @@
+id: Q-HIM-000194
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S04-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: C
+stem: "PHR에 환자가 직접 입력한 정보는 병원 EMR에서 발췌한 정보와 동일한 신뢰도로 다루어야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 자가 입력 정보는 전문가 확인을 거치지 않았으므로 참고 수준으로 다루어야 한다.
+distractor_explanations:
+  O: 자가 입력 정보의 신뢰도 한계를 간과한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

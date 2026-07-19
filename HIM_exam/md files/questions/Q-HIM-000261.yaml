@@ -1,0 +1,23 @@
+id: Q-HIM-000261
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C10-S01-T001
+subject_area: information_use
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "진료 활용은 다른 정보 활용 목적(청구, 통계, 연구 등)의 기초가 되는 가장 기본적인 활용이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 다른 활용은 진료 과정에서 생성된 기록에서 파생된다.
+distractor_explanations:
+  X: 진료 활용의 기초적 위치를 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

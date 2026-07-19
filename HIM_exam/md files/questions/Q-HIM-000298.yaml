@@ -1,0 +1,23 @@
+id: Q-HIM-000298
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S01-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "다층 방어 설계는 하나의 방어선이 실패해도 다음 방어선이 오류를 막도록 하는 개념이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 여러 겹의 안전장치를 두어 한 층의 실패가 바로 사고로 이어지지 않게 하는 것이 다층 방어의 핵심이다.
+distractor_explanations:
+  X: 다층 방어 개념을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

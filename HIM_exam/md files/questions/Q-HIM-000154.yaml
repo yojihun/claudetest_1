@@ -1,0 +1,23 @@
+id: Q-HIM-000154
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S07-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "복사된 기록을 확인 없이 재사용하면 이미 호전된 증상이 계속 기재되는 문제가 생길 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 확인 없는 복사는 오래된 정보를 실제 상태와 무관하게 반복 기재하는 위험을 만든다.
+distractor_explanations:
+  X: 복사·붙여넣기의 위험을 간과한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

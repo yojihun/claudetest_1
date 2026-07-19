@@ -1,0 +1,26 @@
+id: Q-HIM-000236
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C08-S06-T001
+  - HIM-V1-C08-S08-T001
+  - HIM-V1-C08-S09-T001
+  - HIM-V1-C08-S10-T001
+  - HIM-V1-C08-S12-T001
+subject_area: health_information_standards
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  환자가 CT 촬영과 혈액검사를 받고, 담당의가 임상 소견을 EMR에 상세히 기록했으며, 퇴원 후 청구를
+  위해 진단이 코드로 매핑되었고, 이 정보는 API를 통해 다른 병원과 공유되었다. 각 단계에서 사용된
+  표준(DICOM, LOINC, SNOMED CT, KCD, FHIR)을 순서대로 연결하시오.
+answer:
+  - "CT 촬영 저장·전송: DICOM / 혈액검사 결과 코드화: LOINC / 임상 소견 기록: SNOMED CT / 청구용 코드 매핑: KCD / 병원 간 공유: FHIR"
+explanation: >
+  각 표준은 서로 다른 목적을 가진다. DICOM은 영상, LOINC는 검사 항목, SNOMED CT는 임상 개념의
+  세밀한 표현, KCD는 통계·청구 분류, FHIR은 시스템 간 정보 교환을 담당한다. 이 표준들은 하나의
+  진료 과정에서 경쟁하지 않고 함께 작동한다.
+distractor_explanations: {}
+references: []
+verified: false

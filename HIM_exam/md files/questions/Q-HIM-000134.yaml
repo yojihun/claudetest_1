@@ -1,0 +1,29 @@
+id: Q-HIM-000134
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C04-S12-T001
+subject_area: healthcare_organization
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: "특정 진단의 청구가 계속 지연되어 조사한 결과 진료부의 퇴원요약 작성이 늦어진 것이 원인이었다. 이 사례가 보여주는 것은?"
+options:
+  - id: A
+    text: 보험심사부의 업무 능력 부족
+  - id: B
+    text: 정보 흐름 앞 단계의 문제가 뒤 단계로 전파될 수 있다는 것
+  - id: C
+    text: 정보전산 부서의 시스템 오류
+  - id: D
+    text: 개인정보 보호 원칙 위반
+answer:
+  - B
+explanation: 진료(앞 단계)의 지연이 청구(뒤 단계)까지 영향을 준 사례로, 정보 흐름의 연쇄적 영향을 보여준다.
+distractor_explanations:
+  A: 원인은 보험심사부가 아니라 앞 단계인 진료부에 있다.
+  C: 시스템 오류에 대한 언급은 사례에 없다.
+  D: 개인정보 보호와 무관한 사례다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

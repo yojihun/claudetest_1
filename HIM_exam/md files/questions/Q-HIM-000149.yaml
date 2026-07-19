@@ -1,0 +1,23 @@
+id: Q-HIM-000149
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S05-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "동료가 바쁜 사람을 대신해 전자서명(로그인 확정)을 해주는 것은 허용되는 관행이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 대리 서명은 실제 확인 없이 서명하는 것으로 인증 원칙과 무결성 원칙을 훼손한다.
+distractor_explanations:
+  O: 대리 서명의 문제를 편의로 정당화한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

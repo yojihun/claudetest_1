@@ -1,0 +1,29 @@
+id: Q-HIM-000145
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C05-S03-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "다음 중 객관성·명확성 원칙에 가장 부합하는 기록은?"
+options:
+  - id: A
+    text: "환자가 통증을 많이 호소함"
+  - id: B
+    text: "환자가 통증을 10점 척도 중 8점으로 호소함"
+  - id: C
+    text: "환자 상태가 나빠 보임"
+  - id: D
+    text: "특이사항 없음"
+answer:
+  - B
+explanation: 측정 가능한 수치로 표현한 것이 객관성과 명확성 원칙에 가장 부합한다.
+distractor_explanations:
+  A: "많이"는 주관적이고 모호한 표현이다.
+  C: 구체적 관찰 없이 인상만 기술한 것이다.
+  D: 실제 확인 내용이 드러나지 않는 형식적 문구다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000162
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S11-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: C
+stem: "외과 기록에서는 일반적으로 수술 소견과 술후 경과가 강조된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 외과는 수술과 관련된 소견·경과가 기록의 핵심을 이룬다.
+distractor_explanations:
+  X: 진료과별 기록 강조점을 잘못 이해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

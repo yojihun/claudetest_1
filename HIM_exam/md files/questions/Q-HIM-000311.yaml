@@ -1,0 +1,23 @@
+id: Q-HIM-000311
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S09-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "많은 위해사건이 근무 교대나 전원 시 인계 과정의 의사소통 실패에서 비롯되는 것으로 알려져 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 인계 과정은 정보 누락·왜곡이 발생하기 쉬운 지점으로 알려져 있다.
+distractor_explanations:
+  X: 인계 과정의 위험성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

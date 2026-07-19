@@ -1,0 +1,23 @@
+id: Q-HIM-000305
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S05-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "타임아웃 절차는 수술팀 전체가 함께 환자, 수술 부위, 수술명을 확인하는 절차다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 타임아웃은 여러 사람이 동시에 확인해 한 사람의 실수를 다른 사람이 잡아낼 수 있게 하는 절차다.
+distractor_explanations:
+  X: 타임아웃의 참여 주체를 축소해 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000161
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S11-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: C
+stem: "모든 진료과의 기록은 강조되는 항목이 동일하므로 접근권한도 동일하게 설정해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 정신건강의학과처럼 민감정보가 많은 진료과는 더 엄격한 접근통제가 필요할 수 있다.
+distractor_explanations:
+  O: 진료과별 특수성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

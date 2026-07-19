@@ -1,0 +1,23 @@
+id: Q-HIM-000207
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S14-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "업무 효율을 위해 동료의 계정을 빌려 시스템에 접근하는 것은 허용되는 관행이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 계정 공유는 접근 로그의 실제 행위자를 추적할 수 없게 만들어 책임 추적을 무너뜨린다.
+distractor_explanations:
+  O: 계정 공유의 위험성을 편의로 정당화한 응답이다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

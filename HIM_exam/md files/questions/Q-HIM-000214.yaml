@@ -1,0 +1,23 @@
+id: Q-HIM-000214
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C08-S01-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "표준화는 단순히 데이터 형식만 통일하면 충분하며 용어의 의미까지 일치시킬 필요는 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 표준화는 형식뿐 아니라 용어의 의미까지 일치시켜야 시스템 간 정보가 의미 있게 교환된다.
+distractor_explanations:
+  O: 표준화의 범위를 축소해 이해한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

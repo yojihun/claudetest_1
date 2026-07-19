@@ -1,0 +1,23 @@
+id: Q-HIM-000296
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C11-S06-T001
+  - HIM-V1-C11-S07-T001
+  - HIM-V1-C11-S08-T001
+subject_area: quality_management
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  수술 부위 감염률(결과지표)이 상승해 RCA를 시행한 결과, 수술 일정 변경 시 항생제 투여 알림이
+  자동 갱신되지 않는 시스템 문제가 근본 원인으로 밝혀졌다. 이 문제를 해결한 이후 추가로 시행해야
+  할 활동과 그 이유를 설명하시오.
+answer:
+  - "FMEA를 시행해 유사한 다른 자동 알림 시스템에도 같은 유형의 문제가 있는지 사전에 점검해야 한다. RCA는 이미 발생한 문제만 다루므로, 아직 드러나지 않은 유사 위험은 FMEA로 예방해야 한다."
+explanation: >
+  RCA로 발견한 문제를 개선하는 것만으로는 유사한 다른 잠재적 위험을 놓칠 수 있다. FMEA를 통해
+  사전에 유사 위험을 점검하는 것이 재발 방지를 넘어선 예방적 접근이다.
+distractor_explanations: {}
+references: []
+verified: false

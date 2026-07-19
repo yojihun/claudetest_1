@@ -1,0 +1,13 @@
+id: REF-STANDARD-SNOMEDCT-001
+type: standard
+title: SNOMED CT 임상용어 표준 개괄
+publisher: SNOMED International
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: en
+status: located
+notes: >
+  SNOMED CT는 임상 개념(진단, 소견, 처치 등)을 정교하게 코드화하는 국제 임상용어 표준으로 널리
+  알려져 있다. 국내 도입·적용 현황과 최신 배포판 버전은 이 세션에서 원문 대조하지 않았다.

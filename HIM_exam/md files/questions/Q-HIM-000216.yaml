@@ -1,0 +1,29 @@
+id: Q-HIM-000216
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C08-S02-T001
+subject_area: health_information_standards
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "두 병원이 같은 표준 형식으로 데이터를 정상적으로 주고받았지만, 동일한 코드가 서로 다른 진단으로 해석되었다. 실패한 상호운용성 층위는?"
+options:
+  - id: A
+    text: 구문적 상호운용성
+  - id: B
+    text: 의미적 상호운용성
+  - id: C
+    text: 조직적 상호운용성
+  - id: D
+    text: 세 층위 모두 실패
+answer:
+  - B
+explanation: 형식은 정상 전달되었으므로 구문적 상호운용성은 성공했으나, 코드의 의미 해석이 달라 의미적 상호운용성이 실패한 사례다.
+distractor_explanations:
+  A: 데이터 전달 자체는 성공했으므로 구문적 실패는 아니다.
+  C: 정책·계약 문제에 대한 언급은 없다.
+  D: 구문적 상호운용성은 성공했으므로 전부 실패는 아니다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

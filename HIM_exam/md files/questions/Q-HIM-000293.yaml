@@ -1,0 +1,23 @@
+id: Q-HIM-000293
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C11-S09-T001
+subject_area: quality_management
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "손위생 준수율(과정지표)과 병원획득감염률(결과지표)을 함께 추적하면 개선 활동의 실제 효과를 검증할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 과정지표와 결과지표를 함께 보면 과정 개선이 실제 결과 개선으로 이어지는지 확인할 수 있다.
+distractor_explanations:
+  X: 두 지표를 함께 보는 것의 가치를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-QUALITY-MANAGEMENT-001
+verified: false

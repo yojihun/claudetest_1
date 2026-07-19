@@ -1,0 +1,23 @@
+id: Q-HIM-000148
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S04-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "소수점 앞에 '0'을 생략하고 표기하면 용량이 실제보다 크게 오인될 위험이 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: ".5mg"처럼 앞자리 0을 생략하면 "5mg"으로 오인되어 과다 투약 위험이 생길 수 있다.
+distractor_explanations:
+  X: 소수점 표기 오인 위험을 간과한 응답이다.
+references:
+  - REF-SAFETY-DONOTUSE-ABBREVIATIONS-001
+verified: false

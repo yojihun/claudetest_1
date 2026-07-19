@@ -1,0 +1,23 @@
+id: Q-HIM-000179
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S09-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "전원 시 진단명만 전달하면 충분하며 알레르기 정보는 필수가 아니다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 알레르기·최근 투약 정보는 즉각적인 안전과 직결되므로 전원 시 반드시 함께 전달되어야 한다.
+distractor_explanations:
+  O: 안전 정보 전달의 필요성을 간과한 응답이다.
+references:
+  - REF-AHIMA-ROI-001
+verified: false

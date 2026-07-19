@@ -1,0 +1,23 @@
+id: Q-HIM-000178
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S08-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "사본 발급 방식에는 출력물, 전자파일, 열람실 내 열람 등이 있을 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 병원과 요청 목적에 따라 다양한 발급 방식이 사용될 수 있다.
+distractor_explanations:
+  X: 발급 방식의 다양성을 간과한 응답이다.
+references:
+  - REF-AHIMA-ROI-001
+verified: false

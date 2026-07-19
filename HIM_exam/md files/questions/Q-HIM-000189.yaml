@@ -1,0 +1,24 @@
+id: Q-HIM-000189
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C06-S04-T001
+  - HIM-V1-C06-S05-T001
+  - HIM-V1-C06-S12-T001
+subject_area: medical_records
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  기록 관리 감사에서 (1) MPI 중복률이 예상보다 높고, (2) 최근 1년간 백업 복구 훈련 기록이 없다는
+  두 가지 문제가 발견되었다. 각 문제에 대해 필요한 후속 조치를 설명하시오.
+answer:
+  - "(1) 중복환자 병합 절차를 강화하고 접수 단계의 환자식별 확인을 재교육 (2) 백업 복구 절차를 실제로 시험하는 정기 훈련 일정을 수립하고 결과를 기록"
+explanation: >
+  MPI 중복률 문제는 접수 단계의 식별 확인 부족에서 기인하는 경우가 많아 병합 절차와 식별 교육을
+  함께 강화해야 한다. 백업 복구 훈련 부재는 실제 장애 시 복구 실패 위험을 의미하므로 정기 훈련
+  체계를 수립해야 한다. 두 문제 모두 감사에서 발견만 하고 끝나는 것이 아니라 구체적 개선 계획과
+  후속 확인으로 이어져야 한다.
+distractor_explanations: {}
+references: []
+verified: false

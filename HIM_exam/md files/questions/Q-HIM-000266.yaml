@@ -1,0 +1,23 @@
+id: Q-HIM-000266
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C10-S05-T001
+subject_area: information_use
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "근접오류는 실제 사고로 이어지지 않았으므로 기록·분석할 필요가 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 근접오류를 기록·분석하면 실제 사고가 발생하기 전에 위험 패턴을 발견할 수 있다.
+distractor_explanations:
+  O: 근접오류 기록의 가치를 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

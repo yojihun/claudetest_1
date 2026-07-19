@@ -1,0 +1,23 @@
+id: Q-HIM-000202
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S11-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "CPOE 경고가 지나치게 자주 발생하면 의료진이 경고를 습관적으로 무시하는 경고 피로 현상이 나타날 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 경고 피로는 잦은 경고로 인해 중요한 경고까지 무시하게 되는 현상이다.
+distractor_explanations:
+  X: 경고 피로 현상의 존재를 부정한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

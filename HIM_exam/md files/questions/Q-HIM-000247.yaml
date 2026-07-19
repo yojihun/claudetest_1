@@ -1,0 +1,23 @@
+id: Q-HIM-000247
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C09-S08-T001
+subject_area: data_quality
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "무결성은 표본을 원본과 대조하는 방식이 아니라 감사로그 분석을 통한 비정상 패턴 탐지로 측정한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 무결성은 허가되지 않은 변경 여부를 확인하는 차원이므로 감사로그 분석이 핵심 측정 방법이다.
+distractor_explanations:
+  X: 무결성 측정 방법을 정확성 측정 방법과 혼동한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

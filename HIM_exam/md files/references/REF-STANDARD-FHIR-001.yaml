@@ -1,0 +1,14 @@
+id: REF-STANDARD-FHIR-001
+type: standard
+title: FHIR(Fast Healthcare Interoperability Resources) 표준 개괄
+publisher: HL7 International
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: en
+status: located
+notes: >
+  FHIR은 HL7이 개발한 표준으로, 웹 기술(REST API 등)과 "Resource" 단위의 데이터 모델을 활용해
+  의료정보를 교환하는 것으로 널리 알려져 있다. 정확한 최신 릴리스 버전과 세부 명세는 이 세션에서
+  원문 대조하지 않았다.

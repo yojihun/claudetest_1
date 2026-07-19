@@ -1,0 +1,23 @@
+id: Q-HIM-000299
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S02-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "모든 위해사건은 의료 과실로 단정할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 위해사건은 예방 가능한 경우와 예방 불가능한 경우로 나뉘며, 후자는 과실로 단정할 수 없다.
+distractor_explanations:
+  O: 위해사건을 항상 과실로 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

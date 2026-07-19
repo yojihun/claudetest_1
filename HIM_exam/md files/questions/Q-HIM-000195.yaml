@@ -1,0 +1,23 @@
+id: Q-HIM-000195
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S05-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "OCS는 손글씨 처방전보다 판독 오류로 인한 전달 사고를 줄이는 데 기여한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: OCS는 처방을 전자적으로 입력·전달해 손글씨 판독 오류 위험을 줄인다.
+distractor_explanations:
+  X: OCS의 핵심 가치를 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

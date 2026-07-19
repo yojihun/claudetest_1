@@ -1,0 +1,23 @@
+id: Q-HIM-000330
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C14-S01-T001
+subject_area: healthcare_law
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "법규 학습에서 조문 번호를 정확히 암기하는 것이 주체·의무·예외 구조를 이해하는 것보다 우선한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 조문 번호는 개정으로 바뀔 수 있으므로 구조적 이해가 더 안정적이고 효과적인 학습 방법이다.
+distractor_explanations:
+  O: 조문 번호 암기를 과대평가한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

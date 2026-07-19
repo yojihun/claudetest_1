@@ -1,0 +1,23 @@
+id: Q-HIM-000199
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S09-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: C
+stem: "ERP는 임상 진료 정보를 직접 다루는 시스템이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: ERP는 인사, 회계, 자재 등 경영·행정 자원을 다루며 임상 정보는 EMR이 담당한다.
+distractor_explanations:
+  O: ERP와 EMR의 역할을 혼동한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

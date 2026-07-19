@@ -1,0 +1,29 @@
+id: Q-HIM-000252
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C09-S11-T001
+subject_area: data_quality
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "유사 매칭의 임계값을 너무 느슨하게 설정했을 때 커지는 위험은?"
+options:
+  - id: A
+    text: 과소 병합(중복을 놓침)
+  - id: B
+    text: 과다 병합(다른 사람을 같은 사람으로 병합)
+  - id: C
+    text: 적시성 저하
+  - id: D
+    text: 표준화 실패
+answer:
+  - B
+explanation: 임계값이 느슨하면 유사도만 높아도 병합 후보로 판단해 실제로 다른 사람을 병합할 위험이 커진다.
+distractor_explanations:
+  A: 과소 병합은 오히려 임계값이 너무 엄격할 때 커지는 위험이다.
+  C: 적시성과 직접 관련이 없다.
+  D: 표준화와 직접 관련이 없다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

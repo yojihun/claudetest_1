@@ -1,0 +1,29 @@
+id: Q-HIM-000289
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C11-S07-T001
+subject_area: quality_management
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "새로운 투약 프로세스 도입 전 잠재적 오류 발생 지점을 미리 예측하는 기법은?"
+options:
+  - id: A
+    text: RCA
+  - id: B
+    text: FMEA
+  - id: C
+    text: PDCA
+  - id: D
+    text: QA
+answer:
+  - B
+explanation: FMEA는 사고 발생 전 잠재적 위험을 예측·예방하는 사전 분석 기법이다.
+distractor_explanations:
+  A: RCA는 사고 발생 후 원인을 분석하는 사후 기법이다.
+  C: PDCA는 개선 사이클 전반을 다루는 일반적 틀이다.
+  D: QA는 최소 기준 충족 여부를 점검하는 것이다.
+references:
+  - REF-TEXTBOOK-QUALITY-MANAGEMENT-001
+verified: false

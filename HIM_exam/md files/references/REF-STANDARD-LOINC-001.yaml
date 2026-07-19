@@ -1,0 +1,13 @@
+id: REF-STANDARD-LOINC-001
+type: standard
+title: LOINC 검사·관찰 코드 표준 개괄
+publisher: Regenstrief Institute
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: en
+status: located
+notes: >
+  LOINC은 검사·관찰 항목(혈액검사, 활력징후 등)을 표준화된 코드로 표현하는 표준으로 널리 알려져
+  있다. 국내 적용 현황과 최신 버전은 이 세션에서 원문 대조하지 않았다.

@@ -1,0 +1,23 @@
+id: Q-HIM-000262
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C10-S01-T001
+subject_area: information_use
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "임상의사결정지원(CDS)을 참고해 치료 방향을 조정하는 것은 진료 활용의 한 형태로 볼 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: CDS 참고는 진료 과정에서 정보를 활용하는 대표적 형태다.
+distractor_explanations:
+  X: CDS 활용을 진료 활용에서 배제한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

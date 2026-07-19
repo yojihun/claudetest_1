@@ -1,0 +1,22 @@
+id: Q-HIM-000260
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C09-S16-T001
+  - HIM-V1-C09-S01-T001
+subject_area: data_quality
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  한 의료 AI 모델이 20~40대 환자 데이터로만 학습되었는데, 실제로는 전 연령대 환자에게 적용되었다.
+  이 상황에서 (1) 어떤 품질 기준이 부족한지, (2) 예상되는 문제를 설명하시오.
+answer:
+  - "(1) 대표성(Representativeness) 부족 (2) 학습 대상에 포함되지 않은 연령대(예: 노년층) 환자에게 모델이 부정확하게 작동할 위험"
+explanation: >
+  일반 데이터 품질 차원(정확성, 완전성 등)이 충족되어도, 학습 대상 집단을 고르게 반영하지 못하면
+  대표성이 부족한 것이다. 이 경우 학습에 포함되지 않은 집단에서 모델 성능이 떨어질 위험이 있다.
+distractor_explanations: {}
+references:
+  - REF-SECONDARY-DIGITAL-HEALTH-001
+verified: false

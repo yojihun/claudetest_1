@@ -1,0 +1,23 @@
+id: Q-HIM-000237
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C09-S01-T001
+subject_area: data_quality
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "데이터 품질은 목적과 무관하게 항상 동일한 절대적 기준으로 판단된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 데이터 품질은 목적 적합성 관점에서 판단되며, 같은 데이터도 목적에 따라 요구되는 품질 수준이 다르다.
+distractor_explanations:
+  O: 품질을 절대적 기준으로 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

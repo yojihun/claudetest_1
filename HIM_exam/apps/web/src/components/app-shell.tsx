@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "매일 학습" },
@@ -9,20 +12,40 @@ const navItems = [
 ];
 
 export function AppShell({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex h-screen flex-col bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.96),_rgba(230,238,233,0.94)_45%,_rgba(214,226,218,0.92))] text-slate-900">
-      <header className="shrink-0 border-b border-slate-200/70 bg-white/90 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-5 py-3">
-          <h1 className="text-base font-semibold tracking-tight text-slate-950">
-            보건의료정보관리사 학습
-          </h1>
+  const pathname = usePathname();
 
-          <nav className="flex flex-wrap justify-end gap-2">
+  return (
+    <div className="flex h-screen flex-col text-[var(--navy)]">
+      <header className="shrink-0 border-b border-[color:var(--line)] bg-[rgba(255,255,255,0.74)] backdrop-blur-xl">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-4 md:px-5 lg:flex-row lg:items-center lg:justify-between">
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,_var(--blue)_0%,_var(--teal)_100%)] text-sm font-extrabold tracking-[0.18em] text-white shadow-[0_18px_34px_-18px_rgba(36,91,219,0.65)]">
+              HIM
+            </div>
+            <div className="min-w-0">
+              <p className="text-[11px] font-extrabold uppercase tracking-[0.26em] text-[var(--teal)]">
+                Medical Exam Prep
+              </p>
+              <p className="truncate text-lg font-extrabold tracking-[-0.04em] text-[var(--navy)]">
+                보건의료정보관리사 학습
+              </p>
+              <p className="hidden text-sm text-[rgba(16,32,51,0.6)] md:block">
+                의료정보 관리 실무와 국가시험 대비를 한 흐름으로 정리합니다.
+              </p>
+            </div>
+          </div>
+
+          <nav className="flex flex-wrap gap-2">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 transition hover:border-emerald-300 hover:text-emerald-800"
+                className={`rounded-full px-4 py-2.5 text-sm font-semibold transition ${
+                  pathname === item.href ||
+                  (item.href !== "/" && pathname.startsWith(item.href.split("#")[0]))
+                    ? "app-button-primary"
+                    : "app-button-ghost hover:text-[var(--navy)]"
+                }`}
               >
                 {item.label}
               </Link>
@@ -32,7 +55,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </header>
 
       <main className="min-h-0 flex-1 overflow-y-auto">
-        <div className="mx-auto flex w-full max-w-7xl flex-col px-5 py-6">
+        <div className="mx-auto flex w-full max-w-7xl flex-col px-4 py-5 md:px-5 md:py-6">
           {children}
         </div>
       </main>

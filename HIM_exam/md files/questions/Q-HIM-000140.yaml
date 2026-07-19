@@ -1,0 +1,24 @@
+id: Q-HIM-000140
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C04-S11-T001
+  - HIM-V1-C04-S12-T001
+  - HIM-V1-C03-S03-T001
+subject_area: healthcare_organization
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  특정 진단의 청구 삭감률이 증가했다. 조사 결과 해당 진료과의 퇴원요약 작성이 2주 이상 지연되어
+  분류 담당자가 불완전한 정보로 코드를 부여하고 있었다. (1) 이 문제의 근본 원인 부서와
+  (2) 가장 적절한 해결 방향을 설명하시오.
+answer:
+  - "(1) 근본 원인은 퇴원요약 작성이 지연된 해당 진료과 (2) 개별 사례 수정뿐 아니라 퇴원요약 작성 기한에 대한 조직 차원의 규칙(데이터 거버넌스)을 수립해 재발을 방지"
+explanation: >
+  겉으로 드러난 문제(청구 삭감)만 보면 보험심사부나 분류 담당자의 문제로 오해하기 쉽지만, 정보
+  흐름을 추적하면 근본 원인이 진료과의 기록 지연에 있음을 알 수 있다. 반복되는 문제이므로 개별
+  수정과 함께 조직 차원의 규칙 수립이 필요하다.
+distractor_explanations: {}
+references: []
+verified: false

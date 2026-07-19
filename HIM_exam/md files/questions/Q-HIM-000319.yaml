@@ -1,0 +1,29 @@
+id: Q-HIM-000319
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C13-S03-T001
+subject_area: accreditation
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "인증 조사에서 보건의료정보관리사가 가장 직접적으로 관련되는 영역은?"
+options:
+  - id: A
+    text: 정보관리 영역
+  - id: B
+    text: 시설 안전 영역
+  - id: C
+    text: 재무 건전성 영역
+  - id: D
+    text: 마케팅 영역
+answer:
+  - A
+explanation: 기록 완결성, 개인정보 보호 등 정보관리 영역은 보건의료정보관리사의 핵심 업무와 직결된다.
+distractor_explanations:
+  B: 시설 안전은 보건의료정보관리사의 핵심 업무 영역이 아니다.
+  C: 재무 건전성은 인증 조사의 일반적 영역이 아니다.
+  D: 마케팅은 인증 조사와 관련이 없다.
+references:
+  - REF-LAW-HEALTHCARE-ACCREDITATION-001
+verified: false

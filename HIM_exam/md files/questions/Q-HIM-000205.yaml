@@ -1,0 +1,23 @@
+id: Q-HIM-000205
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S13-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "여러 시스템을 도입하면 별도의 통합 작업 없이도 자동으로 데이터가 연결된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 시스템 통합은 표준 기반 인터페이스 구축 등 별도의 작업이 필요하다.
+distractor_explanations:
+  O: 시스템 통합 작업의 필요성을 간과한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

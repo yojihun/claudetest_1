@@ -1,0 +1,23 @@
+id: Q-HIM-000235
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C08-S14-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "코드 체계 개정 반영이 지연되면 병원 내에서 신·구 버전 코드가 혼재해 통계 혼란이 생길 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 개정 반영 지연은 신·구 버전 혼재로 이어져 통계 집계에 혼란을 줄 수 있다.
+distractor_explanations:
+  X: 개정 반영 지연의 위험을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

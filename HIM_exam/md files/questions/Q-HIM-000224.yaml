@@ -1,0 +1,23 @@
+id: Q-HIM-000224
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C08-S07-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "FHIR API를 활용하면 필요한 Resource만 선택적으로 조회할 수 있어 최소 필요 범위 원칙 구현에 유리하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 필요한 Resource만 조회하는 방식은 불필요한 정보 노출을 줄이는 데 기여한다.
+distractor_explanations:
+  X: Resource 단위 접근의 장점을 간과한 응답이다.
+references:
+  - REF-STANDARD-FHIR-001
+verified: false

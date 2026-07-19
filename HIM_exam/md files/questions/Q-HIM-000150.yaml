@@ -1,0 +1,23 @@
+id: Q-HIM-000150
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S05-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "학생·수련의가 작성한 기록에는 지도 의료인의 추가 서명(co-signature)이 필요할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 학생·수련의 기록은 지도 의료인의 인증(co-signature)을 거쳐야 하는 경우가 일반적이다.
+distractor_explanations:
+  X: co-signature의 필요성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

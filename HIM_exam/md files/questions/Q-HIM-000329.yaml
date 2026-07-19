@@ -1,0 +1,23 @@
+id: Q-HIM-000329
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C13-S07-T001
+  - HIM-V1-C13-S09-T001
+subject_area: accreditation
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  추적조사에서 수술 전 타임아웃 기록은 확인되었지만, 퇴원요약이 3주 지연되었고 담당 부서는 이를
+  완결률 통계에서 인지하지 못하고 있었다. (1) 이 사례에서 미흡한 조사 영역과 (2) 근본 원인을
+  설명하시오.
+answer:
+  - "(1) 정보관리 기준(기록 완결성) 미흡 (2) 완결률 관리 체계(품질개선 사이클)가 실제로 작동하지 않아 지연 사례를 인지하지 못한 것"
+explanation: >
+  환자안전 기준은 충족되었지만 정보관리 기준(퇴원요약 완결성)에서 문제가 발견되었다. 더 근본적인
+  문제는 완결률 관리 체계가 이 지연을 사전에 인지하지 못했다는 점으로, 이는 품질개선 사이클의
+  측정 단계가 실질적으로 작동하지 않았음을 의미한다.
+distractor_explanations: {}
+references: []
+verified: false

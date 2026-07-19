@@ -1,0 +1,29 @@
+id: Q-HIM-000349
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C15-S04-T001
+subject_area: health_insurance
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "건강보험이 비용의 일부 또는 전부를 부담하는 진료 항목을 무엇이라 하는가?"
+options:
+  - id: A
+    text: 비급여
+  - id: B
+    text: 급여
+  - id: C
+    text: 선택진료
+  - id: D
+    text: 요양기관
+answer:
+  - B
+explanation: 건강보험이 비용을 부담하는 항목을 급여라고 한다.
+distractor_explanations:
+  A: 비급여는 환자가 전액 부담하는 항목이다.
+  C: 선택진료는 이 구분과 다른 개념이다.
+  D: 요양기관은 급여를 제공하는 기관을 뜻하는 용어다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false

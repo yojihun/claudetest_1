@@ -1,0 +1,29 @@
+id: Q-HIM-000168
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C06-S03-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "다음 중 적절한 환자식별 방법은?"
+options:
+  - id: A
+    text: 병실 호수만 확인
+  - id: B
+    text: 이름과 생년월일 확인
+  - id: C
+    text: 이름만 확인
+  - id: D
+    text: 침상 번호만 확인
+answer:
+  - B
+explanation: 이름과 생년월일처럼 독립적인 식별자 두 가지 이상을 확인하는 것이 적절한 방법이다.
+distractor_explanations:
+  A: 병실 호수는 환자 이동 가능성 때문에 식별자로 부적절하다.
+  C: 동명이인 위험이 있어 하나의 식별자만으로는 부족하다.
+  D: 침상 번호도 병실 호수와 같은 이유로 부적절하다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

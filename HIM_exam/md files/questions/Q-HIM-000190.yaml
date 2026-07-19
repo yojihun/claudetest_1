@@ -1,0 +1,29 @@
+id: Q-HIM-000190
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C07-S01-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "병원정보시스템(HIS)과 EMR의 관계에 대한 설명으로 가장 적절한 것은?"
+options:
+  - id: A
+    text: HIS와 EMR은 완전히 동일한 시스템이다.
+  - id: B
+    text: EMR은 HIS를 구성하는 핵심 모듈 중 하나다.
+  - id: C
+    text: HIS는 EMR의 하위 기능이다.
+  - id: D
+    text: HIS와 EMR은 서로 아무 관련이 없다.
+answer:
+  - B
+explanation: HIS는 병원 업무 전반을 지원하는 상위 통합 시스템이며, EMR은 그 안의 핵심 모듈이다.
+distractor_explanations:
+  A: 두 개념의 범위가 다르다.
+  C: 관계가 반대로 서술되었다.
+  D: EMR은 HIS의 일부이므로 무관하지 않다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

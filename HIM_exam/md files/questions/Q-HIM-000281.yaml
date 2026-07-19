@@ -1,0 +1,29 @@
+id: Q-HIM-000281
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C11-S03-T001
+subject_area: quality_management
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "특정 부서가 기준 통과 여부와 무관하게 지속적으로 개선 과제를 발굴하는 조직 문화를 강조하는 개념은?"
+options:
+  - id: A
+    text: QA
+  - id: B
+    text: QI
+  - id: C
+    text: CQI
+  - id: D
+    text: FMEA
+answer:
+  - C
+explanation: CQI는 QI 활동을 조직 전체의 지속적 문화로 확장하는 개념이다.
+distractor_explanations:
+  A: QA는 최소 기준 충족 여부 점검에 초점을 둔다.
+  B: QI는 개선 자체를 의미하지만 지속적 문화 확립까지는 강조하지 않는다.
+  D: FMEA는 다른 질 관리 도구다.
+references:
+  - REF-TEXTBOOK-QUALITY-MANAGEMENT-001
+verified: false

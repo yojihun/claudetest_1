@@ -1,0 +1,23 @@
+id: Q-HIM-000309
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C12-S07-T001
+subject_area: patient_safety
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "수술안전 체크리스트에서 거즈·기구 개수 확인은 수술실 퇴실 전(Sign Out) 단계에서 이루어진다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 퇴실 전 확인은 체내 이물질 잔류를 예방하는 핵심 절차다.
+distractor_explanations:
+  X: 확인 시점을 잘못 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

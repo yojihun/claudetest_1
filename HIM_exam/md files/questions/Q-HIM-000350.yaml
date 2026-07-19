@@ -1,0 +1,23 @@
+id: Q-HIM-000350
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C15-S04-T001
+subject_area: health_insurance
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "급여·비급여 기준은 고정되어 있으며 시간이 지나도 변하지 않는다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 급여 기준은 신의료기술의 급여 전환 등으로 시기에 따라 변경될 수 있다.
+distractor_explanations:
+  O: 급여 기준의 가변성을 간과한 응답이다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000138
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S14-T001
+subject_area: healthcare_organization
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "의뢰(전원)는 상급 의료기관에서 치료 후 환자를 하급기관으로 돌려보내는 것을 의미한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 상급기관에서 하급기관으로 돌려보내는 것은 회송이며, 의뢰(전원)는 하위에서 상위로 보내는 것이다.
+distractor_explanations:
+  O: 의뢰와 회송의 방향을 반대로 이해한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

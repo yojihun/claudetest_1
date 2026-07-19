@@ -1,0 +1,23 @@
+id: Q-HIM-000153
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S07-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "복사·붙여넣기 자체가 항상 금지되어야 하는 행위다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 복사·붙여넣기 자체보다 확인 없이 재사용하는 것이 문제이며, 복사 후 현재 상태와 대조·수정하면 문제가 되지 않는다.
+distractor_explanations:
+  O: 복사·붙여넣기 자체를 문제로 오해한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000272
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C10-S11-T001
+subject_area: information_use
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "가명처리에 대한 설명으로 가장 적절한 것은?"
+options:
+  - id: A
+    text: 어떤 방법으로도 재식별이 불가능하도록 완전히 처리하는 것이다.
+  - id: B
+    text: 추가 정보 없이는 개인을 알아볼 수 없으나, 별도 관리되는 추가 정보와 결합하면 재식별이 가능한 상태다.
+  - id: C
+    text: 매핑 키 관리가 필요 없는 처리 방식이다.
+  - id: D
+    text: 비식별(익명)처리와 완전히 동일한 개념이다.
+answer:
+  - B
+explanation: 가명처리는 재식별 가능성이 남아있으며, 이를 통제하기 위해 매핑 키를 별도로 엄격히 관리해야 한다.
+distractor_explanations:
+  A: 완전한 재식별 불가능은 비식별(익명)처리에 해당한다.
+  C: 매핑 키 관리는 가명처리의 핵심 요소다.
+  D: 두 개념은 재식별 가능성 여부에서 다르다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

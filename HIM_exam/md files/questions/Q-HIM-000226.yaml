@@ -1,0 +1,23 @@
+id: Q-HIM-000226
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C08-S08-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "SNOMED CT는 ICD/KCD를 완전히 대체하기 위해 만들어진 표준이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 두 표준은 목적이 다르며(통계·청구 vs. 임상 개념 표현), 서로 대체 관계가 아니라 상호 보완적으로 활용될 수 있다.
+distractor_explanations:
+  O: 두 표준의 관계를 대체 관계로 잘못 이해한 응답이다.
+references:
+  - REF-STANDARD-SNOMEDCT-001
+verified: false

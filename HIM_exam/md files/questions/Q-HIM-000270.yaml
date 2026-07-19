@@ -1,0 +1,23 @@
+id: Q-HIM-000270
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C10-S09-T001
+subject_area: information_use
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "CDW는 연구 활용뿐 아니라 질 관리, 공공보건 활용 등 여러 대량 분석 활용을 뒷받침한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: CDW는 여러 대량 분석 활용의 공통 인프라 역할을 한다.
+distractor_explanations:
+  X: CDW의 활용 범위를 좁게 이해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

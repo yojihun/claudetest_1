@@ -1,0 +1,23 @@
+id: Q-HIM-000198
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C07-S08-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "검체 라벨링 오류는 환자식별 오류와 유사한 심각한 안전 위험을 가질 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 검체가 잘못 라벨링되면 다른 환자의 결과가 보고되는 심각한 오류로 이어질 수 있다.
+distractor_explanations:
+  X: 검체 라벨링 오류의 위험성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000256
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C09-S13-T001
+subject_area: data_quality
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "유일성(Uniqueness) 차원의 대표적 품질지표는?"
+options:
+  - id: A
+    text: 정확도율
+  - id: B
+    text: 중복률
+  - id: C
+    text: 고아 레코드 수
+  - id: D
+    text: 적시 완료율
+answer:
+  - B
+explanation: 유일성은 중복 레코드의 비율(중복률)로 측정한다.
+distractor_explanations:
+  A: 정확도율은 정확성의 지표다.
+  C: 고아 레코드 수는 정합성의 지표다.
+  D: 적시 완료율은 적시성의 지표다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

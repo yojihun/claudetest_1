@@ -1,0 +1,23 @@
+id: Q-HIM-000321
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C13-S04-T001
+subject_area: accreditation
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "규정·절차 문서만 잘 작성되어 있으면 실제 이행 기록이 없어도 인증 조사에서 충분히 인정된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 조사위원은 규정과 실제 기록을 함께 확인해 실제 이행 여부를 판단한다.
+distractor_explanations:
+  O: 실제 기록 확인의 필요성을 간과한 응답이다.
+references:
+  - REF-LAW-HEALTHCARE-ACCREDITATION-001
+verified: false

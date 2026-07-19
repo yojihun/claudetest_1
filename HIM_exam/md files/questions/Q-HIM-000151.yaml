@@ -1,0 +1,23 @@
+id: Q-HIM-000151
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S06-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "종이 기록에서 오류를 수정할 때 수정액으로 완전히 덮는 것이 올바른 방법이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 수정액으로 덮으면 원본을 확인할 수 없게 되므로, 한 줄로 긋고 정정 표시를 남기는 방법이 올바르다.
+distractor_explanations:
+  O: 원본 보존의 필요성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000158
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C05-S09-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "자동기록 장비의 이상치가 발견되면 수기로 재확인하는 절차가 필요하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 장비 오작동 가능성이 있으므로 이상치는 그대로 신뢰하지 않고 재확인해야 한다.
+distractor_explanations:
+  X: 장비 오작동 가능성을 간과한 응답이다.
+references:
+  - REF-SECONDARY-DIGITAL-HEALTH-001
+verified: false

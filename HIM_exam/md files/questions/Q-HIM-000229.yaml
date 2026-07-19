@@ -1,0 +1,29 @@
+id: Q-HIM-000229
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C08-S11-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "ICD를 관리하는 국제기구는?"
+options:
+  - id: A
+    text: HL7 International
+  - id: B
+    text: WHO(세계보건기구)
+  - id: C
+    text: SNOMED International
+  - id: D
+    text: DICOM Standards Committee
+answer:
+  - B
+explanation: ICD는 WHO가 관리하는 국제질병분류이다.
+distractor_explanations:
+  A: HL7은 의료정보 교환 표준을 관리하는 기구다.
+  C: SNOMED International은 SNOMED CT를 관리한다.
+  D: DICOM Standards Committee는 DICOM을 관리한다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

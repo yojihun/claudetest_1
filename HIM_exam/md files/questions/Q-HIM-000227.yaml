@@ -1,0 +1,23 @@
+id: Q-HIM-000227
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C08-S09-T001
+subject_area: health_information_standards
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "LOINC은 검사·관찰 항목의 명칭과 코드를 표준화해 서로 다른 검사실의 결과를 비교 가능하게 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: LOINC은 검사·관찰 항목에 공통 코드를 부여해 결과 비교를 가능하게 한다.
+distractor_explanations:
+  X: LOINC의 역할을 간과한 응답이다.
+references:
+  - REF-STANDARD-LOINC-001
+verified: false

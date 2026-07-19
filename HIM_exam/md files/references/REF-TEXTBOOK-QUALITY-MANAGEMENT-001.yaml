@@ -1,0 +1,16 @@
+id: REF-TEXTBOOK-QUALITY-MANAGEMENT-001
+type: textbook
+title: 의료의 질 관리 방법론 개괄(Donabedian 모델, QA/QI/CQI, FMEA, PDCA)
+publisher: null
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: ko
+status: located
+notes: >
+  Avedis Donabedian의 구조-과정-결과 모델, QA(Quality Assurance)에서 CQI(Continuous Quality
+  Improvement)로의 개념 발전, FMEA(고장모드영향분석), PDCA(Deming Cycle)는 의료 질 관리 분야에서
+  널리 인용되는 정설 개념들이다. 이 세션에서는 각 개념의 원 출처 서지사항을 원문 대조하지
+  않았으므로 status를 located로 둔다. verified 승격 전 신뢰할 수 있는 교재의 정확한 인용 정보를
+  확인해야 한다.

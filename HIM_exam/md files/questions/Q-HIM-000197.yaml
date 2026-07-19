@@ -1,0 +1,29 @@
+id: Q-HIM-000197
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C07-S07-T001
+subject_area: health_information_systems
+difficulty: basic
+cognitive_level: understand
+importance: C
+stem: "영상 검사의 예약·접수와 판독 보고서를 관리하는 시스템은?"
+options:
+  - id: A
+    text: PACS
+  - id: B
+    text: RIS
+  - id: C
+    text: LIS
+  - id: D
+    text: OCS
+answer:
+  - B
+explanation: RIS는 영상의학과의 업무 흐름(예약·접수·보고서)을 관리한다.
+distractor_explanations:
+  A: PACS는 영상 데이터 자체를 관리한다.
+  C: LIS는 검사실 업무를 관리한다.
+  D: OCS는 처방 전달을 담당한다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

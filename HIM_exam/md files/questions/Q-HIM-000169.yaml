@@ -1,0 +1,23 @@
+id: Q-HIM-000169
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S03-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "동명이인 환자가 있을 수 있으므로 이름만으로 환자를 식별하는 것은 부적절하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 동명이인 위험 때문에 이름 외 추가 식별자(생년월일 등)를 함께 확인해야 한다.
+distractor_explanations:
+  X: 동명이인 위험을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000185
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C06-S12-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "백업 데이터는 원본과 같은 장소에만 보관해도 충분하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 같은 장소에만 보관하면 화재 등 동일 재해로 원본과 백업이 함께 손상될 위험이 있다.
+distractor_explanations:
+  O: 백업 위치 분리의 필요성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false
