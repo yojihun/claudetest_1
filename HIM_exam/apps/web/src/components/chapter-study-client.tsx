@@ -3,7 +3,11 @@
 import { startTransition, useEffect, useState } from "react";
 
 import { QuestionCard } from "@/components/question-card";
-import { getChapterTitle, getVolumeTitle } from "@/lib/course-meta";
+import {
+  getChapterTitle,
+  getRomanVolumeLabel,
+  getVolumeTitle,
+} from "@/lib/course-meta";
 import { TopicArticle } from "@/components/topic-article";
 import { buildTopicQuestionSet } from "@/lib/study";
 import { loadReviewQuestionIds, saveReviewQuestionIds } from "@/lib/storage";
@@ -77,11 +81,15 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
   }
 
   function getVolumeOptionLabel(volume: number) {
-    return `Volume ${volume}. ${getVolumeTitle(volume)}`;
+    return `${getRomanVolumeLabel(volume)}. ${getVolumeTitle(volume)}`;
   }
 
   function getChapterOptionLabel(chapterKey: string, volume: number, chapter: number) {
-    return `Volume ${volume}. ${getVolumeTitle(volume)} · Chapter ${chapter}. ${getChapterTitle(chapterKey, chapter)}`;
+    return `${chapter}. ${getChapterTitle(chapterKey, chapter)}`;
+  }
+
+  function getTopicOptionLabel(index: number, title: string) {
+    return `${index + 1}. ${title}`;
   }
 
   return (
@@ -118,37 +126,26 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
               >
                 {chapterOptions.map((chapter) => (
                   <option key={chapter.key} value={chapter.key}>
-                    {getChapterOptionLabel(
-                      chapter.key,
-                      chapter.volume,
-                      chapter.chapter,
-                    )}{" "}
-                    ({chapter.topicCount} topics)
+                    {getChapterOptionLabel(chapter.key, chapter.volume, chapter.chapter)}
                   </option>
                 ))}
               </select>
             </label>
-          </div>
-        </section>
 
-        <section className="app-panel rounded-[2rem] p-6">
-          <p className="app-kicker">Topics</p>
-          <h3 className="mt-2 text-lg font-semibold text-[var(--navy)]">Topic 목록</h3>
-          <div className="mt-4 space-y-2">
-            {topicsInChapter.map((topic) => (
-              <button
-                key={topic.id}
-                type="button"
-                onClick={() => setActiveTopicId(topic.id)}
-                className={`w-full rounded-2xl px-4 py-3 text-left text-sm transition ${
-                  topic.id === activeTopic?.id
-                    ? "border border-[rgba(36,91,219,0.18)] bg-[linear-gradient(135deg,rgba(231,238,255,0.98),rgba(221,251,243,0.94))] text-[var(--blue)] shadow-[0_18px_30px_-24px_rgba(36,91,219,0.42)]"
-                    : "border border-transparent bg-white/56 text-[rgba(16,32,51,0.78)] hover:border-[rgba(36,91,219,0.12)] hover:bg-white/88"
-                }`}
+            <label className="block text-sm font-medium text-[rgba(16,32,51,0.72)]">
+              Topic
+              <select
+                value={activeTopic?.id ?? ""}
+                onChange={(event) => setActiveTopicId(event.target.value)}
+                className="app-input mt-2 w-full rounded-2xl px-4 py-3"
               >
-                {topic.title}
-              </button>
-            ))}
+                {topicsInChapter.map((topic, index) => (
+                  <option key={topic.id} value={topic.id}>
+                    {getTopicOptionLabel(index, topic.title)}
+                  </option>
+                ))}
+              </select>
+            </label>
           </div>
         </section>
       </aside>

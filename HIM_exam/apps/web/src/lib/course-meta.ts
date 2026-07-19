@@ -62,6 +62,10 @@ function toRoman(value: number) {
   return numerals[value] ?? String(value);
 }
 
+export function getRomanVolumeLabel(volume: number) {
+  return toRoman(volume);
+}
+
 export function getVolumeTitle(volume: number) {
   return volumeTitles[volume] ?? `Volume ${volume}`;
 }
