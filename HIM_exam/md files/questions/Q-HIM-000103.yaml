@@ -1,0 +1,23 @@
+id: Q-HIM-000103
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S07-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "Privacy와 Confidentiality는 완전히 같은 의미이므로 구분할 필요가 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: Privacy는 개인의 정보 통제권을, Confidentiality는 알게 된 정보를 공개하지 않을 의무를 뜻하는 서로 다른 개념이다.
+distractor_explanations:
+  O: 두 개념을 같은 의미로 혼동한 응답이다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

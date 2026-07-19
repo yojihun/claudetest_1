@@ -1,0 +1,29 @@
+id: Q-HIM-000030
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S11-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: analyze
+importance: B
+stem: "EMR 도입으로 새롭게 생겨난 위험으로 가장 적절한 것은?"
+options:
+  - id: A
+    text: 기록의 물리적 분실
+  - id: B
+    text: 복사·붙여넣기로 인한 미확인 정보의 반복 기재
+  - id: C
+    text: 한 번에 한 사람만 열람 가능한 제약
+  - id: D
+    text: 수작업 검색의 어려움
+answer:
+  - B
+explanation: 복사·붙여넣기 남용은 EMR 도입 이후 새롭게 부각된 대표적 위험이다.
+distractor_explanations:
+  A: 물리적 분실은 종이 기록의 위험이다.
+  C: 동시 열람 제약은 종이 기록의 한계다.
+  D: 수작업 검색의 어려움은 종이 기록의 한계다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

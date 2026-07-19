@@ -1,0 +1,29 @@
+id: Q-HIM-000001
+status: reviewing
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S01-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: 보건의료정보관리에 대한 설명으로 가장 적절한 것은?
+options:
+  - id: A
+    text: 의료인의 진료행위만을 관리한다.
+  - id: B
+    text: 보건의료정보를 수집·관리·분석·보호·활용한다.
+  - id: C
+    text: 의료기관의 회계업무만을 수행한다.
+  - id: D
+    text: 종이 의무기록의 보관만을 의미한다.
+answer:
+  - B
+explanation: 보건의료정보관리는 기록 보관을 넘어 정보의 전 생명주기를 관리한다.
+distractor_explanations:
+  A: 진료행위 자체가 아니라 진료과정에서 생성된 정보를 관리한다.
+  C: 회계는 일부 연계될 수 있으나 핵심 정의가 아니다.
+  D: 현대 HIM은 종이 기록 관리보다 넓은 개념이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

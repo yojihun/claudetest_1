@@ -1,0 +1,23 @@
+id: Q-HIM-000087
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S16-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "사고 발생 이후 기록이 대량으로 수정된 흔적은 법적 분쟁에서 기록의 신뢰도를 높이는 요소가 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 사후 대량 수정은 오히려 기록의 신뢰도를 떨어뜨리고 의심의 대상이 될 수 있다.
+distractor_explanations:
+  O: 사후 수정의 법적 위험을 반대로 이해한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

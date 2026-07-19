@@ -1,0 +1,29 @@
+id: Q-HIM-000016
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S02-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "다음 중 보건의료정보의 범위에 포함되지 않는 것은?"
+options:
+  - id: A
+    text: 개별 환자의 검사결과
+  - id: B
+    text: 병원의 병상이용률 통계
+  - id: C
+    text: 국가 암등록 통계
+  - id: D
+    text: 의료기관과 무관한 개인의 여행 일정
+answer:
+  - D
+explanation: 보건의료정보는 개인·기관·국가 단위의 진료·통계·공중보건 관련 정보를 포괄하지만, 의료와 무관한 개인 일정은 포함되지 않는다.
+distractor_explanations:
+  A: 개인 단위 보건의료정보에 해당한다.
+  B: 기관 단위 보건의료정보에 해당한다.
+  C: 국가·공공 단위 보건의료정보에 해당한다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

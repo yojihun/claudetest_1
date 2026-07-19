@@ -1,0 +1,23 @@
+id: Q-HIM-000008
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S09-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "S(Subjective)는 체온·혈압과 같은 검사 수치를 의미한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 검사 수치와 같은 관찰·측정 결과는 O(Objective)에 해당한다. S는 환자가 호소하거나 진술한 주관적 정보이다.
+distractor_explanations:
+  O: S와 O의 정의를 혼동한 응답이다.
+references:
+  - REF-JOURNAL-WEED-POMR-001
+verified: false

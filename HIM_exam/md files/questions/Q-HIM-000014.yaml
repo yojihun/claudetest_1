@@ -1,0 +1,23 @@
+id: Q-HIM-000014
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S17-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "보건의료정보관리사는 확정된 진단명에 질병분류 코드를 부여하는 업무를 수행한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 질병 및 의료행위 분류(코드 부여)는 보건의료정보관리사의 핵심 업무 중 하나이다.
+distractor_explanations:
+  X: 분류 업무를 진료행위로 잘못 이해한 경우 틀린 응답을 선택하게 된다.
+references:
+  - REF-LAW-MEDICAL-TECHNOLOGIST-ACT-001
+verified: false

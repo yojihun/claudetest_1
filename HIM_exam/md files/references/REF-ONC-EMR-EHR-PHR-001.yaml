@@ -1,0 +1,16 @@
+id: REF-ONC-EMR-EHR-PHR-001
+type: official_guideline
+title: EMR, EHR, PHR의 정의와 구분에 관한 미국 ONC(Office of the National Coordinator for Health IT) 설명 자료
+publisher: ONC (U.S. Department of Health and Human Services)
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: en
+status: located
+notes: >
+  ONC는 EMR을 기관 내부 기록, EHR을 기관 간 공유가 가능한 기록, PHR을 환자가 직접 관리하는 기록으로
+  구분해 설명하는 공식 자료를 제공한다. 이 정의는 국내 보건의료정보관리 교재에서도 통용되는 방식과
+  일치하나, 이 세션에서는 정확한 페이지·최신 개정일까지는 대조하지 못했다.
+  verified로 승격하려면 ONC 공식 페이지 URL과 접속일을 채우고, 국내 법령상 전자의무기록(의료법)
+  정의와 병기해야 한다.

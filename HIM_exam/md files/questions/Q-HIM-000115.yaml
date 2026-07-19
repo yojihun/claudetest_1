@@ -1,0 +1,23 @@
+id: Q-HIM-000115
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S13-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "시스템상 코드 매핑 오류를 해결하기 위해 협업할 부서는 정보전산부다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 시스템 개선과 데이터 표준 적용은 정보전산부와의 협업 영역이다.
+distractor_explanations:
+  X: 협업 부서를 잘못 연결한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

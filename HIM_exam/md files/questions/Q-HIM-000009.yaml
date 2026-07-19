@@ -1,0 +1,22 @@
+id: Q-HIM-000009
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C01-S09-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: analyze
+importance: B
+stem: >
+  다음 경과기록을 S/O/A/P로 분류하시오.
+  "환자는 오른쪽 아랫배가 아프다고 호소함. 체온 38.2℃, 우하복부 압통 및 반발통 관찰됨.
+  급성 충수염 의심. 외과 협진 의뢰 및 복부 CT 시행 예정."
+answer:
+  - "S: 오른쪽 아랫배가 아프다고 호소함 / O: 체온 38.2℃, 우하복부 압통 및 반발통 / A: 급성 충수염 의심 / P: 외과 협진 의뢰 및 복부 CT 시행 예정"
+explanation: >
+  환자의 호소는 S, 체온·신체진찰 소견은 O, 임상적 판단은 A, 향후 조치는 P로 분류한다.
+  S와 O를 섞어 "복통 있음"으로만 기록하면 이후 근거 구분이 어려워진다.
+distractor_explanations: {}
+references:
+  - REF-JOURNAL-WEED-POMR-001
+verified: false

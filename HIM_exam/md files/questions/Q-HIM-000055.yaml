@@ -1,0 +1,23 @@
+id: Q-HIM-000055
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S03-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "외래기록은 각 방문이 상대적으로 독립적인 관리 단위가 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 외래기록은 방문(내원)마다 독립적으로 관리되며, 여러 방문 기록이 누적되어 진료 이력을 형성한다.
+distractor_explanations:
+  X: 외래기록의 관리 단위를 입원기록과 혼동한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

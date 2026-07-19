@@ -1,0 +1,23 @@
+id: Q-HIM-000011
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S12-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "EHR은 한 의료기관 내부에서만 사용되는 기록이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 한 기관 내부에서만 사용되는 것은 EMR의 특징이다. EHR은 여러 기관 간 연속성과 공유를 지향한다.
+distractor_explanations:
+  O: EMR과 EHR의 정의를 서로 바꾸어 이해한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

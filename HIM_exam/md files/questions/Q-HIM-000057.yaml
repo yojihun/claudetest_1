@@ -1,0 +1,23 @@
+id: Q-HIM-000057
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S04-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "응급기록의 최종 처리 결과는 입원, 전원, 귀가, 사망 등으로 명확히 기재되어야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 응급실은 환자가 최종적으로 처리되는 지점이므로 그 결과와 근거가 명확히 기록되어야 한다.
+distractor_explanations:
+  X: 최종 처리 결과 기재의 필요성을 축소한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

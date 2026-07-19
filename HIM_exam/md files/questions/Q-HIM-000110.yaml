@@ -1,0 +1,29 @@
+id: Q-HIM-000110
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C03-S11-T001
+subject_area: him_duties
+difficulty: intermediate
+cognitive_level: analyze
+importance: B
+stem: "여러 부서가 서로 다른 방식으로 환자 식별 정보를 입력해 반복적으로 중복 등록 문제가 발생한다. 근본적 해결에 가장 적절한 접근은?"
+options:
+  - id: A
+    text: 발생할 때마다 개별 중복 건을 수작업으로 정리한다.
+  - id: B
+    text: 조직 차원의 데이터 거버넌스로 입력 규칙과 책임 부서를 명확히 정한다.
+  - id: C
+    text: 통계 부서에 더 많은 인력을 배치한다.
+  - id: D
+    text: 문제를 무시하고 다음 감사 때까지 기다린다.
+answer:
+  - B
+explanation: 반복되는 문제의 근본 원인이 조직 차원의 규칙 부재라면, 개별 수정이 아니라 거버넌스 차원의 규칙 수립이 필요하다.
+distractor_explanations:
+  A: 개별 수정은 반복 문제를 근본적으로 해결하지 못한다.
+  C: 인력 배치는 근본 원인(규칙 부재)을 해결하지 않는다.
+  D: 문제를 방치하는 것은 적절한 대응이 아니다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

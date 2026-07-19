@@ -1,0 +1,23 @@
+id: Q-HIM-000126
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S05-T001
+subject_area: healthcare_organization
+difficulty: basic
+cognitive_level: understand
+importance: C
+stem: "진료부는 보건의료정보관리 업무의 원천이 되는 진단·처치 정보의 1차 생성 주체다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 진료부에서 생성된 정보가 이후 분류·통계·청구 업무의 기초 자료가 된다.
+distractor_explanations:
+  X: 진료부의 역할을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

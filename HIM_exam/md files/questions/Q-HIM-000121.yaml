@@ -1,0 +1,23 @@
+id: Q-HIM-000121
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S02-T001
+subject_area: healthcare_organization
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "의원은 일반적으로 종합병원보다 진료과목의 다양성이 제한적이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 의원은 외래 중심의 소규모 기관으로 진료과목이 제한적인 경우가 많다.
+distractor_explanations:
+  X: 의원과 종합병원의 규모·기능 차이를 반대로 이해한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

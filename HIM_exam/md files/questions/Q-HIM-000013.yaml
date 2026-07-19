@@ -1,0 +1,29 @@
+id: Q-HIM-000013
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S17-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: "다음 중 보건의료정보관리사의 업무 범위에 해당하지 않는 것은?"
+options:
+  - id: A
+    text: 퇴원환자의 진단명에 맞는 질병분류 코드를 부여한다.
+  - id: B
+    text: 병상이용률 등 병원통계 지표를 산출한다.
+  - id: C
+    text: 환자의 주진단을 임상적으로 확정 진단한다.
+  - id: D
+    text: 암등록 대상 환자의 원발부위 정보를 등록한다.
+answer:
+  - C
+explanation: 주진단의 임상적 확정은 담당 의료진의 진료행위이며, 보건의료정보관리사는 확정된 진단에 근거해 분류·통계·등록 업무를 수행한다.
+distractor_explanations:
+  A: 질병분류 코드 부여는 보건의료정보관리사의 핵심 업무 중 하나이다.
+  B: 병원통계 산출은 보건의료정보관리사의 핵심 업무 중 하나이다.
+  D: 암등록 업무는 보건의료정보관리사의 핵심 업무 중 하나이다.
+references:
+  - REF-LAW-MEDICAL-TECHNOLOGIST-ACT-001
+verified: false

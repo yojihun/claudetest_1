@@ -1,0 +1,23 @@
+id: Q-HIM-000113
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S12-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "CDI 질의는 특정 진단명이나 코드를 유도하지 않는 중립적 형식을 지켜야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 질의는 임상적 판단의 명확한 문서화를 돕는 것이지, 특정 결과를 유도하는 수단이 아니다.
+distractor_explanations:
+  X: 질의의 중립성 원칙을 부정한 응답이다.
+references:
+  - REF-AHIMA-CDI-001
+verified: false

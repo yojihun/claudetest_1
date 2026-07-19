@@ -1,0 +1,23 @@
+id: Q-HIM-000085
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S15-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "미비기록 관리에는 보완 기한 설정과 진행 상황 추적이 포함된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 미비기록 관리는 식별뿐 아니라 기한 관리와 추적, 완결 확인까지 포함하는 절차다.
+distractor_explanations:
+  X: 미비기록 관리를 단순 식별로만 좁게 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

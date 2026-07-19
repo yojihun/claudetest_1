@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img" aria-labelledby="title desc" font-family="'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif">
+  <title id="title">EMR·EHR·PHR 비교</title>
+  <desc id="desc">EMR은 실선 사각형으로 표시된 하나의 의료기관 내부, EHR은 점선 사각형으로 표시된 여러 의료기관을 감싸는 범위, PHR은 점-선 사각형으로 표시된 환자 개인 영역으로 구분되는 세 개의 중첩 도형.</desc>
+  <style>
+    .lbl { fill: #1a1a1a; font-size: 16px; text-anchor: middle; font-weight: bold; }
+    .sub { fill: #333333; font-size: 12px; text-anchor: middle; }
+    .box { fill: none; stroke: #1a1a1a; stroke-width: 2; }
+  </style>
+
+  <!-- PHR: outermost, dash-dot border = patient-controlled -->
+  <rect class="box" x="20" y="20" width="860" height="300" rx="14" stroke-dasharray="2 6"/>
+  <text class="lbl" x="450" y="45">PHR — 개인건강기록 (관리 주체: 환자 본인)</text>
+
+  <!-- EHR: middle, dashed border = cross-institution -->
+  <rect class="box" x="70" y="70" width="620" height="220" rx="12" stroke-dasharray="8 6"/>
+  <text class="lbl" x="380" y="95">EHR — 전자건강기록 (관리 주체: 여러 기관의 연계체계)</text>
+
+  <!-- EMR A and EMR B: inner solid boxes = single institution -->
+  <rect class="box" x="110" y="130" width="230" height="130" rx="8"/>
+  <text class="lbl" x="225" y="185" font-size="14">EMR (A병원)</text>
+  <text class="sub" x="225" y="205">관리 주체: A병원</text>
+  <text class="sub" x="225" y="222">범위: 기관 내부 진료기록</text>
+
+  <rect class="box" x="410" y="130" width="230" height="130" rx="8"/>
+  <text class="lbl" x="525" y="185" font-size="14">EMR (B병원)</text>
+  <text class="sub" x="525" y="205">관리 주체: B병원</text>
+  <text class="sub" x="525" y="222">범위: 기관 내부 진료기록</text>
+
+  <text x="450" y="325" text-anchor="middle" font-size="12" fill="#444">
+    캡션: EMR은 개별 기관 내부, EHR은 기관 간 연속성, PHR은 환자 개인 관리 범위를 나타낸다. (선 종류로 구분: 실선=EMR, 점선=EHR, 점-선=PHR)
+  </text>
+</svg>

@@ -1,0 +1,23 @@
+id: Q-HIM-000128
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S07-T001
+subject_area: healthcare_organization
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "원무·행정부에서의 환자 식별 정보 입력 오류는 이후 중복 등록 문제로 이어질 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 환자 식별 정보가 부정확하면 동일인 확인에 실패해 중복 등록이 발생할 수 있다.
+distractor_explanations:
+  X: 원무 업무 오류의 파급 효과를 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

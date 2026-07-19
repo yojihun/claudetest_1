@@ -1,0 +1,23 @@
+id: Q-HIM-000105
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S08-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "데이터 프로파일링은 누락률, 중복률 등 데이터의 현재 상태를 파악하는 단계다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 프로파일링은 품질관리 사이클의 첫 단계로 현재 상태를 파악하는 과정이다.
+distractor_explanations:
+  X: 프로파일링의 정의를 잘못 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

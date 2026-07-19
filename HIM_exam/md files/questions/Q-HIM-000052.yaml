@@ -1,0 +1,29 @@
+id: Q-HIM-000052
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S02-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "입원 전체 경과를 종합하여 퇴원 시점에 작성하는 문서는?"
+options:
+  - id: A
+    text: 병력·신체검진 기록
+  - id: B
+    text: 지시기록
+  - id: C
+    text: 퇴원요약
+  - id: D
+    text: 동의서
+answer:
+  - C
+explanation: 퇴원요약은 입원 기간 전체의 경과를 종합해 퇴원 시점에 작성하는 문서다.
+distractor_explanations:
+  A: 입원·초진 시 작성되는 기초 자료다.
+  B: 처방·검사·처치 지시 시점에 작성된다.
+  D: 처치·수술 전에 작성된다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

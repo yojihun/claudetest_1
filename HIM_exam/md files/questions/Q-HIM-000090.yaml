@@ -1,0 +1,23 @@
+id: Q-HIM-000090
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S01-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "보건의료정보관리사의 13개 세부 직무 영역은 서로 독립적이며 연결되지 않는다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 여러 영역이 서로 연결되어 있으며(예: 분류 정확성과 데이터 품질관리), 독립적으로만 작동하지 않는다.
+distractor_explanations:
+  O: 직무 영역 간 연결성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

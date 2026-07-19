@@ -1,0 +1,10 @@
+id: AST-HIM-EMR-EHR-PHR-001
+type: comparison_table
+title: EMR·EHR·PHR 관계도
+topic_ids:
+  - HIM-V1-C01-S12-T001
+file: assets/diagrams/emr-ehr-phr.svg
+alt: EMR은 개별 의료기관 내부 범위, EHR은 여러 기관을 아우르는 범위, PHR은 환자 개인이 관리하는 가장 바깥 범위로 중첩되어 표현된 비교 도식. 선 종류(실선/점선/점-선)로 세 범위를 구분한다.
+caption: EMR은 기관 내부, EHR은 기관 간 연속성, PHR은 환자 개인 관리 범위를 나타낸다.
+source: original
+license: project-owned

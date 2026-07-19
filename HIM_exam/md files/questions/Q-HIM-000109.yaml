@@ -1,0 +1,23 @@
+id: Q-HIM-000109
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S10-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "표준화 직무에는 내부 코드와 표준 코드 간 매핑표 관리가 포함된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 매핑 관리는 표준화 직무의 핵심 활동 중 하나다.
+distractor_explanations:
+  X: 매핑 관리의 필요성을 간과한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

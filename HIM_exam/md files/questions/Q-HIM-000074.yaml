@@ -1,0 +1,23 @@
+id: Q-HIM-000074
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S11-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "기록 작성의 다섯 원칙은 정확성, 적시성, 객관성, 명확성, 작성자 확인이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 이 다섯 가지가 기록 작성의 기본 원칙이다.
+distractor_explanations:
+  X: 원칙의 개수나 내용을 잘못 기억한 경우 틀린 응답을 선택하게 된다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

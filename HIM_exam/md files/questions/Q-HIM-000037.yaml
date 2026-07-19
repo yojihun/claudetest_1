@@ -1,0 +1,23 @@
+id: Q-HIM-000037
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C01-S14-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: >
+  다음 세 상황을 각각 정확성·완전성·적시성 중 어떤 특성의 문제인지 분류하시오.
+  (1) 검사결과지의 수치를 담당자가 옮겨 적으며 소수점을 잘못 입력했다.
+  (2) 입원기록에 알레르기 유무 항목이 아예 비어 있다.
+  (3) 수술기록이 수술 후 2주가 지나서야 작성되었다.
+answer:
+  - "(1) 정확성 (2) 완전성 (3) 적시성"
+explanation: >
+  (1)은 실제 값과 기록된 값의 불일치이므로 정확성, (2)는 필요한 항목의 누락이므로 완전성,
+  (3)은 필요한 시점에 기록되지 않았으므로 적시성 문제이다.
+distractor_explanations: {}
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

@@ -1,0 +1,19 @@
+{
+  "project": "보건의료정보관리사 국가시험 통합 학습 플랫폼",
+  "version": "1.0.0",
+  "files": [
+    "CONTENT_MODEL.md",
+    "CURRICULUM.md",
+    "EXAM_GUIDE.md",
+    "GLOSSARY.md",
+    "IMAGE_GUIDE.md",
+    "PROJECT.md",
+    "QUESTION_GUIDE.md",
+    "README.md",
+    "REFERENCE_GUIDE.md",
+    "ROADMAP.md",
+    "WRITING_GUIDE.md",
+    "content/_TOPIC_TEMPLATE.md",
+    "questions/_QUESTION_TEMPLATE.yaml"
+  ]
+}

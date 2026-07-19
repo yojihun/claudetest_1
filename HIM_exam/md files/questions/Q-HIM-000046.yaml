@@ -1,0 +1,23 @@
+id: Q-HIM-000046
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S19-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: C
+stem: "생성형 AI가 제안한 질병분류 코드는 검증 없이 그대로 청구에 사용해도 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: AI가 제시한 코드는 참고자료이며, 실제 진료 내용과 일치하는지 사람이 최종 검증한 후 사용해야 한다.
+distractor_explanations:
+  O: AI 결과의 최종 검증 책임을 간과한 응답이다.
+references:
+  - REF-SECONDARY-DIGITAL-HEALTH-001
+verified: false

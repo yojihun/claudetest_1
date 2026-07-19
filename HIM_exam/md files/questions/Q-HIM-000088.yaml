@@ -1,0 +1,25 @@
+id: Q-HIM-000088
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C02-S13-T001
+  - HIM-V1-C02-S14-T001
+  - HIM-V1-C02-S15-T001
+  - HIM-V1-C02-S16-T001
+subject_area: medical_records
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  담낭절제술 환자의 기록에서 마취기록 서명이 누락되었고, 퇴원요약(퇴원 3주 후 작성, "특이 합병증
+  없음")이 경과기록(수술 후 3일간 발열 지속)과 모순된다. 이 사례에서 (1) 정량분석으로 발견되는
+  문제, (2) 정성분석으로 발견되는 문제, (3) 법적 가치 측면의 위험을 각각 설명하시오.
+answer:
+  - "(1) 마취기록 서명 누락 (2) 퇴원요약과 경과기록 내용의 모순 (3) 퇴원요약 작성 지연과 모순된 기재가 향후 분쟁 시 병원에 불리한 근거가 될 수 있음"
+explanation: >
+  정량분석은 서명 등 항목의 존재 여부를, 정성분석은 기록 간 내용의 논리적 일치 여부를 점검한다.
+  이 사례는 두 층위의 문제가 동시에 존재하며, 지연되고 모순된 퇴원요약은 법적 분쟁 시 기록의
+  신뢰도를 떨어뜨리는 위험 요소가 된다.
+distractor_explanations: {}
+references: []
+verified: false

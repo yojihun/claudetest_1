@@ -1,0 +1,29 @@
+id: Q-HIM-000089
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C03-S01-T001
+subject_area: him_duties
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "연구자가 특정 질환 환자 데이터를 요청했을 때 보건의료정보관리사가 동시에 고려해야 할 두 직무 영역은?"
+options:
+  - id: A
+    text: 암등록, 의료통계
+  - id: B
+    text: 정보 제공(연구지원), 개인정보 보호
+  - id: C
+    text: 임상문서개선, 부서 간 협업
+  - id: D
+    text: 데이터 거버넌스, 표준화
+answer:
+  - B
+explanation: 연구 목적 데이터 요청에 응하는 것은 정보 제공·연구지원 업무이며, 동시에 비식별 처리 등 개인정보 보호 원칙을 함께 적용해야 한다.
+distractor_explanations:
+  A: 이 사례와 직접 관련이 적은 영역이다.
+  C: 이 사례의 핵심 쟁점과 다르다.
+  D: 이 사례의 핵심 쟁점과 다르다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

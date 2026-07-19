@@ -1,0 +1,23 @@
+id: Q-HIM-000021
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S04-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "하나의 정보(예: 정확한 진단명 기록)는 진료 지원, 경영 지원, 법적 대응, 연구·정책 지원 중 오직 한 가지 목적에만 기여할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 정확히 기록된 진단명은 진료 참고, 통계 반영, 분쟁 시 근거, 정책 자료 등 여러 목적에 동시에 기여할 수 있다.
+distractor_explanations:
+  O: 하나의 정보가 여러 목적에 동시에 기여할 수 있다는 점을 놓친 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

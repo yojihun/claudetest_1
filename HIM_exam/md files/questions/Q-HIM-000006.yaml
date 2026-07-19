@@ -1,0 +1,21 @@
+id: Q-HIM-000006
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C01-S03-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: analyze
+importance: B
+stem: >
+  다음 세 문장을 각각 데이터·정보·지식 중 하나로 분류하시오.
+  (1) "120" (2) "환자 B의 수축기 혈압이 120mmHg이다" (3) "수축기 혈압 120mmHg는 정상 범위이므로 별도 조치가 필요 없다"
+answer:
+  - "(1) 데이터 (2) 정보 (3) 지식"
+explanation: >
+  (1)은 맥락 없는 개별 수치이므로 데이터, (2)는 대상과 단위라는 맥락이 더해진 정보,
+  (3)은 정보에 판단 규칙(정상 범위 기준)을 적용한 지식이다.
+distractor_explanations: {}
+references:
+  - REF-TEXTBOOK-DIKW-001
+verified: false

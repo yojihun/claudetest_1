@@ -1,0 +1,23 @@
+id: Q-HIM-000059
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S05-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "수술 전 진단명과 수술 후 진단명은 항상 동일하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 수술 후 진단명은 실제 수술 소견에 따라 수술 전 진단명과 다를 수 있다.
+distractor_explanations:
+  O: 두 진단명이 항상 같다고 오해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

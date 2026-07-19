@@ -1,0 +1,23 @@
+id: Q-HIM-000114
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S13-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "보건의료정보관리사가 발견한 데이터 문제는 대부분 다른 부서와의 협업을 통해 해결된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 문제의 원인이 다른 부서의 업무 관행이나 시스템에 있는 경우가 많아 협업이 필요하다.
+distractor_explanations:
+  X: 협업의 필요성을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

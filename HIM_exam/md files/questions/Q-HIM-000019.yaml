@@ -1,0 +1,29 @@
+id: Q-HIM-000019
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S04-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "병원이 병상이용률을 산출해 인력 배치를 조정했다. 이는 HIM의 네 가지 목적 중 무엇에 해당하는가?"
+options:
+  - id: A
+    text: 진료 지원
+  - id: B
+    text: 경영 지원
+  - id: C
+    text: 법적 대응
+  - id: D
+    text: 연구·정책 지원
+answer:
+  - B
+explanation: 병상이용률 등 통계를 활용한 자원 배분 판단은 경영 지원 목적에 해당한다.
+distractor_explanations:
+  A: 다음 진료 참고 목적이 아니므로 진료 지원은 아니다.
+  C: 분쟁·감사 대응 목적이 아니므로 법적 대응은 아니다.
+  D: 정책·연구 목적이 아니라 병원 내부 경영 판단이므로 연구·정책 지원은 아니다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

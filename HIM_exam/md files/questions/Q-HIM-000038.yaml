@@ -1,0 +1,29 @@
+id: Q-HIM-000038
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S15-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "권한이 없는 직원이 시스템 오류를 이용해 타 부서 환자의 기록을 수정했다. 훼손된 특성은?"
+options:
+  - id: A
+    text: 일관성
+  - id: B
+    text: 신뢰성
+  - id: C
+    text: 무결성
+  - id: D
+    text: 적시성
+answer:
+  - C
+explanation: 허가되지 않은 변경이 발생했으므로 무결성이 훼손된 사례이다.
+distractor_explanations:
+  A: 자료 간 값의 모순 문제가 아니므로 일관성 문제는 아니다.
+  B: 반복 측정의 안정성 문제가 아니므로 신뢰성 문제는 아니다.
+  D: 시점의 문제가 아니므로 적시성 문제는 아니다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

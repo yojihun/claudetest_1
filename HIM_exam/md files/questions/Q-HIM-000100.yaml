@@ -1,0 +1,23 @@
+id: Q-HIM-000100
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S06-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "정보 제공 요청이 들어오면 요청자의 신원과 권한 확인 없이 즉시 제공하는 것이 원칙이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 정보 제공은 반드시 요청자의 신원과 정당한 권한을 확인한 후 이루어져야 한다.
+distractor_explanations:
+  O: 확인 절차 없이 즉시 제공하는 것을 원칙으로 오해한 응답이다.
+references:
+  - REF-AHIMA-ROI-001
+verified: false

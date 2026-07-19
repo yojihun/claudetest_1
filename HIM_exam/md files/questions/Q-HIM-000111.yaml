@@ -1,0 +1,23 @@
+id: Q-HIM-000111
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S11-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "데이터 거버넌스와 데이터 품질관리는 완전히 동일한 활동이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 데이터 품질관리는 실무 차원의 점검·개선이고, 데이터 거버넌스는 조직 차원의 정책·책임 수립으로 서로 다른 층위의 활동이다.
+distractor_explanations:
+  O: 두 개념을 동일시한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

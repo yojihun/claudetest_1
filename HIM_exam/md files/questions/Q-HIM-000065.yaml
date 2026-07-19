@@ -1,0 +1,29 @@
+id: Q-HIM-000065
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S08-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: analyze
+importance: B
+stem: "검사결과 수치는 정상이었지만 판독 소견에 '재검 권고'가 기재되어 있었는데, 담당의가 이를 확인하지 않아 재검이 지연되었다. 가장 적절한 원인 설명은?"
+options:
+  - id: A
+    text: 검사 장비의 오작동
+  - id: B
+    text: 결과값(데이터)만 확인하고 판독 소견(지식)을 확인하지 않음
+  - id: C
+    text: 검사 시행 시각 기록 누락
+  - id: D
+    text: 환자의 협조 부족
+answer:
+  - B
+explanation: 결과값과 판독 소견은 서로 다른 정보이며, 판독 소견을 확인하지 않으면 중요한 임상적 판단을 놓칠 수 있다.
+distractor_explanations:
+  A: 장비 오작동에 대한 언급은 사례에 없다.
+  C: 시각 기록 누락 문제가 아니라 소견 확인 누락 문제다.
+  D: 환자 협조와 무관한 사례다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

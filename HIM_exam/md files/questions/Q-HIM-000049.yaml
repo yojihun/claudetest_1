@@ -1,0 +1,29 @@
+id: Q-HIM-000049
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S01-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "간호기록이 상세히 작성되었지만 비표준 약어 사용으로 다른 진료과 의료진이 해석하지 못했다. 저하된 기능은?"
+options:
+  - id: A
+    text: 통계·연구 기능
+  - id: B
+    text: 의사소통 기능
+  - id: C
+    text: 교육 기능
+  - id: D
+    text: 법적 근거 기능
+answer:
+  - B
+explanation: 다른 직역이 이해할 수 없는 기록은 의사소통 기능을 저해한다.
+distractor_explanations:
+  A: 통계·연구 목적의 문제가 아니다.
+  C: 학습 자료 활용의 문제가 아니다.
+  D: 법적 분쟁 근거의 문제가 아니다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000058
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S05-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "충수염 의심으로 수술을 시작했으나 실제로는 다른 병변이 발견되었다. 질병분류 코드 부여의 기준이 되는 진단명은?"
+options:
+  - id: A
+    text: 수술 전 진단명(충수염 의심)
+  - id: B
+    text: 수술 후 진단명(실제 소견)
+  - id: C
+    text: 입원 시 잠정 진단명
+  - id: D
+    text: 응급실 초진 진단명
+answer:
+  - B
+explanation: 질병분류 코드는 실제 수술 소견에 근거한 수술 후 진단명을 기준으로 부여한다.
+distractor_explanations:
+  A: 수술 전 진단은 잠정적 판단으로, 실제 소견과 다를 수 있어 코드 부여의 최종 기준이 아니다.
+  C: 입원 시 잠정 진단도 최종 기준이 아니다.
+  D: 응급실 초진 진단도 최종 기준이 아니다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

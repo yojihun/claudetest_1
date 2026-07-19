@@ -1,0 +1,23 @@
+id: Q-HIM-000118
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S01-T001
+subject_area: healthcare_organization
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "의료기관은 법령이 정한 시설·인력 기준을 갖추지 않아도 의료인이 아닌 사람이 개설할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 의료기관은 의료인이 개설 주체가 되어야 하며 법령이 정한 시설·인력 기준을 갖추어야 한다.
+distractor_explanations:
+  O: 의료기관 개설 요건을 축소해 이해한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

@@ -1,0 +1,28 @@
+id: Q-HIM-000028
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S08-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: remember
+importance: C
+stem: "병원 단위 통계를 활용해 위생 개혁을 추진한 역사적 인물로 알려진 사람은?"
+options:
+  - id: A
+    text: Larry Weed
+  - id: B
+    text: Florence Nightingale
+  - id: C
+    text: 히포크라테스
+  - id: D
+    text: 해당 인물 없음
+answer:
+  - B
+explanation: Florence Nightingale은 병원 단위 통계를 활용해 위생 개혁을 추진한 인물로 알려져 있다.
+distractor_explanations:
+  A: Larry Weed는 POMR·SOAP 제안자이다.
+  C: 히포크라테스는 개별 임상 관찰 기록과 관련된 고대 인물이다.
+references:
+  - REF-TEXTBOOK-HIM-HISTORY-001
+verified: false

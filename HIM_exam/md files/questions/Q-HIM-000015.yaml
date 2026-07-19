@@ -1,0 +1,22 @@
+id: Q-HIM-000015
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C01-S17-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: evaluate
+importance: A
+stem: >
+  신입 보건의료정보관리사가 퇴원환자 기록을 검토하던 중 주진단이 기재되어 있지 않음을 발견했다.
+  이 상황에서 보건의료정보관리사가 취해야 할 가장 적절한 조치는 무엇인가?
+answer:
+  - "담당 의료진에게 주진단 기재를 요청(미비기록 처리)하고, 의료진이 확정한 진단명에 따라 분류 코드를 부여한다."
+explanation: >
+  보건의료정보관리사는 주진단을 직접 판단·기재할 권한이 없으며, 미비기록으로 확인해 담당 의료진에게
+  보완을 요청하는 절차를 따라야 한다. 진단이 확정된 이후에 분류·통계·등록 업무를 수행하는 것이
+  업무 경계를 지키는 적절한 조치다.
+distractor_explanations: {}
+references:
+  - REF-LAW-MEDICAL-TECHNOLOGIST-ACT-001
+verified: false

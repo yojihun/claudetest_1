@@ -1,0 +1,23 @@
+id: Q-HIM-000123
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S03-T001
+subject_area: healthcare_organization
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "상급종합병원 지정은 중증·희귀질환 중심 진료를 유도하는 정책적 목적과 관련이 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 상급종합병원 지정은 의료전달체계상 경증 환자보다 중증 환자 중심 진료를 유도하려는 정책 목적과 연결된다.
+distractor_explanations:
+  X: 정책적 목적을 간과한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

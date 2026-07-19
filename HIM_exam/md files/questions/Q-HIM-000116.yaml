@@ -1,0 +1,23 @@
+id: Q-HIM-000116
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S14-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "책임성(Accountability)은 처벌만을 의미하며 판단 근거를 기록하는 것과는 무관하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 책임성은 접근과 행위의 책임 주체를 추적할 수 있게 하는 성질로, 판단 근거를 기록하는 예방적 습관과 직접 연결된다.
+distractor_explanations:
+  O: 책임성을 처벌로만 좁게 이해한 응답이다.
+references:
+  - REF-AHIMA-CODE-OF-ETHICS-001
+verified: false

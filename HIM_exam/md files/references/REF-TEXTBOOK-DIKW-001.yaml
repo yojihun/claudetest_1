@@ -1,0 +1,15 @@
+id: REF-TEXTBOOK-DIKW-001
+type: journal_article
+title: DIKW(Data-Information-Knowledge-Wisdom) 위계 모델
+publisher: null
+version: null
+effective_date: null
+accessed_date: null
+url: null
+language: en
+status: located
+notes: >
+  데이터·정보·지식(·지혜)의 위계 구분은 정보학 분야에서 Russell Ackoff(1989, "From Data to Wisdom")
+  이후 널리 인용되는 일반 모델이며, 보건의료정보관리 교재에서도 통상적으로 재인용된다.
+  이 프로젝트에서는 원 논문 서지사항을 아직 원문 대조하지 않았으므로 status를 located로 둔다.
+  verified로 승격하려면 원 논문 또는 AHIMA/보건정보관리 교재의 재인용 페이지를 확인해야 한다.

@@ -1,0 +1,23 @@
+id: Q-HIM-000071
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S10-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "동의서에 서명이 있다면 실제 설명이 이루어졌는지와 무관하게 항상 유효한 동의로 인정된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 설명 없이 이루어진 서명은 절차적으로 불완전한 동의로 문제가 될 수 있다.
+distractor_explanations:
+  O: 서명과 유효한 동의를 동일시한 응답이다.
+references:
+  - REF-LAW-MEDICAL-SERVICE-ACT-001
+verified: false

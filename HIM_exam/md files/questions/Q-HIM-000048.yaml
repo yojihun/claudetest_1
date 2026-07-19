@@ -1,0 +1,27 @@
+id: Q-HIM-000048
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C01-S12-T001
+  - HIM-V1-C01-S13-T001
+  - HIM-V1-C01-S17-T001
+subject_area: health_information_management
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: >
+  A병원의 EMR에만 저장된 환자의 알레르기 정보가 전원 간 B병원과 공유되지 않아, B병원에서
+  동일 약물이 재처방될 뻔한 사례가 있었다. 보건의료정보관리사 입장에서 이 문제의 (1) 시스템적
+  원인, (2) 훼손된 품질 특성, (3) 재발 방지를 위해 보건의료정보관리사가 할 수 있는 조치를
+  각각 설명하시오.
+answer:
+  - "(1) A병원의 EMR은 기관 내부용으로 설계되어 기관 간 공유(EHR 수준의 상호운용성)를 지원하지 않음 (2) 일관성(기관 간 정보 불일치) 및 완전성(B병원 입장에서 필요한 정보 누락) (3) 기관 간 정보 공유 체계·표준 도입을 제안하고, 전원 시 필수 공유 항목(알레르기 등)의 누락 여부를 점검하는 절차를 마련"
+explanation: >
+  이 문제는 EMR·EHR의 범위 차이(Topic 11), 품질 특성 중 일관성·완전성(Topic 12·13), 보건의료정보관리사의
+  역할(Topic 16)을 통합적으로 요구한다. 사례형 문제는 여러 Topic의 개념을 동시에 적용해야 하는 경우가
+  많으므로, 하나의 정답 개념만 찾기보다 관련된 여러 축을 함께 짚어야 한다.
+distractor_explanations: {}
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

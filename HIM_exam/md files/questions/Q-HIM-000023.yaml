@@ -1,0 +1,23 @@
+id: Q-HIM-000023
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S05-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "전자의무기록의 도입은 의무기록관리가 HIM으로 확장되는 데 영향을 준 계기 중 하나이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 전자의무기록 도입으로 정보가 여러 시스템에 걸쳐 존재하게 되면서 품질관리·표준화 업무의 필요성이 커졌다.
+distractor_explanations:
+  X: 전자의무기록 도입의 영향을 과소평가한 응답이다.
+references:
+  - REF-TEXTBOOK-HIM-HISTORY-001
+verified: false

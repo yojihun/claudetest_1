@@ -1,0 +1,29 @@
+id: Q-HIM-000004
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S03-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "다음 중 '지식(Knowledge)' 층위에 해당하는 것은?"
+options:
+  - id: A
+    text: 환자 A의 체온이 37.8℃로 측정되었다.
+  - id: B
+    text: 37.8
+  - id: C
+    text: 37.8℃는 미열에 해당하므로 감염 여부를 추가로 확인해야 한다.
+  - id: D
+    text: 오늘 측정된 병동 환자 10명의 체온 목록
+answer:
+  - C
+explanation: 지식은 정보를 바탕으로 판단·행동에 사용할 수 있는 이해체계이다. C는 정보(체온 수치)를 바탕으로 임상적 판단 규칙을 적용한 지식 층위이다.
+distractor_explanations:
+  A: 맥락이 붙은 데이터, 즉 정보 층위이다.
+  B: 맥락 없는 개별 사실이므로 데이터 층위이다.
+  D: 여러 정보를 나열한 것으로 아직 판단 규칙이 적용되지 않은 정보 층위이다.
+references:
+  - REF-TEXTBOOK-DIKW-001
+verified: false

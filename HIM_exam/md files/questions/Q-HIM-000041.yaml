@@ -1,0 +1,29 @@
+id: Q-HIM-000041
+status: drafting
+type: ordering
+topic_ids:
+  - HIM-V1-C01-S16-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "다음 의료정보 생명주기 단계를 순서대로 배열하시오: (가)저장 (나)생성 (다)검증 (라)수집"
+options:
+  - id: A
+    text: 나-라-다-가
+  - id: B
+    text: 나-다-라-가
+  - id: C
+    text: 라-나-다-가
+  - id: D
+    text: 나-라-가-다
+answer:
+  - A
+explanation: 생명주기는 생성(나)-수집(라)-검증(다)-저장(가) 순서로 진행된다.
+distractor_explanations:
+  B: 검증과 수집의 순서가 바뀌었다. 수집이 검증보다 먼저다.
+  C: 생성이 가장 먼저 와야 하는데 수집이 먼저 배열되었다.
+  D: 저장과 검증의 순서가 바뀌었다. 검증이 저장보다 먼저다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

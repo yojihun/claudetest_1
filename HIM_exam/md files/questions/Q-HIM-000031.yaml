@@ -1,0 +1,23 @@
+id: Q-HIM-000031
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S11-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "EMR 도입은 여러 사람이 동시에 기록을 열람할 수 있게 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: EMR은 종이 기록과 달리 여러 사용자가 동시에 접근·조회할 수 있다는 장점이 있다.
+distractor_explanations:
+  X: EMR의 동시 접근 장점을 과소평가한 응답이다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

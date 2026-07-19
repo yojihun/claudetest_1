@@ -1,0 +1,23 @@
+id: Q-HIM-000056
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S04-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "응급기록에서는 처치의 정확한 시각 기록이 진료의 적절성을 판단하는 핵심 근거가 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 응급 상황은 짧은 시간에 여러 처치가 이루어지므로 시간 기록이 진료 적절성의 핵심 근거가 된다.
+distractor_explanations:
+  X: 응급기록에서 시간 기록의 중요성을 과소평가한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

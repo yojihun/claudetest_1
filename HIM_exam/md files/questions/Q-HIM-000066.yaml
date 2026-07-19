@@ -1,0 +1,23 @@
+id: Q-HIM-000066
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S08-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "검사 결과값(원자료)과 판독 소견은 같은 성격의 정보이므로 하나만 확인해도 충분하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 결과값은 데이터에, 판독 소견은 지식에 가까운 서로 다른 층위의 정보이므로 둘 다 확인해야 한다.
+distractor_explanations:
+  O: 두 정보를 같은 층위로 오해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

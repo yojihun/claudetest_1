@@ -1,0 +1,23 @@
+id: Q-HIM-000047
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S19-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: C
+stem: "디지털 헬스 기술이 확산될수록 HIM의 데이터 검증·품질관리 업무의 중요성은 오히려 커진다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 데이터의 양과 속도가 늘어날수록 오류가 섞일 위험도 커지므로 검증·품질관리의 중요성이 커진다.
+distractor_explanations:
+  X: 기술 발전이 검증 업무를 자동으로 없애준다고 오해한 응답이다.
+references:
+  - REF-SECONDARY-DIGITAL-HEALTH-001
+verified: false

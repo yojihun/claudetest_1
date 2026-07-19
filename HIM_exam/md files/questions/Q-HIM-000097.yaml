@@ -1,0 +1,23 @@
+id: Q-HIM-000097
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S05-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "암등록은 진단 시점의 코드 부여로 업무가 종료되며 이후 추적은 필요하지 않다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 암등록은 진단 이후에도 치료정보와 생존 여부 등을 장기간 추적하는 것이 핵심 특징이다.
+distractor_explanations:
+  O: 암등록을 일회성 절차로 오해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

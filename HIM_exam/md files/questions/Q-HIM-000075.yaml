@@ -1,0 +1,23 @@
+id: Q-HIM-000075
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S11-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "적시성 원칙을 지키지 않고 기록 작성을 지연하면 정확성도 함께 떨어질 위험이 커진다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 기록이 지연될수록 기억이 흐려져 정확성이 떨어질 위험이 커지므로 두 원칙은 서로 연결되어 있다.
+distractor_explanations:
+  X: 적시성과 정확성의 연결을 간과한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

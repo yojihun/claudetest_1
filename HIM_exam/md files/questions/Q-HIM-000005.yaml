@@ -1,0 +1,23 @@
+id: Q-HIM-000005
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S03-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "'37.8'이라는 숫자 자체는 맥락이 없는 상태에서도 '지식'에 해당한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 맥락 없는 개별 수치는 데이터 층위에 해당한다. 지식이 되려면 정보를 바탕으로 한 판단 규칙까지 결합되어야 한다.
+distractor_explanations:
+  O: 데이터와 지식의 층위를 혼동한 응답이다.
+references:
+  - REF-TEXTBOOK-DIKW-001
+verified: false

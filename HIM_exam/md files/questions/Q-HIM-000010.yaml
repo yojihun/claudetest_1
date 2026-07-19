@@ -1,0 +1,29 @@
+id: Q-HIM-000010
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S12-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "EMR, EHR, PHR 중 '상호운용성(Interoperability)'과 가장 밀접하게 연결되는 것은?"
+options:
+  - id: A
+    text: EMR
+  - id: B
+    text: EHR
+  - id: C
+    text: PHR
+  - id: D
+    text: 셋 모두 동일하게 관련된다
+answer:
+  - B
+explanation: EHR은 여러 기관 간 연속성과 정보 공유를 지향하므로, 서로 다른 시스템이 정보를 교환하는 상호운용성이 핵심 조건이다.
+distractor_explanations:
+  A: EMR은 기관 내부용으로 설계되어 기관 간 상호운용성이 핵심 조건은 아니다.
+  C: PHR은 개인이 관리하는 기록으로 상호운용성보다 자기관리·접근권이 핵심이다.
+  D: EHR이 다른 둘보다 상호운용성과 더 직접적으로 연결된다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

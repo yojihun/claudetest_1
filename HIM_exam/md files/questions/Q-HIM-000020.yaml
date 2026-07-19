@@ -1,0 +1,23 @@
+id: Q-HIM-000020
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S04-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "HIM의 목적은 진료 지원, 경영 지원, 법적 대응, 연구·정책 지원 네 가지로 정리할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: HIM의 목적은 이 네 가지 축으로 정리되며, 하나의 정보가 동시에 여러 목적에 기여할 수 있다.
+distractor_explanations:
+  X: HIM의 목적을 지나치게 좁게 이해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000054
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S03-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "입원기록과 외래기록의 완결성 판단 기준에 대한 설명으로 가장 적절한 것은?"
+options:
+  - id: A
+    text: 입원기록과 외래기록 모두 방문 단위로만 완결성을 판단한다.
+  - id: B
+    text: 입원기록은 입원 전체 경과의 연결로, 외래기록은 방문별 필요 정보 충족으로 판단한다.
+  - id: C
+    text: 외래기록에도 반드시 퇴원요약이 필요하다.
+  - id: D
+    text: 입원기록은 퇴원요약이 필요 없다.
+answer:
+  - B
+explanation: 입원기록은 하나의 입원 사건 단위로, 외래기록은 방문 단위로 완결성을 판단한다.
+distractor_explanations:
+  A: 입원기록은 사건 단위로 판단하므로 틀린 설명이다.
+  C: 퇴원요약은 입원기록에 필요한 문서다.
+  D: 입원기록의 완결성에는 퇴원요약이 중요한 요소다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

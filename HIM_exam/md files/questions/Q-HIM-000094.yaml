@@ -1,0 +1,23 @@
+id: Q-HIM-000094
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C03-S03-T001
+subject_area: him_duties
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "분류 직무에서 색인만 확인하고 내용예시표를 확인하지 않아도 정확한 코드를 확정할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 색인은 후보 코드를 찾는 단계일 뿐이며, 정확한 적용 범위는 내용예시표에서 확인해야 한다.
+distractor_explanations:
+  O: 색인 확인만으로 충분하다고 오해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

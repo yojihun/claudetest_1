@@ -1,0 +1,29 @@
+id: Q-HIM-000093
+status: drafting
+type: ordering
+topic_ids:
+  - HIM-V1-C03-S03-T001
+subject_area: him_duties
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "분류 직무 절차를 순서대로 배열하시오: (가)내용예시표 확인 (나)원본 확인 (다)색인 확인 (라)코드 검증"
+options:
+  - id: A
+    text: 나-다-가-라
+  - id: B
+    text: 나-가-다-라
+  - id: C
+    text: 다-나-가-라
+  - id: D
+    text: 나-다-라-가
+answer:
+  - A
+explanation: 원본 확인(나) → 색인 확인(다) → 내용예시표 확인(가) → 코드 검증(라) 순서로 진행된다.
+distractor_explanations:
+  B: 색인 확인과 내용예시표 확인의 순서가 바뀌었다.
+  C: 원본 확인이 가장 먼저 와야 하는데 색인 확인이 먼저 배열되었다.
+  D: 코드 검증과 내용예시표 확인의 순서가 바뀌었다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

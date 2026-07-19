@@ -1,0 +1,29 @@
+id: Q-HIM-000081
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S14-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: "경과기록에 기재된 증상과 처방된 약물이 서로 맞지 않는 것을 발견하는 데 필요한 분석은?"
+options:
+  - id: A
+    text: 정량분석
+  - id: B
+    text: 정성분석
+  - id: C
+    text: 재원일수 분석
+  - id: D
+    text: 병상이용률 분석
+answer:
+  - B
+explanation: 내용의 논리적 일관성과 임상적 타당성을 검토하는 것은 정성분석의 역할이다.
+distractor_explanations:
+  A: 정량분석은 문서·항목의 존재 여부만 점검하므로 이 문제를 발견할 수 없다.
+  C: 재원일수 분석은 통계 지표로 이 문제와 무관하다.
+  D: 병상이용률 분석도 이 문제와 무관하다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

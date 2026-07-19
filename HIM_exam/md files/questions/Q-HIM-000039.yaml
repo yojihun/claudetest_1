@@ -1,0 +1,23 @@
+id: Q-HIM-000039
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S15-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "일관성은 같은 항목이 서로 다른 시스템·기록에서 같은 값으로 유지되는지를 의미한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 일관성은 자료 간 정의와 값이 모순되지 않는 정도를 뜻한다.
+distractor_explanations:
+  X: 일관성의 정의를 축소해 이해한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

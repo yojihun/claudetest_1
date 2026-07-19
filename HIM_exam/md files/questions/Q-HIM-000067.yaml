@@ -1,0 +1,29 @@
+id: Q-HIM-000067
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S09-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "다음 중 퇴원요약에 반드시 포함되어야 할 항목이 아닌 것은?"
+options:
+  - id: A
+    text: 입원 사유와 주진단
+  - id: B
+    text: 퇴원 시 환자 상태
+  - id: C
+    text: 퇴원 처방과 추적 계획
+  - id: D
+    text: 입원 전체 경과기록의 전문(全文) 복사
+answer:
+  - D
+explanation: 퇴원요약은 경과기록 전체를 그대로 복사하는 문서가 아니라 핵심을 압축한 문서다.
+distractor_explanations:
+  A: 퇴원요약의 필수 항목이다.
+  B: 퇴원요약의 필수 항목이다.
+  C: 퇴원요약의 필수 항목이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

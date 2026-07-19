@@ -1,0 +1,11 @@
+id: AST-HIM-LIFECYCLE-001
+type: flowchart
+title: 보건의료정보 생명주기
+topic_ids:
+  - HIM-V1-C01-S01-T001
+  - HIM-V1-C01-S16-T001
+file: assets/diagrams/him-lifecycle.svg
+alt: 보건의료정보가 생성, 수집, 검증, 저장, 활용, 공유, 보존, 폐기로 이어지는 8단계 흐름도
+caption: 정보는 생성부터 폐기까지 8단계를 거치며, 각 단계에서 정확성과 안전성 관리가 필요하다.
+source: original
+license: project-owned

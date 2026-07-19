@@ -1,0 +1,29 @@
+id: Q-HIM-000073
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S11-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "다음 중 객관성 원칙에 맞게 작성된 기록은?"
+options:
+  - id: A
+    text: "환자가 예민하고 비협조적임"
+  - id: B
+    text: "환자가 통증을 호소하며 침상 난간 사용을 거부함"
+  - id: C
+    text: "환자 상태가 좋지 않아 보임"
+  - id: D
+    text: "환자가 짜증을 내는 것 같음"
+answer:
+  - B
+explanation: 관찰된 행동을 그대로 기술한 것이 객관성 원칙에 부합한다.
+distractor_explanations:
+  A: 주관적 판단("예민하고 비협조적")이 담겨 있어 객관성 원칙에 어긋난다.
+  C: 모호한 인상을 기술한 것으로 구체적 관찰이 아니다.
+  D: 추측성 표현("것 같음")으로 객관성 원칙에 어긋난다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

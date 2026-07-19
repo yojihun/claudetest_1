@@ -1,0 +1,29 @@
+id: Q-HIM-000076
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C02-S12-T001
+subject_area: medical_records
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "의료기록에서 오류를 발견했을 때 올바른 정정 방법은?"
+options:
+  - id: A
+    text: 원본을 지우고 새 내용으로 다시 작성한다.
+  - id: B
+    text: 원본을 알아볼 수 있게 남기고, 수정 시점·수정자·사유를 함께 기록한다.
+  - id: C
+    text: 수정 사실을 기록하지 않고 조용히 고친다.
+  - id: D
+    text: 원본 작성일로 소급해 수정 내용을 끼워 넣는다.
+answer:
+  - B
+explanation: 원본을 알아볼 수 있게 남기고 수정 시점·수정자·사유를 함께 기록하는 것이 올바른 정정 방법이다.
+distractor_explanations:
+  A: 원본을 지우면 추적이 불가능해져 신뢰성이 떨어진다.
+  C: 수정 사실을 기록하지 않으면 무결성 원칙에 어긋난다.
+  D: 소급 기재는 기록의 신뢰성을 훼손하는 부적절한 방법이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

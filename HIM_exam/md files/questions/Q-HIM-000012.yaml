@@ -1,0 +1,29 @@
+id: Q-HIM-000012
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S12-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "환자 본인이 스마트폰 앱에서 자신의 복약 기록과 운동량을 직접 입력하고 관리하는 시스템은 다음 중 무엇에 가장 가까운가?"
+options:
+  - id: A
+    text: EMR
+  - id: B
+    text: EHR
+  - id: C
+    text: PHR
+  - id: D
+    text: HIS
+answer:
+  - C
+explanation: 환자 본인이 관리 주체가 되어 건강정보를 입력·관리하는 시스템은 PHR의 정의에 해당한다.
+distractor_explanations:
+  A: EMR은 의료기관이 관리 주체이므로 해당하지 않는다.
+  B: EHR도 기관(연계체계)이 관리 주체이므로 해당하지 않는다.
+  D: HIS는 병원 내부 업무 전반을 지원하는 시스템으로 환자 개인이 관리 주체가 아니다.
+references:
+  - REF-ONC-EMR-EHR-PHR-001
+verified: false

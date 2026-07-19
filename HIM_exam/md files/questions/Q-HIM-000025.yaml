@@ -1,0 +1,28 @@
+id: Q-HIM-000025
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C01-S06-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: remember
+importance: C
+stem: "의료기록 역사에서 병원 단위 통계와 위생 개혁으로 대표되는 인물은?"
+options:
+  - id: A
+    text: Larry Weed
+  - id: B
+    text: Florence Nightingale
+  - id: C
+    text: 히포크라테스
+  - id: D
+    text: 해당 인물 없음
+answer:
+  - B
+explanation: Florence Nightingale은 병원 통계와 위생 개혁으로 대표되는 근대 의료기록 역사의 핵심 인물이다.
+distractor_explanations:
+  A: Larry Weed는 POMR·SOAP 제안자로 20세기 중반 인물이다.
+  C: 히포크라테스는 고대 개별 임상 관찰 기록과 관련된 인물이다.
+references:
+  - REF-TEXTBOOK-HIM-HISTORY-001
+verified: false

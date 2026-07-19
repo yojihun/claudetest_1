@@ -1,0 +1,22 @@
+id: Q-HIM-000043
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C01-S16-T001
+subject_area: health_information_management
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: >
+  통계 부서가 퇴원 진단 코드를 집계해 월간 보고서를 만들었는데, 검증되지 않은 오류가 그대로
+  통계에 반영되었다. 이 문제가 생명주기의 어느 단계에서 시작되었고, 어느 단계 처리가 누락되었는지
+  설명하시오.
+answer:
+  - "문제는 '생성' 단계의 입력 오류에서 시작되었고, '검증' 단계 처리가 누락되어 '활용'(통계 집계) 단계까지 오류가 전파되었다."
+explanation: >
+  생명주기에서 검증 단계는 오류가 다음 단계로 전파되는 것을 막는 역할을 한다. 검증이 생략되면
+  생성 단계의 오류가 활용 단계까지 그대로 이어질 수 있다.
+distractor_explanations: {}
+references:
+  - REF-AHIMA-HIM-001
+verified: false

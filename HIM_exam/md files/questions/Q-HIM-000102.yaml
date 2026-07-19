@@ -1,0 +1,29 @@
+id: Q-HIM-000102
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V1-C03-S07-T001
+subject_area: him_duties
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "업무와 무관한 직원이 특정 환자의 기록을 반복 조회한 정황을 발견한 활동은?"
+options:
+  - id: A
+    text: 접근 기록 감사
+  - id: B
+    text: 정보 제공 절차
+  - id: C
+    text: 데이터 거버넌스 정책 수립
+  - id: D
+    text: 임상문서개선
+answer:
+  - A
+explanation: 접근 기록(감사로그)을 정기적으로 점검해 비정상 접근을 탐지하는 것은 접근 기록 감사 활동이다.
+distractor_explanations:
+  B: 정보 제공 절차는 외부 요청 처리와 관련된 것으로 이 사례와 다르다.
+  C: 정책 수립 자체가 아니라 실제 탐지 활동이다.
+  D: 임상문서개선은 기록 내용의 정확성 개선과 관련된 것으로 이 사례와 다르다.
+references:
+  - REF-LAW-PERSONAL-INFO-PROTECTION-ACT-001
+verified: false

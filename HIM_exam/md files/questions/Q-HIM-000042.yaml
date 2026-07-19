@@ -1,0 +1,23 @@
+id: Q-HIM-000042
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C01-S16-T001
+subject_area: health_information_management
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "의료정보 생명주기는 폐기 단계 이후 다시 새로운 정보가 생성될 수 없는 완전한 직선 구조이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 생명주기는 활용·공유 단계에서 새로운 정보(예: 통계 보고서)가 다시 생성되는 순환적 구조를 가진다.
+distractor_explanations:
+  O: 생명주기를 단순 직선 구조로 오해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false

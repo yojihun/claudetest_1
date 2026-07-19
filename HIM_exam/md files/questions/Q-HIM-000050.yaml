@@ -1,0 +1,23 @@
+id: Q-HIM-000050
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C02-S01-T001
+subject_area: medical_records
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "의료기록의 기능에는 법적 근거뿐 아니라 통계·연구, 교육 기능도 포함된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 의료기록은 진료 연속성, 의사소통, 법적 근거, 통계·연구, 교육의 다섯 기능을 수행한다.
+distractor_explanations:
+  X: 의료기록의 기능을 법적 근거로만 좁게 이해한 응답이다.
+references:
+  - REF-AHIMA-HIM-001
+verified: false
