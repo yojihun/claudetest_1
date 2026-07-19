@@ -9,6 +9,7 @@ import { loadFontScale } from "@/lib/storage";
 const navItems = [
   { href: "/", label: "매일 학습" },
   { href: "/study", label: "단원별 학습" },
+  { href: "/past-exam", label: "기출문제" },
   { href: "/glossary", label: "의학용어 사전" },
   { href: "/settings#review-notes", label: "오답노트" },
   { href: "/settings", label: "설정" },

@@ -1,0 +1,2642 @@
+[
+  {
+    "id": "PAST-2025-2-001",
+    "number": 1,
+    "stem": "다음 사례에 대한 질병코드는?B형간염 보균자로 간기능 검사를 포함한 정기 검사를 위해 내원함•AST:22 (참고치 0～34)ALT:28 (참고치 0～40)•HBsAg(+)/anti-HBs(-)HBeAg(+)/anti-HBe(-)•Abdomen ultrasonography:no gross abnormality",
+    "options": [
+      {
+        "id": "1",
+        "text": "B16.9간성 혼수가 없고 델타-병원체도 없는 급성 B형간염"
+      },
+      {
+        "id": "2",
+        "text": "B17.8기타 명시된 급성 바이러스간염"
+      },
+      {
+        "id": "3",
+        "text": "B18.10델타-병원체가 없는 만성 바이러스B형간염, 면역관용기"
+      },
+      {
+        "id": "4",
+        "text": "B18.9상세불명의 만성 바이러스간염"
+      },
+      {
+        "id": "5",
+        "text": "B19.9간성 혼수가 없는 상세불명의 바이러스간염"
+      }
+    ],
+    "answer": "5",
+    "answerText": "B19.9간성 혼수가 없는 상세불명의 바이러스간염",
+    "explanation": "정답 선택지는 5번 \"B19.9간성 혼수가 없는 상세불명의 바이러스간염\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-002",
+    "number": 2,
+    "stem": "다음 진단의 후유증 코드로 옳은 것은?결핵성 수막염(tuberculous meningitis) A17.0† G01*",
+    "options": [
+      {
+        "id": "1",
+        "text": "B90.0중추신경계통결핵의 후유증"
+      },
+      {
+        "id": "2",
+        "text": "B90.9호흡기 및 상세불명 결핵의 후유증"
+      },
+      {
+        "id": "3",
+        "text": "G09중추신경계통의 염증성 질환의 후유증"
+      },
+      {
+        "id": "4",
+        "text": "I69.3뇌경색증의 후유증"
+      },
+      {
+        "id": "5",
+        "text": "I69.4출혈 또는 경색증으로 명시되지 않은 뇌졸중의 후유증"
+      }
+    ],
+    "answer": "4",
+    "answerText": "I69.3뇌경색증의 후유증",
+    "explanation": "정답 선택지는 4번 \"I69.3뇌경색증의 후유증\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-003",
+    "number": 3,
+    "stem": "한국표준질병∙사인분류 제3권 색인 ‘신생물’에서 clavicle 옆에 표기되어 있는 ‘◇’ 기호를 근거로 전이성으로 분류해야 하는 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "carcinoma"
+      },
+      {
+        "id": "2",
+        "text": "Ewing sarcoma"
+      },
+      {
+        "id": "3",
+        "text": "leukemia"
+      },
+      {
+        "id": "4",
+        "text": "lymphoma"
+      },
+      {
+        "id": "5",
+        "text": "osteosarcoma"
+      }
+    ],
+    "answer": "4",
+    "answerText": "lymphoma",
+    "explanation": "정답 선택지는 4번 \"lymphoma\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-004",
+    "number": 4,
+    "stem": "다음 사례에서 주진단 분류 시 선도어는?•최종진단:hearing loss due to chronic suppurative otitis media",
+    "options": [
+      {
+        "id": "1",
+        "text": "손실"
+      },
+      {
+        "id": "2",
+        "text": "이염"
+      },
+      {
+        "id": "3",
+        "text": "중막"
+      },
+      {
+        "id": "4",
+        "text": "청력"
+      },
+      {
+        "id": "5",
+        "text": "화농성 [5～6]다음의 사례를 읽고 아래 각 문제에 대해 가장 적합한 답을 하나만 고르시오.60세 남자 환자는 평소 고혈압 약을 복용하였는데 어제부터 호흡곤란 증상이 있어, 응급실을 통해 순환기내과로 입원함 •최종진단:acute pulmonary edema congestive heart failure hypertensive chronic kidney disease(end stage)•처치:혈액투석혈압강하제, 이뇨제, 혈소판 응집억제제, 고지혈증 치료제•검사 결과–Echo:dilated LV chamber size(66mm) and decreased LV contractility, severe pulmonary edema[한국표준질병∙사인분류 제3권 색인]고혈압(증), 고혈압성 (가속성) (본태성) (특발성) (원발성) (전신성) I10.9부전(Failure)–심실의 [부전(Failure), 심장(heart)도 참조] I50.9–심장 (급성, 돌연) (노년) I50.9––우 [부전(Failure), 심장(heart), 울혈성(congestive)도 참조] I50.03––울혈성 I50.08––좌 I50.1부종(Edema)–폐 (급성) J81––부전, 좌심실을 의미 I50.1––심장상태 또는 부전을 동반한 [부전(Failure), 심실의(ventricular), 좌(left)도 참조] I50.1"
+      }
+    ],
+    "answer": "3",
+    "answerText": "중막",
+    "explanation": "정답 선택지는 3번 \"중막\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-005",
+    "number": 5,
+    "stem": "주진단의 질병코드는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "I10.9기타 및 상세불명의 원발성 고혈압"
+      },
+      {
+        "id": "2",
+        "text": "I50.03우심부전"
+      },
+      {
+        "id": "3",
+        "text": "I50.08기타 및 상세불명의 울혈성 심부전"
+      },
+      {
+        "id": "4",
+        "text": "I50.1좌심실부전"
+      },
+      {
+        "id": "5",
+        "text": "J81폐부종"
+      }
+    ],
+    "answer": "1",
+    "answerText": "I10.9기타 및 상세불명의 원발성 고혈압",
+    "explanation": "정답 선택지는 1번 \"I10.9기타 및 상세불명의 원발성 고혈압\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-006",
+    "number": 6,
+    "stem": "신장병의 질병코드는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "I12.0신부전을 동반한 고혈압성 신장병N18.5만성 신장병(5기)"
+      },
+      {
+        "id": "2",
+        "text": "I12.9신부전이 없는 고혈압성 신장병"
+      },
+      {
+        "id": "3",
+        "text": "I13.0(울혈성) 심부전을 동반한 고혈압성 심장 및 신장병"
+      },
+      {
+        "id": "4",
+        "text": "I13.1신부전을 동반한 고혈압성 심장 및 신장병"
+      },
+      {
+        "id": "5",
+        "text": "I15.8기타 이차성 고혈압N18.5만성 신장병(5기)"
+      }
+    ],
+    "answer": "3",
+    "answerText": "I13.0(울혈성) 심부전을 동반한 고혈압성 심장 및 신장병",
+    "explanation": "정답 선택지는 3번 \"I13.0(울혈성) 심부전을 동반한 고혈압성 심장 및 신장병\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-007",
+    "number": 7,
+    "stem": "주진단의 질병 및 외인코드는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "T42.6X41._"
+      },
+      {
+        "id": "2",
+        "text": "T42.6X61._"
+      },
+      {
+        "id": "3",
+        "text": "T42.6Y46.5"
+      },
+      {
+        "id": "4",
+        "text": "T43.5Y11._"
+      },
+      {
+        "id": "5",
+        "text": "T51.0X65._"
+      }
+    ],
+    "answer": "5",
+    "answerText": "T51.0X65._",
+    "explanation": "정답 선택지는 5번 \"T51.0X65._\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-008",
+    "number": 8,
+    "stem": "기타진단의 질병코드는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "F10.2F20.9J18.9"
+      },
+      {
+        "id": "2",
+        "text": "F10.2F20.9J69.0"
+      },
+      {
+        "id": "3",
+        "text": "F20.9J18.9"
+      },
+      {
+        "id": "4",
+        "text": "F20.9J69.0"
+      },
+      {
+        "id": "5",
+        "text": "F20.9J69.0J70.2"
+      }
+    ],
+    "answer": "4",
+    "answerText": "F20.9J69.0",
+    "explanation": "정답 선택지는 4번 \"F20.9J69.0\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-009",
+    "number": 9,
+    "stem": "0",
+    "options": [
+      {
+        "id": "1",
+        "text": "F20.9J18.9"
+      },
+      {
+        "id": "2",
+        "text": "F20.9J69.0"
+      },
+      {
+        "id": "3",
+        "text": "F20.9J69.0J70.2 9.다음 사례에 대한 질병코드는?•최종진단:chronic obstructive pulmonary diseaseacute bronchitis•주 호 소:dyspnea •검사 결과:PFT상 FEV1 44%, severeJ20.9상세불명의 급성 기관지염J44.0급성 하기도감염을 동반한 만성 폐쇄성 폐질환J44.9상세불명의 만성 폐쇄성 폐질환주:다음 5단위 세분류는 만성 폐쇄성 폐질환의 중증도를 표기하기 위해 J44.0-J44.9에 사용한다.0경도1중등도2중증9상세불명"
+      },
+      {
+        "id": "4",
+        "text": "J44.02"
+      },
+      {
+        "id": "5",
+        "text": "J44.02J20.9③J44.09J20.9④J44.91⑤J44.99J20.9"
+      }
+    ],
+    "answer": "3",
+    "answerText": "F20.9J69.0J70.2 9.다음 사례에 대한 질병코드는?•최종진단:chronic obstructive pulmonary diseaseacute bronchitis•주 호 소:dyspnea •검사 결과:PFT상 FEV1 44%, severeJ20.9상세불명의 급성 기관지염J44.0급성 하기도감염을 동반한 만성 폐쇄성 폐질환J44.9상세불명의 만성 폐쇄성 폐질환주:다음 5단위 세분류는 만성 폐쇄성 폐질환의 중증도를 표기하기 위해 J44.0-J44.9에 사용한다.0경도1중등도2중증9상세불명",
+    "explanation": "정답 선택지는 3번 \"F20.9J69.0J70.2 9.다음 사례에 대한 질병코드는?•최종진단:chronic obstructive pulmonary diseaseacute bronchitis•주 호 소:dyspnea •검사 결과:PFT상 FEV1 44%, severeJ20.9상세불명의 급성 기관지염J44.0급성 하기도감염을 동반한 만성 폐쇄성 폐질환J44.9상세불명의 만성 폐쇄성 폐질환주:다음 5단위 세분류는 만성 폐쇄성 폐질환의 중증도를 표기하기 위해 J44.0-J44.9에 사용한다.0경도1중등도2중증9상세불명\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-010",
+    "number": 10,
+    "stem": "다음 사례에 대한 질병코드는?•최종진단:right inguinal hernia•경과 요약–1개월 전부터 Rt. inguinal protruding mass로 외래 경유 입원함–2025.6.7.Rt. inguinal herniorrhaphy 시행함수술 후 urinary retention 증상이 일시적으로 있어서 도뇨관을 삽입하였으나 저녁에 self voiding이 가능하여 제거함–2025.6.8.합병증 없이 상태 호전되어 퇴원함K40.00재발성으로 명시되어 있지 않은, 폐색은 있지만 괴저가 없는 양쪽 사타구니탈장K40.90재발성으로 명시되어 있지 않은, 폐색 또는 괴저가 없는 한쪽 또는 상세불명의 사타구니탈장K40.91재발성, 폐색 또는 괴저가 없는 한쪽 또는 상세불명의 사타구니탈장R33소변정체",
+    "options": [
+      {
+        "id": "1",
+        "text": "K40.00"
+      },
+      {
+        "id": "2",
+        "text": "K40.00R33"
+      },
+      {
+        "id": "3",
+        "text": "K40.90"
+      },
+      {
+        "id": "4",
+        "text": "K40.90R33"
+      },
+      {
+        "id": "5",
+        "text": "K40.91R33"
+      }
+    ],
+    "answer": "4",
+    "answerText": "K40.90R33",
+    "explanation": "정답 선택지는 4번 \"K40.90R33\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-011",
+    "number": 11,
+    "stem": "주진단과 주수술 분류코드는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "O32.174.1"
+      },
+      {
+        "id": "2",
+        "text": "O32.174.4"
+      },
+      {
+        "id": "3",
+        "text": "O32.574.1"
+      },
+      {
+        "id": "4",
+        "text": "O32.574.4"
+      },
+      {
+        "id": "5",
+        "text": "O32.674.4"
+      }
+    ],
+    "answer": "3",
+    "answerText": "O32.574.1",
+    "explanation": "정답 선택지는 3번 \"O32.574.1\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-012",
+    "number": 12,
+    "stem": "기타진단의 질병코드는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "O60.12Z37.21"
+      },
+      {
+        "id": "2",
+        "text": "O60.22Z37.31"
+      },
+      {
+        "id": "3",
+        "text": "O60.32Z37.21"
+      },
+      {
+        "id": "4",
+        "text": "O64.1Z37.31"
+      },
+      {
+        "id": "5",
+        "text": "O64.5Z38.3"
+      }
+    ],
+    "answer": "1",
+    "answerText": "O60.12Z37.21",
+    "explanation": "정답 선택지는 1번 \"O60.12Z37.21\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-013",
+    "number": 13,
+    "stem": "다음 사례의 입원 시 상병(POA)이 ‘Y’인 것은?•임신 36+0주 산모는 출근길에 승용차 조수석에 탑승하여 가던 중 버스와 충돌하여 cervical spine sprain으로 진단받고 입원함•입원 다음 날 저녁부터 조기진통이 발생하여 자연분만(36+2주) 후 퇴원함",
+    "options": [
+      {
+        "id": "1",
+        "text": "O60.12조기분만을 동반한 조기자연진통, 임신 34주 이상"
+      },
+      {
+        "id": "2",
+        "text": "O80.0자연두정태위분만"
+      },
+      {
+        "id": "3",
+        "text": "S13.4경추의 염좌 및 긴장"
+      },
+      {
+        "id": "4",
+        "text": "V44.62대형화물차 또는 버스와의 충돌로 다친 승용차 탑승자, 교통사고에서 다친 승객, 소득을 위한 작업중"
+      },
+      {
+        "id": "5",
+        "text": "Z37.01단일생존아, 임신 34주 이상～37주 미만"
+      }
+    ],
+    "answer": "3",
+    "answerText": "S13.4경추의 염좌 및 긴장",
+    "explanation": "정답 선택지는 3번 \"S13.4경추의 염좌 및 긴장\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-014",
+    "number": 14,
+    "stem": "다음 사망진단서에서 원사인은?I부(a) 간 전이(b) 기관지폐렴과 위암II부호흡부전, 노쇠",
+    "options": [
+      {
+        "id": "1",
+        "text": "노쇠"
+      },
+      {
+        "id": "2",
+        "text": "위암"
+      },
+      {
+        "id": "3",
+        "text": "간 전이"
+      },
+      {
+        "id": "4",
+        "text": "호흡부전"
+      },
+      {
+        "id": "5",
+        "text": "기관지폐렴"
+      }
+    ],
+    "answer": "2",
+    "answerText": "위암",
+    "explanation": "정답 선택지는 2번 \"위암\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-015",
+    "number": 15,
+    "stem": "포괄수가제를 적용할 수 있는 것은?질병외과계 시술비고",
+    "options": [
+      {
+        "id": "1",
+        "text": "D06.9상세불명의 자궁경부의 제자리암종전자궁적출술46세 환자"
+      },
+      {
+        "id": "2",
+        "text": "H25.01노년성 초기백내장, 왼쪽수정체낭내 적출녹내장수술과 동시 시행"
+      },
+      {
+        "id": "3",
+        "text": "J35.0만성 편도염 편도절제술15세 환자"
+      },
+      {
+        "id": "4",
+        "text": "K35.8기타 및 상세불명의 급성 충수염충수절제술혈우병 환자"
+      },
+      {
+        "id": "5",
+        "text": "K80.21담낭염이 없는 담낭의 결석, 폐색을 동반한복강경하 담낭절제술56세 환자"
+      }
+    ],
+    "answer": "3",
+    "answerText": "J35.0만성 편도염 편도절제술15세 환자",
+    "explanation": "정답 선택지는 3번 \"J35.0만성 편도염 편도절제술15세 환자\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-016",
+    "number": 16,
+    "stem": "십이지장과 연결되는 위(stomach)의 부위는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "body"
+      },
+      {
+        "id": "2",
+        "text": "cardia"
+      },
+      {
+        "id": "3",
+        "text": "cardiac orifice"
+      },
+      {
+        "id": "4",
+        "text": "fundus"
+      },
+      {
+        "id": "5",
+        "text": "pylorus"
+      }
+    ],
+    "answer": "5",
+    "answerText": "pylorus",
+    "explanation": "정답 선택지는 5번 \"pylorus\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-017",
+    "number": 17,
+    "stem": "다음에서 설명하는 질환은?•태생기의 난황관이 소멸되지 않고 남아 있어 발생함•회장벽의 일부가 주머니 모양으로 돌출되어 있음",
+    "options": [
+      {
+        "id": "1",
+        "text": "Barrett’s syndrome"
+      },
+      {
+        "id": "2",
+        "text": "Behcet’s disease"
+      },
+      {
+        "id": "3",
+        "text": "Crohn’s disease"
+      },
+      {
+        "id": "4",
+        "text": "Hirschsprung’s disease"
+      },
+      {
+        "id": "5",
+        "text": "Meckel’s diverticulum"
+      }
+    ],
+    "answer": "5",
+    "answerText": "Meckel’s diverticulum",
+    "explanation": "정답 선택지는 5번 \"Meckel’s diverticulum\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-018",
+    "number": 18,
+    "stem": "장관이 장간막을 축으로 하여 뒤틀리거나 서로 꼬인 상태는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "enterolith"
+      },
+      {
+        "id": "2",
+        "text": "ileus"
+      },
+      {
+        "id": "3",
+        "text": "intussusception"
+      },
+      {
+        "id": "4",
+        "text": "megacolon"
+      },
+      {
+        "id": "5",
+        "text": "volvulus"
+      }
+    ],
+    "answer": "5",
+    "answerText": "volvulus",
+    "explanation": "정답 선택지는 5번 \"volvulus\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-019",
+    "number": 19,
+    "stem": "선천적으로 혀주름띠가 짧아서 frenotomy를 시행하여 치료하는 질환은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "ankyloglossia"
+      },
+      {
+        "id": "2",
+        "text": "cleft palate"
+      },
+      {
+        "id": "3",
+        "text": "harelip"
+      },
+      {
+        "id": "4",
+        "text": "macroglossia"
+      },
+      {
+        "id": "5",
+        "text": "xerostomia"
+      }
+    ],
+    "answer": "1",
+    "answerText": "ankyloglossia",
+    "explanation": "정답 선택지는 1번 \"ankyloglossia\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-020",
+    "number": 20,
+    "stem": "다음 그림과 같이 위(stomach)의 일부를 절제한 후에 남은 위와 공장을 연결하는 수술은? <자료(비공개)>",
+    "options": [
+      {
+        "id": "1",
+        "text": "Billroth I operation"
+      },
+      {
+        "id": "2",
+        "text": "Billroth II operation"
+      },
+      {
+        "id": "3",
+        "text": "Duhamel operation"
+      },
+      {
+        "id": "4",
+        "text": "Fredet-Ramstedt operation"
+      },
+      {
+        "id": "5",
+        "text": "Whipple operation"
+      }
+    ],
+    "answer": "2",
+    "answerText": "Billroth II operation",
+    "explanation": "정답 선택지는 2번 \"Billroth II operation\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-021",
+    "number": 21,
+    "stem": "피부에서 간관까지 바늘을 찔러 넣어 조영제를 직접 주입한 후 담관 구조를 촬영하는 방사선 검사는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "endoscopic retrograde cholangiopancreatography"
+      },
+      {
+        "id": "2",
+        "text": "intravenous cholangiography"
+      },
+      {
+        "id": "3",
+        "text": "intravenous cholecystography"
+      },
+      {
+        "id": "4",
+        "text": "percutaneous needle aspiration"
+      },
+      {
+        "id": "5",
+        "text": "percutaneous transhepatic cholangiography"
+      }
+    ],
+    "answer": "5",
+    "answerText": "percutaneous transhepatic cholangiography",
+    "explanation": "정답 선택지는 5번 \"percutaneous transhepatic cholangiography\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-022",
+    "number": 22,
+    "stem": "기관지, 혈관, 신경이 진입하는, 폐의 오목한 입구는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "apex"
+      },
+      {
+        "id": "2",
+        "text": "base"
+      },
+      {
+        "id": "3",
+        "text": "carina"
+      },
+      {
+        "id": "4",
+        "text": "hilum"
+      },
+      {
+        "id": "5",
+        "text": "mediastinum"
+      }
+    ],
+    "answer": "4",
+    "answerText": "hilum",
+    "explanation": "정답 선택지는 4번 \"hilum\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-023",
+    "number": 23,
+    "stem": "호흡계통 증상과 용어가 바르게 연결된 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "anosmia–질식"
+      },
+      {
+        "id": "2",
+        "text": "asphyxia–과호흡"
+      },
+      {
+        "id": "3",
+        "text": "hemoptysis–객담"
+      },
+      {
+        "id": "4",
+        "text": "orthopnea–좌위호흡"
+      },
+      {
+        "id": "5",
+        "text": "pleurodynia–흉골통"
+      }
+    ],
+    "answer": "4",
+    "answerText": "orthopnea–좌위호흡",
+    "explanation": "정답 선택지는 4번 \"orthopnea–좌위호흡\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-024",
+    "number": 24,
+    "stem": "디프테리아(diphtheria)에 대한 면역성을 측정하는 피부반응검사는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "Mantoux test"
+      },
+      {
+        "id": "2",
+        "text": "patch test"
+      },
+      {
+        "id": "3",
+        "text": "Schick test"
+      },
+      {
+        "id": "4",
+        "text": "scratch test"
+      },
+      {
+        "id": "5",
+        "text": "Widal test"
+      }
+    ],
+    "answer": "3",
+    "answerText": "Schick test",
+    "explanation": "정답 선택지는 3번 \"Schick test\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-025",
+    "number": 25,
+    "stem": "산소와 이산화탄소의 호흡교환을 방해하는 폐포허탈이 특징인 상태는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "atelectasis"
+      },
+      {
+        "id": "2",
+        "text": "bronchiectasis"
+      },
+      {
+        "id": "3",
+        "text": "emphysema"
+      },
+      {
+        "id": "4",
+        "text": "pleurisy"
+      },
+      {
+        "id": "5",
+        "text": "pneumoconiosis"
+      }
+    ],
+    "answer": "1",
+    "answerText": "atelectasis",
+    "explanation": "정답 선택지는 1번 \"atelectasis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-026",
+    "number": 26,
+    "stem": "다음에서 설명하는 질환은?•동맥 내벽의 plaque가 특징이며, 죽종성 병변을 형성함•혈관벽이 두꺼워지고 섬유화, 석회화로 혈관 내강이 좁아져 혈류가 감소됨",
+    "options": [
+      {
+        "id": "1",
+        "text": "aneurysm"
+      },
+      {
+        "id": "2",
+        "text": "arteriomalacia"
+      },
+      {
+        "id": "3",
+        "text": "atherosclerosis"
+      },
+      {
+        "id": "4",
+        "text": "cor pulmonale"
+      },
+      {
+        "id": "5",
+        "text": "thrombosis"
+      }
+    ],
+    "answer": "3",
+    "answerText": "atherosclerosis",
+    "explanation": "정답 선택지는 3번 \"atherosclerosis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-027",
+    "number": 27,
+    "stem": "tetralogy of Fallot의 특징으로 옳은 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "congenital mitral stenosis"
+      },
+      {
+        "id": "2",
+        "text": "left ventricular hypertrophy"
+      },
+      {
+        "id": "3",
+        "text": "patent ductus arteriosus"
+      },
+      {
+        "id": "4",
+        "text": "patent foramen ovale"
+      },
+      {
+        "id": "5",
+        "text": "ventricular septal defect"
+      }
+    ],
+    "answer": "5",
+    "answerText": "ventricular septal defect",
+    "explanation": "정답 선택지는 5번 \"ventricular septal defect\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-028",
+    "number": 28,
+    "stem": "순환계통 질환과 용어가 바르게 연결된 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "embolism–혈전증"
+      },
+      {
+        "id": "2",
+        "text": "hemangioma–혈종"
+      },
+      {
+        "id": "3",
+        "text": "phlebitis–동맥염"
+      },
+      {
+        "id": "4",
+        "text": "valvulitis–판막염"
+      },
+      {
+        "id": "5",
+        "text": "varicose vein–동맥류"
+      }
+    ],
+    "answer": "4",
+    "answerText": "valvulitis–판막염",
+    "explanation": "정답 선택지는 4번 \"valvulitis–판막염\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-029",
+    "number": 29,
+    "stem": "심장막 공간의 비정상적인 체액을 흡인용 주사기로 제거하는 처치는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "cardiotomy"
+      },
+      {
+        "id": "2",
+        "text": "cardioversion"
+      },
+      {
+        "id": "3",
+        "text": "pericardiocentesis"
+      },
+      {
+        "id": "4",
+        "text": "pericardiectomy"
+      },
+      {
+        "id": "5",
+        "text": "thoracentesis"
+      }
+    ],
+    "answer": "3",
+    "answerText": "pericardiocentesis",
+    "explanation": "정답 선택지는 3번 \"pericardiocentesis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-030",
+    "number": 30,
+    "stem": "방사성동위원소를 정맥으로 주입한 후 심근에 축적된 방사성동위원소의 양을 측정하여 심장허혈 및 심근경색 등을 진단하는 검사는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "cardiac CT"
+      },
+      {
+        "id": "2",
+        "text": "cardiac enzyme study"
+      },
+      {
+        "id": "3",
+        "text": "cardiac MRI"
+      },
+      {
+        "id": "4",
+        "text": "cardiac scan"
+      },
+      {
+        "id": "5",
+        "text": "echocardiography"
+      }
+    ],
+    "answer": "4",
+    "answerText": "cardiac scan",
+    "explanation": "정답 선택지는 4번 \"cardiac scan\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-031",
+    "number": 31,
+    "stem": "다음에서 설명하는 기관은?•세균 등의 외부물질 포식으로 신체 방어•노쇠한 적혈구와 혈소판 파괴 및 혈액여과",
+    "options": [
+      {
+        "id": "1",
+        "text": "adenoid"
+      },
+      {
+        "id": "2",
+        "text": "kidney"
+      },
+      {
+        "id": "3",
+        "text": "spleen"
+      },
+      {
+        "id": "4",
+        "text": "thymus"
+      },
+      {
+        "id": "5",
+        "text": "tonsil"
+      }
+    ],
+    "answer": "3",
+    "answerText": "spleen",
+    "explanation": "정답 선택지는 3번 \"spleen\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-032",
+    "number": 32,
+    "stem": "골수의 조혈능력이 부족하여 모든 혈구가 잘 생성되지 않아 발생하는 빈혈은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "aplastic anemia"
+      },
+      {
+        "id": "2",
+        "text": "hemolytic anemia"
+      },
+      {
+        "id": "3",
+        "text": "iron deficiency anemia"
+      },
+      {
+        "id": "4",
+        "text": "sickle cell anemia"
+      },
+      {
+        "id": "5",
+        "text": "thalassemia"
+      }
+    ],
+    "answer": "1",
+    "answerText": "aplastic anemia",
+    "explanation": "정답 선택지는 1번 \"aplastic anemia\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-033",
+    "number": 33,
+    "stem": "코티솔, 알도스테론, 소량의 안드로젠을 분비하는 기관은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "adrenal cortex"
+      },
+      {
+        "id": "2",
+        "text": "adrenal medulla"
+      },
+      {
+        "id": "3",
+        "text": "hypothalamus"
+      },
+      {
+        "id": "4",
+        "text": "parathyroid gland"
+      },
+      {
+        "id": "5",
+        "text": "pituitary gland"
+      }
+    ],
+    "answer": "1",
+    "answerText": "adrenal cortex",
+    "explanation": "정답 선택지는 1번 \"adrenal cortex\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-034",
+    "number": 34,
+    "stem": "다음에서 설명하는 질환은?•선천성 갑상선기능저하증•성장발육장애와 정신지체를 유발",
+    "options": [
+      {
+        "id": "1",
+        "text": "cretinism"
+      },
+      {
+        "id": "2",
+        "text": "Cushing’s syndrome"
+      },
+      {
+        "id": "3",
+        "text": "Graves’ disease"
+      },
+      {
+        "id": "4",
+        "text": "hypoparathyroidism"
+      },
+      {
+        "id": "5",
+        "text": "myxedema"
+      }
+    ],
+    "answer": "1",
+    "answerText": "cretinism",
+    "explanation": "정답 선택지는 1번 \"cretinism\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-035",
+    "number": 35,
+    "stem": "거인증을 치료하거나, 뇌하수체 전엽의 종양을 제거하기 위한 수술은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "adenohypophysectomy"
+      },
+      {
+        "id": "2",
+        "text": "adrenalectomy"
+      },
+      {
+        "id": "3",
+        "text": "parathyroidectomy"
+      },
+      {
+        "id": "4",
+        "text": "pinealectomy"
+      },
+      {
+        "id": "5",
+        "text": "thymectomy"
+      }
+    ],
+    "answer": "1",
+    "answerText": "adenohypophysectomy",
+    "explanation": "정답 선택지는 1번 \"adenohypophysectomy\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-036",
+    "number": 36,
+    "stem": "신체의 방향 중 정중면에 평행이 되는 단면은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "coronal plane"
+      },
+      {
+        "id": "2",
+        "text": "frontal plane"
+      },
+      {
+        "id": "3",
+        "text": "horizontal plane"
+      },
+      {
+        "id": "4",
+        "text": "sagittal plane"
+      },
+      {
+        "id": "5",
+        "text": "transverse plane"
+      }
+    ],
+    "answer": "4",
+    "answerText": "sagittal plane",
+    "explanation": "정답 선택지는 4번 \"sagittal plane\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-037",
+    "number": 37,
+    "stem": "다음에서 설명하는 질환은?•척주에 S 자형의 측면 굴곡 변형•선천성 기형, 나쁜 자세 등이 원인",
+    "options": [
+      {
+        "id": "1",
+        "text": "kyphosis"
+      },
+      {
+        "id": "2",
+        "text": "lordosis"
+      },
+      {
+        "id": "3",
+        "text": "retrolisthesis"
+      },
+      {
+        "id": "4",
+        "text": "scoliosis"
+      },
+      {
+        "id": "5",
+        "text": "spondylolisthesis"
+      }
+    ],
+    "answer": "4",
+    "answerText": "scoliosis",
+    "explanation": "정답 선택지는 4번 \"scoliosis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-038",
+    "number": 38,
+    "stem": "다음에서 설명하는 질환은?•퓨린(purine)대사의 이상으로 과도한 요산(uric acid) 축적•요산염결정이 관절 주위에 침착되어(tophus) 통증과 종창 발생",
+    "options": [
+      {
+        "id": "1",
+        "text": "ankylosis"
+      },
+      {
+        "id": "2",
+        "text": "bunion"
+      },
+      {
+        "id": "3",
+        "text": "chondritis"
+      },
+      {
+        "id": "4",
+        "text": "gout"
+      },
+      {
+        "id": "5",
+        "text": "synovitis"
+      }
+    ],
+    "answer": "4",
+    "answerText": "gout",
+    "explanation": "정답 선택지는 4번 \"gout\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-039",
+    "number": 39,
+    "stem": "다음에서 설명하는 질환은?•루게리그병(Lou Gehrig’s disease)•대뇌피질과 뇌간∙척수의 운동신경세포의 변성 및 소실이 특징임•사지 약화 및 위축이 서서히 진행됨",
+    "options": [
+      {
+        "id": "1",
+        "text": "adhesive capsulitis"
+      },
+      {
+        "id": "2",
+        "text": "amyotrophic lateral sclerosis"
+      },
+      {
+        "id": "3",
+        "text": "myasthenia gravis"
+      },
+      {
+        "id": "4",
+        "text": "Paget’s disease"
+      },
+      {
+        "id": "5",
+        "text": "tuberculous spondylitis"
+      }
+    ],
+    "answer": "2",
+    "answerText": "amyotrophic lateral sclerosis",
+    "explanation": "정답 선택지는 2번 \"amyotrophic lateral sclerosis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-040",
+    "number": 40,
+    "stem": "관절의 통증을 줄이기 위해 관절을 융합하는 외과적 고정술은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "arthrodesis"
+      },
+      {
+        "id": "2",
+        "text": "arthroplasty"
+      },
+      {
+        "id": "3",
+        "text": "bone graft"
+      },
+      {
+        "id": "4",
+        "text": "closed reduction"
+      },
+      {
+        "id": "5",
+        "text": "osteoclasis"
+      }
+    ],
+    "answer": "1",
+    "answerText": "arthrodesis",
+    "explanation": "정답 선택지는 1번 \"arthrodesis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-041",
+    "number": 41,
+    "stem": "서로 다른 신경세포 간에 신경자극을 전달하는 연접부는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "axon"
+      },
+      {
+        "id": "2",
+        "text": "cell body"
+      },
+      {
+        "id": "3",
+        "text": "dendrite"
+      },
+      {
+        "id": "4",
+        "text": "myelin sheath"
+      },
+      {
+        "id": "5",
+        "text": "synapse"
+      }
+    ],
+    "answer": "5",
+    "answerText": "synapse",
+    "explanation": "정답 선택지는 5번 \"synapse\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-042",
+    "number": 42,
+    "stem": "다음에서 설명하는 질환은?•paralysis agitans•도파민을 분비하는 신경세포의 소실로 인한 만성 퇴행성 질환•무표정한 얼굴, 느린 행동, 구부정한 자세, 떨림 등의 증상이 특징임",
+    "options": [
+      {
+        "id": "1",
+        "text": "Alzheimer’s disease"
+      },
+      {
+        "id": "2",
+        "text": "grand mal epilepsy"
+      },
+      {
+        "id": "3",
+        "text": "Huntington’s chorea"
+      },
+      {
+        "id": "4",
+        "text": "multiple sclerosis"
+      },
+      {
+        "id": "5",
+        "text": "Parkinson’s disease"
+      }
+    ],
+    "answer": "5",
+    "answerText": "Parkinson’s disease",
+    "explanation": "정답 선택지는 5번 \"Parkinson’s disease\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-043",
+    "number": 43,
+    "stem": "다음 사례에 해당하는 질환은?•Dx:SAH at Lt. temporal area•Op name:craniotomy with removal of hematoma",
+    "options": [
+      {
+        "id": "1",
+        "text": "거미막하 혈종"
+      },
+      {
+        "id": "2",
+        "text": "경막외 혈종"
+      },
+      {
+        "id": "3",
+        "text": "경막하 혈종"
+      },
+      {
+        "id": "4",
+        "text": "뇌실내 혈종"
+      },
+      {
+        "id": "5",
+        "text": "뇌조직 혈종"
+      }
+    ],
+    "answer": "1",
+    "answerText": "거미막하 혈종",
+    "explanation": "정답 선택지는 1번 \"거미막하 혈종\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-044",
+    "number": 44,
+    "stem": "뇌의 과도한 흥분작용을 억제하여 뇌전증의 발작 조절 및 예방에 사용되는 약물은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "anticoagulant"
+      },
+      {
+        "id": "2",
+        "text": "anticonvulsant"
+      },
+      {
+        "id": "3",
+        "text": "antidepressant"
+      },
+      {
+        "id": "4",
+        "text": "antifungal agent"
+      },
+      {
+        "id": "5",
+        "text": "antihistamine"
+      }
+    ],
+    "answer": "2",
+    "answerText": "anticonvulsant",
+    "explanation": "정답 선택지는 2번 \"anticonvulsant\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-045",
+    "number": 45,
+    "stem": "다음에서 설명하는 질환의 치료법은?•두개강 안에 뇌척수액의 순환과 흡수 장애로 다량의 수액이 저류된 상태•대부분 선천성이고, 후천적으로는 뇌염, 뇌막염이 원인",
+    "options": [
+      {
+        "id": "1",
+        "text": "arteriovenous fistula"
+      },
+      {
+        "id": "2",
+        "text": "ganglionectomy"
+      },
+      {
+        "id": "3",
+        "text": "sympathectomy"
+      },
+      {
+        "id": "4",
+        "text": "thalamotomy"
+      },
+      {
+        "id": "5",
+        "text": "ventriculoperitoneal shunt"
+      }
+    ],
+    "answer": "5",
+    "answerText": "ventriculoperitoneal shunt",
+    "explanation": "정답 선택지는 5번 \"ventriculoperitoneal shunt\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-046",
+    "number": 46,
+    "stem": "endometrium에서 밑줄 친 metri/o에 해당하는 용어는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "fallopian tube"
+      },
+      {
+        "id": "2",
+        "text": "fimbriae"
+      },
+      {
+        "id": "3",
+        "text": "ovary"
+      },
+      {
+        "id": "4",
+        "text": "perineum"
+      },
+      {
+        "id": "5",
+        "text": "uterus"
+      }
+    ],
+    "answer": "5",
+    "answerText": "uterus",
+    "explanation": "정답 선택지는 5번 \"uterus\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-047",
+    "number": 47,
+    "stem": "질 점막에 기생하는 기생충에 의한 감염으로 발생하는 염증성 질환은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "chlamydial infection"
+      },
+      {
+        "id": "2",
+        "text": "colpitis mycotica"
+      },
+      {
+        "id": "3",
+        "text": "leukoplakic vulvitis"
+      },
+      {
+        "id": "4",
+        "text": "senile vaginitis"
+      },
+      {
+        "id": "5",
+        "text": "trichomonas vaginitis"
+      }
+    ],
+    "answer": "5",
+    "answerText": "trichomonas vaginitis",
+    "explanation": "정답 선택지는 5번 \"trichomonas vaginitis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-048",
+    "number": 48,
+    "stem": "출생 시 태아 또는 자궁내 태아의 목 부분에 탯줄이 감긴 상태는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "false labor"
+      },
+      {
+        "id": "2",
+        "text": "kernicterus"
+      },
+      {
+        "id": "3",
+        "text": "meconium stain"
+      },
+      {
+        "id": "4",
+        "text": "nuchal cord"
+      },
+      {
+        "id": "5",
+        "text": "vernix caseosa"
+      }
+    ],
+    "answer": "4",
+    "answerText": "nuchal cord",
+    "explanation": "정답 선택지는 4번 \"nuchal cord\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-049",
+    "number": 49,
+    "stem": "제왕절개 적응증은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "brow presentation"
+      },
+      {
+        "id": "2",
+        "text": "cephalopelvic disproportion"
+      },
+      {
+        "id": "3",
+        "text": "hyperemesis gravidarum"
+      },
+      {
+        "id": "4",
+        "text": "polyhydramnios"
+      },
+      {
+        "id": "5",
+        "text": "vertex presentation"
+      }
+    ],
+    "answer": "2",
+    "answerText": "cephalopelvic disproportion",
+    "explanation": "정답 선택지는 2번 \"cephalopelvic disproportion\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-050",
+    "number": 50,
+    "stem": "다음에서 설명하는 질환은?•자궁경부가 이완되어 유산이나 조산을 초래할 수 있는 상태•Shirodkar operation으로 임신 상태 유지",
+    "options": [
+      {
+        "id": "1",
+        "text": "abruptio placentae"
+      },
+      {
+        "id": "2",
+        "text": "dysfunctional uterine bleeding"
+      },
+      {
+        "id": "3",
+        "text": "gestational toxicosis"
+      },
+      {
+        "id": "4",
+        "text": "hydatidiform mole"
+      },
+      {
+        "id": "5",
+        "text": "incompetent internal os of cervix"
+      }
+    ],
+    "answer": "5",
+    "answerText": "incompetent internal os of cervix",
+    "explanation": "정답 선택지는 5번 \"incompetent internal os of cervix\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-051",
+    "number": 51,
+    "stem": "분만을 위하여 양막을 인공적으로 파열시키는 처치는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "amniocentesis"
+      },
+      {
+        "id": "2",
+        "text": "amniotomy"
+      },
+      {
+        "id": "3",
+        "text": "cauterization"
+      },
+      {
+        "id": "4",
+        "text": "conization"
+      },
+      {
+        "id": "5",
+        "text": "episiotomy"
+      }
+    ],
+    "answer": "2",
+    "answerText": "amniotomy",
+    "explanation": "정답 선택지는 2번 \"amniotomy\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-052",
+    "number": 52,
+    "stem": "남성불임수술을 위해 결찰해 주는 해부학적 부위는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "bulbourethral gland"
+      },
+      {
+        "id": "2",
+        "text": "epididymis"
+      },
+      {
+        "id": "3",
+        "text": "scrotum"
+      },
+      {
+        "id": "4",
+        "text": "urethra"
+      },
+      {
+        "id": "5",
+        "text": "vas deferens"
+      }
+    ],
+    "answer": "5",
+    "answerText": "vas deferens",
+    "explanation": "정답 선택지는 5번 \"vas deferens\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-053",
+    "number": 53,
+    "stem": "비대해진 전립선 조직을 적출하는 수술은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "castration"
+      },
+      {
+        "id": "2",
+        "text": "epididymectomy"
+      },
+      {
+        "id": "3",
+        "text": "posthetomy"
+      },
+      {
+        "id": "4",
+        "text": "prostatectomy"
+      },
+      {
+        "id": "5",
+        "text": "vasectomy"
+      }
+    ],
+    "answer": "4",
+    "answerText": "prostatectomy",
+    "explanation": "정답 선택지는 4번 \"prostatectomy\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-054",
+    "number": 54,
+    "stem": "신장의 실질과 신우에 광범위하게 발생하는 고름성 세균감염은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "hydronephrosis"
+      },
+      {
+        "id": "2",
+        "text": "nephroptosis"
+      },
+      {
+        "id": "3",
+        "text": "nephrosclerosis"
+      },
+      {
+        "id": "4",
+        "text": "pyelonephritis"
+      },
+      {
+        "id": "5",
+        "text": "ureterectasis"
+      }
+    ],
+    "answer": "4",
+    "answerText": "pyelonephritis",
+    "explanation": "정답 선택지는 4번 \"pyelonephritis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-055",
+    "number": 55,
+    "stem": "다음에서 설명하는 약물은?•부종이 심한 경우 체액량 감소를 목적으로 주로 사용함•요세관에서 나트륨(Na+) 재흡수가 저해되어 소변으로 나트륨 배설이 증가함",
+    "options": [
+      {
+        "id": "1",
+        "text": "analgesic"
+      },
+      {
+        "id": "2",
+        "text": "anesthetic"
+      },
+      {
+        "id": "3",
+        "text": "cardiotonic"
+      },
+      {
+        "id": "4",
+        "text": "diuretic"
+      },
+      {
+        "id": "5",
+        "text": "sedative"
+      }
+    ],
+    "answer": "4",
+    "answerText": "diuretic",
+    "explanation": "정답 선택지는 4번 \"diuretic\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-056",
+    "number": 56,
+    "stem": "피부계통의 결합형과 용어가 바르게 연결된 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "hidr/o–water"
+      },
+      {
+        "id": "2",
+        "text": "kerat/o–fat"
+      },
+      {
+        "id": "3",
+        "text": "onych/o–fungus"
+      },
+      {
+        "id": "4",
+        "text": "squam/o–nail"
+      },
+      {
+        "id": "5",
+        "text": "trich/o–hair"
+      }
+    ],
+    "answer": "5",
+    "answerText": "trich/o–hair",
+    "explanation": "정답 선택지는 5번 \"trich/o–hair\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-057",
+    "number": 57,
+    "stem": "다음에서 설명하는 질환은?• 홍반성 구진 및 판을 형성하는 만성 염증성 질환• 병변부에 경계가 뚜렷한 은회색 비늘이 덮여 있음 • 각질용해제, 스테로이드 및 광선요법으로 치료함",
+    "options": [
+      {
+        "id": "1",
+        "text": "erysipelas"
+      },
+      {
+        "id": "2",
+        "text": "herpes zoster"
+      },
+      {
+        "id": "3",
+        "text": "pemphigus"
+      },
+      {
+        "id": "4",
+        "text": "psoriasis"
+      },
+      {
+        "id": "5",
+        "text": "scleroderma"
+      }
+    ],
+    "answer": "4",
+    "answerText": "psoriasis",
+    "explanation": "정답 선택지는 4번 \"psoriasis\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-058",
+    "number": 58,
+    "stem": "중이(middle ear)의 기관은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "auricle"
+      },
+      {
+        "id": "2",
+        "text": "cochlea"
+      },
+      {
+        "id": "3",
+        "text": "semicircular duct"
+      },
+      {
+        "id": "4",
+        "text": "stapes"
+      },
+      {
+        "id": "5",
+        "text": "vestibule"
+      }
+    ],
+    "answer": "4",
+    "answerText": "stapes",
+    "explanation": "정답 선택지는 4번 \"stapes\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-059",
+    "number": 59,
+    "stem": "다음에서 설명하는 질환은?•수정체 혼탁으로 시력장애가 발생함•초음파를 이용하여 혼탁한 수정체를 제거하고 인공수정체로 대체함",
+    "options": [
+      {
+        "id": "1",
+        "text": "cataract"
+      },
+      {
+        "id": "2",
+        "text": "entropion"
+      },
+      {
+        "id": "3",
+        "text": "glaucoma"
+      },
+      {
+        "id": "4",
+        "text": "retinal detachment"
+      },
+      {
+        "id": "5",
+        "text": "retinitis pigmentosa"
+      }
+    ],
+    "answer": "1",
+    "answerText": "cataract",
+    "explanation": "정답 선택지는 1번 \"cataract\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-060",
+    "number": 60,
+    "stem": "다음에서 설명하는 질환은?•재발성 현기증을 동반한 내이의 만성 질환•감각성 난청, 이명 등의 증상이 특징임",
+    "options": [
+      {
+        "id": "1",
+        "text": "acoustic neuroma"
+      },
+      {
+        "id": "2",
+        "text": "cholesteatoma"
+      },
+      {
+        "id": "3",
+        "text": "impacted cerumen"
+      },
+      {
+        "id": "4",
+        "text": "Meniere's disease"
+      },
+      {
+        "id": "5",
+        "text": "otosclerosis"
+      }
+    ],
+    "answer": "4",
+    "answerText": "Meniere's disease",
+    "explanation": "정답 선택지는 4번 \"Meniere's disease\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-061",
+    "number": 61,
+    "stem": "다음 검사로 확인할 수 있는 악성종양은?Cartilage of Rt. scapular region, excisional Bx.",
+    "options": [
+      {
+        "id": "1",
+        "text": "basal cell carcinoma"
+      },
+      {
+        "id": "2",
+        "text": "chondrosarcoma"
+      },
+      {
+        "id": "3",
+        "text": "cystadenocarcinoma"
+      },
+      {
+        "id": "4",
+        "text": "meningioma"
+      },
+      {
+        "id": "5",
+        "text": "thymoma"
+      }
+    ],
+    "answer": "2",
+    "answerText": "chondrosarcoma",
+    "explanation": "정답 선택지는 2번 \"chondrosarcoma\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-062",
+    "number": 62,
+    "stem": "다음 결과에 대한 암등록 시 원발부위는? Pathological diagnosis:1)Squamous cell carcinoma, large cell, non-keratinizing type2)Tumor size:2.5×1cm in surface & 0.7cm in invasion depth3)FIGO stage IB1",
+    "options": [
+      {
+        "id": "1",
+        "text": "bone marrow"
+      },
+      {
+        "id": "2",
+        "text": "breast"
+      },
+      {
+        "id": "3",
+        "text": "cervix uteri"
+      },
+      {
+        "id": "4",
+        "text": "esophagus"
+      },
+      {
+        "id": "5",
+        "text": "sigmoid colon"
+      }
+    ],
+    "answer": "3",
+    "answerText": "cervix uteri",
+    "explanation": "정답 선택지는 3번 \"cervix uteri\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-063",
+    "number": 63,
+    "stem": "다음 사례에서 본원에서의 암등록 대상은?55세 여자 환자는 2023년 타 병원에서 leukemia 진단 후 2년째 항암제(Gleevec) 투여 중으로, 2025년 10월에 본원 건강검진에서 early gastric ca. 발견됨",
+    "options": [
+      {
+        "id": "1",
+        "text": "위암"
+      },
+      {
+        "id": "2",
+        "text": "백혈병"
+      },
+      {
+        "id": "3",
+        "text": "백혈병, 위암"
+      },
+      {
+        "id": "4",
+        "text": "백혈병, 전이성 위암"
+      },
+      {
+        "id": "5",
+        "text": "등록 대상 없음"
+      }
+    ],
+    "answer": "3",
+    "answerText": "백혈병, 위암",
+    "explanation": "정답 선택지는 3번 \"백혈병, 위암\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-064",
+    "number": 64,
+    "stem": "암등록 시 원발부위와 조직학적진단명 코드는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "C44.7M8247/3"
+      },
+      {
+        "id": "2",
+        "text": "C44.7M8800/3"
+      },
+      {
+        "id": "3",
+        "text": "C49.2M8247/3"
+      },
+      {
+        "id": "4",
+        "text": "C49.2M8800/3"
+      },
+      {
+        "id": "5",
+        "text": "C76.5M8020/3"
+      }
+    ],
+    "answer": "1",
+    "answerText": "C44.7M8247/3",
+    "explanation": "정답 선택지는 1번 \"C44.7M8247/3\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-065",
+    "number": 65,
+    "stem": "암등록 시 최종진단방법과 편측성은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "원발부위 조직검사not a paired site"
+      },
+      {
+        "id": "2",
+        "text": "원발부위 조직검사left/origin of primary"
+      },
+      {
+        "id": "3",
+        "text": "원발부위 조직검사right/origin of primary"
+      },
+      {
+        "id": "4",
+        "text": "전이부위 조직검사right/origin of primary"
+      },
+      {
+        "id": "5",
+        "text": "전이부위 조직검사left/origin of primary [66～67]다음의 사례를 읽고 아래 각 문제에 대해 가장 적합한 답을 하나만 고르시오.(Hospital course)•2025.4.○○병원에서 metastatic cancer 의심하에 본원으로 전원•2025.5.2.입원 후 bronchial brushing 검사 결과 small cell carcinoma of lung, RUL 진단•2025.5.6.PET CT 결과 multiple mediastinal LNs metastasis, peritoneal seeding, multiple bone metastasis•2025.5.10.palliative chemotherapy 후 퇴원"
+      }
+    ],
+    "answer": "2",
+    "answerText": "원발부위 조직검사left/origin of primary",
+    "explanation": "정답 선택지는 2번 \"원발부위 조직검사left/origin of primary\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-066",
+    "number": 66,
+    "stem": "암등록 시 원발부위와 최종진단방법은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "상엽, 폐세포학적 검사"
+      },
+      {
+        "id": "2",
+        "text": "상엽, 폐원발부위 조직검사"
+      },
+      {
+        "id": "3",
+        "text": "상엽, 폐전이부위 조직검사"
+      },
+      {
+        "id": "4",
+        "text": "흉곽내 림프절세포학적 검사"
+      },
+      {
+        "id": "5",
+        "text": "흉곽내 림프절전이부위 조직검사"
+      }
+    ],
+    "answer": "1",
+    "answerText": "상엽, 폐세포학적 검사",
+    "explanation": "정답 선택지는 1번 \"상엽, 폐세포학적 검사\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-067",
+    "number": 67,
+    "stem": "암등록 시 초치료와 요약병기는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "치료안함Regional by BOTH direct extension and regional lymph node(s) involved"
+      },
+      {
+        "id": "2",
+        "text": "치료안함Distant site(s)/node(s) involved"
+      },
+      {
+        "id": "3",
+        "text": "화학요법Regional by BOTH direct extension and regional lymph node(s) involved"
+      },
+      {
+        "id": "4",
+        "text": "화학요법Regional, NOS"
+      },
+      {
+        "id": "5",
+        "text": "화학요법Distant site(s)/node(s) involved"
+      }
+    ],
+    "answer": "5",
+    "answerText": "화학요법Distant site(s)/node(s) involved",
+    "explanation": "정답 선택지는 5번 \"화학요법Distant site(s)/node(s) involved\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-068",
+    "number": 68,
+    "stem": "암등록 자료(DB) 질 관리 작업에서 다음 조직학적진단명 사례에 대하여 오류 확인이 필요한 항목은?편측성원발부위최종진단방법초치료요약병기1오른쪽C34.3lower lobe, lung7원발부위 조직검사11000수술, 화학0In situ[조직학적진단명:non-Hodgkin lymphoma]",
+    "options": [
+      {
+        "id": "1",
+        "text": "편측성"
+      },
+      {
+        "id": "2",
+        "text": "원발부위"
+      },
+      {
+        "id": "3",
+        "text": "최종진단방법"
+      },
+      {
+        "id": "4",
+        "text": "초치료"
+      },
+      {
+        "id": "5",
+        "text": "요약병기"
+      }
+    ],
+    "answer": "5",
+    "answerText": "요약병기",
+    "explanation": "정답 선택지는 5번 \"요약병기\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-069",
+    "number": 69,
+    "stem": "「의료법」상 상급종합병원 지정 요건에 대한 설명으로 옳은 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "대통령령으로 정하는 인력∙시설∙장비 등을 갖출 것"
+      },
+      {
+        "id": "2",
+        "text": "특정 질환별∙진료과목별 환자의 구성비율 등이 대통령령으로 정하는 기준에 해당할 것"
+      },
+      {
+        "id": "3",
+        "text": "질병군별(疾病群別) 환자구성 비율이 대통령령으로 정하는 기준에 해당할 것"
+      },
+      {
+        "id": "4",
+        "text": "대통령령으로 정하는 수 이상의 진료과목을 갖추고 각 진료과목마다 전속하는 전문의를 둘 것"
+      },
+      {
+        "id": "5",
+        "text": "보건복지부령으로 정하는 20개 이상의 진료과목을 갖추고 각 진료과목마다 전속하는 전문의를 둘 것"
+      }
+    ],
+    "answer": "5",
+    "answerText": "보건복지부령으로 정하는 20개 이상의 진료과목을 갖추고 각 진료과목마다 전속하는 전문의를 둘 것",
+    "explanation": "정답 선택지는 5번 \"보건복지부령으로 정하는 20개 이상의 진료과목을 갖추고 각 진료과목마다 전속하는 전문의를 둘 것\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-070",
+    "number": 70,
+    "stem": "「의료법」상 A환자가 ○○병원에서 외래진료 후 처방전을 교부받았다. ○○병원이 보존해야 하는 처방전 보존기간은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "2년"
+      },
+      {
+        "id": "2",
+        "text": "3년"
+      },
+      {
+        "id": "3",
+        "text": "4년"
+      },
+      {
+        "id": "4",
+        "text": "5년"
+      },
+      {
+        "id": "5",
+        "text": "10년"
+      }
+    ],
+    "answer": "1",
+    "answerText": "2년",
+    "explanation": "정답 선택지는 1번 \"2년\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-071",
+    "number": 71,
+    "stem": "「의료법」상 ○○병원 종사자가 전자의무기록에 저장된 개인정보를 탐지하여 누출∙변조 또는 훼손하였다. 이 종사자에게 적용되는 벌칙은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "1년 이하의 징역이나 1천만원 이하의 벌금"
+      },
+      {
+        "id": "2",
+        "text": "2년 이하의 징역이나 2천만원 이하의 벌금"
+      },
+      {
+        "id": "3",
+        "text": "3년 이하의 징역이나 3천만원 이하의 벌금"
+      },
+      {
+        "id": "4",
+        "text": "5년 이하의 징역이나 5천만원 이하의 벌금"
+      },
+      {
+        "id": "5",
+        "text": "7년 이하의 징역이나 7천만원 이하의 벌금"
+      }
+    ],
+    "answer": "4",
+    "answerText": "5년 이하의 징역이나 5천만원 이하의 벌금",
+    "explanation": "정답 선택지는 4번 \"5년 이하의 징역이나 5천만원 이하의 벌금\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-072",
+    "number": 72,
+    "stem": "「의료법」상 의료기관의 개설허가 취소 사유가 아닌 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "의료법인의 설립허가가 취소된 때"
+      },
+      {
+        "id": "2",
+        "text": "무자격자로 하여금 의료행위를 하게 한 때"
+      },
+      {
+        "id": "3",
+        "text": "개설허가를 한 날로부터 3월 이내에 정당한 사유 없이 그 업무를 개시하지 아니한 때"
+      },
+      {
+        "id": "4",
+        "text": "의료기관 개설자가 거짓으로 진료비를 청구하여 금고 이상의 형을 선고받고 그 형이 확정된 때"
+      },
+      {
+        "id": "5",
+        "text": "불필요한 검사∙투약(投藥)∙수술 등 지나친 진료행위를 하거나 부당하게 많은 진료비를 요구하는 행위를 한 때"
+      }
+    ],
+    "answer": "5",
+    "answerText": "불필요한 검사∙투약(投藥)∙수술 등 지나친 진료행위를 하거나 부당하게 많은 진료비를 요구하는 행위를 한 때",
+    "explanation": "정답 선택지는 5번 \"불필요한 검사∙투약(投藥)∙수술 등 지나친 진료행위를 하거나 부당하게 많은 진료비를 요구하는 행위를 한 때\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-073",
+    "number": 73,
+    "stem": "「의료법」상 의료기관 인증기준에 포함되지 않는 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "환자 만족도"
+      },
+      {
+        "id": "2",
+        "text": "보험급여의 관리"
+      },
+      {
+        "id": "3",
+        "text": "의료서비스의 제공과정 및 성과"
+      },
+      {
+        "id": "4",
+        "text": "의료기관의 조직∙인력관리 및 운영"
+      },
+      {
+        "id": "5",
+        "text": "의료기관의 의료서비스 질 향상 활동"
+      }
+    ],
+    "answer": "2",
+    "answerText": "보험급여의 관리",
+    "explanation": "정답 선택지는 2번 \"보험급여의 관리\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-074",
+    "number": 74,
+    "stem": "「의료기사 등에 관한 법률」상 보건의료정보관리사의 업무 범위가 아닌 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "진료통계 관리"
+      },
+      {
+        "id": "2",
+        "text": "의무기록의 작성"
+      },
+      {
+        "id": "3",
+        "text": "보건의료정보의 전사"
+      },
+      {
+        "id": "4",
+        "text": "보건의료정보의 분석"
+      },
+      {
+        "id": "5",
+        "text": "질병∙사인∙의료행위의 분류"
+      }
+    ],
+    "answer": "2",
+    "answerText": "의무기록의 작성",
+    "explanation": "정답 선택지는 2번 \"의무기록의 작성\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-075",
+    "number": 75,
+    "stem": "「의료기사 등에 관한 법률」상 보건의료정보관리사의 면허를 받을 수 있는 사람은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "피성년후견인"
+      },
+      {
+        "id": "2",
+        "text": "피한정후견인"
+      },
+      {
+        "id": "3",
+        "text": "「장애인복지법」에 따라 등록한 장애인"
+      },
+      {
+        "id": "4",
+        "text": "「마약류 관리에 관한 법률」에 따른 마약류 중독자"
+      },
+      {
+        "id": "5",
+        "text": "정신과 전문의가 의료기사등으로서 적합하다고 인정하지 아니한 기질성 인격장애 정신질환자"
+      }
+    ],
+    "answer": "3",
+    "answerText": "「장애인복지법」에 따라 등록한 장애인",
+    "explanation": "정답 선택지는 3번 \"「장애인복지법」에 따라 등록한 장애인\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-076",
+    "number": 76,
+    "stem": "「의료기사 등에 관한 법률」상 보건의료정보관리사 면허시험에 합격한 A는 대통령령으로 정하는 바에 따라 최초로 면허를 받은 후부터 3년마다 누구에게 그 실태와 취업상황에 관한 신고를 하여야 하는가?",
+    "options": [
+      {
+        "id": "1",
+        "text": "시∙도지사"
+      },
+      {
+        "id": "2",
+        "text": "질병관리청장"
+      },
+      {
+        "id": "3",
+        "text": "관할 보건소장"
+      },
+      {
+        "id": "4",
+        "text": "보건복지부장관"
+      },
+      {
+        "id": "5",
+        "text": "시장∙군수∙구청장"
+      }
+    ],
+    "answer": "4",
+    "answerText": "보건복지부장관",
+    "explanation": "정답 선택지는 4번 \"보건복지부장관\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-077",
+    "number": 77,
+    "stem": "「의료기사 등에 관한 법률」상 보건기관∙의료기관∙치과기공소∙안경업소 등에서 각각 그 업무에 종사하는 의료기사 등은 보수(補修)교육을 받아야 한다. 이 보수교육의 이수증을 발급하는 자는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "시∙도지사"
+      },
+      {
+        "id": "2",
+        "text": "관할 보건소장"
+      },
+      {
+        "id": "3",
+        "text": "보건복지부장관"
+      },
+      {
+        "id": "4",
+        "text": "시장∙군수∙구청장"
+      },
+      {
+        "id": "5",
+        "text": "보수교육실시기관의 장"
+      }
+    ],
+    "answer": "5",
+    "answerText": "보수교육실시기관의 장",
+    "explanation": "정답 선택지는 5번 \"보수교육실시기관의 장\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-078",
+    "number": 78,
+    "stem": "「의료기사 등에 관한 법률」상 의료기사가 품위를 현저히 손상시키는 행위를 한 경우에 적용되는 규정은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "6개월 이내의 면허자격 정지"
+      },
+      {
+        "id": "2",
+        "text": "1년 이내의 면허자격 정지"
+      },
+      {
+        "id": "3",
+        "text": "2년 이내의 면허자격 정지"
+      },
+      {
+        "id": "4",
+        "text": "3년 이내의 면허자격 정지"
+      },
+      {
+        "id": "5",
+        "text": "5년 이내의 면허자격 정지"
+      }
+    ],
+    "answer": "1",
+    "answerText": "6개월 이내의 면허자격 정지",
+    "explanation": "정답 선택지는 1번 \"6개월 이내의 면허자격 정지\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-079",
+    "number": 79,
+    "stem": "「감염병의 예방 및 관리에 관한 법률」상 생물테러감염병 또는 치명률이 높거나 집단 발생의 우려가 커서 발생 또는 유행 즉시 신고하여야 하고, 음압격리와 같은 높은 수준의 격리가 필요한 감염병은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "제1급감염병"
+      },
+      {
+        "id": "2",
+        "text": "제2급감염병"
+      },
+      {
+        "id": "3",
+        "text": "제3급감염병"
+      },
+      {
+        "id": "4",
+        "text": "제4급감염병"
+      },
+      {
+        "id": "5",
+        "text": "의료관련감염병"
+      }
+    ],
+    "answer": "1",
+    "answerText": "제1급감염병",
+    "explanation": "정답 선택지는 1번 \"제1급감염병\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-080",
+    "number": 80,
+    "stem": "「감염병의 예방 및 관리에 관한 법률」상 제2급감염병은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "결핵"
+      },
+      {
+        "id": "2",
+        "text": "탄저"
+      },
+      {
+        "id": "3",
+        "text": "페스트"
+      },
+      {
+        "id": "4",
+        "text": "디프테리아"
+      },
+      {
+        "id": "5",
+        "text": "신종인플루엔자"
+      }
+    ],
+    "answer": "1",
+    "answerText": "결핵",
+    "explanation": "정답 선택지는 1번 \"결핵\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-081",
+    "number": 81,
+    "stem": "「감염병의 예방 및 관리에 관한 법률」상 감염병의 병원체를 확인할 수 있는 기관이 아닌 곳은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "질병관리청"
+      },
+      {
+        "id": "2",
+        "text": "「지역보건법」 제10조에 따른 보건소"
+      },
+      {
+        "id": "3",
+        "text": "「의료법」 제3조의2에 따른 의료기관 중 치과병원"
+      },
+      {
+        "id": "4",
+        "text": "「의료법」 제3조에 따른 의료기관 중 진단검사의학과 전문의가 상근(常勤)하는 기관"
+      },
+      {
+        "id": "5",
+        "text": "「고등교육법」 제4조에 따라 설립된 의과대학 중 진단검사의학과가 개설된 의과대학"
+      }
+    ],
+    "answer": "3",
+    "answerText": "「의료법」 제3조의2에 따른 의료기관 중 치과병원",
+    "explanation": "정답 선택지는 3번 \"「의료법」 제3조의2에 따른 의료기관 중 치과병원\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-082",
+    "number": 82,
+    "stem": "「국민건강보험법」상 건강보험 가입자의 자격상실 시기로 옳은 것은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "사망한 날"
+      },
+      {
+        "id": "2",
+        "text": "국적을 잃은 날"
+      },
+      {
+        "id": "3",
+        "text": "수급권자가 된 날"
+      },
+      {
+        "id": "4",
+        "text": "국내에 거주하지 아니하게 된 날"
+      },
+      {
+        "id": "5",
+        "text": "직장가입자의 피부양자가 된 날의 다음 날"
+      }
+    ],
+    "answer": "3",
+    "answerText": "수급권자가 된 날",
+    "explanation": "정답 선택지는 3번 \"수급권자가 된 날\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-083",
+    "number": 83,
+    "stem": "「국민건강보험법」상 국민건강보험공단 이사장의 임명권자와 이사장의 임기는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "대통령–2년"
+      },
+      {
+        "id": "2",
+        "text": "대통령–3년"
+      },
+      {
+        "id": "3",
+        "text": "보건복지부장관–2년"
+      },
+      {
+        "id": "4",
+        "text": "보건복지부장관–3년"
+      },
+      {
+        "id": "5",
+        "text": "기획재정부장관–2년"
+      }
+    ],
+    "answer": "2",
+    "answerText": "대통령–3년",
+    "explanation": "정답 선택지는 2번 \"대통령–3년\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-084",
+    "number": 84,
+    "stem": "「국민건강보험법」상 A환자가 ○○병원에 제3자의 행위로 보험급여사유가 생겨 해당 환자에게 보험급여를 한 경우 그 급여에 들어간 비용 한도에서 그 제3자에게 손해배상을 청구할 권리의 주체는?",
+    "options": [
+      {
+        "id": "1",
+        "text": "보건복지부"
+      },
+      {
+        "id": "2",
+        "text": "질병관리청"
+      },
+      {
+        "id": "3",
+        "text": "국민건강보험공단"
+      },
+      {
+        "id": "4",
+        "text": "건강보험요양기관"
+      },
+      {
+        "id": "5",
+        "text": "건강보험심사평가원"
+      }
+    ],
+    "answer": "3",
+    "answerText": "국민건강보험공단",
+    "explanation": "정답 선택지는 3번 \"국민건강보험공단\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-085",
+    "number": 85,
+    "stem": "「국민건강보험법」상 교원으로 사립학교에 근무하는 직장가입자의 보험료액 중 국가의 부담은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "100분의 20"
+      },
+      {
+        "id": "2",
+        "text": "100분의 30"
+      },
+      {
+        "id": "3",
+        "text": "100분의 40"
+      },
+      {
+        "id": "4",
+        "text": "100분의 50"
+      },
+      {
+        "id": "5",
+        "text": "100분의 100"
+      }
+    ],
+    "answer": "1",
+    "answerText": "100분의 20",
+    "explanation": "정답 선택지는 1번 \"100분의 20\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-086",
+    "number": 86,
+    "stem": "「암관리법」상 암관리종합계획 수립에 대한 설명이다. 각각의 () 안에 들어갈 알맞은 것은?( )은 제6조에 따른 국가암관리위원회의 심의를 거쳐 암관리종합계획을 ()마다 세워야 한다.",
+    "options": [
+      {
+        "id": "1",
+        "text": "암등록본부장–3년"
+      },
+      {
+        "id": "2",
+        "text": "암등록본부장–5년"
+      },
+      {
+        "id": "3",
+        "text": "보건복지부장관–3년"
+      },
+      {
+        "id": "4",
+        "text": "보건복지부장관–5년"
+      },
+      {
+        "id": "5",
+        "text": "중앙암등록본부장–3년"
+      }
+    ],
+    "answer": "4",
+    "answerText": "보건복지부장관–5년",
+    "explanation": "정답 선택지는 4번 \"보건복지부장관–5년\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-087",
+    "number": 87,
+    "stem": "「암관리법」상 암연구사업의 업무를 수행할 수 있는 기관은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "국립암센터"
+      },
+      {
+        "id": "2",
+        "text": "지역암센터"
+      },
+      {
+        "id": "3",
+        "text": "질병관리청"
+      },
+      {
+        "id": "4",
+        "text": "지역암등록본부"
+      },
+      {
+        "id": "5",
+        "text": "국가암데이터센터"
+      }
+    ],
+    "answer": "1",
+    "answerText": "국립암센터",
+    "explanation": "정답 선택지는 1번 \"국립암센터\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  },
+  {
+    "id": "PAST-2025-2-088",
+    "number": 88,
+    "stem": "「암관리법」상 지역암등록본부 업무를 전담하는 인력은?",
+    "options": [
+      {
+        "id": "1",
+        "text": "보건교육사"
+      },
+      {
+        "id": "2",
+        "text": "사회복지사"
+      },
+      {
+        "id": "3",
+        "text": "요양보호사"
+      },
+      {
+        "id": "4",
+        "text": "가정전문간호사"
+      },
+      {
+        "id": "5",
+        "text": "보건의료정보관리사"
+      }
+    ],
+    "answer": "5",
+    "answerText": "보건의료정보관리사",
+    "explanation": "정답 선택지는 5번 \"보건의료정보관리사\"입니다. 2025년도 제42회 보건의료정보관리사 국가시험 2교시 최종답안 기준입니다."
+  }
+]
