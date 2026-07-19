@@ -3,6 +3,7 @@
 import { startTransition, useEffect, useState } from "react";
 
 import { QuestionCard } from "@/components/question-card";
+import { getChapterTitle, getVolumeTitle } from "@/lib/course-meta";
 import { TopicArticle } from "@/components/topic-article";
 import { buildTopicQuestionSet } from "@/lib/study";
 import { loadReviewQuestionIds, saveReviewQuestionIds } from "@/lib/storage";
@@ -75,6 +76,14 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
     updateReviewIds(savedQuestionIds.filter((savedId) => savedId !== questionId));
   }
 
+  function getVolumeOptionLabel(volume: number) {
+    return `Volume ${volume}. ${getVolumeTitle(volume)}`;
+  }
+
+  function getChapterOptionLabel(chapterKey: string, volume: number, chapter: number) {
+    return `Volume ${volume}. ${getVolumeTitle(volume)} · Chapter ${chapter}. ${getChapterTitle(chapterKey, chapter)}`;
+  }
+
   return (
     <div className="grid gap-6 lg:grid-cols-[20rem_minmax(0,1fr)]">
       <aside className="space-y-4">
@@ -83,9 +92,6 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
           <h2 className="mt-2 text-xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
             단원 선택
           </h2>
-          <p className="mt-2 text-sm leading-7 app-subtle">
-            회독 중인 볼륨과 챕터를 빠르게 전환하면서 동일 주제 문제를 반복 훈련합니다.
-          </p>
 
           <div className="mt-5 space-y-4">
             <label className="block text-sm font-medium text-[rgba(16,32,51,0.72)]">
@@ -97,7 +103,7 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
               >
                 {dataset.volumes.map((volume) => (
                   <option key={volume} value={volume}>
-                    Volume {volume}
+                    {getVolumeOptionLabel(volume)}
                   </option>
                 ))}
               </select>
@@ -112,7 +118,12 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
               >
                 {chapterOptions.map((chapter) => (
                   <option key={chapter.key} value={chapter.key}>
-                    {chapter.label} ({chapter.topicCount} topics)
+                    {getChapterOptionLabel(
+                      chapter.key,
+                      chapter.volume,
+                      chapter.chapter,
+                    )}{" "}
+                    ({chapter.topicCount} topics)
                   </option>
                 ))}
               </select>
