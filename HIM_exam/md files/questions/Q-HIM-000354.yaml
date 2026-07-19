@@ -1,0 +1,23 @@
+id: Q-HIM-000354
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C15-S07-T001
+subject_area: health_insurance
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "분류 코드가 잘못 부여되면 실제와 다른 DRG 군으로 분류되어 부적절한 금액이 지급될 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: DRG 산정은 분류 코드를 핵심 입력값으로 사용하므로 코드 오류가 지급액에 직접 영향을 준다.
+distractor_explanations:
+  X: 코드 정확성과 DRG 지급의 연결을 간과한 응답이다.
+references:
+  - REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001
+verified: false
