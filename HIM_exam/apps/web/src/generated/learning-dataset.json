@@ -9480,6 +9480,53 @@
       ],
       "chapterKey": "V1-C15",
       "chapterLabel": "Volume 1 · Chapter 15"
+    },
+    {
+      "id": "HIM-V1-C15-S08-T001",
+      "slug": "drg-and-fee-for-service",
+      "title": "포괄수가와 행위별수가",
+      "title_en": "Bundled Payment (DRG) vs. Fee-for-Service",
+      "volume": 1,
+      "chapter": 15,
+      "section": 8,
+      "order": 1,
+      "status": "drafting",
+      "difficulty": "intermediate",
+      "importance": "A",
+      "exam_frequency": "unknown",
+      "estimated_minutes": 8,
+      "prerequisites": [
+        "HIM-V1-C15-S07-T001"
+      ],
+      "related_topics": [
+        "HIM-V1-C15-S09-T001"
+      ],
+      "tags": [
+        "건강보험",
+        "지불제도"
+      ],
+      "content_type": [
+        "concept",
+        "comparison"
+      ],
+      "as_of_date": "Sun Jul 19 2026 09:00:00 GMT+0900 (Korean Standard Time)",
+      "verified": false,
+      "reviewers": [],
+      "references": [
+        "REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001"
+      ],
+      "assets": [],
+      "questions": [
+        "Q-HIM-000355",
+        "Q-HIM-000356"
+      ],
+      "body": "# 포괄수가와 행위별수가\n\n## 학습목표\n\n1. 포괄수가제(DRG 기반)와 행위별수가제의 차이와 각각의 장단점을 설명할 수 있다.\n\n## 한 문장 정의\n\n포괄수가제는 [DRG](s07-drg-overview.md)에 따라 환자군별로 정해진 금액을 지급하는 방식이고, 행위별수가제는 시행된 개별 진료 행위마다 수가를 합산해 지급하는 방식이다.\n\n## 왜 중요한가\n\n두 방식은 서로 다른 유인을 만든다. 어떤 방식이 적용되는지에 따라 병원의 진료 행태에 영향을 줄 수 있다는 점을 이해해야 한다.\n\n## 선수 개념\n\n- [DRG 개요](s07-drg-overview.md)\n\n## 핵심 개념\n\n- 포괄수가제: 정액 지급, 효율적 진료를 유인하지만 과소 진료의 위험도 있음\n- 행위별수가제: 시행한 만큼 지급, 진료의 자율성을 보장하지만 과잉 진료의 위험도 있음\n- 병행 운영: 국내에서는 특정 진료 영역(예: 일부 수술)에는 포괄수가제가, 나머지에는 행위별수가제가 적용되는 방식으로 병행되는 것으로 알려져 있음\n\n## 상세 설명\n\n포괄수가제는 병원이 불필요한 검사나 처치를 줄이도록 유도하는 효과가 있지만, 지나치면 필요한 진료까지 줄이는 과소 진료로 이어질 위험이 있다. 행위별수가제는 필요한 진료를 충분히 제공하도록 유도하지만, 지나치면 불필요한 진료를 늘리는 과잉 진료로 이어질 위험이 있다. 이 때문에 각 제도의 장단점을 보완하기 위해 병행 운영되는 경우가 많다.\n\n## 비교표 또는 흐름\n\n| 구분 | 포괄수가제 | 행위별수가제 |\n|---|---|---|\n| 지급 기준 | 환자군(DRG)별 정액 | 시행 행위별 합산 |\n| 장점 | 효율적 진료 유인 | 진료 자율성 보장 |\n| 위험 | 과소 진료 | 과잉 진료 |\n\n## 실무 사례\n\n한 병원에서 포괄수가제가 적용되는 수술 영역에서는 표준화된 진료 경로를 따르는 경향이 강해졌고, 행위별수가제 영역에서는 개별 환자 상태에 맞춘 유연한 처치가 유지된 사례가 있다.\n\n## 국가시험 포인트\n\n- 두 지불제도의 장단점(과소 진료 vs. 과잉 진료 위험)을 구분하는 문제\n\n## 자주 하는 실수\n\n- 두 제도 중 하나가 항상 더 우월하다고 단정하는 것(각각 장단점이 있음)\n\n## 관련 법령·표준\n\n> 참고: 국내 포괄수가제 적용 대상 영역의 정확한 목록은 이 세션에서 원문 대조하지 않았다(REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001).\n\n## AI Note\n\n해당 없음.\n\n## 핵심 요약\n\n- 포괄수가제는 정액 지급으로 효율성을 유인하지만 과소 진료 위험이, 행위별수가제는 자율성을 보장하지만 과잉 진료 위험이 있다.\n- 두 제도는 국내에서 영역별로 병행 운영되는 것으로 알려져 있다.\n\n## 플래시카드\n\n1. Q. 포괄수가제의 대표적 위험은? / A. 과소 진료\n2. Q. 행위별수가제의 대표적 위험은? / A. 과잉 진료\n\n## 연습문제\n\n- Q-HIM-000355 (객관식)\n- Q-HIM-000356 (OX)\n\n## 참고문헌\n\n- REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001 — 국민건강보험법 및 건강보험 제도 개괄 (status: located)",
+      "summary": "포괄수가제는 정액 지급으로 효율성을 유인하지만 과소 진료 위험이, 행위별수가제는 자율성을 보장하지만 과잉 진료 위험이 있다.",
+      "keyPoints": [
+        "포괄수가제는 정액 지급으로 효율성을 유인하지만 과소 진료 위험이, 행위별수가제는 자율성을 보장하지만 과잉 진료 위험이 있다."
+      ],
+      "chapterKey": "V1-C15",
+      "chapterLabel": "Volume 1 · Chapter 15"
     }
   ],
   "questions": [
@@ -21977,6 +22024,84 @@
         "REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001"
       ],
       "verified": false
+    },
+    {
+      "id": "Q-HIM-000354",
+      "status": "drafting",
+      "type": "true_false",
+      "topic_ids": [
+        "HIM-V1-C15-S07-T001"
+      ],
+      "subject_area": "health_insurance",
+      "difficulty": "basic",
+      "cognitive_level": "understand",
+      "importance": "A",
+      "stem": "분류 코드가 잘못 부여되면 실제와 다른 DRG 군으로 분류되어 부적절한 금액이 지급될 수 있다.",
+      "options": [
+        {
+          "id": "O",
+          "text": "맞다"
+        },
+        {
+          "id": "X",
+          "text": "틀리다"
+        }
+      ],
+      "answer": [
+        "O"
+      ],
+      "explanation": "DRG 산정은 분류 코드를 핵심 입력값으로 사용하므로 코드 오류가 지급액에 직접 영향을 준다.",
+      "distractor_explanations": {
+        "X": "코드 정확성과 DRG 지급의 연결을 간과한 응답이다."
+      },
+      "references": [
+        "REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001"
+      ],
+      "verified": false
+    },
+    {
+      "id": "Q-HIM-000355",
+      "status": "drafting",
+      "type": "multiple_choice",
+      "topic_ids": [
+        "HIM-V1-C15-S08-T001"
+      ],
+      "subject_area": "health_insurance",
+      "difficulty": "intermediate",
+      "cognitive_level": "understand",
+      "importance": "A",
+      "stem": "행위별수가제의 대표적 위험으로 알려진 것은?",
+      "options": [
+        {
+          "id": "A",
+          "text": "과소 진료"
+        },
+        {
+          "id": "B",
+          "text": "과잉 진료"
+        },
+        {
+          "id": "C",
+          "text": "청구 지연"
+        },
+        {
+          "id": "D",
+          "text": "기록 미비"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "시행한 만큼 지급받는 구조는 불필요한 진료를 늘리는 과잉 진료 유인이 될 수 있다.",
+      "distractor_explanations": {
+        "A": "과소 진료는 포괄수가제의 위험으로 더 자주 언급된다.",
+        "C": "청구 지연과 직접 관련이 적다.",
+        "D": "기록 미비와 직접 관련이 적다."
+      },
+      "references": [
+        "REF-LAW-NATIONAL-HEALTH-INSURANCE-ACT-001"
+      ],
+      "verified": false
     }
   ],
   "glossaryEntries": [
@@ -22851,7 +22976,7 @@
       "volume": 1,
       "chapter": 15,
       "label": "Volume 1 · Chapter 15",
-      "topicCount": 7
+      "topicCount": 8
     }
   ]
 }
