@@ -4,6 +4,7 @@ import type { FocusSettings } from "@/lib/types";
 
 const FOCUS_SETTINGS_KEY = "him-focus-settings";
 const REVIEW_NOTE_KEY = "him-review-question-ids";
+const GLOSSARY_SAVED_TERMS_KEY = "him-glossary-saved-terms";
 
 export function loadFocusSettings(): FocusSettings {
   if (typeof window === "undefined") {
@@ -58,4 +59,33 @@ export function saveReviewQuestionIds(questionIds: string[]) {
   }
 
   window.localStorage.setItem(REVIEW_NOTE_KEY, JSON.stringify(questionIds));
+}
+
+export function loadSavedGlossaryTerms() {
+  if (typeof window === "undefined") {
+    return [] as string[];
+  }
+
+  const raw = window.localStorage.getItem(GLOSSARY_SAVED_TERMS_KEY);
+  if (!raw) {
+    return [] as string[];
+  }
+
+  try {
+    const parsed = JSON.parse(raw) as string[];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveSavedGlossaryTerms(termIds: string[]) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.localStorage.setItem(
+    GLOSSARY_SAVED_TERMS_KEY,
+    JSON.stringify(termIds),
+  );
 }

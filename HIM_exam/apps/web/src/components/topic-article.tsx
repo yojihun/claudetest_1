@@ -12,6 +12,8 @@ type TopicSection = {
   body: string;
 };
 
+const hiddenSectionTitles = new Set(["연습문제", "참고문헌"]);
+
 function slugifySectionTitle(title: string) {
   return title
     .toLowerCase()
@@ -33,21 +35,23 @@ function parseTopicSections(markdown: string): TopicSection[] {
     ];
   }
 
-  return matches.map((match, index) => {
-    const title = match[1].trim();
-    const start = match.index ?? 0;
-    const nextStart = matches[index + 1]?.index ?? markdown.length;
-    const sectionBody = markdown
-      .slice(start, nextStart)
-      .replace(/^##\s+.+$/m, "")
-      .trim();
+  return matches
+    .map((match, index) => {
+      const title = match[1].trim();
+      const start = match.index ?? 0;
+      const nextStart = matches[index + 1]?.index ?? markdown.length;
+      const sectionBody = markdown
+        .slice(start, nextStart)
+        .replace(/^##\s+.+$/m, "")
+        .trim();
 
-    return {
-      id: slugifySectionTitle(title) || `section-${index + 1}`,
-      title,
-      body: sectionBody,
-    };
-  });
+      return {
+        id: slugifySectionTitle(title) || `section-${index + 1}`,
+        title,
+        body: sectionBody,
+      };
+    })
+    .filter((section) => !hiddenSectionTitles.has(section.title));
 }
 
 export function TopicArticle({
