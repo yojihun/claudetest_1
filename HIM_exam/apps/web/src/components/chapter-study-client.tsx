@@ -10,7 +10,12 @@ import {
 } from "@/lib/course-meta";
 import { TopicArticle } from "@/components/topic-article";
 import { buildTopicQuestionSet } from "@/lib/study";
-import { loadReviewQuestionIds, saveReviewQuestionIds } from "@/lib/storage";
+import {
+  loadChapterStudySelection,
+  loadReviewQuestionIds,
+  saveChapterStudySelection,
+  saveReviewQuestionIds,
+} from "@/lib/storage";
 import type { LearningDataset } from "@/lib/types";
 
 export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
@@ -23,10 +28,56 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
 
   useEffect(() => {
     const reviewIds = loadReviewQuestionIds();
+    const savedSelection = loadChapterStudySelection();
+
+    const fallbackVolume = dataset.volumes[0] ?? 1;
+    const fallbackChapter = dataset.chapters[0]?.key ?? "";
+    const fallbackTopic = dataset.topics[0]?.id ?? "";
+
+    const nextVolume =
+      savedSelection && dataset.volumes.includes(savedSelection.volume)
+        ? savedSelection.volume
+        : fallbackVolume;
+
+    const nextChapter =
+      savedSelection &&
+      dataset.chapters.some(
+        (chapter) =>
+          chapter.key === savedSelection.chapterKey && chapter.volume === nextVolume,
+      )
+        ? savedSelection.chapterKey
+        : dataset.chapters.find((chapter) => chapter.volume === nextVolume)?.key ??
+          fallbackChapter;
+
+    const nextTopic =
+      savedSelection &&
+      dataset.topics.some(
+        (topic) =>
+          topic.id === savedSelection.topicId && topic.chapterKey === nextChapter,
+      )
+        ? savedSelection.topicId
+        : dataset.topics.find((topic) => topic.chapterKey === nextChapter)?.id ??
+          fallbackTopic;
+
     startTransition(() => {
       setSavedQuestionIds(reviewIds);
+      setSelectedVolume(nextVolume);
+      setSelectedChapterKey(nextChapter);
+      setActiveTopicId(nextTopic);
     });
-  }, []);
+  }, [dataset]);
+
+  useEffect(() => {
+    if (!selectedChapterKey || !activeTopicId) {
+      return;
+    }
+
+    saveChapterStudySelection({
+      volume: selectedVolume,
+      chapterKey: selectedChapterKey,
+      topicId: activeTopicId,
+    });
+  }, [activeTopicId, selectedChapterKey, selectedVolume]);
 
   const chapterOptions = dataset.chapters.filter(
     (chapter) => chapter.volume === selectedVolume,

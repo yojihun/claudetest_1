@@ -113,23 +113,6 @@ export function TopicArticle({
 
       {!compact ? (
         <div className="mt-10 space-y-6">
-          <nav className="app-panel-tint rounded-[1.75rem] p-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[rgba(16,32,51,0.52)]">
-              빠른 이동
-            </p>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {sections.map((section, index) => (
-                <a
-                  key={section.id}
-                  href={`#${section.id}`}
-                  className="app-button-ghost rounded-full px-3 py-2 text-sm font-medium transition"
-                >
-                  {index + 1}. {section.title}
-                </a>
-              ))}
-            </div>
-          </nav>
-
           {sections.map((section, index) => (
             <section
               key={section.id}
