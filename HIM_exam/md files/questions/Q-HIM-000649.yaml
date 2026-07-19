@@ -1,0 +1,29 @@
+id: Q-HIM-000649
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C03-S06-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: understand
+importance: A
+stem: "TNM 병기 체계에서 인근 림프절로의 전이 여부를 나타내는 요소는?"
+options:
+  - id: A
+    text: T(Tumor)
+  - id: B
+    text: N(Node)
+  - id: C
+    text: M(Metastasis)
+  - id: D
+    text: G(Grade)
+answer:
+  - B
+explanation: N(Node)은 인근 림프절로의 전이 여부와 정도를 나타내는 요소이다.
+distractor_explanations:
+  A: T는 원발 종양의 크기와 침습 정도를 나타낸다.
+  C: M은 원격 장기로의 전이를 나타낸다.
+  D: G(Grade)는 분화도를 나타내는 별개의 개념으로 TNM 체계의 구성 요소가 아니다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

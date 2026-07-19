@@ -1,0 +1,23 @@
+id: Q-HIM-000572
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C15-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "암 진단은 일반 질병분류처럼 진단명 코드 하나만으로 암등록 절차가 충분히 완료된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 암등록은 원발부위, 조직학적 형태, 병기 등 추가적인 상세 정보가 함께 필요하다.
+distractor_explanations:
+  O: 암등록에 필요한 추가 정보의 필요성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

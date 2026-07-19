@@ -1,0 +1,23 @@
+id: Q-HIM-000620
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S05-T001
+subject_area: classification
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "수술 후 새로 발생한 합병증은 원래 질환과 구분해 별도로 표시해야 통계와 진료비 산정에 정확히 반영된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 합병증은 원래 질환과 구분해 별도로 표시해야 정확한 통계·진료비 산정이 가능하다.
+distractor_explanations:
+  X: 합병증 별도 표시의 필요성을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000626
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S08-T001
+subject_area: classification
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "감염성 질환을 정확히 코딩하려면 감염 부위뿐 아니라 원인균(세균성, 바이러스성 등) 정보도 함께 확인해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 감염성 질환은 감염 부위와 원인균 정보를 함께 반영해야 정확한 코드를 부여할 수 있다.
+distractor_explanations:
+  X: 원인균 정보의 필요성을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

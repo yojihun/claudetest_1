@@ -1,0 +1,29 @@
+id: Q-HIM-000555
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C14-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "환자와의 면담을 통해 외모, 사고, 기분, 인지 기능 등을 종합적으로 평가하는 검사는?"
+options:
+  - id: A
+    text: 정신상태검사(MSE)
+  - id: B
+    text: 전기경련요법(ECT)
+  - id: C
+    text: 뇌파검사(EEG)
+  - id: D
+    text: 요추천자(LP)
+answer:
+  - A
+explanation: 정신상태검사(MSE)는 면담을 통해 정신 상태를 종합적으로 평가하는 검사이다.
+distractor_explanations:
+  B: 전기경련요법은 치료 방법으로 평가 검사가 아니다.
+  C: 뇌파검사는 뇌의 전기적 활동을 측정하는 신경계 검사로 정신 상태 면담 평가와는 다르다.
+  D: 요추천자는 척수액을 채취하는 검사로 정신 상태 평가와는 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

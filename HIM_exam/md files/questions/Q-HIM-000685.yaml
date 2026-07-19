@@ -1,0 +1,29 @@
+id: Q-HIM-000685
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V3-C03-S08-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 폐 종양이 유방암의 전이가 아닌 새로운 원발암으로 최종 판단된 핵심 근거는?"
+options:
+  - id: A
+    text: 조직형 차이와 면역조직화학염색 결과(ER/PR 음성, TTF-1 양성)
+  - id: B
+    text: 환자의 나이
+  - id: C
+    text: 유방암 치료 후 경과한 시간이 5년이라는 사실만으로
+  - id: D
+    text: 담당 의료진의 주관적 판단만으로
+answer:
+  - A
+explanation: 조직형 차이와 면역조직화학염색 결과(유방암 표지자 음성, 폐 원발 표지자 양성)가 새로운 원발암 판단의 객관적 근거다.
+distractor_explanations:
+  B: 환자의 나이는 이 판단의 핵심 근거가 아니다.
+  C: 경과 시간만으로는 전이와 새 원발암을 확정할 수 없으며 조직학적 근거가 필요하다.
+  D: 이 판단은 객관적 검사 근거(염색 결과)에 기반했으며 주관적 판단만으로 이루어지지 않았다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

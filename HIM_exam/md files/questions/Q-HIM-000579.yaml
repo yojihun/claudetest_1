@@ -1,0 +1,29 @@
+id: Q-HIM-000579
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C16-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "임신 중인 환자에게 방사선 노출 없이 실시간으로 태아 상태를 확인하기 위해 우선 선택하는 영상검사는?"
+options:
+  - id: A
+    text: X-ray
+  - id: B
+    text: CT
+  - id: C
+    text: 초음파(Ultrasound)
+  - id: D
+    text: MRI
+answer:
+  - C
+explanation: 초음파는 음파를 이용해 방사선 노출 없이 실시간 영상을 얻을 수 있어 임신 중에도 안전하게 사용된다.
+distractor_explanations:
+  A: X-ray는 방사선을 이용하는 검사로 임신 중에는 신중한 판단이 필요하다.
+  B: CT는 방사선을 이용하는 검사로 임신 중에는 신중한 판단이 필요하다.
+  D: MRI는 방사선을 사용하지 않지만 실시간 영상이라는 특성은 초음파가 더 강점을 가진다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

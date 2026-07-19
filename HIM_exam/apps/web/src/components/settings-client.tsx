@@ -3,6 +3,7 @@
 import { startTransition, useEffect, useMemo, useState } from "react";
 
 import { getRomanVolumeLabel, getVolumeTitle } from "@/lib/course-meta";
+import { getExamDateLabel } from "@/lib/exam-info";
 import { QuestionCard } from "@/components/question-card";
 import {
   loadFocusSettings,
@@ -118,6 +119,61 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
                     </option>
                   ))}
                 </select>
+              </div>
+            </div>
+          </div>
+
+          <div className="app-panel rounded-[2rem] p-6">
+            <h3 className="text-2xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
+              시험 정보
+            </h3>
+            <p className="mt-3 text-sm leading-7 app-subtle">
+              2026 보건의료정보관리사 국가시험일: {getExamDateLabel()}
+            </p>
+
+            <div className="mt-6 space-y-4 text-sm leading-7 text-[rgba(16,32,51,0.78)]">
+              <div className="rounded-[1.5rem] border border-[rgba(16,32,51,0.08)] bg-white/72 p-4">
+                <p className="font-semibold text-[var(--navy)]">
+                  3교시 지참도서
+                </p>
+                <ul className="mt-3 list-disc space-y-2 pl-5">
+                  <li>
+                    `한국표준질병·사인분류(KCD) 제1권`
+                    : `KCD-8 + 제8차·제9차 신·구대조표` 또는 `KCD-9`
+                  </li>
+                  <li>
+                    `한국표준질병·사인분류(KCD) 제3권`
+                    : `KCD-8 + 제8차·제9차 신·구대조표` 또는 `KCD-9`
+                  </li>
+                  <li>`국제의료행위분류`: `ICD-9-CM, Volume 3` 제1차 개정판</li>
+                  <li>
+                    `종양학 국제질병분류(ICD-O)`
+                    : 제3판 1차 개정판 또는 2차 개정판
+                  </li>
+                </ul>
+              </div>
+
+              <div className="rounded-[1.5rem] border border-[rgba(16,32,51,0.08)] bg-white/72 p-4">
+                <p className="font-semibold text-[var(--navy)]">핵심 유의사항</p>
+                <ul className="mt-3 list-disc space-y-2 pl-5">
+                  <li>
+                    지참 도서는 대한보건의료정보관리사협회 발행본만 가능하며,
+                    타 출판사 서적·제본본·복사본은 불가합니다.
+                  </li>
+                  <li>
+                    `제8차·제9차 신·구대조표`는 협회 발행 책자만 인정됩니다.
+                  </li>
+                  <li>
+                    시험일 기준 최신 정오사항 반영 도서를 기준으로 출제되며,
+                    별도 정오표 지참은 불가하지만 개인 도서에 정오사항 메모는 가능합니다.
+                  </li>
+                  <li>
+                    구형 도서(old version) 지참에 따른 불이익은 응시자 책임입니다.
+                  </li>
+                </ul>
+                <p className="mt-3 text-sm text-[rgba(16,32,51,0.58)]">
+                  문의: 대한보건의료정보관리사협회 02-424-8514
+                </p>
               </div>
             </div>
           </div>

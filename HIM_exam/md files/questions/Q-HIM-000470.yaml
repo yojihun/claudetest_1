@@ -1,0 +1,23 @@
+id: Q-HIM-000470
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C07-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "간, 담낭, 췌장은 담관을 통해 소화관과 연결되어 소화액을 전달하지만 음식물이 직접 통과하지는 않는다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 간, 담낭, 췌장은 소화부속기관으로 소화액을 분비하지만 음식물이 직접 통과하지는 않는다.
+distractor_explanations:
+  X: 소화부속기관의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

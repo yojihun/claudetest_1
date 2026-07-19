@@ -1,0 +1,29 @@
+id: Q-HIM-000519
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C11-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "강한 자극을 주어도 반응하지 않는 깊고 지속적인 의식 소실 상태를 가리키는 용어는?"
+options:
+  - id: A
+    text: 실신(Syncope)
+  - id: B
+    text: 혼수(Coma)
+  - id: C
+    text: 떨림(Tremor)
+  - id: D
+    text: 실어증(Aphasia)
+answer:
+  - B
+explanation: 혼수는 자극에 반응하지 않는 깊고 지속적인 의식 소실 상태이다.
+distractor_explanations:
+  A: 실신은 일시적으로 의식을 잃었다가 곧 자연 회복되는 상태로 혼수보다 경미하다.
+  C: 떨림은 의도치 않은 리듬성 근육 떨림으로 의식 소실과는 다른 증상이다.
+  D: 실어증은 언어 이해·표현 능력의 장애로 의식 소실과는 다른 증상이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

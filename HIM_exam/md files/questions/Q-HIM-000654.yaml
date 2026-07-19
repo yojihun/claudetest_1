@@ -1,0 +1,23 @@
+id: Q-HIM-000654
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C03-S08-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "새로 발견된 종양은 항상 기존 암의 전이로 간주해야 하며 다중원발암 가능성은 검토할 필요가 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 새로 발견된 종양은 조직학적 형태 등을 종합적으로 검토해 전이인지 다중원발암인지 판단해야 한다.
+distractor_explanations:
+  O: 다중원발암 가능성 검토의 필요성을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

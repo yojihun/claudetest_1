@@ -1,0 +1,29 @@
+id: Q-HIM-000581
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C16-S05-T001
+subject_area: medical_terminology
+difficulty: advanced
+cognitive_level: apply
+importance: A
+stem: "'Metoprolol 25mg PO BID'라는 처방을 정확히 해석한 것은?"
+options:
+  - id: A
+    text: 베타차단제 계열 약물 25mg을 경구로 하루 2회 복용
+  - id: B
+    text: ACE 억제제 계열 약물 25mg을 정맥으로 하루 3회 투여
+  - id: C
+    text: 스타틴계 약물 25mg을 필요할 때마다 경구 복용
+  - id: D
+    text: 항생제 25mg을 근육 주사로 하루 4회 투여
+answer:
+  - A
+explanation: "-olol" 접미사는 베타차단제, PO는 경구, BID는 하루 2회를 의미하므로 이 처방은 베타차단제를 경구로 하루 2회 복용하는 것이다.
+distractor_explanations:
+  B: ACE 억제제는 "-pril" 접미사이며, 이 처방의 경로(PO)와 빈도(BID)도 정맥·하루 3회와 다르다.
+  C: 스타틴계는 "-statin" 접미사이며, 이 처방은 PRN(필요시)이 아닌 BID(하루 2회) 처방이다.
+  D: 항생제 접미사는 "-cillin", "-mycin" 등이며, 이 처방의 경로(PO)도 근육 주사가 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

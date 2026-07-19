@@ -1,0 +1,23 @@
+id: Q-HIM-000578
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C16-S03-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "TID는 하루 3회 복용을 의미하며, QID는 하루 4회 복용을 의미한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: TID(하루 3회)와 QID(하루 4회)의 의미가 맞다.
+distractor_explanations:
+  X: TID와 QID의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

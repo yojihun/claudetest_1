@@ -1,0 +1,23 @@
+id: Q-HIM-000520
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C11-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "실신(Syncope)과 혼수(Coma)는 의식 소실의 지속 시간과 심각도가 동일한 증상이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 실신은 일시적이고 자연 회복되는 반면, 혼수는 지속적이고 자극에 반응하지 않는 훨씬 심각한 상태다.
+distractor_explanations:
+  O: 두 증상의 심각도 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

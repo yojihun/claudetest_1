@@ -1,0 +1,23 @@
+id: Q-HIM-000534
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C12-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "백내장은 수술로 시력을 크게 개선할 수 있지만, 녹내장으로 인한 시신경 손상은 되돌릴 수 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 백내장은 수술(인공수정체 삽입)로 개선 가능하지만, 녹내장의 시신경 손상은 비가역적이라 조기 발견과 관리가 중요하다.
+distractor_explanations:
+  X: 두 질환의 치료 가능성·가역성 차이를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

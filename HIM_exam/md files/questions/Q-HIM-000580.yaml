@@ -1,0 +1,23 @@
+id: Q-HIM-000580
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C16-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "CT와 MRI는 원리(방사선 vs 자기장)가 동일해 임상적으로 서로 대체 가능한 검사이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: CT는 방사선, MRI는 자기장을 이용하는 서로 다른 원리의 검사로, 각각 강점(단면 재구성 vs 연부조직)이 달라 항상 대체 가능하지 않다.
+distractor_explanations:
+  O: CT와 MRI의 원리·강점 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

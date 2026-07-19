@@ -1,0 +1,23 @@
+id: Q-HIM-000526
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C11-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "CVA와 TIA는 지속 시간과 영구 손상 여부가 달라 동일하게 취급해서는 안 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: CVA는 지속적인 손상을 남길 수 있고 TIA는 24시간 이내 완전히 회복되어 구분이 필요하다.
+distractor_explanations:
+  X: 두 약어의 차이를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

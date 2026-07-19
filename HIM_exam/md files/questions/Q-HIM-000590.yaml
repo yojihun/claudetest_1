@@ -1,0 +1,23 @@
+id: Q-HIM-000590
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S03-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "비율(Proportion)은 분자가 분모에 포함되는 관계를 가진다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 비율은 전체(분모) 중 부분(분자)의 비중을 나타내므로 분자가 분모에 포함되는 것이 맞다.
+distractor_explanations:
+  X: 비율의 분자·분모 관계를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

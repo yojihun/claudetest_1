@@ -1,0 +1,29 @@
+id: Q-HIM-000563
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C15-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "병리 보고서에 'Metastatic breast carcinoma to lung'이라고 기록되어 있다. 이 폐 병변을 올바르게 진단·기록하는 방식은?"
+options:
+  - id: A
+    text: 새로운 폐암으로 진단·기록한다.
+  - id: B
+    text: 유방암의 폐 전이로 진단·기록한다.
+  - id: C
+    text: 폐암과 유방암 두 개의 서로 무관한 원발암으로 기록한다.
+  - id: D
+    text: 원발부위를 알 수 없는 암으로 기록한다.
+answer:
+  - B
+explanation: 전이된 종양은 발견된 장기가 아닌 원발부위(유방)의 조직 특성을 유지하므로 유방암의 폐 전이로 기록해야 한다.
+distractor_explanations:
+  A: 전이 종양을 발견 장기 기준의 새로운 원발암으로 오인한 것이다.
+  C: 두 종양은 서로 무관한 것이 아니라 하나의 원발암(유방암)과 그 전이 관계다.
+  D: 원발부위(유방)가 이미 확인되었으므로 원발부위 불명으로 기록하는 것은 적절하지 않다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

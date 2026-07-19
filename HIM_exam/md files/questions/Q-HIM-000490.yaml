@@ -1,0 +1,23 @@
+id: Q-HIM-000490
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C08-S05-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "Cr(Creatinine)은 신장 기능 평가에 사용되는 혈액 수치 중 하나이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: Creatinine은 BUN과 함께 신장 기능을 평가하는 대표적인 혈액 수치이다.
+distractor_explanations:
+  X: Cr이 신장 기능 평가 수치임을 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

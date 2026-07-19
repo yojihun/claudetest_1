@@ -1,0 +1,29 @@
+id: Q-HIM-000661
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V4-C01-S02-T001
+subject_area: record_practice
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "심장내과 진료기록에서 'MS'라는 약어를 발견했다. 이 맥락에서 가장 적절한 해석은?"
+options:
+  - id: A
+    text: 다발경화증(Multiple Sclerosis)
+  - id: B
+    text: 승모판협착증(Mitral Stenosis)
+  - id: C
+    text: 뇌졸중(CVA)
+  - id: D
+    text: 양극성장애
+answer:
+  - B
+explanation: 심장내과 맥락에서 MS는 일반적으로 승모판협착증을 의미한다.
+distractor_explanations:
+  A: 다발경화증은 신경과 맥락에서의 MS 해석에 해당한다.
+  C: 뇌졸중은 CVA로 축약되며 MS와 다르다.
+  D: 양극성장애는 이 약어와 무관하다.
+references:
+  - REF-SAFETY-DONOTUSE-ABBREVIATIONS-001
+verified: false

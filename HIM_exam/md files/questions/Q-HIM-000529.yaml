@@ -1,0 +1,29 @@
+id: Q-HIM-000529
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C12-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "청력 저하와 어지러움(현훈)이 함께 나타날 때 의심할 수 있는 신체 부위는?"
+options:
+  - id: A
+    text: 눈
+  - id: B
+    text: 내이
+  - id: C
+    text: 외이만
+  - id: D
+    text: 시신경
+answer:
+  - B
+explanation: 내이에는 청각을 담당하는 달팽이관과 평형감각을 담당하는 전정기관이 함께 위치해, 내이 문제는 청력 저하와 어지러움을 동시에 유발할 수 있다.
+distractor_explanations:
+  A: 눈은 시각을 담당하는 기관으로 청력·평형감각과는 무관하다.
+  C: 외이는 소리를 모으는 역할만 하며 평형감각 기관은 내이에 위치한다.
+  D: 시신경은 시각 정보를 전달하는 신경으로 청력·평형감각과는 다른 기능이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

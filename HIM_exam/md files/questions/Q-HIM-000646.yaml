@@ -1,0 +1,23 @@
+id: Q-HIM-000646
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C03-S04-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "조직학적 형태만 확인하면 행동양식(양성/악성 여부)은 별도로 확인할 필요가 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 조직학적 형태와 행동양식은 서로 다른 축이므로 둘 다 별도로 확인해야 완전한 등록 정보가 된다.
+distractor_explanations:
+  O: 두 축이 별개라는 사실을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

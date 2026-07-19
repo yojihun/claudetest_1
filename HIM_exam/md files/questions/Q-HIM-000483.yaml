@@ -1,0 +1,29 @@
+id: Q-HIM-000483
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C08-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "중환자실 기록에서 소변량이 감소해 급성 신손상 여부를 감별 중이라는 문장에 사용된 소변량 감소 증상은?"
+options:
+  - id: A
+    text: Polyuria
+  - id: B
+    text: Oliguria
+  - id: C
+    text: Dysuria
+  - id: D
+    text: Hematuria
+answer:
+  - B
+explanation: Oliguria는 소변량이 정상보다 적은 상태를 나타내며 신장 기능 저하와 관련될 수 있다.
+distractor_explanations:
+  A: Polyuria는 소변량이 많은 상태로 이 상황과 반대이다.
+  C: Dysuria는 배뇨 시 통증을 나타내는 증상으로 소변량과는 다른 개념이다.
+  D: Hematuria는 소변에 혈액이 섞이는 증상으로 소변량과는 다른 개념이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

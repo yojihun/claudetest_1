@@ -1,0 +1,29 @@
+id: Q-HIM-000481
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C08-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "방광에 저장된 소변을 체외로 배출하는 통로는?"
+options:
+  - id: A
+    text: 요관(Ureter)
+  - id: B
+    text: 요도(Urethra)
+  - id: C
+    text: 신우(Renal Pelvis)
+  - id: D
+    text: 사구체(Glomerulus)
+answer:
+  - B
+explanation: 요도는 방광에서 체외로 소변을 배출하는 통로이다.
+distractor_explanations:
+  A: 요관은 신장에서 방광으로 소변을 운반하는 관으로 방향이 반대이다.
+  C: 신우는 신장 내부에서 소변이 모이는 구조로 체외 배출 통로가 아니다.
+  D: 사구체는 신장 내부에서 혈액을 여과하는 미세 구조로 배출 통로가 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

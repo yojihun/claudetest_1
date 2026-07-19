@@ -1,0 +1,29 @@
+id: Q-HIM-000635
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C02-S13-T001
+subject_area: classification
+difficulty: advanced
+cognitive_level: understand
+importance: A
+stem: "실제로는 없었던 합병증을 있는 것처럼 코딩해 진료비를 부풀리는 행위를 가리키는 용어는?"
+options:
+  - id: A
+    text: 과소코딩(Undercoding)
+  - id: B
+    text: 과다코딩(Upcoding)
+  - id: C
+    text: 코딩 감사(Coding Audit)
+  - id: D
+    text: 주진단 선택
+answer:
+  - B
+explanation: 과다코딩은 실제보다 중증이거나 복잡한 것처럼 코드를 부풀리는 행위다.
+distractor_explanations:
+  A: 과소코딩은 반대로 실제보다 축소해 코딩하는 행위다.
+  C: 코딩 감사는 이런 오류를 점검하는 절차이지 오류 자체가 아니다.
+  D: 주진단 선택은 코딩 절차의 일부로 이 행위와는 다른 개념이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

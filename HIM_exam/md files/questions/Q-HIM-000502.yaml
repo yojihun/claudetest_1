@@ -1,0 +1,23 @@
+id: Q-HIM-000502
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C09-S05-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "BPH는 남성 생식계통, PID는 여성 생식계통에 적용되는 대표적인 진단 약어이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: BPH(양성전립선비대증)는 남성, PID(골반염증성질환)는 여성 생식계통에 적용되는 약어가 맞다.
+distractor_explanations:
+  X: 두 약어의 적용 대상을 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000524
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C11-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "EEG와 LP는 모두 척수액 성분을 확인하는 동일한 성격의 검사이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: EEG는 뇌의 전기적 활동을, LP는 척수액 성분을 확인하는 서로 다른 성격의 검사다.
+distractor_explanations:
+  O: 두 검사의 성격 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

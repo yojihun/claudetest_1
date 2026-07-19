@@ -1,0 +1,23 @@
+id: Q-HIM-000678
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S07-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "산모와 신생아의 의무기록을 서로 다른 환자 ID로 별도 등록한 것은 기록상의 오류이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 산모와 신생아는 법적으로 별개의 개체이므로 별도의 환자 ID로 각각 기록하는 것이 올바른 처리 방식이다.
+distractor_explanations:
+  O: 산모-신생아 분리 기록 원칙을 오류로 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

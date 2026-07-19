@@ -1,0 +1,23 @@
+id: Q-HIM-000472
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C07-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "흑색변(Melena)과 혈변(Hematochezia)은 모두 동일한 부위(하부 위장관)의 출혈만을 시사한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 흑색변은 주로 상부 위장관 출혈을, 혈변은 주로 하부 위장관 출혈을 시사해 부위가 다르다.
+distractor_explanations:
+  O: 두 증상의 출혈 부위 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

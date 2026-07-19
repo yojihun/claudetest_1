@@ -1,0 +1,29 @@
+id: Q-HIM-000509
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C10-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "환자가 다뇨 증상을 보이지만 혈당 수치는 정상일 때 의심할 수 있는 질환은?"
+options:
+  - id: A
+    text: 당뇨병(Diabetes Mellitus)
+  - id: B
+    text: 요붕증(Diabetes Insipidus)
+  - id: C
+    text: 쿠싱증후군(Cushing's Syndrome)
+  - id: D
+    text: 말단비대증(Acromegaly)
+answer:
+  - B
+explanation: 요붕증은 항이뇨호르몬 문제로 혈당은 정상이면서 다량의 묽은 소변을 배출하는 질환이다.
+distractor_explanations:
+  A: 당뇨병은 인슐린 문제로 혈당이 상승하는 질환으로 이 상황과 다르다.
+  C: 쿠싱증후군은 코르티솔 과다로 인한 증후군으로 다뇨가 핵심 증상이 아니다.
+  D: 말단비대증은 성장호르몬 과다로 인한 질환으로 다뇨가 핵심 증상이 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

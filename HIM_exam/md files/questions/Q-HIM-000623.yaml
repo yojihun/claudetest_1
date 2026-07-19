@@ -1,0 +1,29 @@
+id: Q-HIM-000623
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C02-S07-T001
+subject_area: classification
+difficulty: advanced
+cognitive_level: understand
+importance: A
+stem: "임신 중인 여성이 당뇨병을 새로 진단받았다. 이 경우 코딩의 일반적 경향으로 가장 적절한 것은?"
+options:
+  - id: A
+    text: 일반 당뇨병 코드가 아닌 임신 관련 당뇨병 코드가 우선 적용되는 경향이 있다.
+  - id: B
+    text: 임신과 무관하게 일반 당뇨병 코드만 사용한다.
+  - id: C
+    text: 신생아용 분류 챕터에서 코딩한다.
+  - id: D
+    text: 코딩하지 않고 기록에서 제외한다.
+answer:
+  - A
+explanation: 임신 중 발생한 질환은 임신이라는 상태의 영향을 반영해 임신 관련 코드가 우선 적용되는 경향이 있다.
+distractor_explanations:
+  B: 임신 중 발생한 질환은 일반 코드가 아닌 임신 관련 코드가 우선되는 경향이 있다.
+  C: 이 사례는 산모의 진단이며 신생아용 챕터와는 무관하다.
+  D: 진단이 확정되었으므로 코딩에서 제외하는 것은 적절하지 않다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

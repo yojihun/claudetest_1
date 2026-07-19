@@ -1,0 +1,23 @@
+id: Q-HIM-000630
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S10-T001
+subject_area: classification
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "질병분류 코드만 있으면 별도의 의료행위 코드 없이도 정확한 진료비 청구가 가능하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 진료비 청구에는 진단 코드뿐 아니라 시행된 처치를 나타내는 의료행위 코드도 함께 필요하다.
+distractor_explanations:
+  O: 의료행위 코드의 필요성을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

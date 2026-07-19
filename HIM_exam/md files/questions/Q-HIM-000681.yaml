@@ -1,0 +1,29 @@
+id: Q-HIM-000681
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V3-C02-S09-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 '당뇨병성 신증을 동반한 제2형 당뇨병, CKD stage 4'라는 진단을 완전하게 코딩하기 위해 반드시 함께 확인해야 할 두 계통의 분류 원칙은?"
+options:
+  - id: A
+    text: 내분비계(당뇨병 합병증 분류)와 비뇨생식기계(CKD 단계 분류)
+  - id: B
+    text: 신경계와 감각계
+  - id: C
+    text: 피부계와 정신건강
+  - id: D
+    text: 근골격계와 심혈관계
+answer:
+  - A
+explanation: 당뇨병성 신증은 내분비계(당뇨병 합병증)와 비뇨생식기계(CKD 단계) 두 계통의 분류 원칙을 모두 충족해야 완전하게 코딩된다.
+distractor_explanations:
+  B: 신경계와 감각계는 이 진단과 직접 관련이 없다.
+  C: 피부계와 정신건강은 이 진단과 직접 관련이 없다.
+  D: 근골격계와 심혈관계는 이 진단과 직접 관련이 없다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

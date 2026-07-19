@@ -1,0 +1,23 @@
+id: Q-HIM-000594
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S05-T001
+subject_area: hospital_statistics
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "두 집단의 평균이 같다면 자료의 분포(흩어진 정도)도 항상 동일하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 평균이 같아도 표준편차가 다르면 자료의 분포는 크게 다를 수 있다.
+distractor_explanations:
+  O: 평균만으로 분포가 동일하다고 단정한 오류이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

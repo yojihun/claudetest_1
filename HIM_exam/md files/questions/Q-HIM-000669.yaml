@@ -1,0 +1,29 @@
+id: Q-HIM-000669
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V4-C01-S05-T001
+subject_area: record_practice
+difficulty: intermediate
+cognitive_level: analyze
+importance: A
+stem: "이 외래기록 사례에서 'A: T2DM, HTN, on Metformin and Amlodipine, well controlled'라는 문장의 의미로 가장 적절한 것은?"
+options:
+  - id: A
+    text: 제2형 당뇨병과 고혈압이 약물 치료로 잘 조절되고 있다는 평가
+  - id: B
+    text: 환자가 새로 제2형 당뇨병을 진단받았다는 기록
+  - id: C
+    text: 약물 치료가 실패했다는 평가
+  - id: D
+    text: 환자가 입원이 필요하다는 평가
+answer:
+  - A
+explanation: 이 문장은 SOAP 기록의 'A(평가)' 부분으로, 기존에 진단된 T2DM과 HTN이 현재 약물(Metformin, Amlodipine)로 잘 조절되고 있다는 평가를 나타낸다.
+distractor_explanations:
+  B: 이는 새로운 진단이 아니라 기존 진단의 추적 관찰이다.
+  C: 'well controlled'는 치료가 잘 되고 있다는 뜻으로 실패와는 반대다.
+  D: 이 기록에는 입원 필요성에 대한 언급이 없다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

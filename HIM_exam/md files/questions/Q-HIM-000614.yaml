@@ -1,0 +1,23 @@
+id: Q-HIM-000614
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S02-T001
+subject_area: classification
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "제외 지시(Excludes)를 무시하고 알파벳 색인에서 찾은 코드를 그대로 사용하면 코딩 오류로 이어질 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 제외 지시를 확인하지 않으면 실제로는 다른 코드로 분류해야 할 진단을 잘못 코딩할 위험이 있다.
+distractor_explanations:
+  X: 제외 지시 무시의 위험성을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

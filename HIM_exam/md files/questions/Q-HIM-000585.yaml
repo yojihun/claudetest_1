@@ -1,0 +1,29 @@
+id: Q-HIM-000585
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C01-S01-T001
+subject_area: hospital_statistics
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "다음 중 질적 변수(Qualitative Variable)에 해당하는 것은?"
+options:
+  - id: A
+    text: 재원일수
+  - id: B
+    text: 환자의 나이
+  - id: C
+    text: 진단명
+  - id: D
+    text: 체중
+answer:
+  - C
+explanation: 진단명은 범주로 구분되는 질적 변수이다.
+distractor_explanations:
+  A: 재원일수는 숫자로 측정되는 양적 변수이다.
+  B: 나이는 숫자로 측정되는 양적 변수이다.
+  D: 체중은 숫자로 측정되는 양적 변수이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

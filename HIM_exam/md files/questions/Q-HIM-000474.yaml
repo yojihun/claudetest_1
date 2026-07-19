@@ -1,0 +1,23 @@
+id: Q-HIM-000474
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C07-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "궤양성 대장염은 대장과 직장에 국한되어 연속적으로 염증이 퍼지는 것이 특징이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 궤양성 대장염은 대장·직장에 국한되어 연속적으로 염증이 퍼지는 것이 특징이 맞다.
+distractor_explanations:
+  X: 궤양성 대장염의 특징을 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

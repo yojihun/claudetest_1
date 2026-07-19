@@ -1,0 +1,23 @@
+id: Q-HIM-000552
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C14-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "망상과 환각은 개념적으로 동일한 이상(사고 내용 이상)을 나타내는 용어이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 망상은 사고 내용의 이상, 환각은 지각(감각)의 이상으로 서로 다른 범주에 속한다.
+distractor_explanations:
+  O: 두 증상의 범주 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

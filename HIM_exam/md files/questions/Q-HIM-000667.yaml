@@ -1,0 +1,29 @@
+id: Q-HIM-000667
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V4-C01-S05-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "기록 완결성 감사 담당자가 여러 부서의 기록을 시간순으로 나열했더니, 검사 결과가 나오기 전에 그 검사에 근거한 처치가 먼저 시행된 것으로 보였다. 이는 무엇을 시사하는가?"
+options:
+  - id: A
+    text: 기록상의 모순 가능성으로 추가 확인이 필요함
+  - id: B
+    text: 정상적인 진료 순서이므로 문제없음
+  - id: C
+    text: 환자의 상태가 매우 좋다는 의미
+  - id: D
+    text: 검사 결과가 필요 없었다는 의미
+answer:
+  - A
+explanation: 검사 전에 그 결과에 근거한 처치가 시행된 것으로 보이는 시간 순서는 기록상의 모순 가능성을 시사해 추가 확인이 필요하다.
+distractor_explanations:
+  B: 이런 시간 순서는 일반적인 진료 순서와 맞지 않아 정상으로 볼 수 없다.
+  C: 이 상황은 환자 상태와 직접 관련이 없다.
+  D: 검사가 시행되었다는 기록이 있으므로 필요 없었다는 해석은 맞지 않다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

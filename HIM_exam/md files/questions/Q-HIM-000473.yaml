@@ -1,0 +1,29 @@
+id: Q-HIM-000473
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C07-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "내시경 판독지에서 병변이 띄엄띄엄 나타나는 비연속적 양상(skip lesions)이 확인되었다. 이는 어떤 질환에 합당한 소견인가?"
+options:
+  - id: A
+    text: 궤양성 대장염
+  - id: B
+    text: 크론병
+  - id: C
+    text: 위식도역류질환
+  - id: D
+    text: 담석증
+answer:
+  - B
+explanation: 크론병은 소화관 전체에 비연속적(skip lesions)으로 나타날 수 있는 만성 염증성 장질환이다.
+distractor_explanations:
+  A: 궤양성 대장염은 대장·직장에 국한되어 연속적으로 나타나는 것이 특징이다.
+  C: 위식도역류질환은 위산의 식도 역류로 인한 염증으로 비연속적 장 병변과는 다른 개념이다.
+  D: 담석증은 담낭 내 결석 형성 질환으로 장 병변 양상과는 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000495
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C09-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "임신 32주에 통증 없는 질 출혈이 발생해 초음파로 확인했을 때 가장 먼저 의심할 수 있는 상태는?"
+options:
+  - id: A
+    text: 전치태반(Placenta Previa)
+  - id: B
+    text: 태반조기박리(Abruptio Placentae)
+  - id: C
+    text: 자간전증(Preeclampsia)
+  - id: D
+    text: 자궁외임신(Ectopic Pregnancy)
+answer:
+  - A
+explanation: 전치태반은 태반이 자궁 경부를 막아 통증 없는 질 출혈을 유발하는 대표적 원인이다.
+distractor_explanations:
+  B: 태반조기박리는 심한 복통을 동반하는 출혈이 특징으로 이 상황과 다르다.
+  C: 자간전증은 고혈압과 단백뇨를 특징으로 하며 질 출혈이 주 증상이 아니다.
+  D: 자궁외임신은 임신 초기에 나타나는 상태로 임신 32주와는 시기가 맞지 않는다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

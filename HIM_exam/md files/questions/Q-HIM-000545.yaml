@@ -1,0 +1,29 @@
+id: Q-HIM-000545
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C13-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "의심스러운 점의 양성·악성 여부를 조직학적으로 확진하기 위해 시행하는 검사는?"
+options:
+  - id: A
+    text: 냉동요법(Cryotherapy)
+  - id: B
+    text: 피부생검(Skin Biopsy)
+  - id: C
+    text: 절제술(Excision)
+  - id: D
+    text: 안압검사(Tonometry)
+answer:
+  - B
+explanation: 피부생검은 병변 조직을 채취해 현미경으로 확인하는 검사로 양성·악성 여부를 확진하는 데 사용된다.
+distractor_explanations:
+  A: 냉동요법은 양성 병변을 얼려 제거하는 치료로 진단 검사가 아니다.
+  C: 절제술은 병변을 수술로 제거하는 처치로 진단이 아닌 치료 목적이다.
+  D: 안압검사는 눈의 안압을 측정하는 검사로 피부 병변과는 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

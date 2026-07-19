@@ -1,0 +1,29 @@
+id: Q-HIM-000673
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V2-C11-S03-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 응급기록 사례에서 증상이 45분간 지속되고 있다는 정보가 감별진단에 중요한 이유는?"
+options:
+  - id: A
+    text: TIA(일과성허혈발작)는 통상 24시간 이내 완전히 회복되므로, 지속되는 증상은 뇌졸중 가능성을 더 시사하기 때문
+  - id: B
+    text: 45분은 tPA 투여가 불가능한 시간이기 때문
+  - id: C
+    text: 45분 이내 증상은 항상 완치를 의미하기 때문
+  - id: D
+    text: 증상 지속 시간은 진단과 무관하기 때문
+answer:
+  - A
+explanation: TIA는 통상 24시간 이내(대개 더 짧게) 완전히 회복되는 반면, 이 사례처럼 증상이 지속되는 경우는 뇌졸중(CVA) 가능성이 더 크다는 것을 시사한다.
+distractor_explanations:
+  B: tPA는 golden time(제한된 시간 창) 내에서 투여 가능하며, 45분은 이 사례에서 투여 가능한 시간대에 해당한다.
+  C: 45분간 증상이 지속되는 것은 완치가 아니라 지속되는 증상을 의미한다.
+  D: 증상 지속 시간은 TIA와 뇌졸중을 감별하는 핵심 정보다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

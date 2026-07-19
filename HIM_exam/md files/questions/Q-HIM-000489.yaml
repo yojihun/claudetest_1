@@ -1,0 +1,29 @@
+id: Q-HIM-000489
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C08-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "CKD와 ESRD의 관계를 가장 정확히 설명한 것은?"
+options:
+  - id: A
+    text: ESRD는 CKD의 여러 단계 중 가장 심각한 마지막 단계이다.
+  - id: B
+    text: CKD와 ESRD는 서로 무관한 별개의 질환이다.
+  - id: C
+    text: CKD는 ESRD보다 항상 더 심각한 상태이다.
+  - id: D
+    text: ESRD는 급성 신손상만을 가리킨다.
+answer:
+  - A
+explanation: ESRD(말기 신부전)는 CKD(만성 신장질환)의 여러 단계 중 가장 심각한 마지막 단계를 가리킨다.
+distractor_explanations:
+  B: ESRD는 CKD와 무관한 것이 아니라 그 진행 단계 중 하나이다.
+  C: CKD가 ESRD보다 항상 더 심각하다는 것은 관계를 반대로 이해한 것이다.
+  D: ESRD는 만성 신장질환의 최종 단계를 가리키며 급성 신손상과는 다른 개념이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

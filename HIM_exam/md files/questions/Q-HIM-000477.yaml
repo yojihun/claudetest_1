@@ -1,0 +1,29 @@
+id: Q-HIM-000477
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C07-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "다음 중 실제 조직 염증·손상을 동반하는 구조적 질환군을 가리키는 약어는?"
+options:
+  - id: A
+    text: IBS
+  - id: B
+    text: IBD
+  - id: C
+    text: GERD
+  - id: D
+    text: PUD
+answer:
+  - B
+explanation: IBD(Inflammatory Bowel Disease)는 크론병·궤양성 대장염 등 실제 조직 염증을 동반하는 구조적 질환군이다.
+distractor_explanations:
+  A: IBS(Irritable Bowel Syndrome)는 구조적 손상 없이 기능 이상으로 나타나는 질환이다.
+  C: GERD는 위산의 식도 역류로 인한 질환으로 IBD와는 다른 범주이다.
+  D: PUD는 소화성 궤양으로 IBD가 포괄하는 염증성 장질환군과는 다른 개별 진단명이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

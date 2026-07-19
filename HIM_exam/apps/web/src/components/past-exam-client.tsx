@@ -15,13 +15,29 @@ type PastExamQuestion = {
   explanation: string;
 };
 
-const STORAGE_KEY = "him-past-exam-2025-session2-index";
+type PastExamSession = {
+  id: string;
+  label: string;
+  sourceLabel: string;
+  description: string;
+  questions: PastExamQuestion[];
+};
 
-function formatStem(stem: string) {
-  return stem
-    .replaceAll("•", "\n• ")
-    .replaceAll("–", "\n- ")
+const SESSION_STORAGE_KEY = "him-past-exam-session";
+
+function formatExamText(text: string) {
+  return text
+    .replace(/\s*•\s*/g, "\n• ")
+    .replace(/\s*–\s*/g, "\n- ")
+    .replace(/\n{3,}/g, "\n\n")
     .trim();
+}
+
+function getExamTextLines(text: string) {
+  return formatExamText(text)
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
 }
 
 function getSectionLabel(number: number) {
@@ -34,21 +50,48 @@ function getSectionLabel(number: number) {
   return "의료관계법규";
 }
 
-export function PastExamClient({ questions }: { questions: PastExamQuestion[] }) {
+export function PastExamClient({ sessions }: { sessions: PastExamSession[] }) {
+  const [currentSessionId, setCurrentSessionId] = useState(sessions[0]?.id ?? "");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   const [revealedIds, setRevealedIds] = useState<Record<string, boolean>>({});
 
-  useEffect(() => {
-    const savedIndex = Number.parseInt(localStorage.getItem(STORAGE_KEY) ?? "0", 10);
-    if (Number.isFinite(savedIndex) && savedIndex >= 0 && savedIndex < questions.length) {
-      setCurrentIndex(savedIndex);
-    }
-  }, [questions.length]);
+  const currentSession =
+    sessions.find((session) => session.id === currentSessionId) ?? sessions[0];
+  const questions = currentSession.questions;
+  const storageKey = `him-past-exam-index-${currentSession.id}`;
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, String(currentIndex));
-  }, [currentIndex]);
+    const savedSessionId = localStorage.getItem(SESSION_STORAGE_KEY);
+    if (savedSessionId && sessions.some((session) => session.id === savedSessionId)) {
+      setCurrentSessionId(savedSessionId);
+    }
+  }, [sessions]);
+
+  useEffect(() => {
+    if (!currentSession) {
+      return;
+    }
+
+    const savedIndex = Number.parseInt(localStorage.getItem(storageKey) ?? "0", 10);
+    if (Number.isFinite(savedIndex) && savedIndex >= 0 && savedIndex < questions.length) {
+      setCurrentIndex(savedIndex);
+    } else {
+      setCurrentIndex(0);
+    }
+  }, [currentSession, questions.length, storageKey]);
+
+  useEffect(() => {
+    if (!currentSession) {
+      return;
+    }
+    localStorage.setItem(SESSION_STORAGE_KEY, currentSession.id);
+    localStorage.setItem(storageKey, String(currentIndex));
+  }, [currentIndex, currentSession, storageKey]);
+
+  if (!currentSession || questions.length === 0) {
+    return null;
+  }
 
   const currentQuestion = questions[currentIndex];
   const selectedAnswer = selectedAnswers[currentQuestion.id] ?? "";
@@ -58,6 +101,7 @@ export function PastExamClient({ questions }: { questions: PastExamQuestion[] })
     () => getSectionLabel(currentQuestion.number),
     [currentQuestion.number],
   );
+  const stemLines = getExamTextLines(currentQuestion.stem);
 
   function handleSelectAnswer(answer: string) {
     setSelectedAnswers((prev) => ({
@@ -84,12 +128,12 @@ export function PastExamClient({ questions }: { questions: PastExamQuestion[] })
           <p className="app-kicker">Past Exam</p>
           <h1 className="mt-2 app-section-title">2025 기출문제</h1>
           <div className="mt-4 flex flex-wrap gap-2 text-sm">
-            <span className="app-chip rounded-full px-3 py-1.5">2교시</span>
+            <span className="app-chip rounded-full px-3 py-1.5">{currentSession.label}</span>
             <span className="app-chip rounded-full px-3 py-1.5">총 {questions.length}문항</span>
             <span className="app-chip rounded-full px-3 py-1.5">{sectionLabel}</span>
           </div>
           <p className="mt-4 text-sm leading-7 app-subtle">
-            한 문제씩 풀고, 바로 아래에서 정답과 선택지 기준 해설을 확인할 수 있습니다.
+            {currentSession.description}
           </p>
         </section>
 
@@ -102,29 +146,48 @@ export function PastExamClient({ questions }: { questions: PastExamQuestion[] })
               </h2>
             </div>
 
-            <label className="min-w-[13rem]">
-              <span className="mb-2 block text-sm font-semibold text-[var(--navy)]">
-                문제 이동
-              </span>
-              <select
-                value={currentQuestion.id}
-                onChange={(event) => {
-                  const nextIndex = questions.findIndex(
-                    (question) => question.id === event.target.value,
-                  );
-                  if (nextIndex >= 0) {
-                    setCurrentIndex(nextIndex);
-                  }
-                }}
-                className="app-input w-full rounded-2xl px-4 py-3 outline-none"
-              >
-                {questions.map((question) => (
-                  <option key={question.id} value={question.id}>
-                    {question.number}번
-                  </option>
-                ))}
-              </select>
-            </label>
+            <div className="flex min-w-[13rem] flex-col gap-4">
+              <label>
+                <span className="mb-2 block text-sm font-semibold text-[var(--navy)]">
+                  교시 선택
+                </span>
+                <select
+                  value={currentSession.id}
+                  onChange={(event) => setCurrentSessionId(event.target.value)}
+                  className="app-input w-full rounded-2xl px-4 py-3 outline-none"
+                >
+                  {sessions.map((session) => (
+                    <option key={session.id} value={session.id}>
+                      {session.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label>
+                <span className="mb-2 block text-sm font-semibold text-[var(--navy)]">
+                  문제 이동
+                </span>
+                <select
+                  value={currentQuestion.id}
+                  onChange={(event) => {
+                    const nextIndex = questions.findIndex(
+                      (question) => question.id === event.target.value,
+                    );
+                    if (nextIndex >= 0) {
+                      setCurrentIndex(nextIndex);
+                    }
+                  }}
+                  className="app-input w-full rounded-2xl px-4 py-3 outline-none"
+                >
+                  {questions.map((question) => (
+                    <option key={question.id} value={question.id}>
+                      {question.number}번
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
           </div>
         </section>
 
@@ -132,16 +195,29 @@ export function PastExamClient({ questions }: { questions: PastExamQuestion[] })
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[rgba(16,32,51,0.52)]">
               <span className="app-chip rounded-full px-3 py-1">{sectionLabel}</span>
-              <span className="app-chip rounded-full px-3 py-1">2025 2교시</span>
+              <span className="app-chip rounded-full px-3 py-1">{currentSession.label}</span>
             </div>
             <p className="text-sm app-subtle">
               {currentIndex + 1} / {questions.length}
             </p>
           </div>
 
-          <p className="mt-5 whitespace-pre-line text-lg font-semibold leading-8 text-[var(--navy)]">
-            {formatStem(currentQuestion.stem)}
-          </p>
+          <div className="mt-5 rounded-[1.5rem] border border-[rgba(16,32,51,0.08)] bg-white/72 px-5 py-5">
+            <div className="space-y-3">
+              {stemLines.map((line, index) => (
+                <p
+                  key={`${currentQuestion.id}-stem-${index}`}
+                  className={`text-[15px] text-[var(--navy)] md:text-[17px] ${
+                    line.startsWith("•") || line.startsWith("-")
+                      ? "pl-3 font-medium leading-8"
+                      : "leading-8"
+                  }`}
+                >
+                  {line}
+                </p>
+              ))}
+            </div>
+          </div>
 
           <div className="mt-6 space-y-3">
             {currentQuestion.options.map((option) => (
@@ -161,10 +237,23 @@ export function PastExamClient({ questions }: { questions: PastExamQuestion[] })
                   onChange={(event) => handleSelectAnswer(event.target.value)}
                   className="mt-1 accent-[var(--blue)]"
                 />
-                <span className="text-sm leading-7 text-[rgba(16,32,51,0.8)]">
-                  <strong className="mr-2 text-[var(--navy)]">{option.id}.</strong>
-                  {option.text}
-                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-semibold text-[var(--navy)]">{option.id}.</p>
+                  <div className="mt-2 space-y-2">
+                    {getExamTextLines(option.text).map((line, lineIndex) => (
+                      <p
+                        key={`${currentQuestion.id}-${option.id}-${lineIndex}`}
+                        className={`text-sm text-[rgba(16,32,51,0.8)] md:text-[15px] ${
+                          line.startsWith("•") || line.startsWith("-")
+                            ? "pl-3 leading-7"
+                            : "leading-7"
+                        }`}
+                      >
+                        {line}
+                      </p>
+                    ))}
+                  </div>
+                </div>
               </label>
             ))}
           </div>
@@ -215,12 +304,30 @@ export function PastExamClient({ questions }: { questions: PastExamQuestion[] })
 
               <div className="rounded-2xl border border-[rgba(16,32,51,0.08)] bg-white/72 px-4 py-4 text-sm leading-7 text-[rgba(16,32,51,0.76)]">
                 <h3 className="font-semibold text-[var(--navy)]">정답 선택지</h3>
-                <p className="mt-2 text-[var(--navy)]">{currentQuestion.answerText}</p>
+                <div className="mt-2 space-y-2">
+                  {getExamTextLines(currentQuestion.answerText).map((line, index) => (
+                    <p
+                      key={`${currentQuestion.id}-answer-${index}`}
+                      className="text-[var(--navy)] leading-7"
+                    >
+                      {line}
+                    </p>
+                  ))}
+                </div>
               </div>
 
               <div className="rounded-2xl border border-[rgba(16,32,51,0.08)] bg-white/72 px-4 py-4 text-sm leading-7 text-[rgba(16,32,51,0.76)]">
                 <h3 className="font-semibold text-[var(--navy)]">설명</h3>
-                <p className="mt-2">{currentQuestion.explanation}</p>
+                <div className="mt-2 space-y-2">
+                  {getExamTextLines(currentQuestion.explanation).map((line, index) => (
+                    <p
+                      key={`${currentQuestion.id}-explanation-${index}`}
+                      className="leading-7"
+                    >
+                      {line}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           ) : null}
@@ -242,13 +349,15 @@ export function PastExamClient({ questions }: { questions: PastExamQuestion[] })
           <h3 className="mt-2 text-lg font-semibold text-[var(--navy)]">문항 기준</h3>
           <ul className="mt-4 space-y-3 text-sm text-[rgba(16,32,51,0.82)]">
             <li className="rounded-2xl border border-[color:rgba(2,140,116,0.14)] bg-white/76 px-4 py-3">
-              2025년도 제42회 보건의료정보관리사 국가시험 2교시
+              {currentSession.sourceLabel}
             </li>
             <li className="rounded-2xl border border-[color:rgba(2,140,116,0.14)] bg-white/76 px-4 py-3">
               최종답안 기준 정답 반영
             </li>
             <li className="rounded-2xl border border-[color:rgba(2,140,116,0.14)] bg-white/76 px-4 py-3">
-              1교시는 추후 같은 형식으로 추가 확장 가능
+              {currentSession.id === "session1"
+                ? "OCR 텍스트 기반으로 구성되어 일부 표현은 추가 보정될 수 있음"
+                : "문항 카드에서 바로 정답과 설명을 확인 가능"}
             </li>
           </ul>
         </section>

@@ -1,0 +1,23 @@
+id: Q-HIM-000606
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S11-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "병상이용률·평균재원일수 같은 입원 중심 지표만으로 병원 전체의 진료 활동을 충분히 파악할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 입원 중심 지표만으로는 부족하며, 외래·응급·수술통계를 함께 살펴봐야 병원 전체의 활동을 파악할 수 있다.
+distractor_explanations:
+  O: 입원 중심 지표만으로 충분하다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

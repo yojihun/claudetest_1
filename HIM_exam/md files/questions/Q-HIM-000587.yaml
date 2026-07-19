@@ -1,0 +1,29 @@
+id: Q-HIM-000587
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C01-S02-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "순서와 일정한 간격은 있지만 절대 영점이 없어 비율 계산이 부적절한 척도는?"
+options:
+  - id: A
+    text: 명목척도
+  - id: B
+    text: 서열척도
+  - id: C
+    text: 등간척도
+  - id: D
+    text: 비율척도
+answer:
+  - C
+explanation: 등간척도는 일정한 간격은 있지만 절대 영점이 없어 비율 계산이 부적절하다(예: 섭씨 온도).
+distractor_explanations:
+  A: 명목척도는 순서 개념 자체가 없다.
+  B: 서열척도는 순서는 있지만 간격이 일정하지 않다.
+  D: 비율척도는 절대 영점이 있어 비율 계산이 가능하다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

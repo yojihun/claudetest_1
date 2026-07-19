@@ -1,0 +1,23 @@
+id: Q-HIM-000586
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S01-T001
+subject_area: hospital_statistics
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "양적 변수는 숫자로 측정되는 변수이며, 재원일수와 나이가 그 예이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 재원일수와 나이는 숫자로 측정되는 양적 변수의 예가 맞다.
+distractor_explanations:
+  X: 양적 변수의 정의와 예시를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

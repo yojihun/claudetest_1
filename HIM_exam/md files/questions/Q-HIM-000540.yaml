@@ -1,0 +1,23 @@
+id: Q-HIM-000540
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C12-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "안과 진단명은 좌우 눈 구분 없이 기록해도 임상적으로 충분히 안전하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 좌우 구분이 없으면 wrong-site surgery 같은 심각한 오류로 이어질 위험이 있어 안전하지 않다.
+distractor_explanations:
+  O: 좌우 구분 누락의 위험성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

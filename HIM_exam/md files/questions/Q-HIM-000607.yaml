@@ -1,0 +1,29 @@
+id: Q-HIM-000607
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C01-S12-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "입원 후 매우 이른 시점(예: 48시간 이내)의 사망을 제외하고 계산해 병원 자체의 진료 질을 더 반영한다고 여겨지는 사망률은?"
+options:
+  - id: A
+    text: 조사망률
+  - id: B
+    text: 순사망률
+  - id: C
+    text: 병상이용률
+  - id: D
+    text: 병상회전율
+answer:
+  - B
+explanation: 순사망률은 입원 초기의 불가피한 사망을 제외해 병원 진료 질을 더 정확히 반영한다고 여겨진다.
+distractor_explanations:
+  A: 조사망률은 모든 사망을 포함해 계산하는 지표로 이 상황과 다르다.
+  C: 병상이용률은 병상 사용 정도를 나타내는 지표로 사망률과 무관하다.
+  D: 병상회전율은 병상 사용 빈도를 나타내는 지표로 사망률과 무관하다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

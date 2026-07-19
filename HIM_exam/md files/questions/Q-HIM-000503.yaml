@@ -1,0 +1,29 @@
+id: Q-HIM-000503
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C09-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "분만 시 산모에게 전치태반이, 신생아에게 신생아 황달이 함께 발생했다. 코딩 담당자가 취해야 할 올바른 방식은?"
+options:
+  - id: A
+    text: 산모의 진단과 신생아의 진단을 각각 별도로 기록·분류한다.
+  - id: B
+    text: 두 진단을 하나로 합쳐 산모 기록에만 남긴다.
+  - id: C
+    text: 신생아 진단만 기록하고 산모 진단은 생략한다.
+  - id: D
+    text: 두 진단 중 더 심각한 것 하나만 선택해 기록한다.
+answer:
+  - A
+explanation: 산모와 신생아는 서로 다른 개체이므로 각각의 진단을 별도로 기록하고 분류해야 한다.
+distractor_explanations:
+  B: 두 진단을 하나로 합치는 것은 서로 다른 개체의 진단을 구분하지 않는 오류이다.
+  C: 산모의 진단도 별도로 기록되어야 하며 생략해서는 안 된다.
+  D: 두 진단 모두 각 개체의 기록으로 남아야 하며 하나만 선택하는 것은 적절하지 않다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

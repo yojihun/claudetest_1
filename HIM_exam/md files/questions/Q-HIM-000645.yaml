@@ -1,0 +1,29 @@
+id: Q-HIM-000645
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C03-S04-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: understand
+importance: A
+stem: "병리 보고서에서 '위, 선암종, 침습성'이 확인되었다. 이때 '선암종'은 어떤 항목에 해당하는가?"
+options:
+  - id: A
+    text: 조직학적 형태
+  - id: B
+    text: 행동양식
+  - id: C
+    text: 원발부위
+  - id: D
+    text: 병기
+answer:
+  - A
+explanation: 선암종은 종양이 기원한 세포·조직 유형을 나타내는 조직학적 형태에 해당한다.
+distractor_explanations:
+  B: 행동양식은 '침습성(악성)' 부분이 해당하며 조직학적 형태와는 다른 축이다.
+  C: 원발부위는 '위'가 해당하며 조직학적 형태와는 다른 항목이다.
+  D: 병기는 이 보고서에 명시되지 않은 별도의 항목이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

@@ -1,0 +1,19 @@
+id: Q-HIM-000637
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V3-C02-S14-T001
+subject_area: classification
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "환자가 계단에서 낙상해 복통을 주소로 입원했다. 검사 결과 급성 충수염과 국소 복막염이 확인되어 복강경 충수절제술을 시작했으나 수술 중 출혈로 개복 수술로 전환했다. 이 사례에서 주진단으로 코딩해야 할 진단명은?"
+answer:
+  - "급성 충수염"
+explanation: "주진단은 입원 당시 의심 진단(복통)이 아니라 퇴원 시 확정된, 입원의 주된 원인이 된 진단(급성 충수염)이다. 국소 복막염은 합병증을 포함한 기타진단으로 함께 코딩되어야 하며, 수술은 개복 전환을 반영한 의료행위 코드로 코딩되어야 한다."
+distractor_explanations:
+  복통: 입원 당시의 의심 진단(증상)으로 주진단 기준이 아니다.
+  국소 복막염: 이 진단은 주진단이 아닌 기타진단(합병증)으로 코딩되어야 한다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

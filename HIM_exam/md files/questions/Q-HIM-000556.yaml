@@ -1,0 +1,23 @@
+id: Q-HIM-000556
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C14-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "전기경련요법(ECT)은 약물치료에 반응하지 않는 중증 우울증 등에서 고려될 수 있는 치료 옵션이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: ECT는 약물 저항성 중증 우울증 등에서 고려되는 효과적인 치료 옵션이 맞다.
+distractor_explanations:
+  X: ECT의 적용 상황을 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

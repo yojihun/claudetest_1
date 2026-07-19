@@ -1,0 +1,29 @@
+id: Q-HIM-000565
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C15-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "특정 약물 투여 후 급격한 혈압 저하와 기도 부종이 나타났다. 이 상태를 가리키는 용어는?"
+options:
+  - id: A
+    text: 패혈증(Sepsis)
+  - id: B
+    text: 아나필락시스(Anaphylaxis)
+  - id: C
+    text: 원내감염(HAI)
+  - id: D
+    text: 상피내암(Carcinoma in Situ)
+answer:
+  - B
+explanation: 특정 물질(약물 등)에 대한 심각한 알레르기 반응으로 급격한 전신 증상이 나타나는 상태는 아나필락시스이다.
+distractor_explanations:
+  A: 패혈증은 감염에 대한 과도한 전신 반응으로 알레르기와는 원인이 다르다.
+  C: 원내감염은 의료기관 내에서 새로 발생한 감염을 가리키며 알레르기 반응과는 다르다.
+  D: 상피내암은 종양의 초기 단계로 이 상황과 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000663
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V4-C01-S03-T001
+subject_area: record_practice
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "의무기록에 'Anemia'라는 진단명이 있는데 Hgb 수치가 참고치 범위 내 정상으로 기록되어 있다. 이 경우 검토자가 취해야 할 적절한 조치는?"
+options:
+  - id: A
+    text: 불일치를 인지하고 담당 의료진에게 확인을 요청한다.
+  - id: B
+    text: 진단명을 임의로 삭제한다.
+  - id: C
+    text: 검사 수치를 임의로 수정한다.
+  - id: D
+    text: 아무 조치 없이 그대로 둔다.
+answer:
+  - A
+explanation: 진단명과 검사 결과의 불일치는 기록 오류나 정보 누락의 신호일 수 있어 담당 의료진에게 확인을 요청해야 한다.
+distractor_explanations:
+  B: 진단명을 임의로 삭제하는 것은 근거 없는 기록 변경이다.
+  C: 검사 수치를 임의로 수정하는 것은 허용되지 않는 행위다.
+  D: 불일치를 무시하는 것은 정확한 기록 관리 원칙에 반한다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

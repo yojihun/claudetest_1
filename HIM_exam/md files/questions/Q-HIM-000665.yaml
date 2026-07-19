@@ -1,0 +1,29 @@
+id: Q-HIM-000665
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V4-C01-S04-T001
+subject_area: record_practice
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "의무기록에 '심장동맥조영술 시행'이라는 처치만 기록되고 이를 정당화하는 진단명이 없다. 이 경우 발생할 수 있는 문제는?"
+options:
+  - id: A
+    text: 의학적 필요성 입증이 어려워질 수 있다.
+  - id: B
+    text: 처치 자체가 자동으로 무효화된다.
+  - id: C
+    text: 아무런 문제가 발생하지 않는다.
+  - id: D
+    text: 환자에게 법적 책임이 발생한다.
+answer:
+  - A
+explanation: 처치를 정당화하는 진단명이 없으면 의학적 필요성을 입증하기 어려워 진료비 심사 등에서 문제가 될 수 있다.
+distractor_explanations:
+  B: 처치 자체가 자동으로 무효화되는 것은 아니다.
+  C: 진단명 누락은 실질적인 문제를 유발할 수 있다.
+  D: 이 상황에서 법적 책임은 환자가 아니라 기록 관리 측의 문제다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

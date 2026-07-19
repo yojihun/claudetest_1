@@ -1,0 +1,23 @@
+id: Q-HIM-000466
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C06-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "URI와 TB는 모두 '호흡기 감염'을 나타내는 약어이므로 중증도 차이 없이 동일하게 취급해도 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: URI는 비교적 경미한 상기도 감염을, TB는 결핵균에 의한 중증 만성 감염성 질환을 가리켜 중증도 차이가 크다.
+distractor_explanations:
+  O: 두 약어의 중증도 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

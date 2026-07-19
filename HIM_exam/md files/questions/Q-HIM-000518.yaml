@@ -1,0 +1,23 @@
+id: Q-HIM-000518
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C11-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "어근 Myel/o는 문맥에 따라 척수 또는 골수를 의미할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: Myel/o는 신경계 맥락에서는 척수, 혈액 맥락에서는 골수를 의미할 수 있는 어근이 맞다.
+distractor_explanations:
+  X: Myel/o의 문맥별 의미 차이를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

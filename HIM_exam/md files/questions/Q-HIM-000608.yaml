@@ -1,0 +1,23 @@
+id: Q-HIM-000608
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S12-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "조사망률만으로도 병원의 진료 질을 충분하고 정확하게 평가할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 조사망률은 입원 초기 중증 환자의 사망도 포함하므로, 병원 진료 질을 더 정확히 보려면 순사망률 등 보완 지표를 함께 확인해야 한다.
+distractor_explanations:
+  O: 조사망률만으로 충분하다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

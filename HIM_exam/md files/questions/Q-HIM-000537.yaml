@@ -1,0 +1,29 @@
+id: Q-HIM-000537
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C12-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: B
+stem: "'IOP 28 mmHg OD, 16 mmHg OS'라는 기록의 의미는?"
+options:
+  - id: A
+    text: 우측 눈 안압이 28mmHg, 좌측 눈 안압이 16mmHg이다.
+  - id: B
+    text: 좌측 눈 안압이 28mmHg, 우측 눈 안압이 16mmHg이다.
+  - id: C
+    text: 양쪽 눈 모두 안압이 28mmHg이다.
+  - id: D
+    text: 양쪽 눈 모두 안압이 16mmHg이다.
+answer:
+  - A
+explanation: OD는 우측 눈, OS는 좌측 눈을 의미하므로 우측 눈 28mmHg, 좌측 눈 16mmHg로 해석된다.
+distractor_explanations:
+  B: OD와 OS의 좌우를 반대로 해석한 오류이다.
+  C: 두 눈의 수치가 다르게 기록되어 있으므로 동일하다는 해석은 틀렸다.
+  D: 두 눈의 수치가 다르게 기록되어 있으므로 동일하다는 해석은 틀렸다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

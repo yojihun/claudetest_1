@@ -1,0 +1,23 @@
+id: Q-HIM-000492
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C08-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "급성 신손상(AKI)과 만성 신장질환(CKD)은 발병 속도와 가역성이 달라 의무기록에서 명확히 구분해 기록해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: AKI는 갑작스럽고 회복 가능성이 있는 반면, CKD는 점진적이고 비가역적인 경우가 많아 구분이 필요하다.
+distractor_explanations:
+  X: AKI와 CKD 구분의 필요성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

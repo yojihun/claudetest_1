@@ -1,0 +1,29 @@
+id: Q-HIM-000621
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C02-S06-T001
+subject_area: classification
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'Fall from stairs, left wrist fracture'라는 응급실 기록에서 '계단에서의 낙상'은 어떤 분류에 해당하는가?"
+options:
+  - id: A
+    text: 손상분류
+  - id: B
+    text: 외인분류
+  - id: C
+    text: 종양분류
+  - id: D
+    text: 감염분류
+answer:
+  - B
+explanation: 손상이 발생한 원인(낙상)은 외인분류에 해당한다.
+distractor_explanations:
+  A: 손상분류는 '손목 골절'과 같은 손상 자체의 종류·부위를 나타낸다.
+  C: 종양분류는 이 사례와 무관하다.
+  D: 감염분류는 이 사례와 무관하다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

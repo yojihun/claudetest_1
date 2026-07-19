@@ -1,0 +1,29 @@
+id: Q-HIM-000683
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V3-C02-S10-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 이 입원의 '주수술'에 해당하는 처치는?"
+options:
+  - id: A
+    text: ORIF(관혈적정복내고정술)
+  - id: B
+    text: 예방적 항생제 투여
+  - id: C
+    text: 신경블록
+  - id: D
+    text: DEXA 검사
+answer:
+  - A
+explanation: ORIF는 골절 치료라는 이 입원의 핵심 목적에 해당하는 주수술이다.
+distractor_explanations:
+  B: 예방적 항생제 투여는 감염 예방을 위한 부수적 처치다.
+  C: 신경블록은 통증 조절을 위한 부수적 처치다.
+  D: DEXA 검사는 낙상 원인 평가를 위한 부수적 검사다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

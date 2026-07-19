@@ -1,0 +1,29 @@
+id: Q-HIM-000577
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C16-S03-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "'Acetaminophen 500mg PO PRN for pain'이라는 처방에서 PRN이 의미하는 것은?"
+options:
+  - id: A
+    text: 정해진 시간마다 정기적으로 복용
+  - id: B
+    text: 통증 등 필요할 때만 복용
+  - id: C
+    text: 하루 3회 복용
+  - id: D
+    text: 하루 4회 복용
+answer:
+  - B
+explanation: PRN(Pro Re Nata)은 정해진 횟수 없이 필요할 때만 복용하는 처방을 의미한다.
+distractor_explanations:
+  A: 정기적인 복용은 BID, TID 등의 약어로 표기되며 PRN과 다르다.
+  C: 하루 3회는 TID로 표기되며 PRN과 다르다.
+  D: 하루 4회는 QID로 표기되며 PRN과 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

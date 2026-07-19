@@ -1,0 +1,19 @@
+id: Q-HIM-000657
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V3-C03-S10-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "환자가 위 내시경에서 종양이 발견되어 조직검사 결과 선암종, 침습성으로 확진되었고, 영상검사에서 T2N1M0로 판정되어 위절제술과 항암화학요법을 받았다. 이 사례에서 암등록에 기록해야 할 핵심 항목을 모두 나열하시오."
+answer:
+  - "원발부위(위), 조직학적 형태(선암종), 행동양식(침습성/악성), 병기(T2N1M0), 치료정보(위절제술+항암화학요법)"
+explanation: "이 사례는 원발부위, 조직학적 형태, 행동양식, 병기, 치료정보를 모두 정확히 기록해야 완전한 암등록이 되며, 이후 추적조사를 통해 생존 상태를 지속적으로 확인해야 한다."
+distractor_explanations:
+  원발부위만: 원발부위만으로는 완전한 암등록이 되지 않으며 조직학적 형태·병기·치료정보 등이 함께 필요하다.
+  병기만: 병기만으로는 완전한 암등록이 되지 않으며 다른 핵심 항목들도 함께 필요하다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

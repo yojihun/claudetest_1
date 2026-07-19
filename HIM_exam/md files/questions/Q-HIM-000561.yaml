@@ -1,0 +1,29 @@
+id: Q-HIM-000561
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C15-S01-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "자궁경부 세포검사에서 'Carcinoma in situ'가 확인되었다. 이 결과가 의미하는 것은?"
+options:
+  - id: A
+    text: 악성 세포가 확인되었으나 아직 기저막을 뚫고 침습하지 않은 단계이다.
+  - id: B
+    text: 완전히 양성이며 암과는 무관한 세포이다.
+  - id: C
+    text: 이미 다른 장기로 전이된 진행성 암이다.
+  - id: D
+    text: 세포검사 결과가 판독 불가능하다는 의미이다.
+answer:
+  - A
+explanation: 상피내암(Carcinoma in Situ)은 악성 세포가 확인되었으나 아직 기저막을 뚫지 않아 침습하지 않은 초기 단계를 의미한다.
+distractor_explanations:
+  B: 상피내암은 세포 자체가 악성이므로 완전한 양성과는 다르다.
+  C: 상피내암은 아직 침습하지 않은 단계로 전이된 진행성 암과는 다르다.
+  D: 상피내암은 명확한 병리학적 판독 결과이며 판독 불가능을 의미하지 않는다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

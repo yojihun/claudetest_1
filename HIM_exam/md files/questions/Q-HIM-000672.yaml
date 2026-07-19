@@ -1,0 +1,23 @@
+id: Q-HIM-000672
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S03-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 국소 복막염은 수술 후 발생한 합병증이며 입원 당시부터 존재했던 상태가 아니다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 수술기록에 '합병증: 없음'이라고 명시되어 있으며, 국소 복막염은 수술 전 이미 존재했던 상태(기타진단)로 확인되었다.
+distractor_explanations:
+  O: 국소 복막염을 수술 후 합병증으로 오해한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

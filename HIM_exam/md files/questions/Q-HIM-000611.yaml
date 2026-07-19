@@ -1,0 +1,29 @@
+id: Q-HIM-000611
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C02-S01-T001
+subject_area: classification
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "KCD(한국표준질병·사인분류)에 대한 설명으로 가장 적절한 것은?"
+options:
+  - id: A
+    text: WHO의 국제질병분류(ICD)를 국내 실정에 맞게 수정한 국내 표준 분류체계이다.
+  - id: B
+    text: ICD와 완전히 무관하게 독자적으로 개발된 분류체계이다.
+  - id: C
+    text: 진료비 지불과는 무관하며 순수 학술 목적으로만 사용된다.
+  - id: D
+    text: 전 세계 모든 국가가 동일하게 사용하는 단일 분류체계이다.
+answer:
+  - A
+explanation: KCD는 WHO의 ICD를 기반으로 국내 실정에 맞게 수정한 국내 표준 질병분류체계이다.
+distractor_explanations:
+  B: KCD는 ICD와 무관한 것이 아니라 이를 기반으로 개발되었다.
+  C: 분류는 통계뿐 아니라 진료비 지불(수가 산정) 근거로도 활용된다.
+  D: 각 국가는 ICD를 자국 실정에 맞게 수정해 사용하므로 KCD는 한국 고유의 버전이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

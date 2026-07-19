@@ -1,0 +1,23 @@
+id: Q-HIM-000538
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C12-S05-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: remember
+importance: B
+stem: "OU는 양쪽 눈을 의미하는 약어이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: OU(Oculus Uterque)는 양쪽 눈을 의미하는 약어가 맞다.
+distractor_explanations:
+  X: OU의 의미를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

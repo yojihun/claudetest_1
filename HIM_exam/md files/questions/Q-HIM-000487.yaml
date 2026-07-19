@@ -1,0 +1,29 @@
+id: Q-HIM-000487
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C08-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "신부전이 심각하게 진행된 환자에게 신장을 대신해 혈액 내 노폐물을 인공적으로 제거하는 치료는?"
+options:
+  - id: A
+    text: BUN/Creatinine 검사
+  - id: B
+    text: 혈액투석(Hemodialysis)
+  - id: C
+    text: 방광경검사(Cystoscopy)
+  - id: D
+    text: 유치도뇨관 삽입
+answer:
+  - B
+explanation: 혈액투석은 신부전 환자의 혈액에서 인공적으로 노폐물을 제거하는 치료이다.
+distractor_explanations:
+  A: BUN/Creatinine 검사는 신장 기능을 평가하는 진단 검사로 치료가 아니다.
+  C: 방광경검사는 방광 내부를 관찰하는 검사로 노폐물 제거와는 다르다.
+  D: 유치도뇨관은 소변 배출·측정을 위한 처치로 노폐물 제거 치료와는 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

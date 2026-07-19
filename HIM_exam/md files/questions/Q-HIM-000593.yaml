@@ -1,0 +1,29 @@
+id: Q-HIM-000593
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C01-S05-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "두 병동의 평균 재원일수가 모두 5일로 동일하지만, A병동은 표준편차가 1일이고 B병동은 표준편차가 5일이다. 이 차이가 의미하는 것은?"
+options:
+  - id: A
+    text: B병동의 재원일수가 A병동보다 훨씬 넓게 흩어져 있다.
+  - id: B
+    text: 두 병동의 재원일수 분포는 완전히 동일하다.
+  - id: C
+    text: A병동의 환자 수가 B병동보다 많다.
+  - id: D
+    text: B병동의 평균 재원일수가 A병동보다 길다.
+answer:
+  - A
+explanation: 표준편차가 클수록 자료가 평균에서 넓게 흩어져 있음을 의미하므로, B병동의 재원일수 편차가 훨씬 크다.
+distractor_explanations:
+  B: 표준편차가 다르므로 두 병동의 분포는 동일하지 않다.
+  C: 표준편차는 환자 수와 직접 관련이 없다.
+  D: 평균 재원일수는 두 병동 모두 5일로 동일하다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

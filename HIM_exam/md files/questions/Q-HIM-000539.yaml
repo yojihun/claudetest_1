@@ -1,0 +1,29 @@
+id: Q-HIM-000539
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C12-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "안과 수술 스케줄표에 'Cataract surgery'라고만 기록되고 좌우 구분이 없을 때 발생할 수 있는 가장 심각한 위험은?"
+options:
+  - id: A
+    text: 반대쪽 눈을 수술하는 wrong-site surgery
+  - id: B
+    text: 수술 시간이 길어지는 것
+  - id: C
+    text: 수술 비용이 증가하는 것
+  - id: D
+    text: 진료 예약이 지연되는 것
+answer:
+  - A
+explanation: 좌우 구분 없이 기록되면 수술팀이 반대쪽 눈을 수술하는 wrong-site surgery 위험이 있다.
+distractor_explanations:
+  B: 수술 시간 연장은 이 기록 누락의 핵심 위험이 아니다.
+  C: 수술 비용 증가는 이 기록 누락과 직접 관련이 없다.
+  D: 진료 예약 지연은 이 기록 누락의 핵심 위험이 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

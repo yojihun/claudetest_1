@@ -1,0 +1,23 @@
+id: Q-HIM-000486
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C08-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "요독증(Uremia)은 신부전으로 노폐물이 혈액에 축적되어 나타나는 중독 증상이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 요독증은 신부전으로 노폐물이 걸러지지 않고 혈액에 축적되어 나타나는 증상이 맞다.
+distractor_explanations:
+  X: 요독증의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

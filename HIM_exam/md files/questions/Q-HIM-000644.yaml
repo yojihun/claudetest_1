@@ -1,0 +1,23 @@
+id: Q-HIM-000644
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C03-S03-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "유방암이 폐로 전이된 경우, 이 암은 원발부위(유방)를 기준으로 등록해야 하며 발견 부위(폐)를 기준으로 등록해서는 안 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 전이된 암은 발견 부위가 아닌 원발부위를 기준으로 등록해야 하는 것이 맞다.
+distractor_explanations:
+  X: 원발부위 등록 원칙을 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000553
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C14-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "조증(기분 고양)과 우울증 삽화가 주기적으로 번갈아 나타나는 기분장애는?"
+options:
+  - id: A
+    text: 조현병(Schizophrenia)
+  - id: B
+    text: 양극성장애(Bipolar Disorder)
+  - id: C
+    text: 강박장애(OCD)
+  - id: D
+    text: 신경성식욕부진증(Anorexia Nervosa)
+answer:
+  - B
+explanation: 양극성장애는 조증과 우울증 삽화가 주기적으로 번갈아 나타나는 기분장애이다.
+distractor_explanations:
+  A: 조현병은 사고·지각 이상(망상, 환각)이 핵심 증상으로 기분의 주기적 변화와는 다른 질환이다.
+  C: 강박장애는 반복적 강박사고·행동이 핵심으로 기분의 주기적 변화와는 다르다.
+  D: 신경성식욕부진증은 체중 증가에 대한 두려움으로 인한 섭식장애로 기분의 주기적 변화와는 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000610
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S13-T001
+subject_area: hospital_statistics
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "병원통계 사례형 문제를 풀 때는 문제가 재원 중 관점을 묻는지 퇴원 완료 관점을 묻는지 먼저 식별하는 것이 오류를 줄이는 데 도움이 된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 지표의 관점(재원 중 vs 퇴원 완료)을 먼저 식별하는 것이 올바른 공식 선택의 첫 단계다.
+distractor_explanations:
+  X: 문제 풀이 전략의 유효성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

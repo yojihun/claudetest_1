@@ -1,0 +1,23 @@
+id: Q-HIM-000504
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C09-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "조산(Premature Birth) 진단은 임신 주수 정보 없이 기록해도 의학적 의미가 동일하게 전달된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 조산은 몇 주에 태어났는지에 따라 의학적 의미와 대응이 달라지므로 정확한 임신 주수 정보가 필요하다.
+distractor_explanations:
+  O: 임신 주수 정보의 중요성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

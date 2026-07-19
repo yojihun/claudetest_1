@@ -1,0 +1,29 @@
+id: Q-HIM-000629
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C02-S10-T001
+subject_area: classification
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "진단명(질병분류)과 별개로 의료행위 분류가 필요한 이유로 가장 적절한 것은?"
+options:
+  - id: A
+    text: 처치명은 진료비 산정의 직접적 근거가 되기 때문
+  - id: B
+    text: 의료행위 분류는 통계와 무관하기 때문
+  - id: C
+    text: 모든 환자는 동일한 처치를 받기 때문
+  - id: D
+    text: 의료행위 분류는 법적으로 사용이 금지되어 있기 때문
+answer:
+  - A
+explanation: 의료행위 코드는 시행된 처치를 반영해 진료비 산정의 직접적 근거가 되므로 진단 분류와 별개로 필요하다.
+distractor_explanations:
+  B: 의료행위 분류도 통계 산출에 활용된다.
+  C: 환자마다 받는 처치가 다르므로 이 분류가 필요하다.
+  D: 의료행위 분류는 실제로 널리 사용되는 체계다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

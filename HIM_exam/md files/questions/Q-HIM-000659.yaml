@@ -1,0 +1,29 @@
+id: Q-HIM-000659
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V4-C01-S01-T001
+subject_area: record_practice
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'Pt with hx of T2DM and HTN presents with epigastric pain, EGD reveals gastric ulcer'라는 문장에서 'EGD reveals gastric ulcer' 부분이 해당하는 범주는?"
+options:
+  - id: A
+    text: 과거력
+  - id: B
+    text: 검사·진단
+  - id: C
+    text: 처치(투약)
+  - id: D
+    text: 사회력
+answer:
+  - B
+explanation: EGD(상부위장관내시경)로 위궤양이 확인된 부분은 검사·진단 범주에 해당한다.
+distractor_explanations:
+  A: 과거력은 T2DM, HTN 부분에 해당한다.
+  C: 처치(투약)는 이 문장의 뒷부분(PPI 시작 등)에 해당한다.
+  D: 사회력은 이 문장에 언급되지 않았다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

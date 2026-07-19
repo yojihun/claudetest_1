@@ -1,0 +1,23 @@
+id: Q-HIM-000566
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C15-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "원내감염(HAI)은 환자가 입원 당시에는 없었던 감염이 병원 내에서 새로 발생한 경우를 가리킨다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 원내감염은 입원 당시 없었던 감염이 병원 내에서 새로 발생한 경우를 가리키는 것이 맞다.
+distractor_explanations:
+  X: 원내감염의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

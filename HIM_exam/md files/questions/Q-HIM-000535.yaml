@@ -1,0 +1,29 @@
+id: Q-HIM-000535
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C12-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "녹내장이 의심되는 환자에게 안압을 지속적으로 측정해 관리하기 위해 시행하는 검사는?"
+options:
+  - id: A
+    text: 안압검사(Tonometry)
+  - id: B
+    text: 청력검사(Audiometry)
+  - id: C
+    text: 고막절개술(Myringotomy)
+  - id: D
+    text: 백내장수술(Cataract Surgery)
+answer:
+  - A
+explanation: 안압검사는 눈의 안압을 측정하는 검사로 녹내장 진단·관리에 필수적이다.
+distractor_explanations:
+  B: 청력검사는 청력 수준을 측정하는 검사로 안압과는 무관하다.
+  C: 고막절개술은 중이의 액체를 배출하는 처치로 안압 측정과는 다르다.
+  D: 백내장수술은 수정체를 제거하는 수술로 안압 측정 검사가 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

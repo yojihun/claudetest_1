@@ -1,0 +1,19 @@
+id: Q-HIM-000609
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V3-C01-S13-T001
+subject_area: hospital_statistics
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "A병동은 가동병상 50개이며, 한 달(30일) 동안 환자일수 1,200, 그 기간 퇴원환자 수는 40명, 퇴원환자의 총 재원일수는 240일이었다. 이 병동의 병상이용률(%)과 평균재원일수(일)를 각각 구하시오."
+answer:
+  - "병상이용률 80%, 평균재원일수 6일"
+explanation: "병상이용률 = 환자일수 ÷ (가동병상수 × 기간 일수) × 100 = 1,200 ÷ (50 × 30) × 100 = 80%. 평균재원일수 = 퇴원환자 총 재원일수 ÷ 퇴원환자 수 = 240 ÷ 40 = 6일. 두 지표는 각각 재원 중 관점(환자일수)과 퇴원 완료 관점(퇴원환자 재원일수)의 서로 다른 자료를 사용한다."
+distractor_explanations:
+  "병상이용률 40%, 평균재원일수 30일": 두 공식의 분자·분모를 서로 뒤바꿔 대입한 오답이다.
+  "병상이용률 96%, 평균재원일수 6일": 병상이용률 분모에서 기간 일수(30)를 곱하지 않고 가동병상수(50)로만 나눈 오답이다(1,200÷50×4=96처럼 잘못 계산한 경우).
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

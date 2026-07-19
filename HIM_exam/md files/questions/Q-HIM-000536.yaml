@@ -1,0 +1,23 @@
+id: Q-HIM-000536
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C12-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "고막절개술(Myringotomy)은 중이염 등으로 중이에 고인 액체를 배출하기 위해 고막을 절개하는 처치이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 고막절개술은 중이의 액체를 배출하기 위해 고막을 절개하는 처치가 맞다.
+distractor_explanations:
+  X: 고막절개술의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

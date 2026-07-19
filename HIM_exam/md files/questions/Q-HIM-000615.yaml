@@ -1,0 +1,29 @@
+id: Q-HIM-000615
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C02-S03-T001
+subject_area: classification
+difficulty: advanced
+cognitive_level: apply
+importance: A
+stem: "환자가 '복통'을 주소로 입원했으나 검사 결과 '급성 충수염'으로 확진되어 충수절제술을 받았다. 주진단으로 코딩해야 할 진단명은?"
+options:
+  - id: A
+    text: 복통
+  - id: B
+    text: 급성 충수염
+  - id: C
+    text: 복통과 급성 충수염을 동등하게 병기
+  - id: D
+    text: 충수절제술
+answer:
+  - B
+explanation: 주진단은 입원 당시 의심 진단(복통)이 아니라 퇴원 시 확정된 진단(급성 충수염)을 기준으로 선택한다.
+distractor_explanations:
+  A: 복통은 입원 당시의 의심 진단(증상)으로 주진단 기준이 아니다.
+  C: 주진단은 하나의 확정 진단을 기준으로 선택하며 증상과 확정 진단을 동등하게 병기하지 않는다.
+  D: 충수절제술은 처치명이며 진단명이 아니다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000604
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S10-T001
+subject_area: hospital_statistics
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "병상회전간격이 지나치게 짧으면 병상 소독·정비에 필요한 최소한의 시간이 부족할 위험이 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 병상회전간격이 너무 짧으면 병상 정비·감염관리에 필요한 시간이 부족할 위험이 있다.
+distractor_explanations:
+  X: 짧은 병상회전간격의 위험성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

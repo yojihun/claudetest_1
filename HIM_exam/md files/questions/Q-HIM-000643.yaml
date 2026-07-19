@@ -1,0 +1,29 @@
+id: Q-HIM-000643
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C03-S03-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: understand
+importance: A
+stem: "전신에 여러 전이 병변이 발견되었으나 광범위한 검사에도 원발부위를 끝내 찾지 못한 경우, 이 사례를 어떻게 등록해야 하는가?"
+options:
+  - id: A
+    text: 처음 발견된 전이 병변의 위치를 원발부위로 등록한다.
+  - id: B
+    text: 원발부위 불명암으로 별도 처리한다.
+  - id: C
+    text: 등록 자체를 하지 않는다.
+  - id: D
+    text: 가장 흔한 암종으로 임의 추정해 등록한다.
+answer:
+  - B
+explanation: 원발부위를 끝내 특정하지 못한 경우는 원발부위 불명암으로 별도 처리하는 것이 원칙이다.
+distractor_explanations:
+  A: 전이 병변의 위치를 원발부위로 등록하는 것은 원발부위 등록 원칙에 어긋난다.
+  C: 이런 사례도 암등록 대상이므로 등록을 생략해서는 안 된다.
+  D: 근거 없이 암종을 추정해 등록하는 것은 부정확한 기록이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

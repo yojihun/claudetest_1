@@ -1,0 +1,29 @@
+id: Q-HIM-000573
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C16-S01-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "처방 목록에서 'Lisinopril'이라는 약물명을 보고 접미사를 통해 추정할 수 있는 약물 계열은?"
+options:
+  - id: A
+    text: ACE 억제제(혈압 조절)
+  - id: B
+    text: 스타틴계(콜레스테롤 저하)
+  - id: C
+    text: 페니실린계 항생제
+  - id: D
+    text: 베타차단제
+answer:
+  - A
+explanation: 접미사 '-pril'은 ACE 억제제 계열을 나타내며 주로 혈압 조절에 사용된다.
+distractor_explanations:
+  B: 스타틴계는 접미사 '-statin'으로 나타나며 '-pril'과 다르다.
+  C: 페니실린계 항생제는 접미사 '-cillin'으로 나타나며 '-pril'과 다르다.
+  D: 베타차단제는 접미사 '-olol'로 나타나며 '-pril'과 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

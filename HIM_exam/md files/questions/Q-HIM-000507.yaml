@@ -1,0 +1,29 @@
+id: Q-HIM-000507
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C10-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "혈당 45 mg/dL와 함께 의식 변화가 나타나 포도당을 투여받은 환자의 상태는?"
+options:
+  - id: A
+    text: 고혈당(Hyperglycemia)
+  - id: B
+    text: 저혈당(Hypoglycemia)
+  - id: C
+    text: 갑상선기능항진증(Hyperthyroidism)
+  - id: D
+    text: 갑상선기능저하증(Hypothyroidism)
+answer:
+  - B
+explanation: 혈당이 정상보다 낮고 의식 변화를 동반한 상태는 저혈당이며, 포도당 투여로 치료한다.
+distractor_explanations:
+  A: 고혈당은 혈당이 높은 상태로 이 상황과 반대이다.
+  C: 갑상선기능항진증은 갑상선호르몬 과다로 인한 상태로 혈당 수치와 직접 관련이 없다.
+  D: 갑상선기능저하증은 갑상선호르몬 부족으로 인한 상태로 혈당 수치와 직접 관련이 없다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

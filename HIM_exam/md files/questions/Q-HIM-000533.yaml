@@ -1,0 +1,29 @@
+id: Q-HIM-000533
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C12-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "안압 상승으로 시신경이 서서히 손상되어 방치하면 실명으로 이어질 수 있는 질환은?"
+options:
+  - id: A
+    text: 백내장(Cataract)
+  - id: B
+    text: 녹내장(Glaucoma)
+  - id: C
+    text: 근시(Myopia)
+  - id: D
+    text: 사시(Strabismus)
+answer:
+  - B
+explanation: 녹내장은 안압 상승으로 시신경이 손상되는 질환으로 방치 시 실명 위험이 있다.
+distractor_explanations:
+  A: 백내장은 수정체 혼탁으로 인한 질환으로 시신경 손상과는 다른 기전이다.
+  C: 근시는 굴절 이상으로 인한 시력 문제로 시신경 손상과는 무관하다.
+  D: 사시는 양쪽 눈의 초점이 다른 곳을 향하는 상태로 시신경 손상과는 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

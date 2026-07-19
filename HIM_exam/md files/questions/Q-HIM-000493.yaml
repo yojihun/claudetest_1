@@ -1,0 +1,29 @@
+id: Q-HIM-000493
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C09-S01-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "자궁내막 조직이 자궁 밖(난소, 복막 등)에서 비정상적으로 자라는 질환은?"
+options:
+  - id: A
+    text: 자궁근종(Uterine Myoma)
+  - id: B
+    text: 자궁내막증(Endometriosis)
+  - id: C
+    text: 난소낭종(Ovarian Cyst)
+  - id: D
+    text: 골반염증성질환(PID)
+answer:
+  - B
+explanation: 자궁내막증은 자궁내막 조직이 자궁 밖에서 비정상적으로 자라는 질환이다.
+distractor_explanations:
+  A: 자궁근종은 자궁 근육층에서 발생하는 양성 종양으로 조직 위치 이상과는 다른 기전이다.
+  C: 난소낭종은 난소에 생기는 낭성 병변으로 자궁내막 조직의 이소성 성장과는 다르다.
+  D: 골반염증성질환은 감염성 염증으로 자궁내막증과는 기전이 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

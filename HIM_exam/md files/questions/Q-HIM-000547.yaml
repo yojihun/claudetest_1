@@ -1,0 +1,29 @@
+id: Q-HIM-000547
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C13-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: B
+stem: "'Bx confirmed BCC, excision performed'라는 문장에서 BCC가 의미하는 것은?"
+options:
+  - id: A
+    text: 기저세포암
+  - id: B
+    text: 편평세포암
+  - id: C
+    text: 흑색종
+  - id: D
+    text: 두드러기
+answer:
+  - A
+explanation: BCC는 Basal Cell Carcinoma의 약자로 기저세포암을 의미한다.
+distractor_explanations:
+  B: 편평세포암은 SCC로 축약되며 BCC와 다르다.
+  C: 흑색종은 Melanoma로 축약되며 BCC와 다르다.
+  D: 두드러기는 Urticaria로 피부암과 무관한 알레르기성 질환이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,19 @@
+id: Q-HIM-000599
+status: drafting
+type: calculation
+topic_ids:
+  - HIM-V3-C01-S08-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "가동병상수 100개인 병동에서 30일 동안 환자일수가 2,400이었다. 이 병동의 병상이용률(%)을 계산하시오."
+answer:
+  - "80"
+explanation: "병상이용률 = (환자일수 ÷ (가동병상수 × 기간 일수)) × 100 = (2,400 ÷ (100 × 30)) × 100 = 80%. 분자는 재원 중 관점의 누적 환자일수, 분모는 그 기간 동안 이론적으로 채울 수 있었던 최대 병상일수(가동병상수 × 기간 일수)이다."
+distractor_explanations:
+  "2400": 환자일수 자체를 병상이용률로 착각한 오답이다(분모로 나누지 않음).
+  "24": 가동병상수와 기간 일수를 곱하지 않고 둘 중 하나로만 나눈 오답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

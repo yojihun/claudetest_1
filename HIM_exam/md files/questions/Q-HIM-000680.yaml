@@ -1,0 +1,23 @@
+id: Q-HIM-000680
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C03-S06-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 항암화학요법이 '시행 예정'으로 기록되어 있으므로, 실제 투여가 완료되었는지는 이후 추적 기록에서 확인해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: '시행 예정'이라는 기록은 아직 완료되지 않았음을 나타내므로 실제 완료 여부는 추가 기록에서 확인해야 한다.
+distractor_explanations:
+  X: '예정'과 '완료'를 구분하지 않은 오류이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

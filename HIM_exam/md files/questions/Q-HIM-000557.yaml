@@ -1,0 +1,29 @@
+id: Q-HIM-000557
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C14-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'Pt endorses SI with plan, admitted for safety'라는 문장에서 SI가 의미하는 것은?"
+options:
+  - id: A
+    text: 자살 사고
+  - id: B
+    text: 주요우울장애
+  - id: C
+    text: 범불안장애
+  - id: D
+    text: 정신상태검사
+answer:
+  - A
+explanation: SI는 Suicidal Ideation의 약자로 자살 사고를 의미한다.
+distractor_explanations:
+  B: 주요우울장애는 MDD로 축약되며 SI와 다르다.
+  C: 범불안장애는 GAD로 축약되며 SI와 다르다.
+  D: 정신상태검사는 MSE로 축약되며 SI와 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

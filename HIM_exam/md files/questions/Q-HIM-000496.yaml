@@ -1,0 +1,23 @@
+id: Q-HIM-000496
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C09-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "태반조기박리(Abruptio Placentae)는 태반의 위치는 정상이지만 분만 전에 자궁벽에서 미리 떨어져 나가는 상태이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 태반조기박리는 태반 위치는 정상이나 분만 전 자궁벽에서 조기에 박리되는 상태가 맞다.
+distractor_explanations:
+  X: 태반조기박리의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

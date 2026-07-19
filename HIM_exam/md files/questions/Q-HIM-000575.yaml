@@ -1,0 +1,29 @@
+id: Q-HIM-000575
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C16-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "'Nitroglycerin SL PRN for chest pain'이라는 처방에서 SL이 의미하는 투여 경로는?"
+options:
+  - id: A
+    text: 경구
+  - id: B
+    text: 정맥 주사
+  - id: C
+    text: 설하
+  - id: D
+    text: 피하 주사
+answer:
+  - C
+explanation: SL(Sublingual)은 혀 밑에 넣어 투여하는 설하 경로를 의미한다.
+distractor_explanations:
+  A: 경구는 PO로 표기되며 SL과 다르다.
+  B: 정맥 주사는 IV로 표기되며 SL과 다르다.
+  D: 피하 주사는 SC로 표기되며 SL과 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

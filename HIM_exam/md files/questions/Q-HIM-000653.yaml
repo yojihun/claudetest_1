@@ -1,0 +1,29 @@
+id: Q-HIM-000653
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C03-S08-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: apply
+importance: A
+stem: "위암 치료 후 몇 년 뒤 폐에서 발견된 종양이 조직검사에서 위암과 전혀 다른 원발성 폐암 형태로 확인되었다. 이 경우 올바른 등록 방식은?"
+options:
+  - id: A
+    text: 위암의 전이로 간주해 하나의 암으로 등록한다.
+  - id: B
+    text: 위암과 독립된 다중원발암으로 각각 별도 등록한다.
+  - id: C
+    text: 새로 발견된 폐 종양은 등록하지 않는다.
+  - id: D
+    text: 두 종양을 하나로 합쳐 '위폐암'으로 등록한다.
+answer:
+  - B
+explanation: 조직학적 형태가 전혀 다르므로 이는 전이가 아닌 독립된 다중원발암으로 각각 별도 등록해야 한다.
+distractor_explanations:
+  A: 조직형이 전혀 다르므로 전이로 간주하는 것은 적절하지 않다.
+  C: 새로 발견된 원발암도 암등록 대상이므로 등록해야 한다.
+  D: 두 암을 하나로 합쳐 등록하는 방식은 존재하지 않는다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

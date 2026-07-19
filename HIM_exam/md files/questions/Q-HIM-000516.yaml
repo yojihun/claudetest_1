@@ -1,0 +1,23 @@
+id: Q-HIM-000516
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C10-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "'DM'이라는 약어만 기록되어 있어도 유형과 합병증 정보 없이 항상 완전한 분류가 가능하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 유형과 합병증 정보 없이는 포괄적 코드만 가능하며, 정확한 분류를 위해서는 세부 정보 확인이 필요하다.
+distractor_explanations:
+  O: 세부 정보 없이도 충분하다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

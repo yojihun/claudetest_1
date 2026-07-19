@@ -1,0 +1,23 @@
+id: Q-HIM-000560
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C14-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "정신질환과 신체질환(예: 당뇨병)이 함께 있는 환자는 정신질환 진단명만 기록하면 충분하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 정신질환과 신체질환이 동반된 경우 두 진단명을 모두 기록해야 통합적인 치료와 정확한 통계가 가능하다.
+distractor_explanations:
+  O: 동반질환 기록의 필요성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

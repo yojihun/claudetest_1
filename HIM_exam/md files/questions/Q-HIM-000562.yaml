@@ -1,0 +1,23 @@
+id: Q-HIM-000562
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C15-S01-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "상피내암은 완전히 침습한 악성 종양과 동일한 예후를 가진다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 상피내암은 아직 침습하지 않은 초기 단계로, 완전히 침습한 악성 종양보다 훨씬 좋은 예후를 가진다.
+distractor_explanations:
+  O: 상피내암과 침습암의 예후 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000514
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C10-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "T1DM과 T2DM은 단순히 진단 시기의 순서를 나타내는 숫자일 뿐 기전상의 차이는 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: T1DM은 자가면역에 의한 인슐린 절대 부족, T2DM은 인슐린 저항이 핵심 기전으로 서로 다르다.
+distractor_explanations:
+  O: 두 유형의 기전 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,19 @@
+id: Q-HIM-000601
+status: drafting
+type: calculation
+topic_ids:
+  - HIM-V3-C01-S09-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "한 달 동안 퇴원한 환자 20명의 재원일수를 모두 더한 값이 100일이었다. 이 기간의 평균재원일수(일)를 계산하시오."
+answer:
+  - "5"
+explanation: "평균재원일수 = 퇴원환자의 총 재원일수 ÷ 퇴원환자 수 = 100 ÷ 20 = 5일."
+distractor_explanations:
+  "100": 총 재원일수 자체를 평균재원일수로 착각한 오답이다(퇴원환자 수로 나누지 않음).
+  "20": 퇴원환자 수 자체를 평균재원일수로 착각한 오답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000592
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S04-T001
+subject_area: hospital_statistics
+difficulty: basic
+cognitive_level: remember
+importance: A
+stem: "최빈값은 자료 중 가장 자주 나타나는 값을 의미한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 최빈값의 정의가 맞다.
+distractor_explanations:
+  X: 최빈값의 정의를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

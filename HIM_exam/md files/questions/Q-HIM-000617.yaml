@@ -1,0 +1,29 @@
+id: Q-HIM-000617
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C02-S04-T001
+subject_area: classification
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "환자가 두통을 호소해 여러 검사를 받았지만 끝내 원인 질환을 확정하지 못했다. 이 경우 적절한 코딩 방식은?"
+options:
+  - id: A
+    text: 두통이라는 증상 자체를 진단명으로 코딩한다.
+  - id: B
+    text: 검사 결과가 없으므로 코딩을 생략한다.
+  - id: C
+    text: 임의로 가장 흔한 원인 질환명을 추정해 코딩한다.
+  - id: D
+    text: 다른 환자의 유사 사례를 참고해 코딩한다.
+answer:
+  - A
+explanation: 원인 질환이 확정되지 않았다면 증상(두통) 자체를 진단명으로 코딩하는 것이 적절하다.
+distractor_explanations:
+  B: 진료가 이루어졌으므로 코딩을 생략하는 것은 적절하지 않다.
+  C: 확정되지 않은 원인을 임의로 추정해 코딩하는 것은 부정확한 기록이다.
+  D: 다른 환자의 사례로 코딩을 결정하는 것은 근거 없는 방식이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

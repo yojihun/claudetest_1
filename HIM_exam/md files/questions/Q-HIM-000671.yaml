@@ -1,0 +1,29 @@
+id: Q-HIM-000671
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V3-C02-S03-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 입원 사례에서 주진단으로 코딩해야 할 진단명은?"
+options:
+  - id: A
+    text: 복통 원인 감별(입원 당시 의심 진단)
+  - id: B
+    text: 급성 충수염(국소 복막염 동반)
+  - id: C
+    text: 국소 복막염만
+  - id: D
+    text: 복강경 충수절제술
+answer:
+  - B
+explanation: 주진단은 입원 당시 의심 진단이 아니라 퇴원 시 확정된 진단(급성 충수염, 국소 복막염 동반)을 기준으로 선택해야 한다.
+distractor_explanations:
+  A: 이는 입원 당시의 의심 진단으로 주진단 선택 기준이 아니다.
+  C: 국소 복막염은 기타진단(합병증)으로, 급성 충수염과 함께 코딩되어야 하며 국소 복막염만 주진단으로 삼지 않는다.
+  D: 복강경 충수절제술은 처치명이며 진단명이 아니다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

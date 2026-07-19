@@ -1,0 +1,23 @@
+id: Q-HIM-000628
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S09-T001
+subject_area: classification
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "포괄적 진단명만으로는 정확한 분류가 어렵다는 원칙은 특정 계통에만 적용되고 다른 계통에는 해당하지 않는다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 이 원칙은 순환기계, 호흡기계, 소화기계, 비뇨생식기계, 근골격계 등 모든 계통에 공통적으로 적용된다.
+distractor_explanations:
+  O: 이 원칙이 여러 계통에 공통 적용된다는 사실을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

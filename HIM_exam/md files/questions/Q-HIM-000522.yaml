@@ -1,0 +1,23 @@
+id: Q-HIM-000522
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C11-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "TIA 증상이 완전히 사라졌다면 향후 뇌졸중 위험을 걱정할 필요가 없다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: TIA는 증상이 사라져도 향후 실제 뇌졸중 발생 위험이 매우 높은 경고 신호이므로 신속한 평가와 예방 조치가 필요하다.
+distractor_explanations:
+  O: TIA의 경고 신호로서의 의미를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

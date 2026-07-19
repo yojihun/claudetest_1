@@ -1,0 +1,29 @@
+id: Q-HIM-000567
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C15-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "특정 부위에 방사선을 집중적으로 조사해 국소적으로 암세포를 파괴하는 치료는?"
+options:
+  - id: A
+    text: 항암화학요법(Chemotherapy)
+  - id: B
+    text: 방사선요법(Radiotherapy)
+  - id: C
+    text: 생검(Biopsy)
+  - id: D
+    text: 냉동요법(Cryotherapy)
+answer:
+  - B
+explanation: 방사선요법은 특정 부위에 방사선을 집중 조사하는 국소 치료이다.
+distractor_explanations:
+  A: 항암화학요법은 약물이 혈류를 통해 전신에 작용하는 치료로 국소 치료와는 다르다.
+  C: 생검은 조직을 채취해 확진하는 검사로 치료가 아니다.
+  D: 냉동요법은 양성 피부 병변 등을 얼려 제거하는 처치로 방사선요법과는 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,23 @@
+id: Q-HIM-000622
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S06-T001
+subject_area: classification
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "손상 사례를 코딩할 때는 손상 자체(무엇을 다쳤는가)뿐 아니라 발생 원인(어떻게 다쳤는가)도 함께 기록해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 손상분류와 외인분류를 함께 기록해야 원인별 통계 산출과 예방 정책에 활용할 수 있다.
+distractor_explanations:
+  X: 두 분류를 함께 기록해야 하는 필요성을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

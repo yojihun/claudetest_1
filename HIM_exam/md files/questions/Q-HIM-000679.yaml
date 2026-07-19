@@ -1,0 +1,29 @@
+id: Q-HIM-000679
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V3-C03-S06-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례의 병기 'T2N1M0'에서 N1이 의미하는 것은?"
+options:
+  - id: A
+    text: 인근 림프절로의 전이가 확인됨
+  - id: B
+    text: 원격 장기로의 전이가 확인됨
+  - id: C
+    text: 원발 종양이 매우 작음
+  - id: D
+    text: 종양이 완전히 제거됨
+answer:
+  - A
+explanation: N(Node)은 인근 림프절 전이 여부를 나타내며, N1은 림프절 전이가 확인되었음을 의미한다.
+distractor_explanations:
+  B: 원격 전이는 M으로 표시되며 이 사례에서는 M0(원격 전이 없음)로 기록되어 있다.
+  C: 원발 종양의 크기는 T로 표시되며 N1과는 다른 요소다.
+  D: 종양 제거 여부는 병기 표기와 직접 관련이 없다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

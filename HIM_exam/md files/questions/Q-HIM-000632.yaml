@@ -1,0 +1,23 @@
+id: Q-HIM-000632
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S11-T001
+subject_area: classification
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "개복 수술과 복강경 수술은 같은 목적을 가진 수술이라도 접근 방식이 달라 별도의 코드로 구분되는 경우가 많다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 접근 방식(개복 vs 복강경)에 따라 같은 목적의 수술이라도 다른 코드로 구분되는 경우가 많다.
+distractor_explanations:
+  X: 접근 방식에 따른 코드 구분을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

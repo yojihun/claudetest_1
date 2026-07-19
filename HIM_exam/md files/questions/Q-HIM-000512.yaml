@@ -1,0 +1,23 @@
+id: Q-HIM-000512
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C10-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "공복혈당(FBS) 수치 하나만으로 환자의 장기적인 혈당 관리 상태를 충분히 판단할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 공복혈당은 검사 당일 시점만 반영하므로, 장기적 관리 상태를 평가하려면 당화혈색소(HbA1c)를 함께 확인해야 한다.
+distractor_explanations:
+  O: 공복혈당만으로 장기적 상태를 판단할 수 있다고 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

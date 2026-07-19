@@ -1,0 +1,29 @@
+id: Q-HIM-000641
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C03-S02-T001
+subject_area: cancer_registry
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "암등록 등록대상에 일반적으로 포함되는 종양의 범위는?"
+options:
+  - id: A
+    text: 악성 종양과 상피내암
+  - id: B
+    text: 양성 종양만
+  - id: C
+    text: 모든 종류의 종양과 관계없이 전혀 등록하지 않음
+  - id: D
+    text: 감염성 질환
+answer:
+  - A
+explanation: 암등록 대상은 원칙적으로 악성 종양(침습암)과 상피내암을 포함한다.
+distractor_explanations:
+  B: 양성 종양은 일반적으로 암등록 대상에서 제외된다.
+  C: 악성 종양과 상피내암은 등록되어야 한다.
+  D: 감염성 질환은 암등록과는 다른 영역이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

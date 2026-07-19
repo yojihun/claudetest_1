@@ -1,0 +1,29 @@
+id: Q-HIM-000479
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C07-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "퇴원요약지에 'Hepatitis'라고만 기록된 경우, 코딩 담당자가 정확한 분류를 위해 추가로 확인해야 할 정보는?"
+options:
+  - id: A
+    text: 원인(바이러스성, 알코올성, 자가면역성 등)
+  - id: B
+    text: 환자의 혈액형
+  - id: C
+    text: 담당 의료진의 이름
+  - id: D
+    text: 병원의 소재지
+answer:
+  - A
+explanation: 간염은 원인에 따라 전혀 다른 분류 코드가 적용되므로 원인 정보 확인이 필요하다.
+distractor_explanations:
+  B: 혈액형은 간염 분류와 직접 관련이 없다.
+  C: 담당 의료진의 이름은 분류 코드 결정과 무관하다.
+  D: 병원의 소재지는 분류 코드 결정과 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

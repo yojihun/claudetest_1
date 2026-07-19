@@ -199,12 +199,14 @@ const topicIds = new Set();
 const referenceIds = new Set();
 const assetIds = new Set();
 const questionIds = new Set();
+const caseIds = new Set();
 
 // Pass 1: collect IDs
 const topicFiles = listFiles(path.join(ROOT, "content"), ".md");
 const questionFiles = listFiles(path.join(ROOT, "questions"), ".yaml");
 const referenceFiles = listFiles(path.join(ROOT, "references"), ".yaml");
 const assetFiles = listFiles(path.join(ROOT, "assets"), ".yaml");
+const caseFiles = listFiles(path.join(ROOT, "cases"), ".md");
 
 const parsedTopics = [];
 for (const file of topicFiles) {
@@ -240,6 +242,18 @@ for (const file of assetFiles) {
   const data = parseYAML(fs.readFileSync(file, "utf8"));
   parsedAssets.push({ file, data });
   if (data.id) assetIds.add(data.id);
+}
+
+const parsedCases = [];
+for (const file of caseFiles) {
+  const text = fs.readFileSync(file, "utf8");
+  const parsed = extractFrontmatter(text);
+  if (!parsed) { errors.push(`${rel(file)}: frontmatter(---)를 찾을 수 없음`); continue; }
+  parsedCases.push({ file, ...parsed });
+  if (parsed.frontmatter.id) {
+    if (caseIds.has(parsed.frontmatter.id)) errors.push(`${rel(file)}: 중복 Case ID ${parsed.frontmatter.id}`);
+    caseIds.add(parsed.frontmatter.id);
+  }
 }
 
 // Pass 2: schema validation + cross-reference checks
@@ -345,7 +359,47 @@ for (const { file, data } of parsedAssets) {
   }
 }
 
-console.log(`검사한 파일: ${filesChecked}개 (Topic ${parsedTopics.length}, Question ${parsedQuestions.length}, Reference ${parsedReferences.length}, Asset ${parsedAssets.length})`);
+const ALLOWED_HEADINGS_CASE = new Set([
+  "사례 개요", "원문 기록", "핵심 용어", "시간순 재구성", "진단 및 처치 추출",
+  "기록 누락·모순 점검", "분류 또는 통계 적용", "법적·윤리적 고려",
+  "연습문제", "상세 해설", "참고문헌",
+]);
+
+for (const { file, frontmatter: fm, body } of parsedCases) {
+  filesChecked++;
+  checkPattern(file, fm, "id", /^CASE-MR-[0-9]{6}$/);
+  checkPattern(file, fm, "slug", /^[a-z0-9]+(-[a-z0-9]+)*$/);
+  if (!fm.title) errors.push(`${rel(file)}: 필수 필드 누락 - title`);
+  checkEnum(file, fm, "status", ["planned", "researching", "drafting", "reviewing", "verified", "published", "deprecated"]);
+  checkEnum(file, fm, "difficulty", ["basic", "intermediate", "advanced"]);
+  checkEnum(file, fm, "importance", ["A", "B", "C", "D"]);
+  if (fm.volume !== 4) errors.push(`${rel(file)}: volume은 4여야 함 (현재 ${fm.volume})`);
+  if (fm.deidentified !== true) errors.push(`${rel(file)}: deidentified는 반드시 true여야 함(합성/비식별 사례만 허용)`);
+  if (typeof fm.verified !== "boolean") errors.push(`${rel(file)}: verified는 boolean이어야 함`);
+
+  for (const refId of asArray(fm.references)) {
+    if (!referenceIds.has(refId)) warnings.push(`${rel(file)}: references에 있는 ${refId}가 references/ 디렉터리에 없음`);
+  }
+  for (const qId of asArray(fm.questions)) {
+    if (!questionIds.has(qId)) warnings.push(`${rel(file)}: questions에 있는 ${qId}가 questions/ 디렉터리에 없음`);
+  }
+  for (const preq of asArray(fm.prerequisites)) {
+    if (!topicIds.has(preq) && !caseIds.has(preq)) warnings.push(`${rel(file)}: prerequisites의 ${preq}가 아직 존재하지 않는 Topic/Case ID`);
+  }
+  for (const rt of asArray(fm.related_topics)) {
+    if (!topicIds.has(rt) && !caseIds.has(rt)) warnings.push(`${rel(file)}: related_topics의 ${rt}가 아직 존재하지 않는 Topic/Case ID`);
+  }
+
+  const headings = [...body.matchAll(/^##\s+(.+)$/gm)].map((m) => m[1].trim());
+  const seen = new Set();
+  for (const h of headings) {
+    if (!ALLOWED_HEADINGS_CASE.has(h)) warnings.push(`${rel(file)}: 알 수 없는 사례 섹션 제목 '## ${h}'`);
+    if (seen.has(h)) warnings.push(`${rel(file)}: 섹션 제목 '## ${h}' 중복`);
+    seen.add(h);
+  }
+}
+
+console.log(`검사한 파일: ${filesChecked}개 (Topic ${parsedTopics.length}, Question ${parsedQuestions.length}, Reference ${parsedReferences.length}, Asset ${parsedAssets.length}, Case ${parsedCases.length})`);
 console.log(`오류(error): ${errors.length}건, 경고(warning): ${warnings.length}건\n`);
 
 if (warnings.length) {

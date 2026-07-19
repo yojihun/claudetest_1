@@ -1,0 +1,23 @@
+id: Q-HIM-000588
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S02-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "서열척도로 측정된 중증도 단계(1~5단계)에 평균을 계산해 등간척도처럼 다루는 것은 통계적으로 적절하다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 서열척도는 순서는 있지만 간격이 일정하지 않으므로 평균 계산보다 중앙값이 통계적으로 더 적절하다.
+distractor_explanations:
+  O: 서열척도에 평균을 적용하는 것이 부적절함을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

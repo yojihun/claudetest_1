@@ -1,0 +1,29 @@
+id: Q-HIM-000605
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C01-S11-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: understand
+importance: B
+stem: "응급실에 내원한 환자 중 실제로 입원까지 이어진 비율을 나타내는 지표는?"
+options:
+  - id: A
+    text: 병상이용률
+  - id: B
+    text: 입원 전환율
+  - id: C
+    text: 병상회전율
+  - id: D
+    text: 평균재원일수
+answer:
+  - B
+explanation: 입원 전환율은 응급실 내원 환자 중 실제로 입원으로 이어진 비율을 나타내는 응급통계 지표다.
+distractor_explanations:
+  A: 병상이용률은 병상이 실제로 채워진 정도를 나타내는 입원 중심 지표다.
+  C: 병상회전율은 병상 하나가 사용된 환자 수를 나타내는 지표다.
+  D: 평균재원일수는 퇴원환자의 평균 입원 기간을 나타내는 지표다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

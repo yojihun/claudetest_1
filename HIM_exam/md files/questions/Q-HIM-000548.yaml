@@ -1,0 +1,23 @@
+id: Q-HIM-000548
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C13-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "BCC와 SCC는 대체로 흑색종보다 전이 위험이 낮고 예후가 양호한 편이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: BCC와 SCC는 국소 절제만으로 치료되는 경우가 많아 대체로 흑색종보다 예후가 양호한 편이다.
+distractor_explanations:
+  X: BCC·SCC와 흑색종의 예후 차이를 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

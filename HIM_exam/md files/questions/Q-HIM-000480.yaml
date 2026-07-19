@@ -1,0 +1,23 @@
+id: Q-HIM-000480
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C07-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "바이러스성 간염과 알코올성 간염은 원인이 다르더라도 항상 동일한 분류 코드가 적용된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 간염은 원인(바이러스성, 알코올성 등)에 따라 서로 다른 분류 코드가 적용된다.
+distractor_explanations:
+  O: 원인에 따른 분류 코드 차이를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

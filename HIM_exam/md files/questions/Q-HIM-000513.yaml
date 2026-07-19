@@ -1,0 +1,29 @@
+id: Q-HIM-000513
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C10-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "주로 자가면역 반응으로 췌장의 인슐린 분비 세포가 파괴되어 인슐린이 거의 생성되지 않는 당뇨병 유형은?"
+options:
+  - id: A
+    text: T1DM
+  - id: B
+    text: T2DM
+  - id: C
+    text: TSH
+  - id: D
+    text: FBS
+answer:
+  - A
+explanation: T1DM(제1형 당뇨병)은 자가면역 반응으로 인슐린 분비 세포가 파괴되어 인슐린이 거의 생성되지 않는 유형이다.
+distractor_explanations:
+  B: T2DM(제2형 당뇨병)은 인슐린 저항이 핵심 기전으로 이 상황과 다르다.
+  C: TSH는 갑상선자극호르몬으로 당뇨병 유형과는 무관하다.
+  D: FBS는 공복혈당 검사명으로 당뇨병 유형을 나타내는 약어가 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

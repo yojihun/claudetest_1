@@ -1,0 +1,23 @@
+id: Q-HIM-000528
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C11-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: B
+stem: "뇌졸중 급성기 치료 이후 남은 편마비·실어증 등의 후유증은 급성기 진단과 별도로 구분해 기록해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 후유증은 급성기 진단과 별도의 코드로 분류될 수 있어 구분해 기록해야 한다.
+distractor_explanations:
+  X: 후유증 구분 기록의 필요성을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000469
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C07-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "다음 중 음식물이 직접 통과하지 않는 소화부속기관은?"
+options:
+  - id: A
+    text: 위
+  - id: B
+    text: 소장
+  - id: C
+    text: 췌장
+  - id: D
+    text: 대장
+answer:
+  - C
+explanation: 췌장은 소화효소와 인슐린을 분비하는 소화부속기관으로 음식물이 직접 통과하지 않는다.
+distractor_explanations:
+  A: 위는 음식물이 직접 통과하는 소화관 본체이다.
+  B: 소장은 음식물이 직접 통과하는 소화관 본체이다.
+  D: 대장은 음식물이 직접 통과하는 소화관 본체이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

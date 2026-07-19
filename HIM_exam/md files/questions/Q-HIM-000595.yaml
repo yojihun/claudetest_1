@@ -1,0 +1,29 @@
+id: Q-HIM-000595
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C01-S06-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "환자센서스를 관례적으로 집계하는 기준 시점은?"
+options:
+  - id: A
+    text: 매일 정오(12시)
+  - id: B
+    text: 매일 자정(0시)
+  - id: C
+    text: 매주 월요일 오전
+  - id: D
+    text: 매월 1일
+answer:
+  - B
+explanation: 환자센서스는 관례적으로 매일 자정을 기준으로 재원환자 수를 집계한다.
+distractor_explanations:
+  A: 정오는 환자센서스의 관례적 집계 시점이 아니다.
+  C: 매주 월요일 오전은 환자센서스의 관례적 집계 시점이 아니다.
+  D: 매월 1일은 환자센서스의 관례적 집계 시점이 아니다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

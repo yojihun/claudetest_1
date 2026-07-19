@@ -1,0 +1,23 @@
+id: Q-HIM-000596
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S06-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "환자센서스와 환자일수는 완전히 동일한 개념으로 서로 바꾸어 사용할 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 환자센서스는 특정 시점의 값이고, 환자일수는 이를 일정 기간 누적한 값으로 서로 다른 개념이다.
+distractor_explanations:
+  O: 두 개념의 차이(시점 값 vs 누적값)를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

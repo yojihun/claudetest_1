@@ -1,0 +1,23 @@
+id: Q-HIM-000546
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C13-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "피부 병변의 처치 방법(냉동요법 vs 절제술)은 생검을 통한 진단 결과에 따라 결정된다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 양성으로 확인되면 냉동요법, 악성으로 확진되면 절제술 등 진단 결과에 따라 처치 방법이 결정되는 것이 맞다.
+distractor_explanations:
+  X: 처치 방법 결정 과정을 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

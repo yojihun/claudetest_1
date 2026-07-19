@@ -1,0 +1,29 @@
+id: Q-HIM-000639
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C03-S01-T001
+subject_area: cancer_registry
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "일반 질병분류만으로는 암 관리 정책 수립에 충분하지 않아 별도의 암등록이 필요한 이유는?"
+options:
+  - id: A
+    text: 암은 원발부위별 발생 추이, 병기별 생존율 등 훨씬 정교한 정보가 필요하기 때문
+  - id: B
+    text: 암은 일반 질병분류에 아예 포함되지 않기 때문
+  - id: C
+    text: 암 환자는 통계 대상에서 제외되기 때문
+  - id: D
+    text: 암등록은 법적으로 아무 의미가 없는 절차이기 때문
+answer:
+  - A
+explanation: 암 관리 정책에는 원발부위별 발생 추이, 병기별 생존율 등 정교한 정보가 필요해 별도의 암등록 체계가 요구된다.
+distractor_explanations:
+  B: 암은 일반 질병분류에도 포함되지만, 암등록은 그보다 더 상세한 정보를 추가로 수집한다.
+  C: 암 환자도 일반 통계에 포함되며 암등록으로 더 상세히 다뤄진다.
+  D: 암등록은 암 관리 정책 수립에 실질적으로 활용되는 중요한 절차다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

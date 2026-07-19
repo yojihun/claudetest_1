@@ -1,0 +1,23 @@
+id: Q-HIM-000500
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V2-C09-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "TURP는 전립선암을 치료하는 근본적인 암 절제 수술이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: TURP는 주로 양성전립선비대증(BPH)으로 인한 배뇨 증상을 개선하기 위한 시술로, 전립선암의 근본 치료 수술이 아니다.
+distractor_explanations:
+  O: TURP의 목적을 전립선암 치료로 오해한 응답이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

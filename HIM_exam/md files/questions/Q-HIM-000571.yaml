@@ -1,0 +1,29 @@
+id: Q-HIM-000571
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C15-S06-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "일반 질병분류(KCD)와 비교했을 때 암등록이 추가로 요구하는 정보로 가장 적절한 것은?"
+options:
+  - id: A
+    text: 원발부위, 조직학적 형태, 병기 등 암 특유의 상세 정보
+  - id: B
+    text: 환자의 혈액형
+  - id: C
+    text: 담당 의료진의 근무 경력
+  - id: D
+    text: 병원의 설립 연도
+answer:
+  - A
+explanation: 암등록은 일반 질병분류보다 원발부위, 조직학적 형태, 병기 등 암 특유의 상세 정보를 표준화된 형식으로 요구한다.
+distractor_explanations:
+  B: 혈액형은 암등록의 필수 항목이 아니다.
+  C: 담당 의료진의 근무 경력은 암등록 항목과 무관하다.
+  D: 병원의 설립 연도는 암등록 항목과 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000471
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C07-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "하부 위장관(대장, 직장) 출혈로 소화되지 않은 선홍색 피가 대변에 섞여 나오는 증상은?"
+options:
+  - id: A
+    text: 토혈(Hematemesis)
+  - id: B
+    text: 흑색변(Melena)
+  - id: C
+    text: 혈변(Hematochezia)
+  - id: D
+    text: 객혈(Hemoptysis)
+answer:
+  - C
+explanation: 혈변은 하부 위장관 출혈로 소화되지 않은 선홍색 피가 대변에 섞여 나오는 증상이다.
+distractor_explanations:
+  A: 토혈은 구토를 통해 출혈이 배출되는 증상으로 대변과는 다르다.
+  B: 흑색변은 상부 위장관 출혈이 소화되어 검게 나타나는 대변으로 이 문제와 출혈 부위가 다르다.
+  D: 객혈은 기도·폐에서 유래한 출혈로 소화기계 증상이 아니다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

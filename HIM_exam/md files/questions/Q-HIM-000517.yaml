@@ -1,0 +1,29 @@
+id: Q-HIM-000517
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C11-S01-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: A
+stem: "당뇨병성 말초신경병증(Peripheral Neuropathy)이 침범하는 신경계 영역은?"
+options:
+  - id: A
+    text: 중추신경계
+  - id: B
+    text: 말초신경계
+  - id: C
+    text: 내분비계
+  - id: D
+    text: 순환계
+answer:
+  - B
+explanation: 말초신경병증은 중추신경계 밖에서 온몸에 분포하는 말초신경계를 침범하는 질환이다.
+distractor_explanations:
+  A: 중추신경계는 뇌와 척수로 구성되며 말초신경병증과는 다른 영역이다.
+  C: 내분비계는 당뇨병의 근본 원인과 관련되지만 신경 손상 자체는 신경계 영역이다.
+  D: 순환계는 혈액 순환을 담당하는 계통으로 신경 손상과는 다른 영역이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

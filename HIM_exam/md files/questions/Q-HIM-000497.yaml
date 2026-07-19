@@ -1,0 +1,29 @@
+id: Q-HIM-000497
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C09-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "PSA 수치가 상승해 전립선 조직검사를 시행하는 주된 목적은?"
+options:
+  - id: A
+    text: 양성전립선비대증과 전립선암을 감별하기 위해
+  - id: B
+    text: 잠복고환 여부를 확인하기 위해
+  - id: C
+    text: 포경 수술 여부를 결정하기 위해
+  - id: D
+    text: 부고환염의 원인균을 확인하기 위해
+answer:
+  - A
+explanation: PSA 상승 시 조직검사는 양성전립선비대증(비암성)과 전립선암(악성)을 감별하기 위해 시행된다.
+distractor_explanations:
+  B: 잠복고환은 소아기에 확인되는 상태로 PSA·전립선 조직검사와는 무관하다.
+  C: 포경 수술 여부는 전립선 조직검사와 관련이 없다.
+  D: 부고환염의 원인균 확인은 별도의 검사(배양검사 등)로 이루어지며 전립선 조직검사와는 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

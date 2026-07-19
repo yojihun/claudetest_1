@@ -1,0 +1,29 @@
+id: Q-HIM-000525
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C11-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'Elevated ICP, mannitol administered'라는 문장에서 ICP가 의미하는 것은?"
+options:
+  - id: A
+    text: 두개내압
+  - id: B
+    text: 의식 소실
+  - id: C
+    text: 뇌졸중
+  - id: D
+    text: 일과성허혈발작
+answer:
+  - A
+explanation: ICP는 Intracranial Pressure의 약자로 두개내압을 의미한다.
+distractor_explanations:
+  B: 의식 소실은 LOC로 축약되며 ICP와 다르다.
+  C: 뇌졸중은 CVA로 축약되며 ICP와 다르다.
+  D: 일과성허혈발작은 TIA로 축약되며 ICP와 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

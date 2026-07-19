@@ -1,0 +1,29 @@
+id: Q-HIM-000647
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C03-S05-T001
+subject_area: cancer_registry
+difficulty: advanced
+cognitive_level: understand
+importance: B
+stem: "병리 보고서에 'Poorly differentiated adenocarcinoma'라고 기록된 종양의 일반적 경향은?"
+options:
+  - id: A
+    text: 정상 조직과 유사해 상대적으로 느리게 성장하는 경향
+  - id: B
+    text: 정상 조직과 크게 달라 상대적으로 빠르고 공격적으로 성장하는 경향
+  - id: C
+    text: 양성 종양으로 전환될 가능성이 높음
+  - id: D
+    text: 완전히 정상적인 조직 소견
+answer:
+  - B
+explanation: 저분화(Poorly differentiated) 종양은 정상 조직 구조와 크게 달라 상대적으로 빠르고 공격적인 성장 경향을 보인다.
+distractor_explanations:
+  A: 정상 조직과 유사해 느리게 성장하는 것은 고분화 종양의 경향이다.
+  C: 저분화 종양이 양성으로 전환된다는 것은 사실이 아니다.
+  D: 저분화라는 표현 자체가 정상 조직과 다른 소견을 의미한다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

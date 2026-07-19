@@ -1,0 +1,29 @@
+id: Q-HIM-000655
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V3-C03-S09-T001
+subject_area: cancer_registry
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "'이 암종의 5년 생존율은 얼마인가'라는 통계를 산출하기 위해 반드시 필요한 암등록 활동은?"
+options:
+  - id: A
+    text: 추적조사(Follow-up)
+  - id: B
+    text: 원발부위 등록만
+  - id: C
+    text: 병기 등록만
+  - id: D
+    text: 조직학적 형태 등록만
+answer:
+  - A
+explanation: 5년 생존율은 진단 이후 지속적인 추적조사를 통해 생존·재발 상태를 확인해야 산출할 수 있다.
+distractor_explanations:
+  B: 원발부위 등록만으로는 생존율을 산출할 수 없다.
+  C: 병기 등록만으로는 생존율을 산출할 수 없다.
+  D: 조직학적 형태 등록만으로는 생존율을 산출할 수 없다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

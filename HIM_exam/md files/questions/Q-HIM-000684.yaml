@@ -1,0 +1,23 @@
+id: Q-HIM-000684
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C02-S10-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 골절(손상)과 낙상(원인)은 각각 별도의 분류 축(손상분류와 외인분류)으로 함께 기록되어야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 손상분류(골절)와 외인분류(낙상)는 별도의 축으로 함께 기록해야 완전한 통계가 산출된다.
+distractor_explanations:
+  X: 손상분류와 외인분류를 함께 기록해야 하는 원칙을 간과한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

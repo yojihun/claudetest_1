@@ -1,0 +1,29 @@
+id: Q-HIM-000511
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C10-S04-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "최근 2~3개월간의 평균 혈당 조절 상태를 반영하는 검사는?"
+options:
+  - id: A
+    text: 공복혈당(FBS)
+  - id: B
+    text: 당화혈색소(HbA1c)
+  - id: C
+    text: 갑상선기능검사(TFT)
+  - id: D
+    text: 전혈구검사(CBC)
+answer:
+  - B
+explanation: 당화혈색소는 적혈구 내 헤모글로빈에 결합된 포도당 비율로 최근 2~3개월간의 평균 혈당 조절 상태를 반영한다.
+distractor_explanations:
+  A: 공복혈당은 검사 당일 시점의 혈당만을 반영한다.
+  C: 갑상선기능검사는 갑상선호르몬 수치를 평가하는 검사로 혈당과는 다른 지표이다.
+  D: 전혈구검사는 혈액세포 수치를 평가하는 검사로 혈당 조절과는 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000569
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C15-S05-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: apply
+importance: A
+stem: "'Bx confirmed CIS, no evidence of mets'라는 문장이 시사하는 암의 진행 단계는?"
+options:
+  - id: A
+    text: 이미 다른 장기로 전이된 진행성 단계
+  - id: B
+    text: 침습 전(기저막을 뚫지 않은) 초기 단계
+  - id: C
+    text: 완치가 불가능한 말기 단계
+  - id: D
+    text: 양성 종양 단계
+answer:
+  - B
+explanation: CIS(상피내암)가 확진되고 전이 증거가 없다는 것은 암이 아직 침습 전 초기 단계에 머물러 있음을 시사한다.
+distractor_explanations:
+  A: 전이 증거가 없다고 명시되어 있어 진행성 전이 단계와는 반대되는 상황이다.
+  C: CIS는 침습 전 초기 단계로 말기 단계와는 정반대에 가깝다.
+  D: CIS는 세포 자체가 악성이므로 양성 종양과는 다른 개념이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

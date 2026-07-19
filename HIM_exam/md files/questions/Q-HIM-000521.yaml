@@ -1,0 +1,29 @@
+id: Q-HIM-000521
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C11-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "뇌졸중과 유사한 증상이 나타났다가 24시간 이내 완전히 회복되었다. 이 상태를 가리키는 용어는?"
+options:
+  - id: A
+    text: 뇌졸중(CVA)
+  - id: B
+    text: 일과성허혈발작(TIA)
+  - id: C
+    text: 뇌전증(Epilepsy)
+  - id: D
+    text: 수막염(Meningitis)
+answer:
+  - B
+explanation: TIA는 뇌졸중과 유사한 증상이 24시간 이내 완전히 회복되는 상태로, 향후 뇌졸중의 경고 신호이다.
+distractor_explanations:
+  A: 뇌졸중은 증상이 지속되며 영구적인 뇌 손상을 남길 수 있어 이 상황과 다르다.
+  C: 뇌전증은 반복적인 발작을 특징으로 하는 만성 질환으로 이 상황과 다르다.
+  D: 수막염은 뇌·척수를 감싸는 막의 감염성 염증으로 이 상황과 다르다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

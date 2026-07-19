@@ -1,0 +1,23 @@
+id: Q-HIM-000600
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S08-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "병상이용률이 지속적으로 100%에 가깝게 유지된다면 병상 부족으로 신규 환자 수용이나 응급 대응에 어려움이 있을 수 있음을 시사한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 병상이용률이 지나치게 높으면 병상 부족과 응급 대응 여력 저하를 시사할 수 있다.
+distractor_explanations:
+  X: 높은 병상이용률의 함의를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

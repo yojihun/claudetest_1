@@ -1,0 +1,23 @@
+id: Q-HIM-000602
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S09-T001
+subject_area: hospital_statistics
+difficulty: intermediate
+cognitive_level: remember
+importance: A
+stem: "평균재원일수의 분모는 그 기간의 전체 재원환자 수(퇴원하지 않은 환자 포함)가 아니라 퇴원환자 수만을 사용한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 평균재원일수의 분모는 퇴원환자 수만을 사용하는 것이 맞다.
+distractor_explanations:
+  X: 평균재원일수의 분모 구성을 정확히 서술한 것을 틀렸다고 응답한 오류이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

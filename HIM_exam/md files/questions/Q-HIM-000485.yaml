@@ -1,0 +1,29 @@
+id: Q-HIM-000485
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C08-S03-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "발열과 옆구리 통증을 동반해 방광염보다 더 심각한 것으로 판단되는 요로감염은?"
+options:
+  - id: A
+    text: 방광염(Cystitis)
+  - id: B
+    text: 신우신염(Pyelonephritis)
+  - id: C
+    text: 요실금(Incontinence)
+  - id: D
+    text: 신결석증(Renal Calculus)
+answer:
+  - B
+explanation: 신우신염은 신장까지 감염이 진행된 상태로 발열, 옆구리 통증 등 전신 증상을 동반할 수 있는 더 심각한 요로감염이다.
+distractor_explanations:
+  A: 방광염은 하부(방광)에 국한된 비교적 경미한 요로감염이다.
+  C: 요실금은 소변이 새는 증상으로 감염과는 다른 개념이다.
+  D: 신결석증은 신장에 결석이 생기는 상태로 감염과는 다른 기전이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

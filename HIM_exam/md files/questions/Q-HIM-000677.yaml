@@ -1,0 +1,29 @@
+id: Q-HIM-000677
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V3-C02-S07-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 신생아 황달 진단은 어느 기록에 반영되어야 하는가?"
+options:
+  - id: A
+    text: 산모의 분만기록
+  - id: B
+    text: 신생아의 별도 기록
+  - id: C
+    text: 산모와 신생아 기록에 동일하게 두 번 반영
+  - id: D
+    text: 어느 기록에도 반영하지 않음
+answer:
+  - B
+explanation: 신생아 황달은 신생아에게 발생한 진단이므로 산모와 별개인 신생아의 기록에 반영되어야 한다.
+distractor_explanations:
+  A: 산모의 진단은 정상 분만이며 신생아 황달과는 다른 개체의 진단이다.
+  C: 산모와 신생아는 별개의 개체이므로 각 진단을 해당 개체의 기록에만 반영해야 한다.
+  D: 신생아 황달은 실제로 진단된 상태이므로 기록에 반영해야 한다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

@@ -1,0 +1,29 @@
+id: Q-HIM-000543
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C13-S02-T001
+subject_area: medical_terminology
+difficulty: intermediate
+cognitive_level: understand
+importance: A
+stem: "모양이 불규칙하고 최근 색이 변한 점에 대해 조직검사를 시행해 확인하려는 질환은?"
+options:
+  - id: A
+    text: 두드러기(Urticaria)
+  - id: B
+    text: 흑색종(Melanoma)
+  - id: C
+    text: 대상포진(Herpes Zoster)
+  - id: D
+    text: 습진(Eczema)
+answer:
+  - B
+explanation: 모양이 불규칙하고 색이 변한 점은 흑색종을 의심하게 하는 대표적 소견으로 조직검사를 통해 확인한다.
+distractor_explanations:
+  A: 두드러기는 알레르기 반응으로 인한 병변으로 점의 모양·색 변화와는 다른 소견이다.
+  C: 대상포진은 신경 경로를 따른 수포성 발진이 특징으로 점의 변화와는 다르다.
+  D: 습진은 만성 피부 염증으로 점의 모양·색 변화와는 다른 소견이다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

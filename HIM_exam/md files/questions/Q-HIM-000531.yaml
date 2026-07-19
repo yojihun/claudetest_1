@@ -1,0 +1,29 @@
+id: Q-HIM-000531
+status: drafting
+type: multiple_choice
+topic_ids:
+  - HIM-V2-C12-S02-T001
+subject_area: medical_terminology
+difficulty: basic
+cognitive_level: understand
+importance: B
+stem: "실제로는 움직이지 않는데 자신이나 주변이 빙빙 도는 것처럼 느껴지는 증상은?"
+options:
+  - id: A
+    text: 이명(Tinnitus)
+  - id: B
+    text: 현훈(Vertigo)
+  - id: C
+    text: 백내장(Cataract)
+  - id: D
+    text: 근시(Myopia)
+answer:
+  - B
+explanation: 현훈은 평형 기관(전정기관) 이상으로 자신이나 주변이 빙빙 도는 것처럼 느껴지는 어지러움이다.
+distractor_explanations:
+  A: 이명은 외부 소리 없이 귀에서 소리가 들리는 청각 관련 증상으로 이 상황과 다르다.
+  C: 백내장은 눈의 수정체가 혼탁해지는 질환으로 어지러움과는 무관하다.
+  D: 근시는 시력 문제로 어지러움과는 무관하다.
+references:
+  - REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001
+verified: false

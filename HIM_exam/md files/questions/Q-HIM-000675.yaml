@@ -1,0 +1,29 @@
+id: Q-HIM-000675
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V3-C02-S11-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 계획된 술식은 복강경 담낭절제술이었으나 실제로는 개복 담낭절제술로 전환되었다. 의료행위 코딩 시 기준으로 삼아야 할 접근 방식은?"
+options:
+  - id: A
+    text: 계획된 접근 방식(복강경)
+  - id: B
+    text: 실제로 시행된 최종 접근 방식(개복)
+  - id: C
+    text: 두 접근 방식을 각각 별도로 두 번 코딩
+  - id: D
+    text: 접근 방식은 코딩에 반영하지 않음
+answer:
+  - B
+explanation: 의료행위 코딩은 계획이 아니라 실제로 시행된 최종 접근 방식(개복)을 기준으로 해야 한다.
+distractor_explanations:
+  A: 계획된 접근 방식이 아니라 실제 시행된 방식을 기준으로 해야 한다.
+  C: 하나의 수술에 두 접근 방식을 각각 코딩하는 것은 적절하지 않다.
+  D: 접근 방식은 코드 선택에 영향을 주는 중요한 정보다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false
