@@ -135,7 +135,10 @@ export function SettingsClient({ dataset }: { dataset: LearningDataset }) {
         </aside>
       </section>
 
-      <section className="rounded-[2rem] border border-slate-200 bg-white/90 p-6">
+      <section
+        id="review-notes"
+        className="rounded-[2rem] border border-slate-200 bg-white/90 p-6"
+      >
         <h3 className="text-2xl font-semibold tracking-tight text-slate-950">
           오답노트 다시 풀기
         </h3>
