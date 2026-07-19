@@ -214,9 +214,85 @@ function parseConstrainedYaml(text) {
 
 function extractSection(markdown, heading) {
   const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const sectionPattern = new RegExp(`^## ${escaped}\\s*$\\n?([\\s\\S]*?)(?=^##\\s|$)`, "m");
+  const sectionPattern = new RegExp(`^#{1,2}\\s+${escaped}\\s*$\\n?([\\s\\S]*?)(?=^#{1,2}\\s|$)`, "m");
   const match = markdown.match(sectionPattern);
   return match?.[1]?.trim() ?? "";
+}
+
+function cleanMarkdownCell(value) {
+  return value
+    .replace(/\*\*/g, "")
+    .replace(/\[(.*?)\]\((.*?)\)/g, "$1")
+    .trim();
+}
+
+function extractGlossaryEntries(markdown) {
+  const lines = markdown.split("\n");
+  const entries = [];
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line.startsWith("|")) {
+      continue;
+    }
+
+    const cells = line
+      .split("|")
+      .map((cell) => cleanMarkdownCell(cell))
+      .filter(Boolean);
+
+    if (cells.length < 2) {
+      continue;
+    }
+
+    const headerLike =
+      /^표준 표기$/i.test(cells[0]) ||
+      /^용어\b/i.test(cells[0]) ||
+      /^term$/i.test(cells[0]) ||
+      /^용어\s*\(term\)$/i.test(cells[0]) ||
+      /^의미\s*\(meaning\)$/i.test(cells[1] ?? "") ||
+      /^---+$/.test(cells[0]);
+
+    if (headerLike) {
+      continue;
+    }
+
+    if (cells.every((cell) => /^-+$/.test(cell))) {
+      continue;
+    }
+
+    if (cells.length >= 4) {
+      const [term, english, abbreviation, description] = cells;
+      if (!term || !description) {
+        continue;
+      }
+      entries.push({
+        term,
+        english,
+        abbreviation,
+        description,
+      });
+      continue;
+    }
+
+    const [term, description] = cells;
+    if (!term || !description) {
+      continue;
+    }
+
+    if (description === "|" || /^\[?접두사|\[?접미사|\[?어근/.test(term)) {
+      continue;
+    }
+
+    entries.push({
+      term,
+      english: "",
+      abbreviation: "-",
+      description,
+    });
+  }
+
+  return entries;
 }
 
 function extractSummary(markdown) {
@@ -379,24 +455,7 @@ async function main() {
     )
   ).sort((left, right) => left.id.localeCompare(right.id));
 
-  const glossaryEntries = extractSection(glossaryMarkdown, "핵심 용어")
-    .split("\n")
-    .map((line) => line.trim())
-    .filter((line) => line.startsWith("|"))
-    .slice(2)
-    .map((row) =>
-      row
-        .split("|")
-        .map((cell) => cell.trim())
-        .filter(Boolean),
-    )
-    .filter((cells) => cells.length >= 4)
-    .map((cells) => ({
-      term: cells[0],
-      english: cells[1],
-      abbreviation: cells[2],
-      description: cells[3],
-    }));
+  const glossaryEntries = extractGlossaryEntries(glossaryMarkdown);
 
   const dataset = {
     topics,

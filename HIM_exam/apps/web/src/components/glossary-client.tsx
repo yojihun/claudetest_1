@@ -136,9 +136,11 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
                         {activeEntry.abbreviation}
                       </span>
                     ) : null}
-                    <span className="rounded-full bg-white px-3 py-1 text-sm text-slate-600">
-                      {activeEntry.english}
-                    </span>
+                    {activeEntry.english ? (
+                      <span className="rounded-full bg-white px-3 py-1 text-sm text-slate-600">
+                        {activeEntry.english}
+                      </span>
+                    ) : null}
                   </div>
                 </div>
 
@@ -204,9 +206,11 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
                     <div className="flex items-start justify-between gap-3">
                       <div>
                         <p className="font-semibold text-slate-950">{entry.term}</p>
-                        <p className="mt-1 text-sm text-slate-500">
-                          {entry.english}
-                        </p>
+                        {entry.english ? (
+                          <p className="mt-1 text-sm text-slate-500">
+                            {entry.english}
+                          </p>
+                        ) : null}
                       </div>
                       <button
                         type="button"
@@ -250,7 +254,9 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
             <div className="flex items-start justify-between gap-3">
               <div>
                 <h3 className="text-lg font-semibold text-slate-950">{entry.term}</h3>
-                <p className="mt-1 text-sm text-slate-500">{entry.english}</p>
+                {entry.english ? (
+                  <p className="mt-1 text-sm text-slate-500">{entry.english}</p>
+                ) : null}
               </div>
               {entry.abbreviation !== "-" ? (
                 <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800">
