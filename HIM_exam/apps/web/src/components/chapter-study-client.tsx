@@ -192,7 +192,9 @@ export function ChapterStudyClient({ dataset }: { dataset: LearningDataset }) {
               >
                 {topicsInChapter.map((topic, index) => (
                   <option key={topic.id} value={topic.id}>
-                    {getTopicOptionLabel(index, topic.title)}
+                    {topic.isCase
+                      ? `사례 ${topic.caseNumber ?? index + 1}. ${topic.title}`
+                      : getTopicOptionLabel(index, topic.title)}
                   </option>
                 ))}
               </select>

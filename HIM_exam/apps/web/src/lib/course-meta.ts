@@ -1,10 +1,10 @@
 import type { Topic } from "@/lib/types";
 
 const volumeTitles: Record<number, string> = {
-  1: "보건의료정보관리",
+  1: "보건의료정보관리 개론",
   2: "의학용어",
-  3: "병원통계·질병분류·암등록",
-  4: "실무",
+  3: "병원통계·분류·암등록",
+  4: "의무기록 실무",
 };
 
 const chapterTitles: Record<string, string> = {

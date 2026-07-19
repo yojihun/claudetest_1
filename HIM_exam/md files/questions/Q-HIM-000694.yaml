@@ -1,0 +1,23 @@
+id: Q-HIM-000694
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C15-S10-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 사례에서 청구가 거절된 근본 원인은 진료기록 자체에 임상 정보가 없었기 때문이다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - X
+explanation: 진료기록에는 충분한 임상 정보가 있었으나, 청구서 작성 시 이 정보가 제대로 반영되지 않아 거절되었다.
+distractor_explanations:
+  O: 문제의 원인을 진료기록 부재로 잘못 파악한 응답이다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

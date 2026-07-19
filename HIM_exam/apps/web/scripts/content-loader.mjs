@@ -9,15 +9,16 @@ const APP_ROOT = path.resolve(SCRIPT_DIR, "..");
 const PROJECT_ROOT = path.resolve(APP_ROOT, "..", "..");
 const MD_ROOT = path.join(PROJECT_ROOT, "md files");
 const CONTENT_ROOT = path.join(MD_ROOT, "content");
+const CASE_ROOT = path.join(MD_ROOT, "cases");
 const QUESTION_ROOT = path.join(MD_ROOT, "questions");
 const GLOSSARY_PATH = path.join(MD_ROOT, "GLOSSARY.md");
 const OUTPUT_PATH = path.join(APP_ROOT, "src", "generated", "learning-dataset.json");
 const BLOCK_SCALAR = /^[|>][-+]?$/;
 const VOLUME_TITLES = {
-  1: "보건의료정보관리",
+  1: "보건의료정보관리 개론",
   2: "의학용어",
-  3: "병원통계·질병분류·암등록",
-  4: "실무",
+  3: "병원통계·분류·암등록",
+  4: "의무기록 실무",
 };
 const CHAPTER_TITLES = {
   "V1-C1": "보건의료정보관리 개론",
@@ -424,10 +425,11 @@ function buildChapters(topics) {
 
 export async function buildLearningDataset() {
   const topicFiles = await collectFiles(CONTENT_ROOT, ".md");
+  const caseFiles = await collectFiles(CASE_ROOT, ".md");
   const questionFiles = await collectFiles(QUESTION_ROOT, ".yaml");
   const glossaryMarkdown = await fs.readFile(GLOSSARY_PATH, "utf8");
 
-  const topics = (
+  const contentTopics = (
     await Promise.all(
       topicFiles.map(async (filePath) => {
         const raw = await fs.readFile(filePath, "utf8");
@@ -445,6 +447,7 @@ export async function buildLearningDataset() {
           slug: String(data.slug),
           title: String(data.title),
           title_en: data.title_en ? String(data.title_en) : undefined,
+          isCase: false,
           volume,
           chapter,
           section,
@@ -472,7 +475,56 @@ export async function buildLearningDataset() {
         };
       }),
     )
-  ).sort(
+  );
+
+  const caseTopics = await Promise.all(
+    caseFiles.map(async (filePath) => {
+      const raw = await fs.readFile(filePath, "utf8");
+      const parsed = matter(raw);
+      const data = parsed.data;
+      const volume = Number(data.volume);
+      const chapter = Number(data.chapter);
+      const caseNumber = Number(data.case_number ?? data.order ?? 1);
+      const order = Number(data.order ?? caseNumber);
+      const chapterKey = `V${volume}-C${chapter}`;
+      const body = parsed.content.trim();
+
+      return {
+        id: String(data.id),
+        slug: String(data.slug),
+        title: String(data.title),
+        title_en: data.title_en ? String(data.title_en) : undefined,
+        isCase: true,
+        caseNumber,
+        volume,
+        chapter,
+        section: caseNumber,
+        order,
+        status: String(data.status ?? "drafting"),
+        difficulty: String(data.difficulty ?? "drafting"),
+        importance: String(data.importance ?? "C"),
+        exam_frequency: String(data.exam_frequency ?? "unknown"),
+        estimated_minutes: Number(data.estimated_minutes ?? 0),
+        prerequisites: Array.isArray(data.prerequisites) ? data.prerequisites.map(String) : [],
+        related_topics: Array.isArray(data.related_topics) ? data.related_topics.map(String) : [],
+        tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
+        content_type: ["case"],
+        as_of_date: data.as_of_date ? String(data.as_of_date) : undefined,
+        verified: Boolean(data.verified),
+        reviewers: Array.isArray(data.reviewers) ? data.reviewers.map(String) : [],
+        references: Array.isArray(data.references) ? data.references.map(String) : [],
+        assets: Array.isArray(data.assets) ? data.assets.map(String) : [],
+        questions: Array.isArray(data.questions) ? data.questions.map(String) : [],
+        body,
+        summary: extractSummary(body),
+        keyPoints: extractKeyPoints(body),
+        chapterKey,
+        chapterLabel: getChapterLabel(volume, chapter, chapterKey),
+      };
+    }),
+  );
+
+  const topics = [...contentTopics, ...caseTopics].sort(
     (left, right) =>
       left.volume - right.volume ||
       left.chapter - right.chapter ||

@@ -127,7 +127,9 @@ export function TopicArticle({
         <div className="flex flex-wrap items-center gap-2 text-sm text-[rgba(16,32,51,0.56)]">
           <span className="app-chip rounded-full px-3 py-1">{topic.estimated_minutes}분</span>
           <span className="app-chip rounded-full px-3 py-1">난이도 {topic.difficulty}</span>
-          <span className="app-chip rounded-full px-3 py-1">Section {topic.section}</span>
+          <span className="app-chip rounded-full px-3 py-1">
+            {topic.isCase ? `사례 ${topic.caseNumber ?? topic.section}` : `Section ${topic.section}`}
+          </span>
         </div>
       </div>
 

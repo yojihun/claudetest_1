@@ -1,0 +1,23 @@
+id: Q-HIM-000690
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V1-C04-S13-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "담당의 서명이 퇴원일로부터 9일 후에 이루어진 것은 기록의 적시성 측면에서 문제가 될 수 있다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 서명 지연은 기록 완결의 적시성 원칙에 부합하지 않아 완결성 점검에서 문제로 지적될 수 있다.
+distractor_explanations:
+  X: 서명 지연의 적시성 문제를 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

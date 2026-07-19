@@ -318,4 +318,14 @@ Topic은 다음 조건을 충족할 때 `published` 상태가 된다.
 - Volume III: 병원통계·질병 및 의료행위 분류·암등록
 - Volume IV: 의무기록 실무
 
+현재 기본 구성은 다음과 같다.
+
+- Volume I (보건의료정보관리 개론): 16 chapters, 225 Topics
+- Volume II (의학용어): 16 chapters, 97 Topics
+- Volume III (병원통계·분류·암등록): 3 Parts, 37 Topics
+- Volume IV (의무기록 실무): 15 chapters
+  Chapter 1은 foundational skills 5 Topics
+  Chapter 2-15는 synthetic practice Case 14개
+  각 Case는 비식별화된 환자 데이터 기반 10-part case structure를 따른다
+
 상세 구조는 `CURRICULUM.md`를 따른다.

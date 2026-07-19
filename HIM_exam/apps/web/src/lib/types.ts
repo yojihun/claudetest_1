@@ -3,6 +3,8 @@ export type Topic = {
   slug: string;
   title: string;
   title_en?: string;
+  isCase?: boolean;
+  caseNumber?: number;
   volume: number;
   chapter: number;
   section: number;

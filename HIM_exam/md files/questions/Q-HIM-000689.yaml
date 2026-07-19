@@ -1,0 +1,29 @@
+id: Q-HIM-000689
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V1-C04-S13-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 퇴원요약지 사례에서 가장 심각한 환자 안전 문제로 지적할 수 있는 누락 항목은?"
+options:
+  - id: A
+    text: 퇴원 처방란이 비어 있는 것
+  - id: B
+    text: 입원일이 기록된 것
+  - id: C
+    text: 주진단이 기록된 것
+  - id: D
+    text: 추적관찰 계획이 기록된 것
+answer:
+  - A
+explanation: 퇴원 처방란이 비어 있으면 환자가 퇴원 후 필요한 약물을 복용하지 못할 위험이 있어 가장 심각한 환자 안전 문제다.
+distractor_explanations:
+  B: 입원일은 정상적으로 기록되어 있어 문제가 아니다.
+  C: 주진단도 정상적으로 기록되어 있어 문제가 아니다.
+  D: 추적관찰 계획도 기록되어 있어 문제가 아니다.
+references:
+  - REF-TEXTBOOK-PATIENT-SAFETY-001
+verified: false

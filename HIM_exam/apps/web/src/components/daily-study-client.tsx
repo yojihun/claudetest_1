@@ -62,19 +62,25 @@ export function DailyStudyClient({ dataset }: { dataset: LearningDataset }) {
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_24rem]">
       <div className="space-y-6">
         <section className="app-panel-strong overflow-hidden rounded-[2.2rem] p-7">
-          <div className="relative">
+          <div className="relative flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="absolute -top-14 right-0 h-40 w-40 rounded-full bg-[rgba(255,159,45,0.12)] blur-3xl" />
             <div className="absolute -left-10 top-8 h-32 w-32 rounded-full bg-[rgba(36,91,219,0.14)] blur-3xl" />
             <div className="relative">
               <p className="app-kicker">Exam Countdown</p>
-              <p className="mt-4 text-[clamp(3rem,10vw,6.5rem)] font-black tracking-[-0.09em] text-[var(--navy)]">
-                {ddayLabel}
-              </p>
               <h1 className="mt-4 text-2xl font-extrabold tracking-[-0.05em] text-[var(--navy)] md:text-3xl">
                 2026 보건의료정보관리사 국가시험
               </h1>
               <p className="mt-3 text-base leading-8 text-[rgba(16,32,51,0.72)]">
                 시험일: {getExamDateLabel()}
+              </p>
+            </div>
+
+            <div className="relative rounded-[1.8rem] border border-[rgba(36,91,219,0.12)] bg-white/76 px-6 py-5 text-center shadow-[0_22px_42px_-30px_rgba(36,91,219,0.38)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--teal)]">
+                D-day
+              </p>
+              <p className="mt-2 text-[clamp(2.5rem,7vw,4.25rem)] font-black tracking-[-0.09em] text-[var(--navy)]">
+                {ddayLabel}
               </p>
             </div>
           </div>

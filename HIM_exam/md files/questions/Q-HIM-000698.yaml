@@ -1,0 +1,29 @@
+id: Q-HIM-000698
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V3-C02-S03-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: "이 사례에서 청구서에 '혈변'이라는 진단명만 기재되어 심사가 보류되었다. 이 문제를 해결하기 위한 올바른 조치는?"
+options:
+  - id: A
+    text: 실제 확정된 진단명(직장 선암종)과 병기 정보를 청구서에 정확히 반영해 재청구한다.
+  - id: B
+    text: 청구를 포기하고 병원이 비용을 부담한다.
+  - id: C
+    text: 진단명을 더 심각하게 부풀려 재청구한다.
+  - id: D
+    text: 청구서를 수정하지 않고 그대로 재제출한다.
+answer:
+  - A
+explanation: 실제 진료기록에 근거해 확정 진단명과 병기 정보를 정확히 반영하는 것이 올바른 재청구 방법이다.
+distractor_explanations:
+  B: 실제 의학적 근거가 있으므로 청구를 포기할 필요는 없다.
+  C: 진단명을 부풀리는 것은 과다코딩에 해당하는 부정 청구다.
+  D: 동일한 불충분한 정보로 재제출하면 다시 거절될 가능성이 크다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

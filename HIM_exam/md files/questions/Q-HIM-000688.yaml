@@ -1,0 +1,23 @@
+id: Q-HIM-000688
+status: drafting
+type: true_false
+topic_ids:
+  - HIM-V3-C01-S08-T001
+subject_area: hospital_statistics
+difficulty: advanced
+cognitive_level: remember
+importance: A
+stem: "병상이용률과 평균재원일수를 계산할 때는 각각 다른 자료(환자일수 vs 퇴원환자 재원일수)를 사용해야 한다."
+options:
+  - id: O
+    text: 맞다
+  - id: X
+    text: 틀리다
+answer:
+  - O
+explanation: 병상이용률은 환자일수(재원 중 관점), 평균재원일수는 퇴원환자 재원일수(퇴원 완료 관점)를 사용해야 한다.
+distractor_explanations:
+  X: 두 지표가 서로 다른 자료를 사용한다는 원칙을 간과한 응답이다.
+references:
+  - REF-TEXTBOOK-DATA-QUALITY-001
+verified: false

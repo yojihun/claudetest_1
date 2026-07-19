@@ -1,0 +1,29 @@
+id: Q-HIM-000695
+status: drafting
+type: record_interpretation
+topic_ids:
+  - HIM-V3-C02-S03-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: analyze
+importance: A
+stem: "이 종합 사례에서 입원 진료비 청구 시 주진단으로 코딩해야 할 진단명은?"
+options:
+  - id: A
+    text: 혈변(입원 당시 증상)
+  - id: B
+    text: 직장 선암종(퇴원 시 확정 진단)
+  - id: C
+    text: 체중 감소
+  - id: D
+    text: 저위전방절제술
+answer:
+  - B
+explanation: 주진단은 입원 당시 증상(혈변)이 아니라 퇴원 시 확정된 진단(직장 선암종)을 기준으로 선택해야 한다.
+distractor_explanations:
+  A: 혈변은 입원 당시의 증상으로 주진단 선택 기준이 아니다.
+  C: 체중 감소도 증상의 일부로 주진단이 아니다.
+  D: 저위전방절제술은 처치명이며 진단명이 아니다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false

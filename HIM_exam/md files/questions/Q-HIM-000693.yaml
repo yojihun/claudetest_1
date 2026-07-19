@@ -1,0 +1,29 @@
+id: Q-HIM-000693
+status: drafting
+type: case_based
+topic_ids:
+  - HIM-V1-C15-S10-T001
+subject_area: record_practice
+difficulty: advanced
+cognitive_level: evaluate
+importance: A
+stem: "이 사례에서 거절된 MRI 청구를 올바르게 재청구하는 방법은?"
+options:
+  - id: A
+    text: 실제 진료기록에 근거해 만성 경과, 보존적 치료 실패, 신경학적 이상 소견 등 구체적 정보를 청구서에 반영한다.
+  - id: B
+    text: 실제로 없었던 추가 증상을 새로 만들어 청구서에 기재한다.
+  - id: C
+    text: 재청구를 포기하고 병원이 비용을 부담한다.
+  - id: D
+    text: 진단명을 더 중증인 병명으로 임의로 바꿔 기재한다.
+answer:
+  - A
+explanation: 올바른 재청구는 실제 진료기록에 근거해 의학적 필요성을 뒷받침하는 구체적 정보를 정확히 반영하는 것이다.
+distractor_explanations:
+  B: 실제로 없었던 소견을 만들어 기재하는 것은 부정 청구에 해당한다.
+  C: 실제 임상 근거가 있으므로 재청구를 포기할 필요는 없다.
+  D: 진단명을 임의로 바꾸는 것은 부정확한 기록이자 부정 청구에 해당할 수 있다.
+references:
+  - REF-CLASSIFICATION-ICD-KCD-001
+verified: false
