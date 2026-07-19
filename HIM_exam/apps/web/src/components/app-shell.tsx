@@ -1,7 +1,10 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
+import { loadFontScale } from "@/lib/storage";
 
 const navItems = [
   { href: "/", label: "매일 학습" },
@@ -13,6 +16,27 @@ const navItems = [
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+
+  useEffect(() => {
+    function applyFontScale(scale: number) {
+      document.documentElement.style.setProperty("--app-font-scale", String(scale));
+    }
+
+    applyFontScale(loadFontScale());
+
+    function handleFontScaleChange(event: Event) {
+      const nextScale = (event as CustomEvent<number>).detail;
+      applyFontScale(nextScale);
+    }
+
+    window.addEventListener("him-font-scale-change", handleFontScaleChange as EventListener);
+    return () => {
+      window.removeEventListener(
+        "him-font-scale-change",
+        handleFontScaleChange as EventListener,
+      );
+    };
+  }, []);
 
   return (
     <div className="flex h-screen flex-col text-[var(--navy)]">

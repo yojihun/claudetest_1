@@ -6,6 +6,7 @@ const FOCUS_SETTINGS_KEY = "him-focus-settings";
 const REVIEW_NOTE_KEY = "him-review-question-ids";
 const GLOSSARY_SAVED_TERMS_KEY = "him-glossary-saved-terms";
 const CHAPTER_STUDY_SELECTION_KEY = "him-chapter-study-selection";
+const FONT_SCALE_KEY = "him-font-scale";
 
 type ChapterStudySelection = {
   volume: number;
@@ -26,6 +27,9 @@ export function loadFocusSettings(): FocusSettings {
   try {
     const parsed = JSON.parse(raw) as FocusSettings;
     if (!parsed || typeof parsed !== "object" || !("mode" in parsed)) {
+      return { mode: "none" };
+    }
+    if (parsed.mode === "chapter") {
       return { mode: "none" };
     }
     return parsed;
@@ -133,5 +137,37 @@ export function saveChapterStudySelection(selection: ChapterStudySelection) {
   window.localStorage.setItem(
     CHAPTER_STUDY_SELECTION_KEY,
     JSON.stringify(selection),
+  );
+}
+
+export function loadFontScale() {
+  if (typeof window === "undefined") {
+    return 3;
+  }
+
+  const raw = window.localStorage.getItem(FONT_SCALE_KEY);
+  if (!raw) {
+    return 3;
+  }
+
+  const parsed = Number(raw);
+  if (!Number.isFinite(parsed)) {
+    return 3;
+  }
+
+  return Math.min(5, Math.max(1, Math.round(parsed)));
+}
+
+export function saveFontScale(scale: number) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  const normalized = Math.min(5, Math.max(1, Math.round(scale)));
+  window.localStorage.setItem(FONT_SCALE_KEY, String(normalized));
+  window.dispatchEvent(
+    new CustomEvent("him-font-scale-change", {
+      detail: normalized,
+    }),
   );
 }

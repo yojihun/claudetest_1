@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -10,6 +11,11 @@ type TopicSection = {
   id: string;
   title: string;
   body: string;
+};
+
+type Flashcard = {
+  question: string;
+  answer: string;
 };
 
 const hiddenSectionTitles = new Set(["연습문제", "참고문헌"]);
@@ -81,6 +87,26 @@ function parseTopicSections(markdown: string): TopicSection[] {
     );
 }
 
+function parseFlashcards(body: string): Flashcard[] {
+  return body
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => line.replace(/^\d+\.\s*/, ""))
+    .map((line) => {
+      const match = line.match(/^Q\.\s*(.*?)\s*\/\s*A\.\s*(.+)$/);
+      if (!match) {
+        return null;
+      }
+
+      return {
+        question: match[1].trim(),
+        answer: match[2].trim(),
+      };
+    })
+    .filter((card): card is Flashcard => card !== null);
+}
+
 export function TopicArticle({
   topic,
   compact = false,
@@ -90,6 +116,7 @@ export function TopicArticle({
 }) {
   const markdownBody = topic.body.replace(/^# .*\n+/m, "");
   const sections = parseTopicSections(markdownBody);
+  const [openedFlashcards, setOpenedFlashcards] = useState<Record<string, boolean>>({});
 
   return (
     <article className="app-panel-strong rounded-[2rem] p-7">
@@ -129,82 +156,128 @@ export function TopicArticle({
               </div>
 
               <div className="mt-5 text-[15px] leading-8 text-[rgba(16,32,51,0.88)] md:text-[17px]">
-                <ReactMarkdown
-                  remarkPlugins={[remarkGfm]}
-                  components={{
-                    h1: ({ children }) => (
-                      <h4 className="mt-10 mb-4 text-2xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
-                        {children}
-                      </h4>
-                    ),
-                    h2: ({ children }) => (
-                      <h4 className="mt-10 mb-4 text-2xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
-                        {children}
-                      </h4>
-                    ),
-                    h3: ({ children }) => (
-                      <h5 className="mt-8 mb-3 text-xl font-bold tracking-[-0.03em] text-[var(--navy)]">
-                        {children}
-                      </h5>
-                    ),
-                    p: ({ children }) => (
-                      <p className="my-5 text-[15px] leading-8 text-[rgba(16,32,51,0.88)] md:text-[17px]">
-                        {children}
-                      </p>
-                    ),
-                    ol: ({ children }) => (
-                      <ol className="my-5 list-decimal space-y-3 pl-7 text-[15px] leading-8 text-[rgba(16,32,51,0.88)] marker:font-semibold marker:text-[var(--gold)] md:text-[17px]">
-                        {children}
-                      </ol>
-                    ),
-                    ul: ({ children }) => (
-                      <ul className="my-5 list-disc space-y-3 pl-7 text-[15px] leading-8 text-[rgba(16,32,51,0.88)] marker:text-[var(--teal)] md:text-[17px]">
-                        {children}
-                      </ul>
-                    ),
-                    li: ({ children }) => <li className="pl-1">{children}</li>,
-                    table: ({ children }) => (
-                      <div className="my-7 overflow-x-auto rounded-[1.5rem] border border-[rgba(16,32,51,0.1)] bg-white/88">
-                        <table className="min-w-full border-collapse text-left text-sm">
+                {section.title === "플래시카드" ? (
+                  <div className="grid gap-4">
+                    {parseFlashcards(section.body).map((card, cardIndex) => {
+                      const flashcardKey = `${section.id}-${cardIndex}`;
+                      const isOpen = openedFlashcards[flashcardKey] ?? false;
+
+                      return (
+                        <button
+                          key={flashcardKey}
+                          type="button"
+                          onClick={() =>
+                            setOpenedFlashcards((current) => ({
+                              ...current,
+                              [flashcardKey]: !isOpen,
+                            }))
+                          }
+                          className="rounded-[1.5rem] border border-[rgba(36,91,219,0.12)] bg-[linear-gradient(145deg,rgba(231,238,255,0.9),rgba(221,251,243,0.72))] p-5 text-left shadow-[0_18px_34px_-28px_rgba(36,91,219,0.45)] transition hover:border-[rgba(36,91,219,0.22)] hover:bg-[linear-gradient(145deg,rgba(231,238,255,0.98),rgba(221,251,243,0.84))]"
+                        >
+                          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--teal)]">
+                            Flash Card {cardIndex + 1}
+                          </p>
+                          <p className="mt-3 text-lg font-semibold leading-8 text-[var(--navy)]">
+                            Q. {card.question}
+                          </p>
+                          <div className="mt-4 rounded-[1.25rem] border border-dashed border-[rgba(16,32,51,0.12)] bg-white/72 px-4 py-4">
+                            {isOpen ? (
+                              <>
+                                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[rgba(16,32,51,0.52)]">
+                                  Answer
+                                </p>
+                                <p className="mt-2 text-[15px] leading-8 text-[rgba(16,32,51,0.84)] md:text-[17px]">
+                                  A. {card.answer}
+                                </p>
+                              </>
+                            ) : (
+                              <p className="text-sm text-[rgba(16,32,51,0.58)]">
+                                클릭해서 정답 보기
+                              </p>
+                            )}
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      h1: ({ children }) => (
+                        <h4 className="mt-10 mb-4 text-2xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
                           {children}
-                        </table>
-                      </div>
-                    ),
-                    thead: ({ children }) => (
-                      <thead className="bg-[rgba(16,32,51,0.04)]">{children}</thead>
-                    ),
-                    th: ({ children }) => (
-                      <th className="border-b border-[rgba(16,32,51,0.1)] px-4 py-3 font-semibold text-[var(--navy)]">
-                        {children}
-                      </th>
-                    ),
-                    td: ({ children }) => (
-                      <td className="border-b border-[rgba(16,32,51,0.06)] px-4 py-3 align-top text-[rgba(16,32,51,0.76)]">
-                        {children}
-                      </td>
-                    ),
-                    a: ({ children, href }) => (
-                      <a
-                        href={href}
-                        className="font-medium text-[var(--teal)] underline underline-offset-2"
-                      >
-                        {children}
-                      </a>
-                    ),
-                    strong: ({ children }) => (
-                      <strong className="font-semibold text-[var(--navy)]">
-                        {children}
-                      </strong>
-                    ),
-                    code: ({ children }) => (
-                      <code className="rounded-lg bg-[rgba(36,91,219,0.08)] px-1.5 py-0.5 text-[0.95em] text-[var(--navy)]">
-                        {children}
-                      </code>
-                    ),
-                  }}
-                >
-                  {section.body}
-                </ReactMarkdown>
+                        </h4>
+                      ),
+                      h2: ({ children }) => (
+                        <h4 className="mt-10 mb-4 text-2xl font-extrabold tracking-[-0.04em] text-[var(--navy)]">
+                          {children}
+                        </h4>
+                      ),
+                      h3: ({ children }) => (
+                        <h5 className="mt-8 mb-3 text-xl font-bold tracking-[-0.03em] text-[var(--navy)]">
+                          {children}
+                        </h5>
+                      ),
+                      p: ({ children }) => (
+                        <p className="my-5 text-[15px] leading-8 text-[rgba(16,32,51,0.88)] md:text-[17px]">
+                          {children}
+                        </p>
+                      ),
+                      ol: ({ children }) => (
+                        <ol className="my-5 list-decimal space-y-3 pl-7 text-[15px] leading-8 text-[rgba(16,32,51,0.88)] marker:font-semibold marker:text-[var(--gold)] md:text-[17px]">
+                          {children}
+                        </ol>
+                      ),
+                      ul: ({ children }) => (
+                        <ul className="my-5 list-disc space-y-3 pl-7 text-[15px] leading-8 text-[rgba(16,32,51,0.88)] marker:text-[var(--teal)] md:text-[17px]">
+                          {children}
+                        </ul>
+                      ),
+                      li: ({ children }) => <li className="pl-1">{children}</li>,
+                      table: ({ children }) => (
+                        <div className="my-7 overflow-x-auto rounded-[1.5rem] border border-[rgba(16,32,51,0.1)] bg-white/88">
+                          <table className="min-w-full border-collapse text-left text-sm">
+                            {children}
+                          </table>
+                        </div>
+                      ),
+                      thead: ({ children }) => (
+                        <thead className="bg-[rgba(16,32,51,0.04)]">{children}</thead>
+                      ),
+                      th: ({ children }) => (
+                        <th className="border-b border-[rgba(16,32,51,0.1)] px-4 py-3 font-semibold text-[var(--navy)]">
+                          {children}
+                        </th>
+                      ),
+                      td: ({ children }) => (
+                        <td className="border-b border-[rgba(16,32,51,0.06)] px-4 py-3 align-top text-[rgba(16,32,51,0.76)]">
+                          {children}
+                        </td>
+                      ),
+                      a: ({ children, href }) => (
+                        <a
+                          href={href}
+                          className="font-medium text-[var(--teal)] underline underline-offset-2"
+                        >
+                          {children}
+                        </a>
+                      ),
+                      strong: ({ children }) => (
+                        <strong className="font-semibold text-[var(--navy)]">
+                          {children}
+                        </strong>
+                      ),
+                      code: ({ children }) => (
+                        <code className="rounded-lg bg-[rgba(36,91,219,0.08)] px-1.5 py-0.5 text-[0.95em] text-[var(--navy)]">
+                          {children}
+                        </code>
+                      ),
+                    }}
+                  >
+                    {section.body}
+                  </ReactMarkdown>
+                )}
               </div>
             </section>
           ))}

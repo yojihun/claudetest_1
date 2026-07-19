@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  --app-font-scale: 3;
   --background: #eaf3ff;
   --foreground: #102033;
   --surface: rgba(255, 255, 255, 0.82);
@@ -35,6 +36,7 @@
 
 html {
   height: 100%;
+  font-size: calc(13px + (var(--app-font-scale) * 1px));
 }
 
 body {

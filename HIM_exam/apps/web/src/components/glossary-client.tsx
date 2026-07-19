@@ -1,6 +1,6 @@
 "use client";
 
-import { startTransition, useDeferredValue, useEffect, useMemo, useState } from "react";
+import { startTransition, useEffect, useMemo, useState } from "react";
 
 import {
   loadSavedGlossaryTerms,
@@ -34,8 +34,8 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
   const [activeEntry, setActiveEntry] = useState<GlossaryEntry | null>(null);
   const [revealed, setRevealed] = useState(false);
   const [savedTermIds, setSavedTermIds] = useState<string[]>([]);
-  const deferredQuery = useDeferredValue(query);
-  const normalizedQuery = deferredQuery.trim().toLowerCase();
+  const [openedSavedTermId, setOpenedSavedTermId] = useState<string | null>(null);
+  const normalizedQuery = query.trim().toLowerCase();
 
   useEffect(() => {
     startTransition(() => {
@@ -200,20 +200,32 @@ export function GlossaryClient({ entries }: { entries: GlossaryEntry[] }) {
             {savedEntries.length > 0 ? (
               savedEntries.slice(0, 6).map((entry) => {
                 const termId = createTermId(entry);
+                const isOpen = openedSavedTermId === termId;
                 return (
                   <div
                     key={termId}
                     className="rounded-2xl border border-[rgba(16,32,51,0.08)] bg-white/72 px-4 py-3"
                   >
                     <div className="flex items-start justify-between gap-3">
-                      <div>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setOpenedSavedTermId((current) =>
+                            current === termId ? null : termId,
+                          )
+                        }
+                        className="min-w-0 flex-1 text-left"
+                      >
                         <p className="font-semibold text-[var(--navy)]">{entry.term}</p>
                         {entry.english ? (
                           <p className="mt-1 text-sm text-[rgba(16,32,51,0.52)]">
                             {entry.english}
                           </p>
                         ) : null}
-                      </div>
+                        <p className="mt-2 text-sm leading-6 text-[rgba(16,32,51,0.68)]">
+                          {isOpen ? entry.description : "클릭해서 뜻 보기"}
+                        </p>
+                      </button>
                       <button
                         type="button"
                         onClick={() => removeSavedTerm(termId)}
