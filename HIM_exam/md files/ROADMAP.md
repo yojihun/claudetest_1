@@ -67,7 +67,41 @@ updated: 2026-07-19
 
 완료 기준: 사용자가 Chapter 단위 학습, 퀴즈, 오답 복습을 할 수 있다.
 
-**진행 현황 (2026-07-19):** Volume I Chapter 1~3(보건의료정보관리 개론 19개, 의료기록의 이해 17개, 보건의료정보관리사의 직무 14개) 총 50개 Topic 완성 및 검증 통과. 문제 117개, 도식 2개, Reference 14건. `node scripts/validate-content.mjs` 기준 오류 0건, 경고 0건. Chapter 1의 10번 항목(SOAP 기록 방식)은 9번 항목(Larry Weed와 POMR)에 통합. 다음은 Chapter 4(의료기관과 조직, 15개 Topic)로 진행 예정.
+**진행 현황 (2026-07-19):** Volume I 16개 챕터 전체(100%) 완성 및 검증 통과. 총 225개 Topic, 문제 390개, 도식 2개, Reference 26건. Chapter 15(건강보험)의 급여 기준·심사 세부 절차, Chapter 16(의료데이터와 AI)의 국내 AI 의료기기 인허가 절차는 원문 미확인으로 "검증 필요" 표시 유지.
+
+Volume II(의학용어) 16개 챕터 전체(100%) 완성 및 검증 통과. 총 97개 Topic, 문제 194개. 계통별 Chapter(3~14)는 CURRICULUM.md의 10개 하위 항목을 Topic-First 원칙에 따라 6개 Topic(해부생리 / 증상 / 질환명 / 검사와 수술 / 약어와 문장해석 / 분류연결)으로 통합하는 패턴을 확립해 반복 적용했으며, 생식기계(Ch9, 여성·임신출산·남성 통합)와 피부계·정신건강(Ch13~14, 커리큘럼 세부 항목이 상대적으로 적어 5개 Topic으로 축약)은 예외적으로 조정했다. Chapter 15(종양학)는 Volume III 암등록 Part와의 연결을, Chapter 16(검사·수술·약물)은 Volume II 총정리와 Volume III로의 전환을 각각 마지막 Topic에서 명시적으로 다뤘다. `node scripts/validate-content.mjs` 기준 오류 0건, 경고 0건. GLOSSARY.md에 정리된 계통별 용어표를 1차 근거로 사용하며, 특정 교재의 정확한 서지사항은 원문 대조하지 않아 REF-TEXTBOOK-MEDICAL-TERMINOLOGY-001은 status: located로 유지한다. Volume III Part 1(병원통계) 저작 시작: 13개 Topic(통계 기초·척도·비율/비/율·대표값·산포도·환자센서스·환자일수·병상이용률·평균재원일수·병상회전율/간격·외래응급수술통계·산과사망감염통계·공식선택전략) 완성 및 검증 통과, 문제 26개. 병상이용률·평균재원일수 등 국제적으로 통용되는 표준 공식을 다루되, 국내 국시원 공식의 정확한 표기·반올림 규칙·특수 사례 처리는 원문 대조하지 않아 각 Topic에 "검증 필요"로 명시했다. `node scripts/validate-content.mjs` 기준 오류 0건, 경고 0건. Part 2(질병 및 의료행위 분류) 완성: 14개 Topic, 문제 28개. Part 3(암등록) 완성: 10개 Topic(암등록목적/국가암등록사업, 등록대상/자료원, 원발부위, 조직학적형태/행동양식, 분화도, 병기TNM체계, 진단일결정, 다중원발암, 치료정보/추적조사, 데이터품질/사례종합), 문제 20개. 특정 KCD 코드 번호와 국내 국가암등록사업의 구체적 관리 주체·법적 근거는 일절 명시하지 않고 분류·등록 원리 개념 위주로 서술했으며, 구체적 코드·기준은 공식 분류집·지침 확인이 필요함을 각 Topic에 명시했다. `node scripts/validate-content.mjs` 기준 오류 0건, 경고 0건.
+
+**Volume III 전체 완료(2026-07-19):** Part 1~3 총 37개 Topic, 문제 74개.
+
+**Volume IV(의무기록 실무) 저작 — 신규 Case 콘텐츠 모델 도입:** CONTENT_MODEL.md에 정의되어 있던 별도의 Case 모델(CASE-MR-*)을 실제로 구축했다. `schemas/case.schema.json` 신규 생성, `scripts/validate-content.mjs`에 `cases/` 디렉터리 스캔·검증 로직(ID 패턴 `CASE-MR-[0-9]{6}`, `deidentified: true` 필수 검증, 10단계 본문 섹션 제목 검증, questions/references/topic 교차 참조 검증)을 추가했다. `cases/_CASE_TEMPLATE.md` 템플릿도 함께 만들었다.
+
+Chapter 1(기록 해석의 기초)은 5개 항목이 개념 학습에 가까워 기존 Topic 모델로 작성(5개 Topic: 의학용어해석·약어해석·검사결과읽기·진단처치연결·시간순재구성). Chapter 2~15는 CURRICULUM.md가 정의한 10단계 사례 구조(사례개요·원문기록·핵심용어·시간순재구성·진단및처치추출·기록누락모순점검·분류또는통계적용·법적윤리적고려·연습문제·상세해설)를 따르는 Case로 각 1건씩 작성했다(외래/입원/응급/수술/산과신생아/종양/질병분류통합/의료행위분류통합/암등록통합/의료통계통합/기록완결성/개인정보법규/보험청구연계/종합모의실무, 총 14개 Case). 모든 환자 정보는 합성 ID(SYN-*)를 사용해 완전히 비식별화했다.
+
+`node scripts/validate-content.mjs` 기준 오류 0건, 경고 0건.
+
+---
+
+## 전체 프로젝트 완료 현황 (2026-07-19)
+
+Volume I~IV 전체 완성: Topic 364개, Case 14개, 문제 698개, Reference 27건, Asset 2개(도식). 검증 파일 총 1,105개, 오류 0건·경고 0건.
+
+- Volume I(보건의료정보관리 개론) 16개 챕터, 225개 Topic
+- Volume II(의학용어) 16개 챕터, 97개 Topic
+- Volume III(병원통계·분류·암등록) 3개 Part, 37개 Topic
+- Volume IV(의무기록 실무) 15개 챕터, 5개 Topic + 14개 Case
+
+다음 단계 제안(Phase 3 이후, 앱 개발 착수 전 검토 필요):
+1. 법령·통계 공식·분류 코드 중 "검증 필요"로 표시된 항목의 원문 대조(국시원 공고, 관련 법령, KCD 공식 분류집, 국가암등록사업 지침 등)
+2. 내용 전문가(HIM Domain Reviewer, Legal/Policy Reviewer 등) 검토
+3. Phase 3(앱 MVP) 착수 — 콘텐츠 JSON 변환, 학습 진도 모델 구현
+4. Volume II~IV의 추가 도식(Asset) 보강 검토(현재 Asset은 Volume I에만 2건 존재)
+
+## GLOSSARY.md 품질 감사 및 정리 (2026-07-20)
+
+사용자 요청으로 GLOSSARY.md의 의학용어가 국가시험에 적절히 구성되었는지 검증했다.
+
+- **계통별 용어표(1~15절, 어근/접두사/접미사 + 14개 계통)**: 중복 키 점검 결과 Pancreat/o(소화/내분비 이중 기능), Thromb/o(혈전/혈소판 동음이의 어근) 두 건만 발견되었고 둘 다 의도된 정상적 중복이라 유지. Circumcision의 한글 번역에서 오탈자("환상군절제술" → "환상절제술") 1건 수정.
+- **"16. 의학용어 주요 약어" 절 전체 삭제**: 이 절(약 400개 항목)은 문서 자체가 선언한 "1:1 (용어:의미) 관계" 설계 원칙을 위반하는 중복 키가 9건(AC, ARF, BBB, CT, CVA, DI, LOC, MR, Tx) 존재했고, 이 중 LOC·DI는 서로 모순되는 두 가지 의미가 병기되어 있었다. 앞선 1~15절과 20개 약어가 중복되었으며 그중 CHF는 "congestive heart failure"를 "만성심부전"으로 오역(정확히는 울혈심부전)해 기존 절의 정확한 정의와 충돌했다. 또한 번역이 누락되거나 깨진 항목(BSV, C-P, G/S, CPB, CML, ROS, H, "B all C" 등), 행이 어긋나 값이 뒤바뀐 항목(CR 항목에 엉뚱하게 "페니실린 G칼륨"이 기재됨), 특정 병원 내부 은어·상품명 수준의 항목(Bivon, Beta SOL, Bus-com, CB oint, E-pump, Amino-TPN)이 다수 포함되어 있어, 출처 검증 없이 대량 붙여넣기된 것으로 판단했다. 국가시험 대비 자료로서의 신뢰성과 "Evidence First" 원칙에 부합하지 않아 절 전체를 삭제했다. GLOSSARY.md version 1.5.0 → 1.6.0.
 
 # 5. Phase 3 — 앱 MVP
 
@@ -102,7 +136,7 @@ updated: 2026-07-19
 
 # 6. Phase 4 — Volume I 완성
 
-- [ ] Chapter 1~16 Topic 제작
+- [x] Chapter 1~16 Topic 제작 — 225개 Topic 완성 및 검증 통과(2026-07-19)
 - [ ] 문제은행 구축
 - [ ] 법규 기준일 관리
 - [ ] 표준·시스템 도식

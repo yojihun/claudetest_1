@@ -12,6 +12,7 @@ const navItems = [
   { href: "/study", label: "단원별 학습", shortLabel: "UNIT", tone: "teal" },
   { href: "/past-exam", label: "기출문제", shortLabel: "EXAM", tone: "gold" },
   { href: "/glossary", label: "의학용어 사전", shortLabel: "TERM", tone: "navy" },
+  { href: "/hospital-statistics", label: "병원통계", shortLabel: "STAT", tone: "teal" },
   { href: "/settings#review-notes", label: "오답노트", shortLabel: "NOTE", tone: "rose" },
   { href: "/settings", label: "설정", shortLabel: "SET", tone: "blue" },
 ] as const;
@@ -142,10 +143,12 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             {isMenuOpen ? (
               <nav className="app-panel-strong absolute right-0 top-[calc(100%+0.85rem)] z-30 w-[min(88vw,28rem)] rounded-[1.8rem] p-3 shadow-[0_28px_70px_-36px_rgba(16,32,51,0.42)]">
                 <div className="grid grid-cols-2 gap-3">
-                  {navItems.map((item) => {
+                  {navItems.map((item, index) => {
                     const isActive =
                       pathname === item.href ||
                       (item.href !== "/" && pathname.startsWith(item.href.split("#")[0]));
+
+                    const isLastOdd = navItems.length % 2 !== 0 && index === navItems.length - 1;
 
                     return (
                       <Link
@@ -153,7 +156,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                         href={item.href}
                         className={`app-nav-card app-nav-card-${item.tone} ${
                           isActive ? "app-nav-card-active" : ""
-                        }`}
+                        } ${isLastOdd ? "col-span-2" : ""}`}
                       >
                         <span className="app-nav-card-badge">{item.shortLabel}</span>
                         <span className="mt-3 block text-base font-bold tracking-[-0.03em]">
