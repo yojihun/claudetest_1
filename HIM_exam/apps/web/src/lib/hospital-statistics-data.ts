@@ -1,6 +1,6 @@
 export interface StatTerm {
   id: string;
-  category: "사망" | "병상" | "재원일수" | "외래·입원" | "산과·신생아" | "부검";
+  category: "사망" | "병상" | "재원일수" | "외래·입원" | "산과·신생아" | "부검" | "역학통계" | "생정·출산력";
   name: string;
   nameEn: string;
   definition: string;
@@ -8,7 +8,7 @@ export interface StatTerm {
   formula: string;
   numerator: string; // 분자
   denominator: string; // 분모
-  unit: "%" | "일" | "회" | "명" | "‰";
+  unit: "%" | "일" | "회" | "명" | "‰" | "배" | "건";
   keyPoint: string; // 한 줄 암기 포인트
   comparison: string; // 헷갈리는 용어 비교
 }
@@ -104,7 +104,7 @@ export const statTerms: StatTerm[] = [
     category: "재원일수",
     name: "평균재원일수",
     nameEn: "Average Length of Stay (ALOS)",
-    definition: "퇴원한 환자 1명이 평균적으로 며칠 동안 입원해 있었를 나타내는 지표입니다.",
+    definition: "퇴원한 환자 1명이 평균적으로 며칠 동안 입원해 있었는지를 나타내는 지표입니다.",
     whyImportant: "의료 서비스의 효율성을 나타내며, 포괄수가제(DRG) 환경에서 병원 진료비 관리와 병상 활용 극대화를 위해 단축시키고자 노력하는 대표 지표입니다.",
     formula: "기간 중 퇴원환자의 총 재원일수 ÷ 퇴원환자수",
     numerator: "기간 중 퇴원환자들의 총 재원일수 합",
@@ -124,7 +124,7 @@ export const statTerms: StatTerm[] = [
     numerator: "기간 중 총 사망자 수 (신생아 사망 포함)",
     denominator: "기간 중 총 퇴원환자 수 (사망자 포함)",
     unit: "%",
-    keyPoint: "분모의 '총 퇴원환자수'에는 사망한 상태로 퇴원한 환도 반드시 포함되어야 합니다.",
+    keyPoint: "분모의 '총 퇴원환자수'에는 사망한 상태로 퇴원한 환자도 반드시 포함되어야 합니다.",
     comparison: "순사망률과 달리 입원 후 48시간 이내에 발생한 자연사나 불가항력적 사망을 구분하지 않고 합산합니다."
   },
   {
@@ -260,9 +260,9 @@ export const statTerms: StatTerm[] = [
     nameEn: "Net Autopsy Rate",
     definition: "부검을 할 수 없는 상황(예: 유족 거부, 법의학 시신 전출 등)의 사망자를 제외하고 산출하는 실제 부검 비율입니다.",
     whyImportant: "병원이 부검 동의를 얻을 수 있고 부검을 수행할 수 있었던 실질적 가능 범위 대비 부검율을 나타냅니다.",
-    formula: "(총 부검수 ÷ (총 사망자수 - 부검 불가능/제외 사망수)) × 100",
+    formula: "(총 부검수 ÷ (총 사망자수 - 부검제외시신수)) × 100",
     numerator: "기간 중 행해진 총 부검수",
-    denominator: "총 사망자수 - 부검 불가능/제외 사망수 (법의학 사건 등으로 전출된 시신 등)",
+    denominator: "총 사망자수 - 부검제외시신수 (법의학 사건 등으로 전출된 시신 등)",
     unit: "%",
     keyPoint: "분모에서 부검 권한이나 가능성이 없는 시신 수를 반드시 제외해 줍니다.",
     comparison: "조부검률에 비해 분모가 작아지므로 수치는 더 높게 산출됩니다."
@@ -322,6 +322,146 @@ export const statTerms: StatTerm[] = [
     unit: "‰",
     keyPoint: "분모에 사산아(태아사망) 수를 활생아 수와 함께 합산해야 분모/분자 매칭이 이루어집니다.",
     comparison: "단순 신생아사망률은 사산아를 분모에 넣지 않지만, 주산기 통계는 태아사망을 분모/분자 모두에 포함합니다."
+  },
+  {
+    id: "STAT-021",
+    category: "외래·입원",
+    name: "외래 신환자 비율",
+    nameEn: "New Outpatient Rate",
+    definition: "전체 외래 방문 환자 중 당해 병원을 처음 방문한 신규 환자의 비율입니다.",
+    whyImportant: "병원의 신규 환자 유입 능력 및 병원 인지도 성장을 측정합니다.",
+    formula: "(기간 중 신환자수 ÷ 외래환자 연인원) × 100",
+    numerator: "해당 기간 병원에 최초 등록 및 내원한 신환자수",
+    denominator: "해당 기간 총 외래환자 연인원 (누적 방문자수)",
+    unit: "%",
+    keyPoint: "분모가 실인원이 아닌 '연인원(방문 횟수 누적)'임을 명심해야 합니다.",
+    comparison: "재진환자 비율 = (재진환자수 ÷ 외래환자 연인원) × 100"
+  },
+  {
+    id: "STAT-022",
+    category: "외래·입원",
+    name: "응급실 사망률",
+    nameEn: "Emergency Room Mortality Rate",
+    definition: "응급실 내원객 중 치료 과정 또는 내원 즉시 사망한 환자의 비율입니다.",
+    whyImportant: "응급의료센터의 중증도 대응 및 응급 치료 진료 품질을 대변합니다.",
+    formula: "(응급실 사망자수 ÷ 응급실 총 내원환자수) × 100",
+    numerator: "응급실 진료 도중 또는 도착 후 즉시 사망자수 (DOA 포함 여부 구분 필요)",
+    denominator: "응급실을 방문하여 진료받은 총 환자수",
+    unit: "%",
+    keyPoint: "도착시사망(DOA)의 경우 병원 통계 지침에 따라 분모/분자에서 공제하는 방식도 구분해 확인해야 합니다.",
+    comparison: "조사망률 등은 '입원 후 퇴원' 기준이나, 응급실 통계는 '응급 외래' 개념을 모집단으로 합니다."
+  },
+  {
+    id: "STAT-023",
+    category: "외래·입원",
+    name: "응급실 입원율",
+    nameEn: "ER Admission Rate",
+    definition: "응급실을 방문한 환자 중 상태가 위중하여 일반 병실이나 중환자실로 입원 조치된 환자의 비율입니다.",
+    whyImportant: "응급실 내원 환자들의 중증도 분석 및 병상 연계율을 보여줍니다.",
+    formula: "(응급실을 통한 입원환자수 ÷ 응급실 총 내원환자수) × 100",
+    numerator: "응급실 진료 후 외래를 거치지 않고 바로 입원한 환자수",
+    denominator: "응급실 총 내원환자수",
+    unit: "%",
+    keyPoint: "분자는 응급실 내원객 중 '당일 혹은 즉각 입원 완료된 환자수'입니다.",
+    comparison: "응급의료 의존도 평가지표로 활용됩니다."
+  },
+  {
+    id: "STAT-024",
+    category: "역학통계",
+    name: "발생률",
+    nameEn: "Incidence Rate",
+    definition: "특정 기간 동안 기존에 병이 없던 건강한 인구 집단 중 새롭게 질병이 발생한 빈도입니다.",
+    whyImportant: "질병의 전파 위험도 및 속도를 직접적으로 측정하여 급성 감염병 유행 조사 등에 쓰입니다.",
+    formula: "(특정 기간 중 새롭게 진단된 신환자수 ÷ 감염 위험에 노출된 모집단 연앙인구) × 1,000",
+    numerator: "기간 중 새로 발생한 신규 환자수 (기존 유병자 제외)",
+    denominator: "해당 기간 감염 위험에 노출되어 있던 인구수 (연앙인구)",
+    unit: "‰",
+    keyPoint: "이미 병을 앓고 있던 유병자는 분모와 분자 모두에서 제외되며 새로 발생한 사람만 셉니다.",
+    comparison: "유병률이 특정 시점에 병을 앓고 있는 전체 비율을 보는 점과 달리, 발생률은 신규 발생 '속도'에 집중합니다."
+  },
+  {
+    id: "STAT-025",
+    category: "역학통계",
+    name: "유병률",
+    nameEn: "Prevalence Rate",
+    definition: "특정 시점 혹은 기간 동안 전체 인구 중에서 해당 질병을 앓고 있는 환자(신환+구환)의 비율입니다.",
+    whyImportant: "지역사회 내의 만성질환(고혈압, 당뇨 등)의 규모 및 보건의료 서비스 수요를 파악하기에 용이합니다.",
+    formula: "(특정 시점의 환자수 ÷ 특정 시점의 총 인구수) × 1,000",
+    numerator: "특정 시점에 해당 질병을 가지고 있는 전체 환자수 (신환 + 기존 환자)",
+    denominator: "그 시점의 해당 지역사회 총 인구수",
+    unit: "‰",
+    keyPoint: "발생 기간과 상관없이 '지금 현재 앓고 있는 모든 사람'을 분자로 합니다.",
+    comparison: "유병률은 발생률에 평균 이환기간(질병 지속기간)을 곱한 값과 대략적으로 비례 관계를 갖습니다 (유병률 ≒ 발생률 × 이환기간)."
+  },
+  {
+    id: "STAT-026",
+    category: "역학통계",
+    name: "치명률",
+    nameEn: "Case Fatality Rate",
+    definition: "특정 질병에 걸린 이환자 중에서 그 질병으로 인해 사망한 환자의 비율입니다.",
+    whyImportant: "질병 자체의 중증도와 임상적 위험(독성)을 직접 평가하는 지표입니다.",
+    formula: "(특정 질병에 의한 사망자수 ÷ 특정 질병의 총 이환자수) × 100",
+    numerator: "해당 질병으로 사망한 사람 수",
+    denominator: "해당 질병에 걸린 전체 환자수 (이환자수)",
+    unit: "%",
+    keyPoint: "조사망률 등은 전체 인구(혹은 전체 퇴원자)가 분모인 반면, 치명률의 분모는 오직 '해당 질환자'입니다.",
+    comparison: "코로나19나 메르스의 독성을 비교할 때 전체 인구 기준 사망률이 아닌 '치명률'을 사용하는 것이 정확합니다."
+  },
+  {
+    id: "STAT-027",
+    category: "생정·출산력",
+    name: "조출생률",
+    nameEn: "Crude Birth Rate (CBR)",
+    definition: "특정 인구 집단에서 1년간 태어난 총 활생아수를 그 해의 연앙인구(7월 1일 기준 인구)로 나누어 천분율로 나타낸 값입니다.",
+    whyImportant: "한 사회의 가장 기본적인 출생 수준을 보여주며 보건 생정 통계의 출발점이 됩니다.",
+    formula: "(연간 총 출생아수 ÷ 당해 연도 연앙인구) × 1,000",
+    numerator: "1년간 태어난 총 활생아수 (사산 제외)",
+    denominator: "당해 연도의 연앙인구 (중앙 인구)",
+    unit: "‰",
+    keyPoint: "연령이나 성별 구조를 고려하지 않고 전체 인구를 분모로 삼기 때문에 '조(Crude)'라는 단어가 붙습니다.",
+    comparison: "가임여성만을 분모로 삼는 일반출산율보다 수치가 훨씬 작게 나옵니다."
+  },
+  {
+    id: "STAT-028",
+    category: "생정·출산력",
+    name: "일반출산율",
+    nameEn: "General Fertility Rate (GFR)",
+    definition: "가임 연령기(15~49세) 여성 인구 대비 1년간 태어난 활생아수의 천분율 비율입니다.",
+    whyImportant: "실제 아기를 낳을 수 있는 여성 인구 집단만을 모모집단으로 하여 조출생률보다 실제적인 출산력을 대변합니다.",
+    formula: "(연간 총 출생아수 ÷ 15~49세 가임 여성 연앙인구) × 1,000",
+    numerator: "1년간 태어난 총 활생아수",
+    denominator: "15세부터 49세까지의 가임 여성 연앙인구 수",
+    unit: "‰",
+    keyPoint: "분모에 전체 인구가 아니라 '15-49세 여성 인구'가 들어가는 것이 핵심입니다.",
+    comparison: "조출생률에 비해 분모가 훨씬 작아지므로 천분율 지표값이 훨씬 큽니다."
+  },
+  {
+    id: "STAT-029",
+    category: "생정·출산력",
+    name: "합계출산율",
+    nameEn: "Total Fertility Rate (TFR)",
+    definition: "한 여성이 평생(15~49세) 동안 낳을 것으로 예상되는 평균 출생아 수입니다.",
+    whyImportant: "연령별 출산율의 왜곡을 방지하고 한 세대의 인구 대체 능력을 직접적으로 비교할 수 있는 가장 대표적인 국가 출산력 지표입니다.",
+    formula: "각 연령별(15-49세) 출산율(ASFR)의 합",
+    numerator: "연령별 여성 1명당 평균 출생아수의 총합",
+    denominator: "1 (여성 1인 기준)",
+    unit: "명",
+    keyPoint: "천분율이나 백분율이 아닌 여성 1인당 '평균 자녀수(명)' 단위를 씁니다.",
+    comparison: "인구 규모를 유지하기 위해 필요한 대체출산율은 보통 2.1명 수준입니다."
+  },
+  {
+    id: "STAT-030",
+    category: "역학통계",
+    name: "상대위험도 (비교위험도)",
+    nameEn: "Relative Risk (RR)",
+    definition: "위험 요인에 노출된 집단에서의 질병 발생률과 노출되지 않은 집단에서의 질병 발생률의 비입니다.",
+    whyImportant: "특정 위험 요인(예: 흡연)이 질병(예: 폐암) 발생에 미치는 인과 관계의 크기를 직접적으로 나타냅니다.",
+    formula: "노출군의 질병 발생률 ÷ 비노출군의 질병 발생률",
+    numerator: "노출군(Exposed) 내에서의 질병 발생률 = a / (a + b)",
+    denominator: "비노출군(Non-exposed) 내에서의 질병 발생률 = c / (c + d)",
+    unit: "배",
+    keyPoint: "결과가 1이면 요인과 질병의 연관성이 없고, 1보다 크면 위험 요인임을 뜻합니다.",
+    comparison: "환자-대조군 연구에서는 발생률을 직접 구할 수 없으므로 상대위험도 대신 교차비(Odds Ratio, OR)를 계산하여 상대위험도의 근사치로 삼습니다."
   }
 ];
 
@@ -457,6 +597,50 @@ export const interactiveChallenges: InteractiveChallenge[] = [
     formulaUsed: "((사산아수 + 초생아사망수) ÷ (활생아수 + 사산아수)) × 1,000",
     explanation: "분자 = 사산아(200) + 초생아사망(50) = 250명. 분모 = 활생아(9,800) + 사산아(200) = 10,000명. 주산기사망률 = (250 ÷ 10,000) × 1,000 = 25.0‰ 입니다. (정수 25 입력)",
     unit: "‰"
+  },
+  {
+    id: "CHALLENGE-009",
+    title: "일반출산율 구하기",
+    scenario: "어느 행정 구역의 1년간 총 활생아 출생수는 1,200명이었습니다. 이 지역의 가임 연령기 여성(15~49세) 연앙인구는 30,000명이었습니다.",
+    givenData: { 활생아수: 1200, 가임여성인구: 30000 },
+    questionText: "이 구역의 일반출산율(General Fertility Rate)은 천분율(‰) 기준으로 얼마입니까? (정수로 입력)",
+    correctAnswer: 40,
+    formulaUsed: "(연간 활생아수 ÷ 가임여성 연앙인구) × 1,000",
+    explanation: "분자 = 1,200명. 분모 = 30,000명. 따라서 일반출산율 = (1,200 ÷ 30,000) × 1,000 = 40.0‰ 입니다. (정수 40 입력)",
+    unit: "‰"
+  },
+  {
+    id: "CHALLENGE-010",
+    title: "지역사회 유병률 구하기",
+    scenario: "인구 50,000명인 어느 동네에서 특정 시점에 당뇨병을 앓고 있는 기존 및 신규 환자가 총 2,500명 존재하고 있었습니다.",
+    givenData: { 총인구: 50000, 당뇨환자: 2500 },
+    questionText: "이 시점의 이 지역 당뇨병 유병률(Prevalence Rate)은 천분율(‰) 기준으로 얼마입니까? (정수로 입력)",
+    correctAnswer: 50,
+    formulaUsed: "(현재 질병보유 환자수 ÷ 전체 인구수) × 1,000",
+    explanation: "분자 = 2,500명. 분모 = 50,000명. 유병률 = (2,500 ÷ 50,000) × 1,000 = 50.0‰ 입니다. (정수 50 입력)",
+    unit: "‰"
+  },
+  {
+    id: "CHALLENGE-011",
+    title: "상대위험도(Relative Risk) 구하기",
+    scenario: "고콜레스테롤 혈증 노출군 1,000명 중 심장질환 신규 발생이 80명 있었고, 비노출군 1,000명 중에서는 신규 발생이 20명 있었습니다.",
+    givenData: { 노출군수: 1000, 노출군발생: 80, 비노출군수: 1000, 비노출군발생: 20 },
+    questionText: "콜레스테롤 노출군 대 비노출군의 상대위험도(RR)는 몇 배입니까? (정수로 입력)",
+    correctAnswer: 4,
+    formulaUsed: "노출군 발생률 ÷ 비노출군 발생률",
+    explanation: "노출군 발생률 = 80 ÷ 1,000 = 0.08 (8%). 비노출군 발생률 = 20 ÷ 1,000 = 0.02 (2%). 상대위험도(RR) = 0.08 ÷ 0.02 = 4 배입니다.",
+    unit: "배"
+  },
+  {
+    id: "CHALLENGE-012",
+    title: "응급실 사망률 구하기",
+    scenario: "한 달 동안 응급실 총 내원환자수는 800명이었습니다. 이 중 진료 도중 사망하여 퇴원한 환자가 4명, 응급실 도착 시 이미 사망해 있던 환자(DOA)가 4명 있었습니다. (도착시사망을 분모 분자에 포함해 계산)",
+    givenData: { 총내원객: 800, 진료중사망: 4, DOA: 4 },
+    questionText: "이 병원의 이 달 응급실 사망률은 몇 % 입니까? (소수점 첫째자리에서 반올림하여 정수로 입력)",
+    correctAnswer: 1,
+    formulaUsed: "((진료중사망 + DOA) ÷ 응급실 총 내원객수) × 100",
+    explanation: "분자 = 4 + 4 = 8명. 분모 = 800명. 응급실 사망률 = (8 ÷ 800) × 100 = 1% 입니다. (정수 1 입력)",
+    unit: "%"
   }
 ];
 
@@ -758,7 +942,7 @@ export const mockQuestions: MockQuestion[] = [
       { id: "D", text: "15회" }
     ],
     answer: ["C"],
-    explanation: "병상회전율 공식은 '퇴원환자수 ÷ 가동병상수'입니다. 주어진 조건에는 가동병상수(150)와 환자일수(3,600일)만 있고, '퇴원환자수'가 명시되어 있지 않으므로 계산이 불가능합니다. (환자일수는 이용률 계산용)"
+    explanation: "병상회전율 공식은 '퇴원환자수 ÷ 가동병상수'입니다. 주어진 조건에는 가동병상수(150)와 환자일수(3,600일)만 있고, '퇴원환자수'가 명시되어 있지 않으므로 계산이 불가능합니다."
   },
   {
     id: "MOCK-STAT-024",
@@ -785,5 +969,135 @@ export const mockQuestions: MockQuestion[] = [
     ],
     answer: ["B"],
     explanation: "표준편차(또는 분산)가 0이라는 것은 개별 자료값들이 평균으로부터 떨어진 거리가 전혀 없다는 뜻으로, 모든 자료의 값이 평균값과 100% 동일함을 뜻합니다."
+  },
+  {
+    id: "MOCK-STAT-026",
+    type: "multiple_choice",
+    stem: "특정 연도에 행정 구역의 전체 인구수(연앙인구)가 100,000명이고, 그 해에 새롭게 활생아로 출생 등록된 아기가 총 800명이었다. 이 구역의 조출생률(Crude Birth Rate)은?",
+    options: [
+      { id: "A", text: "8.0‰" },
+      { id: "B", text: "0.8‰" },
+      { id: "C", text: "8.0%" },
+      { id: "D", text: "80‰" }
+    ],
+    answer: ["A"],
+    explanation: "조출생률 공식 = (연간 총 출생아수 ÷ 당해 연앙인구) × 1,000 = (800 ÷ 100,000) × 1,000 = 8.0‰ 입니다."
+  },
+  {
+    id: "MOCK-STAT-027",
+    type: "multiple_choice",
+    stem: "역학 통계 지표 중 특정 시점 현재 인구 중 질병을 앓고 있는 모든 환자(신환+구환)의 분율을 나타내는 지표와, 연간 새로이 병에 걸린 환자 비율을 나타내는 지표의 명칭이 올바르게 짝지어진 것은?",
+    options: [
+      { id: "A", text: "발생률 - 유병률" },
+      { id: "B", text: "유병률 - 발생률" },
+      { id: "C", text: "치명률 - 조사망률" },
+      { id: "D", text: "유병률 - 치명률" }
+    ],
+    answer: ["B"],
+    explanation: "현재 시점의 보유 환자 비율은 유병률(Prevalence), 신규 발생 비율은 발생률(Incidence)입니다."
+  },
+  {
+    id: "MOCK-STAT-028",
+    type: "multiple_choice",
+    stem: "A 보건소 관할 구역 내 결핵 환자가 총 100명 있었으며, 그해 결핵으로 인해 사망한 환자가 5명 발생했습니다. 이 구역의 결핵 치명률(Case Fatality Rate)은 얼마인가?",
+    options: [
+      { id: "A", text: "5.0‰" },
+      { id: "B", text: "5.0%" },
+      { id: "C", text: "20.0%" },
+      { id: "D", text: "0.5%" }
+    ],
+    answer: ["B"],
+    explanation: "치명률 공식 = (해당 질병 사망수 ÷ 해당 질병 총 환자수) × 100 = (5 ÷ 100) × 100 = 5.0% 입니다."
+  },
+  {
+    id: "MOCK-STAT-029",
+    type: "multiple_choice",
+    stem: "역학 조사 결과, 특정 발암물질 노출군의 암 발생률이 10%이고 비노출군의 암 발생률이 2%였다. 이때 이 발암물질의 상대위험도(Relative Risk)는 몇 배인가?",
+    options: [
+      { id: "A", text: "2배" },
+      { id: "B", text: "5배" },
+      { id: "C", text: "8배" },
+      { id: "D", text: "12배" }
+    ],
+    answer: ["B"],
+    explanation: "상대위험도(Relative Risk) = 노출군 발생률(10%) ÷ 비노출군 발생률(2%) = 5 배입니다."
+  },
+  {
+    id: "MOCK-STAT-030",
+    type: "multiple_choice",
+    stem: "응급실 진료 품질 평가 시, 응급실 진료를 받고 병동으로 즉시 입원한 환자의 비율을 측정하는 지표는?",
+    options: [
+      { id: "A", text: "응급실 사망률" },
+      { id: "B", text: "응급실 입원율" },
+      { id: "C", text: "응급실 내원율" },
+      { id: "D", text: "외래 신환자 비율" }
+    ],
+    answer: ["B"],
+    explanation: "응급실 내원객 중 위중하여 즉시 일반 병상이나 중환자실로 입원한 비율은 응급실 입원율(ER Admission Rate)입니다."
+  },
+  {
+    id: "MOCK-STAT-031",
+    type: "multiple_choice",
+    stem: "출산력 지표 중에서 '한 여성이 평생(15~49세) 동안 낳을 것으로 예상되는 평균 자녀수'를 뜻하는 대표적인 인구학 지표는?",
+    options: [
+      { id: "A", text: "조출생률" },
+      { id: "B", text: "일반출산율" },
+      { id: "C", text: "합계출산율" },
+      { id: "D", text: "총재생산율" }
+    ],
+    answer: ["C"],
+    explanation: "평생 가임 연령 동안 평균적으로 출산하는 자녀수를 뜻하는 대표 국가 출산 지표는 합계출산율(Total Fertility Rate)입니다."
+  },
+  {
+    id: "MOCK-STAT-032",
+    type: "multiple_choice",
+    stem: "외래환자 통계에서 '방문할 때마다 중복을 허용하여 누적한 환자의 총방문 횟수'를 뜻하는 용어는?",
+    options: [
+      { id: "A", text: "외래 실인원" },
+      { id: "B", text: "외래 연인원" },
+      { id: "C", text: "외래 센서스" },
+      { id: "D", text: "신환자 수" }
+    ],
+    answer: ["B"],
+    explanation: "중복 방문 횟수를 그대로 누적하여 합산한 수치를 외래 연인원(Total visits/patients)이라고 합니다."
+  },
+  {
+    id: "MOCK-STAT-033",
+    type: "multiple_choice",
+    stem: "생후 28일 미만에 사망한 신생아 사망수를 활생아수로 나누어 천분율로 구하는 지표는?",
+    options: [
+      { id: "A", text: "영아사망률" },
+      { id: "B", text: "주산기사망률" },
+      { id: "C", text: "신생아기사망률" },
+      { id: "D", text: "조사망률" }
+    ],
+    answer: ["C"],
+    explanation: "생후 28일 미만 사망아 기준은 신생아기사망률(Neonatal Mortality Rate)의 고유 정의입니다."
+  },
+  {
+    id: "MOCK-STAT-034",
+    type: "multiple_choice",
+    stem: "조사부검률(Gross Autopsy Rate)을 계산할 때 분모로 설정해야 하는 대상을 가장 옳게 설명한 것은?",
+    options: [
+      { id: "A", text: "총 부검을 수행할 수 있었던 권한 내 사망자수" },
+      { id: "B", text: "법의학 케이스를 제외한 병원 내 총 사망자수" },
+      { id: "C", text: "병원 내 발생한 총 사망자수" },
+      { id: "D", text: "병원 외부에서 이송된 외부 사망자수" }
+    ],
+    answer: ["C"],
+    explanation: "조부검률(Gross)은 제외 요인 없이 해당 병원 내에서 발생한 순수 '총 사망자수'를 분모로 취하여 계산합니다."
+  },
+  {
+    id: "MOCK-STAT-035",
+    type: "multiple_choice",
+    stem: "특정 지역의 가임기 여성(15~49세) 연앙인구에 대한 1년간 출생아 수의 천분율 비율인 '일반출산율(GFR)'이 조출생률(CBR)과 다른 점은?",
+    options: [
+      { id: "A", text: "분모에 전체 인구가 아닌 가임여성 인구를 사용하여 실질적 출산력을 반영한다." },
+      { id: "B", text: "분자에 사산아를 합산한다." },
+      { id: "C", text: "백분율(%) 단위를 사용한다." },
+      { id: "D", text: "부검률과 비례 관계를 가진다." }
+    ],
+    answer: ["A"],
+    explanation: "일반출산율의 분모는 전체 인구가 아닌 실제 임신 및 출산이 가능한 가임여성(15-49세) 인구만을 대상으로 하여 조출생률보다 실제 출산력 측정에 타당합니다."
   }
 ];
