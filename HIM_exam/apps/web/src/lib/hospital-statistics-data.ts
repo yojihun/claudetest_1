@@ -1,6 +1,6 @@
 export interface StatTerm {
   id: string;
-  category: "사망" | "병상" | "재원일수" | "외래·입원" | "산과·신생아";
+  category: "사망" | "병상" | "재원일수" | "외래·입원" | "산과·신생아" | "부검";
   name: string;
   nameEn: string;
   definition: string;
@@ -8,7 +8,7 @@ export interface StatTerm {
   formula: string;
   numerator: string; // 분자
   denominator: string; // 분모
-  unit: "%" | "일" | "회" | "명";
+  unit: "%" | "일" | "회" | "명" | "‰";
   keyPoint: string; // 한 줄 암기 포인트
   comparison: string; // 헷갈리는 용어 비교
 }
@@ -77,7 +77,7 @@ export const statTerms: StatTerm[] = [
     name: "병상회전간격",
     nameEn: "Bed Turnover Interval",
     definition: "한 환자가 퇴원한 후 다음 환자가 입원할 때까지 병상이 비어 있는 평균 일수입니다.",
-    whyImportant: "병상 순환 과정에서의 낭비 시간이나 비효율을 진단합니다. 수치가 0에 가까울수록 공백 없이 병상이 운영됨을 의미합니다. 음수가 나오는 경우는 퇴원과 입원이 겹치거나 병상 초과 가동 시 발생합니다.",
+    whyImportant: "병상 순환 과정에서의 낭비 시간이나 비효율을 진단합니다. 수치가 0에 가까울수록 공백 없이 병상이 운영됨을 의미합니다.",
     formula: "((가동병상수 × 기간일수) - 기간 중 총 환자일수) ÷ 퇴원환자수",
     numerator: "(가동병상수 × 기간일수) - 기간 중 총 환자일수",
     denominator: "퇴원환자수",
@@ -104,7 +104,7 @@ export const statTerms: StatTerm[] = [
     category: "재원일수",
     name: "평균재원일수",
     nameEn: "Average Length of Stay (ALOS)",
-    definition: "퇴원한 환자 1명이 평균적으로 며칠 동안 입원해 있었는지를 나타내는 지표입니다.",
+    definition: "퇴원한 환자 1명이 평균적으로 며칠 동안 입원해 있었를 나타내는 지표입니다.",
     whyImportant: "의료 서비스의 효율성을 나타내며, 포괄수가제(DRG) 환경에서 병원 진료비 관리와 병상 활용 극대화를 위해 단축시키고자 노력하는 대표 지표입니다.",
     formula: "기간 중 퇴원환자의 총 재원일수 ÷ 퇴원환자수",
     numerator: "기간 중 퇴원환자들의 총 재원일수 합",
@@ -124,7 +124,7 @@ export const statTerms: StatTerm[] = [
     numerator: "기간 중 총 사망자 수 (신생아 사망 포함)",
     denominator: "기간 중 총 퇴원환자 수 (사망자 포함)",
     unit: "%",
-    keyPoint: "분모의 '총 퇴원환자수'에는 사망한 상태로 퇴원한 환자도 반드시 포함되어야 합니다.",
+    keyPoint: "분모의 '총 퇴원환자수'에는 사망한 상태로 퇴원한 환도 반드시 포함되어야 합니다.",
     comparison: "순사망률과 달리 입원 후 48시간 이내에 발생한 자연사나 불가항력적 사망을 구분하지 않고 합산합니다."
   },
   {
@@ -238,6 +238,90 @@ export const statTerms: StatTerm[] = [
     unit: "명",
     keyPoint: "외래 실인원(Unique patients)과 연인원(Cumulative count)을 구별하여 대입해야 합니다.",
     comparison: "외래 실인원은 중복을 제외하고 병원을 찾은 순수한 환자의 머릿수이며, 연인원은 방문할 때마다 누적한 수치입니다."
+  },
+  {
+    id: "STAT-015",
+    category: "부검",
+    name: "조부검률",
+    nameEn: "Gross Autopsy Rate",
+    definition: "특정 기간 동안 병원 내 총 사망자 중 병원 보건의료진에 의해 부검이 행해진 비율입니다.",
+    whyImportant: "임상 진단의 정확성 평가 및 의학 연구 활성화를 측정하는 학술 지표입니다.",
+    formula: "(총 부검수 ÷ 총 사망자수) × 100",
+    numerator: "기간 중 병원에서 행해진 총 부검수",
+    denominator: "기간 중 병원 내 총 사망자수",
+    unit: "%",
+    keyPoint: "분모는 법의학 부검이나 미부검 전출 사망 건수 등을 구분하지 않은 순수 총 사망자수입니다.",
+    comparison: "순부검률과 달리 법의학적 강제 부검 등으로 부검을 할 수 없었던 사례를 분모에서 제외하지 않습니다."
+  },
+  {
+    id: "STAT-016",
+    category: "부검",
+    name: "순부검률",
+    nameEn: "Net Autopsy Rate",
+    definition: "부검을 할 수 없는 상황(예: 유족 거부, 법의학 시신 전출 등)의 사망자를 제외하고 산출하는 실제 부검 비율입니다.",
+    whyImportant: "병원이 부검 동의를 얻을 수 있고 부검을 수행할 수 있었던 실질적 가능 범위 대비 부검율을 나타냅니다.",
+    formula: "(총 부검수 ÷ (총 사망자수 - 부검 불가능/제외 사망수)) × 100",
+    numerator: "기간 중 행해진 총 부검수",
+    denominator: "총 사망자수 - 부검 불가능/제외 사망수 (법의학 사건 등으로 전출된 시신 등)",
+    unit: "%",
+    keyPoint: "분모에서 부검 권한이나 가능성이 없는 시신 수를 반드시 제외해 줍니다.",
+    comparison: "조부검률에 비해 분모가 작아지므로 수치는 더 높게 산출됩니다."
+  },
+  {
+    id: "STAT-017",
+    category: "부검",
+    name: "병원부검률",
+    nameEn: "Hospital Autopsy Rate",
+    definition: "병원에 소속되어 치료받던 환자(입원 및 외래 환자 포함)가 병원 외부에서 사망하였으나 병원으로 이송하여 부검한 경우까지 포함한 포괄적 부검율입니다.",
+    whyImportant: "병원의 학문적 영향력 및 원외 사망 환자에 대한 임상적 검증 비율을 통합 평가합니다.",
+    formula: "((병원 내 부검수 + 원외 사망자 이송 부검수) ÷ (병원 내 사망수 + 원외 이송 사망수)) × 100",
+    numerator: "병원 내부 부검수 + 외부 사망자 중 병원에서 부검한 수",
+    denominator: "병원 내부 사망자수 + 외부 사망자 중 병원으로 이송된 수",
+    unit: "%",
+    keyPoint: "분모와 분자 모두에 '이송(진료받던 원외 환자)' 케이스를 더해 주어야 합니다.",
+    comparison: "순부검률이나 조부검률은 오직 병원 내부 입원 사망만을 기준으로 삼는 경우가 대부분입니다."
+  },
+  {
+    id: "STAT-018",
+    category: "사망",
+    name: "영아사망률",
+    nameEn: "Infant Mortality Rate",
+    definition: "태어난 지 1년(365일) 미만에 사망한 영아의 비율로, 대개 인구 1,000명당의 천분율(‰)로 나타냅니다.",
+    whyImportant: "한 국가나 지역사회의 보건위생 및 환경 위생 수준을 대표하는 가장 민감하고 중요한 보건 지표입니다.",
+    formula: "(1세 미만 영아 사망수 ÷ 특정 기간 출생아 수) × 1,000",
+    numerator: "연간 생후 1년 미만 사망 영아수",
+    denominator: "연간 태어난 총 활생아수 (살아서 태어난 아기)",
+    unit: "‰",
+    keyPoint: "백분율(%)이 아닌 천분율(‰, permil) 단위를 사용하며 곱하기 1,000을 해 줍니다.",
+    comparison: "신생아기사망률(생후 28일 미만)과 비교하여 영아기 전체(1년 미만)를 범위로 삼습니다."
+  },
+  {
+    id: "STAT-019",
+    category: "사망",
+    name: "신생아기사망률",
+    nameEn: "Neonatal Mortality Rate",
+    definition: "살아서 태어난 아기 중 생후 28일 미만에 사망한 신생아의 비율입니다.",
+    whyImportant: "생후 극초기 사망 요인을 평가하며, 모체 요인 및 분만 시 의료적 처치 품질과 연관이 깊습니다.",
+    formula: "(생후 28일 미만 사망수 ÷ 활생아수) × 1,000",
+    numerator: "생후 28일 미만 사망아 수",
+    denominator: "살아서 태어난 총 활생아수",
+    unit: "‰",
+    keyPoint: "영아사망률과 마찬가지로 천분율(‰) 단위를 주로 사용하여 1,000을 곱합니다.",
+    comparison: "생후 28일 이후부터 1년 미만 사이에 사망하는 후기 신생아 및 영아 사망 요인과 생리적 원인이 다릅니다."
+  },
+  {
+    id: "STAT-020",
+    category: "사망",
+    name: "주산기사망률",
+    nameEn: "Perinatal Mortality Rate",
+    definition: "임신 28주 이상의 태아사망(사산) 및 출생 후 7일 미만의 초생아 사망을 합산하여 산출하는 지표입니다.",
+    whyImportant: "임신 후기와 분만 전후의 태아 및 아기의 생존 능력을 측정하는 종합 산부인과 지표입니다.",
+    formula: "((임신 28주 이상 태아사망 + 생후 7일 미만 초생아사망) ÷ (총 활생아수 + 임신 28주 이상 태아사망수)) × 1,000",
+    numerator: "임신 28주 이상 사산아 수 + 생후 7일 미만 사망아 수",
+    denominator: "살아서 태어난 총 활생아수 + 임신 28주 이상 사산아 수",
+    unit: "‰",
+    keyPoint: "분모에 사산아(태아사망) 수를 활생아 수와 함께 합산해야 분모/분자 매칭이 이루어집니다.",
+    comparison: "단순 신생아사망률은 사산아를 분모에 넣지 않지만, 주산기 통계는 태아사망을 분모/분자 모두에 포함합니다."
   }
 ];
 
@@ -323,12 +407,56 @@ export const interactiveChallenges: InteractiveChallenge[] = [
     id: "CHALLENGE-004",
     title: "병상회전간격 구하기",
     scenario: "가동병상수가 100개인 병원의 5월(31일) 총 환자일수는 2,480일이었고, 이 기간 동안 퇴원환자는 총 200명이었습니다.",
-    givenData: { 가동병상수: 100, 기간일수: 31, 총환자일수: 2480, 퇴원환자수: 200 },
+    givenData: { 가동병상수: 100, 기간일수: 31, total_patient_days: 2480, 퇴원환자수: 200 },
     questionText: "이 병원의 병상회전간격은 며칠입니까? (소수점 둘째자리에서 반올림하여 첫째자리까지 입력)",
     correctAnswer: 3.1,
     formulaUsed: "((가동병상수 × 기간일수) - 총 환자일수) ÷ 퇴원환자수",
     explanation: "총 가능 병상일 = 100개 × 31일 = 3,100일. 실제 사용 환자일 = 2,480일. 유휴 병상일(비어있던 날의 합) = 3,100 - 2,480 = 620일. 병상회전간격 = 620 ÷ 200 = 3.1일 입니다.",
     unit: "일"
+  },
+  {
+    id: "CHALLENGE-005",
+    title: "순부검률 구하기",
+    scenario: "특정 달에 병원 내 사망자는 총 40명이었습니다. 이 중 검사나 이송 등으로 부검이 불가능한 법의학 사건 시신이 10구 전출되었고, 실제로 병원 내에서 부검이 집도된 시신은 9구였습니다.",
+    givenData: { 총사망자: 40, 제외시신: 10, 부검수: 9 },
+    questionText: "이 병원의 이 달 순부검률(Net Autopsy Rate)은 몇 % 입니까? (소수점 첫째자리에서 반올림하여 정수로 입력)",
+    correctAnswer: 30,
+    formulaUsed: "(총 부검수 ÷ (총 사망자수 - 부검제외시신수)) × 100",
+    explanation: "분자 = 총 부검수 = 9구. 분모 = 총 사망자수(40) - 제외시신수(10) = 30명. 따라서 (9 ÷ 30) × 100 = 30% 입니다.",
+    unit: "%"
+  },
+  {
+    id: "CHALLENGE-006",
+    title: "제왕절개율 계산하기",
+    scenario: "B 산부인과 병원의 이번 달 분만 실적은 다음과 같습니다: 자연분만 160건, 제왕절개수술 분만 80건, 흡입분만 10건.",
+    givenData: { 자연분만: 160, 제왕절개: 80, 흡입분만: 10 },
+    questionText: "이 산부인과의 이번 달 제왕절개율은 몇 % 입니까? (소수점 둘째자리에서 반올림하여 첫째자리까지 입력)",
+    correctAnswer: 32,
+    formulaUsed: "(제왕절개분만수 ÷ 총 분만수) × 100",
+    explanation: "총 분만 건수 = 160(자연) + 80(제왕) + 10(흡입) = 250건. 제왕절개율 = (80 ÷ 250) × 100 = 32.0% 입니다. (정수 32 입력)",
+    unit: "%"
+  },
+  {
+    id: "CHALLENGE-007",
+    title: "일일평균외래환자수 구하기",
+    scenario: "종합병원의 10월 한 달(31일) 동안 외래 환자 연인원(총 방문수)은 15,500명이었습니다.",
+    givenData: { 연인원: 15500, 기간일수: 31 },
+    questionText: "이 병원의 10월 일일평균외래환자수는 몇 명입니까? (정수로 입력)",
+    correctAnswer: 500,
+    formulaUsed: "외래환자 연인원 ÷ 기간일수",
+    explanation: "분자 = 15,500명. 분모 = 31일. 따라서 15,500 ÷ 31 = 500명 입니다.",
+    unit: "명"
+  },
+  {
+    id: "CHALLENGE-008",
+    title: "주산기사망률 구하기",
+    scenario: "어느 지역의 1년간 통계입니다. 살아서 태어난 활생아수는 9,800명이고, 임신 28주 이상의 사산아(태아사망) 수는 200명이었으며, 생후 7일 미만의 사망아 수는 50명이었습니다.",
+    givenData: { 활생아: 9800, 사산아: 200, 초생아사망: 50 },
+    questionText: "이 지역의 주산기사망률(Perinatal Mortality Rate)은 천분율(‰) 기준으로 얼마입니까? (소수점 둘째자리에서 반올림하여 첫째자리까지 입력)",
+    correctAnswer: 25,
+    formulaUsed: "((사산아수 + 초생아사망수) ÷ (활생아수 + 사산아수)) × 1,000",
+    explanation: "분자 = 사산아(200) + 초생아사망(50) = 250명. 분모 = 활생아(9,800) + 사산아(200) = 10,000명. 주산기사망률 = (250 ÷ 10,000) × 1,000 = 25.0‰ 입니다. (정수 25 입력)",
+    unit: "‰"
   }
 ];
 
@@ -527,5 +655,135 @@ export const mockQuestions: MockQuestion[] = [
     ],
     answer: ["C"],
     explanation: "평균재원일수의 분모는 오직 '퇴원환자수'만 들어갑니다. 입원환자나 재원환자수를 곱해 대입하는 것은 심각한 오류입니다."
+  },
+  {
+    id: "MOCK-STAT-016",
+    type: "multiple_choice",
+    stem: "A 병원에서 이번 달 총 사망환자는 20명이었습니다. 이 중 법의학 조사가 의뢰되어 타 기관으로 전출 간 시신이 2명, 유가족 반대로 부검이 불가능했던 환자가 3명이었고, 실제로 부검이 집도된 건수는 3건이었습니다. 이 병원의 순부검률(Net Autopsy Rate)은 얼마인가?",
+    options: [
+      { id: "A", text: "15%" },
+      { id: "B", text: "16.7%" },
+      { id: "C", text: "20%" },
+      { id: "D", text: "25%" }
+    ],
+    answer: ["C"],
+    explanation: "순부검률 공식 = (실제 부검수 ÷ (총 사망자수 - 부검제외시신)) × 100 = (3 ÷ (20 - 2 - 3)) × 100 = (3 ÷ 15) × 100 = 20% 입니다."
+  },
+  {
+    id: "MOCK-STAT-017",
+    type: "multiple_choice",
+    stem: "병원 외부에서 사망했으나 병원 보건의료진에 의해 사망이 확인되고 이송되어 부검된 수와 병원 내 사망자 수를 통합하여 부검의 비율을 산정하는 지표는?",
+    options: [
+      { id: "A", text: "조부검률" },
+      { id: "B", text: "순부검률" },
+      { id: "C", text: "병원부검률" },
+      { id: "D", text: "법의부검률" }
+    ],
+    answer: ["C"],
+    explanation: "원외 사망자로서 병원에서 부검한 경우와 병원 내 사망자를 분모 분자에 합하여 구하는 공식은 병원부검률(Hospital Autopsy Rate)의 고유 정의입니다."
+  },
+  {
+    id: "MOCK-STAT-018",
+    type: "multiple_choice",
+    stem: "어떤 보건 지역의 1년간 총 생후 1년 미만의 사망 영아수가 50명이고 태어난 활생아수가 25,000명일 때, 이 지역의 영아사망률(Infant Mortality Rate)은 천분율(‰) 기준으로 얼마인가?",
+    options: [
+      { id: "A", text: "1.0‰" },
+      { id: "B", text: "2.0‰" },
+      { id: "C", text: "3.0‰" },
+      { id: "D", text: "4.0‰" }
+    ],
+    answer: ["B"],
+    explanation: "영아사망률 = (1세 미만 사망수 ÷ 활생아수) × 1,000 = (50 ÷ 25,000) × 1,000 = 2.0‰ 입니다. 단위가 천분율(‰)이므로 곱하기 1,000을 하여 2.0을 도출합니다."
+  },
+  {
+    id: "MOCK-STAT-019",
+    type: "multiple_choice",
+    stem: "신생아기사망률(Neonatal Mortality Rate)을 계산할 때 분자 대상에 포함되는 신생아의 나이 기준은 생후 며칠 미만인가?",
+    options: [
+      { id: "A", text: "생후 7일 미만" },
+      { id: "B", text: "생후 14일 미만" },
+      { id: "C", text: "생후 28일 미만" },
+      { id: "D", text: "생후 1년 미만" }
+    ],
+    answer: ["C"],
+    explanation: "신생아기사망률(Neonatal Mortality Rate)은 생후 28일 미만의 신생아 사망을 분자 기준으로 삼습니다. (7일 미만은 초생아 사망기준)"
+  },
+  {
+    id: "MOCK-STAT-020",
+    type: "multiple_choice",
+    stem: "주산기사망률(Perinatal Mortality Rate) 공식에서 분모와 분자에 공통적으로 사산아(태아사망)를 더하는 수학적 타당성은 무엇인가?",
+    options: [
+      { id: "A", text: "부검률을 낮추기 위해" },
+      { id: "B", text: "전체 신생아실 퇴원수를 맞추기 위해" },
+      { id: "C", text: "태아사망 자체가 분만 건수(전체 임신종결)의 일종이므로, 활생아수와 합해 전체 대상(모집단)을 일치시키기 위해" },
+      { id: "D", text: "사망률을 억지로 높게 나타내기 위해" }
+    ],
+    answer: ["C"],
+    explanation: "주산기사망률은 임신 28주 이후 분만 과정 및 분만 직후 발생한 사망을 종합하므로, 활생아수(산 아이)와 태아사망수(사산아)를 합해 전체 분만(임신 종결) 모집단을 맞추는 것이 수학적으로 정확합니다."
+  },
+  {
+    id: "MOCK-STAT-021",
+    type: "multiple_choice",
+    stem: "척도(Scale of measurement)의 분류 중 절대영점(Absolute Zero Point)이 존재하여 덧셈, 뺄셈뿐만 아니라 곱셈, 나눗셈이 모두 가능한 척도는?",
+    options: [
+      { id: "A", text: "명명척도 (Nominal Scale)" },
+      { id: "B", text: "서열척도 (Ordinal Scale)" },
+      { id: "C", text: "등간척도 (Interval Scale)" },
+      { id: "D", text: "비율척도 (Ratio Scale)" }
+    ],
+    answer: ["D"],
+    explanation: "절대영점이 존재하여 수치의 배율 비교(나눗셈)까지 가능한 척도는 비율척도(Ratio Scale)입니다. 온도 등은 절대영점이 없으므로 등간척도입니다."
+  },
+  {
+    id: "MOCK-STAT-022",
+    type: "multiple_choice",
+    stem: "자료를 크기 순서대로 정렬했을 때 가장 정중앙에 위치하는 값을 의미하는 대표값의 명칭은?",
+    options: [
+      { id: "A", text: "산술평균 (Arithmetic Mean)" },
+      { id: "B", text: "중앙값 (Median)" },
+      { id: "C", text: "최빈값 (Mode)" },
+      { id: "D", text: "기하평균 (Geometric Mean)" }
+    ],
+    answer: ["B"],
+    explanation: "크기 순서대로 자료를 배열하였을 때 정중앙에 오는 값을 중앙값(Median, 중위수)이라고 합니다."
+  },
+  {
+    id: "MOCK-STAT-023",
+    type: "multiple_choice",
+    stem: "가동병상수가 150개인 병원의 4월(30일) 환자일수가 3,600일일 때, 4월 한 달 동안의 병상회전율은 몇 회인가?",
+    options: [
+      { id: "A", text: "20회" },
+      { id: "B", text: "24회" },
+      { id: "C", text: "자료 부족으로 계산 불가능" },
+      { id: "D", text: "15회" }
+    ],
+    answer: ["C"],
+    explanation: "병상회전율 공식은 '퇴원환자수 ÷ 가동병상수'입니다. 주어진 조건에는 가동병상수(150)와 환자일수(3,600일)만 있고, '퇴원환자수'가 명시되어 있지 않으므로 계산이 불가능합니다. (환자일수는 이용률 계산용)"
+  },
+  {
+    id: "MOCK-STAT-024",
+    type: "multiple_choice",
+    stem: "A 병원의 1년간 모성 퇴원환자가 800명(사망자 2명 포함)이었습니다. 이 중 임신중독증 합병증으로 사망한 모성 환자가 2명일 때, 임상 모성사망률은 몇 %인가?",
+    options: [
+      { id: "A", text: "0.25%" },
+      { id: "B", text: "0.5%" },
+      { id: "C", text: "1.0%" },
+      { id: "D", text: "2.0%" }
+    ],
+    answer: ["A"],
+    explanation: "임상 모성사망률 공식 = (모성 사망수 ÷ 모성 퇴원환자수) × 100 = (2 ÷ 800) × 100 = 0.25% 입니다."
+  },
+  {
+    id: "MOCK-STAT-025",
+    type: "multiple_choice",
+    stem: "병원 통계 자료의 표준편차가 0으로 나타났다면 이 자료의 분포 상태는 어떠한가?",
+    options: [
+      { id: "A", text: "자료들이 완전한 대칭 분포(정규분포)를 이룬다." },
+      { id: "B", text: "모든 자료의 수치가 평균값과 완전히 동일하여 분산이 없다." },
+      { id: "C", text: "가장 큰 수치와 가장 작은 수치의 편차가 극대화된다." },
+      { id: "D", text: "부검률이 0% 인 병원과 일치한다." }
+    ],
+    answer: ["B"],
+    explanation: "표준편차(또는 분산)가 0이라는 것은 개별 자료값들이 평균으로부터 떨어진 거리가 전혀 없다는 뜻으로, 모든 자료의 값이 평균값과 100% 동일함을 뜻합니다."
   }
 ];
