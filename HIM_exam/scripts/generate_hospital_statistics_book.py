@@ -247,13 +247,13 @@ def build_editable_docx(blocks: list[Block]) -> None:
                 p.alignment = WD_ALIGN_PARAGRAPH.CENTER
                 p.paragraph_format.space_before = Pt(20)
                 p.paragraph_format.space_after = Pt(20)
-                add_rich_text_runs(p, block.text, size_pt=11, color_rgb=GRAY)
+                add_rich_text_runs(p, block.text, size_pt=15, color_rgb=GRAY)
                 
             elif block.kind == "bullet":
                 p = doc.add_paragraph(style='List Bullet')
                 p.paragraph_format.left_indent = Inches(1.5)
-                p.paragraph_format.space_after = Pt(4)
-                add_rich_text_runs(p, block.text, size_pt=10, color_rgb=GRAY)
+                p.paragraph_format.space_after = Pt(6)
+                add_rich_text_runs(p, block.text, size_pt=14, color_rgb=GRAY)
                 
             elif block.kind in ["h2", "number"]:
                 # Suppress guides on cover page, just skip
@@ -265,56 +265,56 @@ def build_editable_docx(blocks: list[Block]) -> None:
             p = doc.add_paragraph()
             p.paragraph_format.space_before = Pt(24)
             p.paragraph_format.space_after = Pt(2)
-            add_rich_text_runs(p, block.text, size_pt=10, color_rgb=TEAL)
+            add_rich_text_runs(p, block.text, size_pt=14, color_rgb=TEAL)
             p.runs[0].bold = True
 
         elif block.kind == "h1":
             p = doc.add_paragraph()
-            p.paragraph_format.space_before = Pt(12)
-            p.paragraph_format.space_after = Pt(12)
+            p.paragraph_format.space_before = Pt(16)
+            p.paragraph_format.space_after = Pt(16)
             p.paragraph_format.keep_with_next = True
-            add_rich_text_runs(p, block.text, size_pt=20, color_rgb=NAVY)
+            add_rich_text_runs(p, block.text, size_pt=26, color_rgb=NAVY)
             p.runs[0].bold = True
 
         elif block.kind == "h2":
             p = doc.add_paragraph()
-            p.paragraph_format.space_before = Pt(16)
-            p.paragraph_format.space_after = Pt(8)
+            p.paragraph_format.space_before = Pt(20)
+            p.paragraph_format.space_after = Pt(10)
             p.paragraph_format.keep_with_next = True
-            add_rich_text_runs(p, block.text, size_pt=14, color_rgb=BLUE)
+            add_rich_text_runs(p, block.text, size_pt=20, color_rgb=BLUE)
             p.runs[0].bold = True
 
         elif block.kind == "body":
             p = doc.add_paragraph()
             p.paragraph_format.line_spacing = 1.3
-            p.paragraph_format.space_after = Pt(10)
-            add_rich_text_runs(p, block.text, size_pt=11, color_rgb=NAVY)
+            p.paragraph_format.space_after = Pt(12)
+            add_rich_text_runs(p, block.text, size_pt=15, color_rgb=NAVY)
 
         elif block.kind == "bullet":
             p = doc.add_paragraph(style='List Bullet')
-            p.paragraph_format.space_after = Pt(4)
-            add_rich_text_runs(p, block.text, size_pt=11, color_rgb=NAVY)
+            p.paragraph_format.space_after = Pt(6)
+            add_rich_text_runs(p, block.text, size_pt=15, color_rgb=NAVY)
 
         elif block.kind == "number":
             p = doc.add_paragraph()
             p.paragraph_format.left_indent = Inches(0.25)
-            p.paragraph_format.space_after = Pt(4)
-            add_rich_text_runs(p, block.text, size_pt=11, color_rgb=NAVY)
+            p.paragraph_format.space_after = Pt(6)
+            add_rich_text_runs(p, block.text, size_pt=15, color_rgb=NAVY)
 
         elif block.kind == "term":
             head, tail = block.text.split(": ", 1)
             p_head = doc.add_paragraph()
-            p_head.paragraph_format.space_before = Pt(10)
+            p_head.paragraph_format.space_before = Pt(14)
             p_head.paragraph_format.space_after = Pt(2)
             p_head.paragraph_format.keep_with_next = True
-            add_rich_text_runs(p_head, f"• {head}", size_pt=11, color_rgb=NAVY)
+            add_rich_text_runs(p_head, f"• {head}", size_pt=15, color_rgb=NAVY)
             p_head.runs[0].bold = True
             
             p_tail = doc.add_paragraph()
             p_tail.paragraph_format.left_indent = Inches(0.25)
-            p_tail.paragraph_format.space_after = Pt(10)
+            p_tail.paragraph_format.space_after = Pt(12)
             p_tail.paragraph_format.line_spacing = 1.2
-            add_rich_text_runs(p_tail, tail, size_pt=11, color_rgb=NAVY)
+            add_rich_text_runs(p_tail, tail, size_pt=15, color_rgb=NAVY)
 
         elif block.kind == "formula":
             # Display inside a nice native single-cell table (Callout style)
@@ -328,7 +328,7 @@ def build_editable_docx(blocks: list[Block]) -> None:
             
             p = cell.paragraphs[0]
             p.paragraph_format.space_after = Pt(0)
-            add_rich_text_runs(p, block.text, size_pt=11, color_rgb=NAVY)
+            add_rich_text_runs(p, block.text, size_pt=15, color_rgb=NAVY)
 
         elif block.kind in ["question", "answer"]:
             # Display inside a nice native single-cell table
@@ -348,7 +348,7 @@ def build_editable_docx(blocks: list[Block]) -> None:
             p = cell.paragraphs[0]
             p.paragraph_format.space_after = Pt(0)
             prefix = "Q. " if is_q else "A. "
-            add_rich_text_runs(p, f"{prefix}{block.text}", size_pt=11, color_rgb=NAVY)
+            add_rich_text_runs(p, f"{prefix}{block.text}", size_pt=15, color_rgb=NAVY)
             p.runs[0].bold = True
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
