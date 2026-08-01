@@ -1,26 +1,25 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from pathlib import Path
-from textwrap import wrap
-
 from PIL import Image, ImageDraw, ImageFont
 from docx import Document
 from docx.shared import Mm
-
 
 ROOT = Path("/Users/jihoonkim/Desktop/vibe-coding/HIM_exam")
 OUTPUT_DIR = ROOT / "artifacts"
 OUTPUT_PATH = OUTPUT_DIR / "병원통계_쉽게_공부하는_책.docx"
 PAGE_DIR = OUTPUT_DIR / "hospital_statistics_book_pages"
 FONT_PATH = Path("/System/Library/Fonts/AppleSDGothicNeo.ttc")
+COVER_IMAGE_PATH = ROOT / "scripts/hospital_stats_cover.jpg"
 
 PAGE_WIDTH = 1240
 PAGE_HEIGHT = 1754
 MARGIN_X = 96
 MARGIN_TOP = 110
 MARGIN_BOTTOM = 110
-BODY_LINE_GAP = 18
+BODY_LINE_GAP = 14
 
 NAVY = (18, 36, 58)
 TEAL = (0, 132, 116)
@@ -29,41 +28,135 @@ GRAY = (100, 112, 132)
 LIGHT = (242, 247, 250)
 WHITE = (255, 255, 255)
 
-
 @dataclass
 class Block:
     kind: str
     text: str
 
-
 def font(size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(str(FONT_PATH), size)
 
-
 FONTS = {
-    "cover_title": font(54),
+    "cover_title": font(60),
     "cover_subtitle": font(28),
-    "section_kicker": font(24),
-    "h1": font(38),
-    "h2": font(28),
-    "body": font(31),
-    "body_bold": font(31),
-    "small": font(20),
+    "section_kicker": font(20),
+    "h1": font(42),
+    "h2": font(32),
+    "body": font(22),
+    "body_bold": font(22),
+    "small": font(16),
 }
 
+def parse_rich_text(text: str) -> list[tuple[str, dict]]:
+    tokens = []
+    # Match: ==highlight==, **bold**, __underline__, or plain text
+    pattern = re.compile(r'(==.*?==|\*\*.*?\*\*|__.*?__|[^=\*_]+|==|\*\*|__)')
+    matches = pattern.findall(text)
+    for m in matches:
+        if not m:
+            continue
+        if m.startswith("==") and m.endswith("=="):
+            tokens.append((m[2:-2], {"highlight": True}))
+        elif m.startswith("**") and m.endswith("**"):
+            tokens.append((m[2:-2], {"bold": True}))
+        elif m.startswith("__") and m.endswith("__"):
+            tokens.append((m[2:-2], {"underline": True}))
+        else:
+            tokens.append((m, {}))
+    return tokens
+
+def wrap_rich_text(draw: ImageDraw.ImageDraw, text: str, font_regular: ImageFont.FreeTypeFont, usable_width: int) -> list[list[tuple[str, dict]]]:
+    paragraphs = text.split("\n")
+    all_lines = []
+    
+    for paragraph in paragraphs:
+        segments = parse_rich_text(paragraph)
+        words = []
+        for content, style in segments:
+            if not content:
+                continue
+            parts = content.split(" ")
+            for i, part in enumerate(parts):
+                word_text = part
+                if i < len(parts) - 1:
+                    word_text += " "
+                words.append((word_text, style))
+
+        current_line: list[tuple[str, dict]] = []
+        current_width = 0
+
+        for word_text, style in words:
+            is_bold = style.get("bold", False)
+            word_width = draw.textlength(word_text, font=font_regular)
+            if is_bold:
+                word_width += 1.5
+
+            if current_width + word_width <= usable_width:
+                current_line.append((word_text, style))
+                current_width += word_width
+            else:
+                if current_line:
+                    all_lines.append(current_line)
+                current_line = [(word_text, style)]
+                current_width = word_width
+
+        if current_line:
+            all_lines.append(current_line)
+            
+    return all_lines or [[("", {})]]
+
+def draw_rich_line(draw: ImageDraw.ImageDraw, x: int, y: int, line_segments: list[tuple[str, dict]], font_regular: ImageFont.FreeTypeFont, default_color: tuple[int, int, int]):
+    # Pass 1: draw highlights
+    curr_x = x
+    line_height = font_regular.size
+    for segment_text, style in line_segments:
+        is_highlight = style.get("highlight", False)
+        is_bold = style.get("bold", False)
+        segment_width = draw.textlength(segment_text, font=font_regular)
+        if is_bold:
+            segment_width += 1.5
+        if is_highlight:
+            # draw fluorescent yellow box
+            draw.rectangle(
+                (curr_x, y - 2, curr_x + segment_width, y + line_height + 4),
+                fill=(255, 255, 140)
+            )
+        curr_x += segment_width
+
+    # Pass 2: draw text & underlines
+    curr_x = x
+    for segment_text, style in line_segments:
+        is_bold = style.get("bold", False)
+        is_underline = style.get("underline", False)
+        segment_width = draw.textlength(segment_text, font=font_regular)
+
+        if is_bold:
+            draw.text((curr_x, y), segment_text, font=font_regular, fill=default_color)
+            draw.text((curr_x + 1, y), segment_text, font=font_regular, fill=default_color)
+            segment_width += 1.5
+        else:
+            draw.text((curr_x, y), segment_text, font=font_regular, fill=default_color)
+
+        if is_underline:
+            draw.line(
+                (curr_x, y + line_height + 2, curr_x + segment_width, y + line_height + 2),
+                fill=default_color,
+                width=2
+            )
+        curr_x += segment_width
 
 def content_blocks() -> list[Block]:
     return [
         Block("cover_title", "병원통계, 쉽게 잡는 공부책"),
         Block("cover_subtitle", "보건의료정보관리사 시험 대비\n공식의 '이유'를 깨우치는 세상에서 가장 친절한 통계책"),
         Block("body", "이 책은 병원통계 공식만 보면 머리가 아픈 수험생들을 위해 쓰여졌습니다. "
-             "공식을 무작정 암기하는 대신, '왜 분모에 이걸 넣어야만 하는지' 일상생활의 친근한 비유를 들어 아주 쉽게 풀어 설명합니다."),
+             "공식을 무작정 암기하는 대신, ==왜 분모에 이걸 넣어야만 하는지== 일상생활의 친근한 비유를 들어 아주 쉽게 풀어 설명합니다."),
         Block("bullet", "Chapter I. 왜 그런 공식이 나왔을까?: 병상, 재원일수, 사망, 부검, 외래, 응급, 역학 및 출산 지표의 탄생 배경과 원리 이해"),
         Block("bullet", "Chapter II. 머리에 쏙 들어오는 계산 원리: 비유로 이해하는 비율형, 평균형, 회전형 계산법과 함정 피하기"),
         Block("bullet", "Chapter III. 말문이 트이는 자가 점검: 스스로 원리를 설명할 수 있게 돕는 15가지 핵심 질문과 친절한 풀이"),
         Block("h2", "이 책을 읽는 효과적인 방법"),
-        Block("number", "1. 공식 자체를 외우기 전에 반드시 '이유를 설명하는 비유'를 먼저 소리 내어 읽어보세요."),
-        Block("number", "2. '왜 퇴원환자로 나눠야 하지?' 같은 근본적인 질문에 답을 할 수 있게 되면 공식은 저절로 외워집니다."),
+        Block("number", "1. 공식 자체를 외우기 전에 반드시 ==이유를 설명하는 비유==를 먼저 소리 내어 읽어보세요."),
+        Block("number", "2. **'왜 퇴원환자로 나눠야 하지?'** 같은 근본적인 질문에 답을 할 수 있게 되면 공식은 저절로 외워집니다."),
         Block("number", "3. 연습장에 손으로 직접 비유를 생각하며 계산 과정을 그려보세요."),
         Block("pagebreak", ""),
 
@@ -71,42 +164,42 @@ def content_blocks() -> list[Block]:
         Block("h1", "병상과 재원일수 공식의 원리"),
         Block("h2", "1. 병상이용률: '게스트하우스 방 채우기' 비유"),
         Block("body", "방이 10개 있는 게스트하우스가 있습니다. 6월 한 달(30일) 동안 만실이었다면 총 300번(10실×30일) 방을 빌려줄 수 있었습니다. "
-             "이것이 분모인 '가동병상수 × 기간일수'입니다. 그런데 실제 손님이 묵고 간 누적 일수가 240일이라면, 이용률은 240÷300 = 80%가 됩니다. "
-             "분모에 단순히 병상수만 넣으면 안 되고, '기간 일수'를 곱해 총 가용 공간의 단위(병상일)를 일치시켜야 하는 이유입니다."),
-        Block("term", "병상이용률 (Bed Occupancy Rate): 준비된 전체 병상일수 대비 실제 환자가 사용한 누적 일수의 비율입니다. 공식은 (총 환자일수 ÷ (가동병상수 × 기간일수)) × 100 (%)"),
+             "이것이 분모인 **가동병상수 × 기간일수**입니다. 그런데 실제 손님이 묵고 간 누적 일수가 240일이라면, 이용률은 240÷300 = 80%가 됩니다. "
+             "분모에 단순히 병상수만 넣으면 안 되고, ==기간 일수를 곱해== 총 가용 공간의 단위(병상일)를 일치시켜야 하는 이유입니다."),
+        Block("term", "병상이용률 (Bed Occupancy Rate): 준비된 전체 병상일수 대비 실제 환자가 사용한 누적 일수의 비율입니다. 공식은 ==(총 환자일수 ÷ (가동병상수 × 기간일수)) × 100== (%)"),
         Block("h2", "2. 평균재원일수: '끝난 사람만 계산한다' 원리"),
-        Block("body", "평균재원일수를 구할 때 왜 '입원환자'가 아니라 '퇴원환자'로 나눌까요? 아직 입원 중인 사람은 언제 나갈지 알 수 없기 때문입니다! "
-             "식당에서 손님이 평균 몇 분 동안 식사하는지 계산하려면, 밥을 다 먹고 '나간 손님들'의 식사 시간만 합산해서 나눠야 정확합니다. "
-             "따라서 분모와 분자 모두 아직 진행 중인 재원환자가 아니라, 기록이 완성된 '퇴원환자' 기준이어야 합니다."),
-        Block("term", "평균재원일수 (Average Length of Stay): 퇴원한 환자 1명이 평균적으로 며칠 동안 입원해 있었는지를 계산합니다. 공식은 퇴원환자의 총 재원일수 ÷ 퇴원환자수 (일)"),
+        Block("body", "평균재원일수를 구할 때 왜 '입원환자'가 아니라 **'퇴원환자'**로 나눌까요? 아직 입원 중인 사람은 언제 나갈지 알 수 없기 때문입니다! "
+             "식당에서 손님이 평균 몇 분 동안 식사하는지 계산하려면, 밥을 다 먹고 ==나간 손님들==의 식사 시간만 합산해서 나눠야 정확합니다. "
+             "따라서 분모와 분자 모두 아직 진행 중인 재원환자가 아니라, 기록이 완성된 __퇴원환자__ 기준이어야 합니다."),
+        Block("term", "평균재원일수 (Average Length of Stay): 퇴원한 환자 1명이 평균적으로 며칠 동안 입원해 있었는지를 계산합니다. 공식은 ==퇴원환자의 총 재원일수 ÷ 퇴원환자수== (일)"),
         Block("pagebreak", ""),
 
         Block("kicker", "CHAPTER I"),
         Block("h1", "사망 및 부검 공식의 원리"),
         Block("h2", "3. 순사망률: '병원 탓을 할 수 없는 시간 48시간'"),
         Block("body", "병원에 오자마자 1시간 만에 자연사한 환자는 의사가 손을 쓸 시간조차 없었습니다. "
-             "이런 사망까지 병원 책임으로 돌려 사망률을 계산하면 억울하겠죠? 그래서 의학적으로 의미 있는 치료가 시작될 수 있는 시간인 '48시간'을 기준으로 잡습니다. "
-             "이 48시간 미만 사망 환자들을 분모(전체 대상)와 분자(사망자)에서 둘 다 깨끗이 빼주고 계산하는 것이 '순사망률'입니다."),
-        Block("term", "순사망률 (Net Mortality Rate): 입원 후 48시간 이상 지난 시점의 순수한 사망 비율입니다. 공식은 (48시간 이상 사망수 ÷ (총 퇴원환자수 - 48시간 미만 사망수)) × 100 (%)"),
+             "이런 사망까지 병원 책임으로 돌려 사망률을 계산하면 억울하겠죠? 그래서 의학적으로 의미 있는 치료가 시작될 수 있는 시간인 **'48시간'**을 기준으로 잡습니다. "
+             "이 ==48시간 미만 사망 환자==들을 분모(전체 대상)와 분자(사망자)에서 둘 다 깨끗이 빼주고 계산하는 것이 __순사망률__입니다."),
+        Block("term", "순사망률 (Net Mortality Rate): 입원 후 48시간 이상 지난 시점의 순수한 사망 비율입니다. 공식은 ==(48시간 이상 사망수 ÷ (총 퇴원환자수 - 48시간 미만 사망수)) × 100== (%)"),
         Block("h2", "4. 부검률 3종 세트: '진료 범위의 차이'"),
         Block("body", "조부검률은 제외 없이 원내 전체 사망자 대비 부검 수입니다. "
-             "반면 순부검률은 유족이 거부하거나 법의학 사건으로 다른 곳으로 가버려 '애초에 부검을 할 수 없었던 시신'을 분모에서 빼고 계산합니다. "
-             "병원부검률은 입원 환자가 퇴원해 집에 있다가 사망했지만 병원으로 모셔와 부검한 경우까지 분모와 분자에 모두 더해 포괄적으로 계산합니다."),
-        Block("term", "순부검률 (Net Autopsy Rate): 병원이 부검할 권한과 가능성이 있었던 시신 대비 부검률입니다. 공식은 (총 부검수 ÷ (총 사망자수 - 부검제외시신수)) × 100 (%)"),
+             "반면 __순부검률__은 유족이 거부하거나 법의학 사건으로 다른 곳으로 가버려 ==부검을 할 수 없었던 시신==을 분모에서 빼고 계산합니다. "
+             "__병원부검률__은 입원 환자가 퇴원해 집에 있다가 사망했지만 병원으로 모셔와 부검한 경우까지 분모와 분자에 모두 더해 포괄적으로 계산합니다."),
+        Block("term", "순부검률 (Net Autopsy Rate): 병원이 부검할 권한과 가능성이 있었던 시신 대비 부검률입니다. 공식은 ==(총 부검수 ÷ (총 사망자수 - 부검제외시신수)) × 100== (%)"),
         Block("pagebreak", ""),
 
         Block("kicker", "CHAPTER I"),
         Block("h1", "외래·응급·역학 및 출산 공식의 원리"),
         Block("h2", "5. 치명률: '감기가 코로나보다 덜 무서운 이유'"),
-        Block("body", "사망률은 '전체 인구' 중 몇 명이 죽었는지 계산하지만, 치명률은 '그 병에 걸린 사람' 중 몇 명이 죽었는지를 봅니다. "
+        Block("body", "사망률은 '전체 인구' 중 몇 명이 죽었는지 계산하지만, 치명률은 **'그 병에 걸린 사람'** 중 몇 명이 죽었는지를 봅니다. "
              "감기는 전 세계 인구 절반이 걸려 일부가 사망해도 치명률이 0.01%도 안 되지만, 에볼라는 걸린 사람의 절반이 사망하므로 치명률이 50%에 달합니다. "
-             "즉, 질병 자체의 '독성'을 보려면 분모를 전체 인구가 아니라 '그 질병에 걸린 환자수'로 제한해야 합니다."),
-        Block("term", "치명률 (Case Fatality Rate): 특정 질병에 걸린 환자 대비 사망자의 비율입니다. 공식은 (해당 질병 사망자수 ÷ 해당 질병 총 환자수) × 100 (%)"),
+             "즉, 질병 자체의 '독성'을 보려면 분모를 전체 인구가 아니라 ==그 질병에 걸린 환자수==로 제한해야 합니다."),
+        Block("term", "치명률 (Case Fatality Rate): 특정 질병에 걸린 환자 대비 사망자의 비율입니다. 공식은 ==(해당 질병 사망자수 ÷ 해당 질병 총 환자수) × 100== (%)"),
         Block("h2", "6. 발생률 vs 유병률: '양동이에 내리는 빗물' 비유"),
-        Block("body", "새로 내리는 빗방울의 속도가 '발생률(Incidence)'이고, 양동이에 고여 있는 물의 전체 양이 '유병률(Prevalence)'입니다. "
+        Block("body", "새로 내리는 빗방울의 속도가 **발생률(Incidence)**이고, 양동이에 고여 있는 물의 전체 양이 **유병률(Prevalence)**입니다. "
              "아무리 새로운 환자가 많이 발생해도(발생률이 높아도) 치료가 금방 되어 퇴원하면 양동이에 고인 환자(유병률)는 적습니다. "
-             "반면 잘 낫지 않는 만성질환은 새로 걸리는 사람(발생률)이 적어도 양동이에 계속 고이므로 유병률은 아주 높게 나타납니다."),
-        Block("term", "유병률 (Prevalence Rate): 특정 시점 인구 중 질병을 앓고 있는 전체 비율입니다. 공식은 (현재 환자수 ÷ 총 인구수) × 1,000 (‰)"),
+             "반면 잘 낫지 않는 만성질환은 새로 걸리는 사람(발생률)이 적어도 ==양동이에 계속 고이므로 유병률은 아주 높게== 나타납니다."),
+        Block("term", "유병률 (Prevalence Rate): 특정 시점 인구 중 질병을 앓고 있는 전체 비율입니다. 공식은 ==(현재 환자수 ÷ 총 인구수) × 1,000== (‰)"),
         Block("pagebreak", ""),
 
         Block("kicker", "CHAPTER II"),
@@ -114,13 +207,13 @@ def content_blocks() -> list[Block]:
         Block("h2", "1. 병상회전율과 간격: '식당 테이블 회전'"),
         Block("body", "테이블 회전율이 높다는 것은 같은 자리에 손님이 자주 바뀌었다는 뜻입니다. 병상회전율은 가동병상 1개당 퇴원환자가 몇 명 거쳐갔는지를 뜻합니다. "
              "그럼 다음 손님이 올 때까지 테이블이 비어 있던 평균 시간은 얼마일까요? "
-             "전체 영업일 중 테이블이 비어 있던 총 일수(가동병상일수 - 실제 사용일수)를 구하고, 이를 나간 손님 수(퇴원환자수)로 나누면 됩니다. 이것이 바로 회전간격입니다."),
-        Block("formula", "병상회전간격 = ((가동병상수 × 기간일수) - 환자일수) ÷ 퇴원환자수 (일)"),
+             "전체 영업일 중 테이블이 비어 있던 총 일수(**가동병상일수 - 실제 사용일수**)를 구하고, 이를 나간 손님 수(__퇴원환자수__)로 나누면 됩니다. 이것이 바로 회전간격입니다."),
+        Block("formula", "병상회전간격 = ==((가동병상수 × 기간일수) - 환자일수) ÷ 퇴원환자수== (일)"),
         Block("h2", "2. 조출생률 vs 일반출산율: '인구 전체 vs 아기 낳는 여성'"),
         Block("body", "조출생률은 남자, 어린아이, 할머니를 모두 포함한 '전체 인구' 대비 아기가 태어난 비율입니다. 분모가 너무 넓어 착시가 생길 수 있습니다. "
-             "반면 일반출산율은 실제 아이를 낳을 수 있는 연령대인 '15-49세 가임여성 인구'만을 분모로 둡니다. "
-             "가임여성만 대상으로 하기 때문에 분모가 훨씬 작아져 수치가 조출생률보다 4~5배 높고 실제 출산 여건을 정확히 반영합니다. 둘 다 천분율(‰)이므로 1,000을 곱합니다."),
-        Block("formula", "일반출산율 = (연간 총 활생아수 ÷ 15~49세 가임 여성 연앙인구) × 1,000 (‰)"),
+             "반면 __일반출산율__은 실제 아이를 낳을 수 있는 연령대인 **'15-49세 가임여성 인구'**만을 분모로 둡니다. "
+             "가임여성만 대상으로 하기 때문에 분모가 훨씬 작아져 수치가 조출생률보다 4~5배 높고 실제 출산 여건을 정확히 반영합니다. 둘 다 천분율(‰)이므로 ==1,000을 곱합니다==."),
+        Block("formula", "일반출산율 = ==(연간 총 활생아수 ÷ 15~49세 가임 여성 연앙인구) × 1,000== (‰)"),
         Block("pagebreak", ""),
 
         Block("kicker", "CHAPTER III"),
@@ -134,7 +227,7 @@ def content_blocks() -> list[Block]:
         Block("question", "4. 병상회전간격 공식의 분자인 '(가동병상수 × 기간일수) - 환자일수'가 의미하는 직관적인 뜻은 무엇입니까?"),
         Block("answer", "특정 기간 동안 병원이 운영할 수 있었던 전체 병상일수 중에서, 실제 환자가 채우지 못해 '비어 있었던(유휴) 총 병상일수'의 합을 의미합니다."),
         Block("question", "5. 영아사망률, 조출생률, 일반출산율, 발생률, 유병률의 공통적인 최종 계산 규칙은 무엇입니까?"),
-        Block("answer", "백분율(%)이 아니라 인구 1,000명당 비율인 천분율(‰) 단위를 주로 사용하기 때문에 공식 마지막에 100이 아닌 1,000을 곱해주어야 합니다."),
+        Block("answer", "백분율(%)이 아니라 인구 1,000명당 비율인 천분율(‰) 단위를 주로 사용하기 때문에 공식 마지막에 1,000을 곱해주어야 합니다."),
         Block("pagebreak", ""),
 
         Block("kicker", "CHAPTER III"),
@@ -166,46 +259,33 @@ def content_blocks() -> list[Block]:
         Block("body", "맺음말: 병원통계는 단순한 공식 암기 과목이 아닙니다. 환자가 병실에 들어오고, 머물고, 나가거나 치료되는 실제 의료 현장의 이야기를 숫자로 엮어낸 것입니다. '왜 그럴까?'를 질문하고 비유로 원리를 그릴 수 있다면 모든 문제를 쉽게 정복할 수 있습니다. 수험생 여러분의 합격을 응원합니다!"),
     ]
 
-
-def wrap_text(draw: ImageDraw.ImageDraw, text: str, text_font: ImageFont.FreeTypeFont, width: int) -> list[str]:
-    pieces = text.split("\n")
-    lines: list[str] = []
-    for piece in pieces:
-        if not piece:
-            lines.append("")
-            continue
-        current = ""
-        for token in piece.split(" "):
-            candidate = token if not current else f"{current} {token}"
-            if draw.textlength(candidate, font=text_font) <= width:
-                current = candidate
-                continue
-            if current:
-                lines.append(current)
-                current = token
-                continue
-            broken = wrap(piece, width=max(1, width // max(1, text_font.size // 2)))
-            lines.extend(broken)
-            current = ""
-            break
-        if current:
-            lines.append(current)
-    return lines or [""]
-
-
-def block_layout(draw: ImageDraw.ImageDraw, block: Block, usable_width: int) -> tuple[list[str], ImageFont.FreeTypeFont, tuple[int, int, int], int, int]:
+def measure_block(draw: ImageDraw.ImageDraw, block: Block, usable_width: int) -> int:
+    # Use regular body font size to wrap and measure height
     if block.kind == "cover_title":
-        return wrap_text(draw, block.text, FONTS["cover_title"], usable_width), FONTS["cover_title"], NAVY, 64, 18
+        lines = wrap_rich_text(draw, block.text, FONTS["cover_title"], usable_width)
+        line_height = FONTS["cover_title"].size + BODY_LINE_GAP
+        return 64 + len(lines) * line_height + 18
     if block.kind == "cover_subtitle":
-        return wrap_text(draw, block.text, FONTS["cover_subtitle"], usable_width), FONTS["cover_subtitle"], TEAL, 46, 12
+        lines = wrap_rich_text(draw, block.text, FONTS["cover_subtitle"], usable_width)
+        line_height = FONTS["cover_subtitle"].size + BODY_LINE_GAP
+        return 46 + len(lines) * line_height + 12
     if block.kind == "kicker":
-        return wrap_text(draw, block.text, FONTS["section_kicker"], usable_width), FONTS["section_kicker"], TEAL, 34, 8
+        lines = wrap_rich_text(draw, block.text, FONTS["section_kicker"], usable_width)
+        line_height = FONTS["section_kicker"].size + BODY_LINE_GAP
+        return 34 + len(lines) * line_height + 8
     if block.kind == "h1":
-        return wrap_text(draw, block.text, FONTS["h1"], usable_width), FONTS["h1"], NAVY, 36, 8
+        lines = wrap_rich_text(draw, block.text, FONTS["h1"], usable_width)
+        line_height = FONTS["h1"].size + BODY_LINE_GAP
+        return 36 + len(lines) * line_height + 8
     if block.kind == "h2":
-        return wrap_text(draw, block.text, FONTS["h2"], usable_width), FONTS["h2"], BLUE, 28, 8
+        lines = wrap_rich_text(draw, block.text, FONTS["h2"], usable_width)
+        line_height = FONTS["h2"].size + BODY_LINE_GAP
+        return 28 + len(lines) * line_height + 8
     if block.kind == "formula":
-        return wrap_text(draw, block.text, FONTS["body_bold"], usable_width - 28), FONTS["body_bold"], NAVY, 18, 10
+        lines = wrap_rich_text(draw, block.text, FONTS["body_bold"], usable_width - 28)
+        line_height = FONTS["body_bold"].size + BODY_LINE_GAP
+        return 18 + len(lines) * line_height + 24 + 10
+
     prefix_map = {
         "bullet": "• ",
         "number": "",
@@ -216,9 +296,7 @@ def block_layout(draw: ImageDraw.ImageDraw, block: Block, usable_width: int) -> 
     }
     if block.kind in prefix_map:
         text = block.text
-        if block.kind == "number":
-            text = block.text
-        elif block.kind == "term":
+        if block.kind == "term":
             head, tail = block.text.split(": ", 1)
             text = f"{head}\n{tail}"
         elif block.kind == "question":
@@ -227,44 +305,113 @@ def block_layout(draw: ImageDraw.ImageDraw, block: Block, usable_width: int) -> 
             text = f"A. {block.text}"
         else:
             text = f"{prefix_map[block.kind]}{block.text}"
-        return wrap_text(draw, text, FONTS["body"], usable_width - 18), FONTS["body"], NAVY, 16, 8
-    return wrap_text(draw, block.text, FONTS["body"], usable_width), FONTS["body"], NAVY, 18, 8
-
-
-def measure_block(draw: ImageDraw.ImageDraw, block: Block, usable_width: int) -> int:
-    lines, text_font, _, before, after = block_layout(draw, block, usable_width)
-    line_height = text_font.size + BODY_LINE_GAP
-    return before + len(lines) * line_height + after
-
+        lines = wrap_rich_text(draw, text, FONTS["body"], usable_width - 18)
+        line_height = FONTS["body"].size + BODY_LINE_GAP
+        if block.kind in {"question", "answer"}:
+            return 16 + len(lines) * line_height + 24 + 8
+        return 16 + len(lines) * line_height + 8
+    
+    lines = wrap_rich_text(draw, block.text, FONTS["body"], usable_width)
+    line_height = FONTS["body"].size + BODY_LINE_GAP
+    return 18 + len(lines) * line_height + 8
 
 def draw_block(draw: ImageDraw.ImageDraw, block: Block, x: int, y: int, usable_width: int) -> int:
-    lines, text_font, color, before, after = block_layout(draw, block, usable_width)
-    y += before
-    line_height = text_font.size + BODY_LINE_GAP
+    if block.kind == "cover_title":
+        lines = wrap_rich_text(draw, block.text, FONTS["cover_title"], usable_width)
+        y += 64
+        line_height = FONTS["cover_title"].size + BODY_LINE_GAP
+        for idx, line in enumerate(lines):
+            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["cover_title"], NAVY)
+        return y + len(lines) * line_height + 18
+
+    if block.kind == "cover_subtitle":
+        lines = wrap_rich_text(draw, block.text, FONTS["cover_subtitle"], usable_width)
+        y += 46
+        line_height = FONTS["cover_subtitle"].size + BODY_LINE_GAP
+        for idx, line in enumerate(lines):
+            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["cover_subtitle"], TEAL)
+        return y + len(lines) * line_height + 12
+
+    if block.kind == "kicker":
+        lines = wrap_rich_text(draw, block.text, FONTS["section_kicker"], usable_width)
+        y += 34
+        line_height = FONTS["section_kicker"].size + BODY_LINE_GAP
+        for idx, line in enumerate(lines):
+            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["section_kicker"], TEAL)
+        return y + len(lines) * line_height + 8
+
+    if block.kind == "h1":
+        lines = wrap_rich_text(draw, block.text, FONTS["h1"], usable_width)
+        y += 36
+        line_height = FONTS["h1"].size + BODY_LINE_GAP
+        for idx, line in enumerate(lines):
+            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["h1"], NAVY)
+        return y + len(lines) * line_height + 8
+
+    if block.kind == "h2":
+        lines = wrap_rich_text(draw, block.text, FONTS["h2"], usable_width)
+        y += 28
+        line_height = FONTS["h2"].size + BODY_LINE_GAP
+        for idx, line in enumerate(lines):
+            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["h2"], BLUE)
+        return y + len(lines) * line_height + 8
 
     if block.kind == "formula":
+        lines = wrap_rich_text(draw, block.text, FONTS["body_bold"], usable_width - 28)
+        y += 18
+        line_height = FONTS["body_bold"].size + BODY_LINE_GAP
         box_top = y - 8
         box_height = len(lines) * line_height + 24
         draw.rounded_rectangle((x, box_top, x + usable_width, box_top + box_height), radius=24, fill=LIGHT, outline=(210, 222, 232), width=2)
-        text_x = x + 16
         for idx, line in enumerate(lines):
-            draw.text((text_x, y + idx * line_height), line, font=text_font, fill=color)
-        return box_top + box_height + after
+            draw_rich_line(draw, x + 16, y + idx * line_height, line, FONTS["body_bold"], NAVY)
+        return box_top + box_height + 10
 
-    if block.kind in {"question", "answer"}:
-        box_color = (246, 250, 255) if block.kind == "question" else (240, 248, 243)
-        border = (208, 220, 235) if block.kind == "question" else (198, 224, 208)
-        box_top = y - 8
-        box_height = len(lines) * line_height + 24
-        draw.rounded_rectangle((x, box_top, x + usable_width, box_top + box_height), radius=20, fill=box_color, outline=border, width=2)
+    prefix_map = {
+        "bullet": "• ",
+        "number": "",
+        "term": "",
+        "example": "예시 ",
+        "question": "",
+        "answer": "정리 ",
+    }
+    if block.kind in prefix_map:
+        text = block.text
+        if block.kind == "term":
+            head, tail = block.text.split(": ", 1)
+            # Render head as Bold on its own line
+            text = f"**{head}**\n{tail}"
+        elif block.kind == "question":
+            text = f"Q. {block.text.split('. ', 1)[1] if '. ' in block.text else block.text}"
+        elif block.kind == "answer":
+            text = f"A. {block.text}"
+        else:
+            text = f"{prefix_map[block.kind]}{block.text}"
+
+        lines = wrap_rich_text(draw, text, FONTS["body"], usable_width - 18)
+        y += 16
+        line_height = FONTS["body"].size + BODY_LINE_GAP
+
+        if block.kind in {"question", "answer"}:
+            box_color = (246, 250, 255) if block.kind == "question" else (240, 248, 243)
+            border = (208, 220, 235) if block.kind == "question" else (198, 224, 208)
+            box_top = y - 8
+            box_height = len(lines) * line_height + 24
+            draw.rounded_rectangle((x, box_top, x + usable_width, box_top + box_height), radius=20, fill=box_color, outline=border, width=2)
+            for idx, line in enumerate(lines):
+                draw_rich_line(draw, x + 16, y + idx * line_height, line, FONTS["body"], NAVY)
+            return box_top + box_height + 8
+
         for idx, line in enumerate(lines):
-            draw.text((x + 16, y + idx * line_height), line, font=text_font, fill=color)
-        return box_top + box_height + after
+            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["body"], NAVY)
+        return y + len(lines) * line_height + 8
 
+    lines = wrap_rich_text(draw, block.text, FONTS["body"], usable_width)
+    y += 18
+    line_height = FONTS["body"].size + BODY_LINE_GAP
     for idx, line in enumerate(lines):
-        draw.text((x, y + idx * line_height), line, font=text_font, fill=color)
-    return y + len(lines) * line_height + after
-
+        draw_rich_line(draw, x, y + idx * line_height, line, FONTS["body"], NAVY)
+    return y + len(lines) * line_height + 8
 
 def render_pages(blocks: list[Block]) -> list[Path]:
     PAGE_DIR.mkdir(parents=True, exist_ok=True)
@@ -312,6 +459,16 @@ def render_pages(blocks: list[Block]) -> list[Path]:
         for block in page_blocks:
             y = draw_block(draw, block, MARGIN_X, y, usable_width)
 
+        # Cover page (page 1) special graphic placement
+        if index == 1 and COVER_IMAGE_PATH.exists():
+            try:
+                cover_illustration = Image.open(COVER_IMAGE_PATH)
+                cover_illustration = cover_illustration.resize((500, 500))
+                # paste cover illustration at coordinates (PAGE_WIDTH // 2 - 250, 780)
+                img.paste(cover_illustration, (PAGE_WIDTH // 2 - 250, 780))
+            except Exception as e:
+                print(f"Error loading cover image: {e}")
+
         page_label = f"{index}"
         label_width = draw.textlength(page_label, font=FONTS["small"])
         draw.text((PAGE_WIDTH - MARGIN_X - label_width, PAGE_HEIGHT - 70), page_label, font=FONTS["small"], fill=GRAY)
@@ -321,7 +478,6 @@ def render_pages(blocks: list[Block]) -> list[Path]:
         page_paths.append(page_path)
 
     return page_paths
-
 
 def build_docx(page_paths: list[Path]) -> None:
     doc = Document()
@@ -344,13 +500,11 @@ def build_docx(page_paths: list[Path]) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     doc.save(OUTPUT_PATH)
 
-
 def main() -> None:
     blocks = content_blocks()
     page_paths = render_pages(blocks)
     build_docx(page_paths)
     print(OUTPUT_PATH)
-
 
 if __name__ == "__main__":
     main()
