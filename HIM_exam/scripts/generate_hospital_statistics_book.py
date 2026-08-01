@@ -3,53 +3,29 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
 from docx import Document
-from docx.shared import Mm
+from docx.shared import Pt, RGBColor, Inches, Mm
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_COLOR_INDEX
+from docx.oxml import parse_xml, OxmlElement
+from docx.oxml.ns import nsdecls, qn
 
 ROOT = Path("/Users/jihoonkim/Desktop/vibe-coding/HIM_exam")
 OUTPUT_DIR = ROOT / "artifacts"
 OUTPUT_PATH = OUTPUT_DIR / "병원통계_쉽게_공부하는_책.docx"
-PAGE_DIR = OUTPUT_DIR / "hospital_statistics_book_pages"
-FONT_PATH = Path("/System/Library/Fonts/AppleSDGothicNeo.ttc")
 COVER_IMAGE_PATH = ROOT / "scripts/hospital_stats_cover.jpg"
 
-PAGE_WIDTH = 1240
-PAGE_HEIGHT = 1754
-MARGIN_X = 96
-MARGIN_TOP = 110
-MARGIN_BOTTOM = 110
-BODY_LINE_GAP = 14
-
-NAVY = (18, 36, 58)
-TEAL = (0, 132, 116)
-BLUE = (40, 90, 210)
-GRAY = (100, 112, 132)
-LIGHT = (242, 247, 250)
-WHITE = (255, 255, 255)
+NAVY = RGBColor(18, 36, 58)
+TEAL = RGBColor(0, 132, 116)
+BLUE = RGBColor(40, 90, 210)
+GRAY = RGBColor(100, 112, 132)
 
 @dataclass
 class Block:
     kind: str
     text: str
 
-def font(size: int) -> ImageFont.FreeTypeFont:
-    return ImageFont.truetype(str(FONT_PATH), size)
-
-FONTS = {
-    "cover_title": font(60),
-    "cover_subtitle": font(28),
-    "section_kicker": font(20),
-    "h1": font(42),
-    "h2": font(32),
-    "body": font(22),
-    "body_bold": font(22),
-    "small": font(16),
-}
-
 def parse_rich_text(text: str) -> list[tuple[str, dict]]:
     tokens = []
-    # Match: ==highlight==, **bold**, __underline__, or plain text
     pattern = re.compile(r'(==.*?==|\*\*.*?\*\*|__.*?__|[^=\*_]+|==|\*\*|__)')
     matches = pattern.findall(text)
     for m in matches:
@@ -65,85 +41,49 @@ def parse_rich_text(text: str) -> list[tuple[str, dict]]:
             tokens.append((m, {}))
     return tokens
 
-def wrap_rich_text(draw: ImageDraw.ImageDraw, text: str, font_regular: ImageFont.FreeTypeFont, usable_width: int) -> list[list[tuple[str, dict]]]:
-    paragraphs = text.split("\n")
-    all_lines = []
-    
-    for paragraph in paragraphs:
-        segments = parse_rich_text(paragraph)
-        words = []
-        for content, style in segments:
-            if not content:
-                continue
-            parts = content.split(" ")
-            for i, part in enumerate(parts):
-                word_text = part
-                if i < len(parts) - 1:
-                    word_text += " "
-                words.append((word_text, style))
+def set_cell_background(cell, hex_color: str):
+    shading_elm = parse_xml(f'<w:shd {nsdecls("w")} w:fill="{hex_color}"/>')
+    cell._tc.get_or_add_tcPr().append(shading_elm)
 
-        current_line: list[tuple[str, dict]] = []
-        current_width = 0
+def set_cell_margins(cell, top=144, bottom=144, left=288, right=288):
+    # Margin values in dxa (1 pt = 20 dxa)
+    tcPr = cell._tc.get_or_add_tcPr()
+    tcMar = OxmlElement('w:tcMar')
+    for m_type, val in [('w:top', top), ('w:bottom', bottom), ('w:left', left), ('w:right', right)]:
+        node = OxmlElement(m_type)
+        node.set(qn('w:w'), str(val))
+        node.set(qn('w:type'), 'dxa')
+        tcMar.append(node)
+    tcPr.append(tcMar)
 
-        for word_text, style in words:
-            is_bold = style.get("bold", False)
-            word_width = draw.textlength(word_text, font=font_regular)
-            if is_bold:
-                word_width += 1.5
+def set_cell_border(cell, **kwargs):
+    """
+    kwargs can contain: top, bottom, left, right, insideH, insideV
+    with value: {"sz": 12, "val": "single", "color": "D3D3D3", "space": "0"}
+    """
+    tcPr = cell._tc.get_or_add_tcPr()
+    tcBorders = OxmlElement('w:tcBorders')
+    for border_name in ['top', 'left', 'bottom', 'right', 'insideH', 'insideV']:
+        if border_name in kwargs:
+            edge = OxmlElement(f'w:{border_name}')
+            for key, val in kwargs[border_name].items():
+                edge.set(qn(f'w:{key}'), str(val))
+            tcBorders.append(edge)
+    tcPr.append(tcBorders)
 
-            if current_width + word_width <= usable_width:
-                current_line.append((word_text, style))
-                current_width += word_width
-            else:
-                if current_line:
-                    all_lines.append(current_line)
-                current_line = [(word_text, style)]
-                current_width = word_width
-
-        if current_line:
-            all_lines.append(current_line)
-            
-    return all_lines or [[("", {})]]
-
-def draw_rich_line(draw: ImageDraw.ImageDraw, x: int, y: int, line_segments: list[tuple[str, dict]], font_regular: ImageFont.FreeTypeFont, default_color: tuple[int, int, int]):
-    # Pass 1: draw highlights
-    curr_x = x
-    line_height = font_regular.size
-    for segment_text, style in line_segments:
-        is_highlight = style.get("highlight", False)
-        is_bold = style.get("bold", False)
-        segment_width = draw.textlength(segment_text, font=font_regular)
-        if is_bold:
-            segment_width += 1.5
-        if is_highlight:
-            # draw fluorescent yellow box
-            draw.rectangle(
-                (curr_x, y - 2, curr_x + segment_width, y + line_height + 4),
-                fill=(255, 255, 140)
-            )
-        curr_x += segment_width
-
-    # Pass 2: draw text & underlines
-    curr_x = x
-    for segment_text, style in line_segments:
-        is_bold = style.get("bold", False)
-        is_underline = style.get("underline", False)
-        segment_width = draw.textlength(segment_text, font=font_regular)
-
-        if is_bold:
-            draw.text((curr_x, y), segment_text, font=font_regular, fill=default_color)
-            draw.text((curr_x + 1, y), segment_text, font=font_regular, fill=default_color)
-            segment_width += 1.5
-        else:
-            draw.text((curr_x, y), segment_text, font=font_regular, fill=default_color)
-
-        if is_underline:
-            draw.line(
-                (curr_x, y + line_height + 2, curr_x + segment_width, y + line_height + 2),
-                fill=default_color,
-                width=2
-            )
-        curr_x += segment_width
+def add_rich_text_runs(paragraph, text: str, font_name="Apple SD Gothic Neo", size_pt=11, color_rgb=NAVY):
+    segments = parse_rich_text(text)
+    for segment_text, style in segments:
+        run = paragraph.add_run(segment_text)
+        run.font.name = font_name
+        run.font.size = Pt(size_pt)
+        run.font.color.rgb = color_rgb
+        if style.get("bold", False):
+            run.bold = True
+        if style.get("underline", False):
+            run.underline = True
+        if style.get("highlight", False):
+            run.font.highlight_color = WD_COLOR_INDEX.YELLOW
 
 def content_blocks() -> list[Block]:
     return [
@@ -185,7 +125,7 @@ def content_blocks() -> list[Block]:
         Block("body", "조부검률은 제외 없이 원내 전체 사망자 대비 부검 수입니다. "
              "반면 __순부검률__은 유족이 거부하거나 법의학 사건으로 다른 곳으로 가버려 ==부검을 할 수 없었던 시신==을 분모에서 빼고 계산합니다. "
              "__병원부검률__은 입원 환자가 퇴원해 집에 있다가 사망했지만 병원으로 모셔와 부검한 경우까지 분모와 분자에 모두 더해 포괄적으로 계산합니다."),
-        Block("term", "순부검률 (Net Autopsy Rate): 병원이 부검할 권한과 가능성이 있었던 시신 대비 부검률입니다. 공식은 ==(총 부검수 ÷ (총 사망자수 - 부검제외시신수)) × 100== (%)"),
+        Block("term", "순부검률 (Net Autopsy Rate): 병원이 부검할 권한 and 가능성이 있었던 시신 대비 부검률입니다. 공식은 ==(총 부검수 ÷ (총 사망자수 - 부검제외시신수)) × 100== (%)"),
         Block("pagebreak", ""),
 
         Block("kicker", "CHAPTER I"),
@@ -259,251 +199,164 @@ def content_blocks() -> list[Block]:
         Block("body", "맺음말: 병원통계는 단순한 공식 암기 과목이 아닙니다. 환자가 병실에 들어오고, 머물고, 나가거나 치료되는 실제 의료 현장의 이야기를 숫자로 엮어낸 것입니다. '왜 그럴까?'를 질문하고 비유로 원리를 그릴 수 있다면 모든 문제를 쉽게 정복할 수 있습니다. 수험생 여러분의 합격을 응원합니다!"),
     ]
 
-def measure_block(draw: ImageDraw.ImageDraw, block: Block, usable_width: int) -> int:
-    # Use regular body font size to wrap and measure height
-    if block.kind == "cover_title":
-        lines = wrap_rich_text(draw, block.text, FONTS["cover_title"], usable_width)
-        line_height = FONTS["cover_title"].size + BODY_LINE_GAP
-        return 64 + len(lines) * line_height + 18
-    if block.kind == "cover_subtitle":
-        lines = wrap_rich_text(draw, block.text, FONTS["cover_subtitle"], usable_width)
-        line_height = FONTS["cover_subtitle"].size + BODY_LINE_GAP
-        return 46 + len(lines) * line_height + 12
-    if block.kind == "kicker":
-        lines = wrap_rich_text(draw, block.text, FONTS["section_kicker"], usable_width)
-        line_height = FONTS["section_kicker"].size + BODY_LINE_GAP
-        return 34 + len(lines) * line_height + 8
-    if block.kind == "h1":
-        lines = wrap_rich_text(draw, block.text, FONTS["h1"], usable_width)
-        line_height = FONTS["h1"].size + BODY_LINE_GAP
-        return 36 + len(lines) * line_height + 8
-    if block.kind == "h2":
-        lines = wrap_rich_text(draw, block.text, FONTS["h2"], usable_width)
-        line_height = FONTS["h2"].size + BODY_LINE_GAP
-        return 28 + len(lines) * line_height + 8
-    if block.kind == "formula":
-        lines = wrap_rich_text(draw, block.text, FONTS["body_bold"], usable_width - 28)
-        line_height = FONTS["body_bold"].size + BODY_LINE_GAP
-        return 18 + len(lines) * line_height + 24 + 10
-
-    prefix_map = {
-        "bullet": "• ",
-        "number": "",
-        "term": "",
-        "example": "예시 ",
-        "question": "",
-        "answer": "정리 ",
-    }
-    if block.kind in prefix_map:
-        text = block.text
-        if block.kind == "term":
-            head, tail = block.text.split(": ", 1)
-            text = f"{head}\n{tail}"
-        elif block.kind == "question":
-            text = f"Q. {block.text.split('. ', 1)[1] if '. ' in block.text else block.text}"
-        elif block.kind == "answer":
-            text = f"A. {block.text}"
-        else:
-            text = f"{prefix_map[block.kind]}{block.text}"
-        lines = wrap_rich_text(draw, text, FONTS["body"], usable_width - 18)
-        line_height = FONTS["body"].size + BODY_LINE_GAP
-        if block.kind in {"question", "answer"}:
-            return 16 + len(lines) * line_height + 24 + 8
-        return 16 + len(lines) * line_height + 8
+def build_editable_docx(blocks: list[Block]) -> None:
+    doc = Document()
     
-    lines = wrap_rich_text(draw, block.text, FONTS["body"], usable_width)
-    line_height = FONTS["body"].size + BODY_LINE_GAP
-    return 18 + len(lines) * line_height + 8
-
-def draw_block(draw: ImageDraw.ImageDraw, block: Block, x: int, y: int, usable_width: int) -> int:
-    if block.kind == "cover_title":
-        lines = wrap_rich_text(draw, block.text, FONTS["cover_title"], usable_width)
-        y += 64
-        line_height = FONTS["cover_title"].size + BODY_LINE_GAP
-        for idx, line in enumerate(lines):
-            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["cover_title"], NAVY)
-        return y + len(lines) * line_height + 18
-
-    if block.kind == "cover_subtitle":
-        lines = wrap_rich_text(draw, block.text, FONTS["cover_subtitle"], usable_width)
-        y += 46
-        line_height = FONTS["cover_subtitle"].size + BODY_LINE_GAP
-        for idx, line in enumerate(lines):
-            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["cover_subtitle"], TEAL)
-        return y + len(lines) * line_height + 12
-
-    if block.kind == "kicker":
-        lines = wrap_rich_text(draw, block.text, FONTS["section_kicker"], usable_width)
-        y += 34
-        line_height = FONTS["section_kicker"].size + BODY_LINE_GAP
-        for idx, line in enumerate(lines):
-            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["section_kicker"], TEAL)
-        return y + len(lines) * line_height + 8
-
-    if block.kind == "h1":
-        lines = wrap_rich_text(draw, block.text, FONTS["h1"], usable_width)
-        y += 36
-        line_height = FONTS["h1"].size + BODY_LINE_GAP
-        for idx, line in enumerate(lines):
-            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["h1"], NAVY)
-        return y + len(lines) * line_height + 8
-
-    if block.kind == "h2":
-        lines = wrap_rich_text(draw, block.text, FONTS["h2"], usable_width)
-        y += 28
-        line_height = FONTS["h2"].size + BODY_LINE_GAP
-        for idx, line in enumerate(lines):
-            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["h2"], BLUE)
-        return y + len(lines) * line_height + 8
-
-    if block.kind == "formula":
-        lines = wrap_rich_text(draw, block.text, FONTS["body_bold"], usable_width - 28)
-        y += 18
-        line_height = FONTS["body_bold"].size + BODY_LINE_GAP
-        box_top = y - 8
-        box_height = len(lines) * line_height + 24
-        draw.rounded_rectangle((x, box_top, x + usable_width, box_top + box_height), radius=24, fill=LIGHT, outline=(210, 222, 232), width=2)
-        for idx, line in enumerate(lines):
-            draw_rich_line(draw, x + 16, y + idx * line_height, line, FONTS["body_bold"], NAVY)
-        return box_top + box_height + 10
-
-    prefix_map = {
-        "bullet": "• ",
-        "number": "",
-        "term": "",
-        "example": "예시 ",
-        "question": "",
-        "answer": "정리 ",
-    }
-    if block.kind in prefix_map:
-        text = block.text
-        if block.kind == "term":
-            head, tail = block.text.split(": ", 1)
-            # Render head as Bold on its own line
-            text = f"**{head}**\n{tail}"
-        elif block.kind == "question":
-            text = f"Q. {block.text.split('. ', 1)[1] if '. ' in block.text else block.text}"
-        elif block.kind == "answer":
-            text = f"A. {block.text}"
-        else:
-            text = f"{prefix_map[block.kind]}{block.text}"
-
-        lines = wrap_rich_text(draw, text, FONTS["body"], usable_width - 18)
-        y += 16
-        line_height = FONTS["body"].size + BODY_LINE_GAP
-
-        if block.kind in {"question", "answer"}:
-            box_color = (246, 250, 255) if block.kind == "question" else (240, 248, 243)
-            border = (208, 220, 235) if block.kind == "question" else (198, 224, 208)
-            box_top = y - 8
-            box_height = len(lines) * line_height + 24
-            draw.rounded_rectangle((x, box_top, x + usable_width, box_top + box_height), radius=20, fill=box_color, outline=border, width=2)
-            for idx, line in enumerate(lines):
-                draw_rich_line(draw, x + 16, y + idx * line_height, line, FONTS["body"], NAVY)
-            return box_top + box_height + 8
-
-        for idx, line in enumerate(lines):
-            draw_rich_line(draw, x, y + idx * line_height, line, FONTS["body"], NAVY)
-        return y + len(lines) * line_height + 8
-
-    lines = wrap_rich_text(draw, block.text, FONTS["body"], usable_width)
-    y += 18
-    line_height = FONTS["body"].size + BODY_LINE_GAP
-    for idx, line in enumerate(lines):
-        draw_rich_line(draw, x, y + idx * line_height, line, FONTS["body"], NAVY)
-    return y + len(lines) * line_height + 8
-
-def render_pages(blocks: list[Block]) -> list[Path]:
-    PAGE_DIR.mkdir(parents=True, exist_ok=True)
-    for old in PAGE_DIR.glob("page-*.png"):
-        old.unlink()
-
-    probe = Image.new("RGB", (PAGE_WIDTH, PAGE_HEIGHT), WHITE)
-    probe_draw = ImageDraw.Draw(probe)
-    usable_width = PAGE_WIDTH - MARGIN_X * 2
-    usable_height = PAGE_HEIGHT - MARGIN_TOP - MARGIN_BOTTOM
-
-    pages: list[list[Block]] = []
-    current: list[Block] = []
-    current_height = 0
-
+    # Page setup
+    for section in doc.sections:
+        section.top_margin = Inches(1.0)
+        section.bottom_margin = Inches(1.0)
+        section.left_margin = Inches(1.0)
+        section.right_margin = Inches(1.0)
+        
+    is_cover = True
+    
     for block in blocks:
         if block.kind == "pagebreak":
-            if current:
-                pages.append(current)
-                current = []
-                current_height = 0
+            doc.add_page_break()
+            is_cover = False
             continue
 
-        needed = measure_block(probe_draw, block, usable_width)
-        if current and current_height + needed > usable_height:
-            pages.append(current)
-            current = []
-            current_height = 0
-        current.append(block)
-        current_height += needed
+        if is_cover:
+            # Render cover page elements
+            if block.kind == "cover_title":
+                p = doc.add_paragraph()
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                p.paragraph_format.space_before = Pt(120)
+                p.paragraph_format.space_after = Pt(10)
+                add_rich_text_runs(p, block.text, size_pt=36, color_rgb=NAVY)
+                
+            elif block.kind == "cover_subtitle":
+                p = doc.add_paragraph()
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                p.paragraph_format.space_before = Pt(10)
+                p.paragraph_format.space_after = Pt(40)
+                add_rich_text_runs(p, block.text, size_pt=16, color_rgb=TEAL)
+                
+                # Add Cover Illustration natively
+                if COVER_IMAGE_PATH.exists():
+                    p_img = doc.add_paragraph()
+                    p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                    run = p_img.add_run()
+                    run.add_picture(str(COVER_IMAGE_PATH), width=Inches(3.5))
+                    p_img.paragraph_format.space_before = Pt(30)
+                    p_img.paragraph_format.space_after = Pt(30)
 
-    if current:
-        pages.append(current)
+            elif block.kind == "body":
+                p = doc.add_paragraph()
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                p.paragraph_format.space_before = Pt(20)
+                p.paragraph_format.space_after = Pt(20)
+                add_rich_text_runs(p, block.text, size_pt=11, color_rgb=GRAY)
+                
+            elif block.kind == "bullet":
+                p = doc.add_paragraph(style='List Bullet')
+                p.paragraph_format.left_indent = Inches(1.5)
+                p.paragraph_format.space_after = Pt(4)
+                add_rich_text_runs(p, block.text, size_pt=10, color_rgb=GRAY)
+                
+            elif block.kind in ["h2", "number"]:
+                # Suppress guides on cover page, just skip
+                pass
+            continue
 
-    page_paths: list[Path] = []
-    for index, page_blocks in enumerate(pages, start=1):
-        img = Image.new("RGB", (PAGE_WIDTH, PAGE_HEIGHT), WHITE)
-        draw = ImageDraw.Draw(img)
-        y = MARGIN_TOP
+        # Render regular pages
+        if block.kind == "kicker":
+            p = doc.add_paragraph()
+            p.paragraph_format.space_before = Pt(24)
+            p.paragraph_format.space_after = Pt(2)
+            add_rich_text_runs(p, block.text, size_pt=10, color_rgb=TEAL)
+            p.runs[0].bold = True
 
-        if index > 1:
-            draw.line((MARGIN_X, 70, PAGE_WIDTH - MARGIN_X, 70), fill=(228, 236, 243), width=2)
-            draw.text((MARGIN_X, 34), "병원통계, 쉽게 잡는 공부책", font=FONTS["small"], fill=GRAY)
+        elif block.kind == "h1":
+            p = doc.add_paragraph()
+            p.paragraph_format.space_before = Pt(12)
+            p.paragraph_format.space_after = Pt(12)
+            p.paragraph_format.keep_with_next = True
+            add_rich_text_runs(p, block.text, size_pt=20, color_rgb=NAVY)
+            p.runs[0].bold = True
 
-        for block in page_blocks:
-            y = draw_block(draw, block, MARGIN_X, y, usable_width)
+        elif block.kind == "h2":
+            p = doc.add_paragraph()
+            p.paragraph_format.space_before = Pt(16)
+            p.paragraph_format.space_after = Pt(8)
+            p.paragraph_format.keep_with_next = True
+            add_rich_text_runs(p, block.text, size_pt=14, color_rgb=BLUE)
+            p.runs[0].bold = True
 
-        # Cover page (page 1) special graphic placement
-        if index == 1 and COVER_IMAGE_PATH.exists():
-            try:
-                cover_illustration = Image.open(COVER_IMAGE_PATH)
-                cover_illustration = cover_illustration.resize((500, 500))
-                # paste cover illustration at coordinates (PAGE_WIDTH // 2 - 250, 780)
-                img.paste(cover_illustration, (PAGE_WIDTH // 2 - 250, 780))
-            except Exception as e:
-                print(f"Error loading cover image: {e}")
+        elif block.kind == "body":
+            p = doc.add_paragraph()
+            p.paragraph_format.line_spacing = 1.3
+            p.paragraph_format.space_after = Pt(10)
+            add_rich_text_runs(p, block.text, size_pt=11, color_rgb=NAVY)
 
-        page_label = f"{index}"
-        label_width = draw.textlength(page_label, font=FONTS["small"])
-        draw.text((PAGE_WIDTH - MARGIN_X - label_width, PAGE_HEIGHT - 70), page_label, font=FONTS["small"], fill=GRAY)
+        elif block.kind == "bullet":
+            p = doc.add_paragraph(style='List Bullet')
+            p.paragraph_format.space_after = Pt(4)
+            add_rich_text_runs(p, block.text, size_pt=11, color_rgb=NAVY)
 
-        page_path = PAGE_DIR / f"page-{index}.png"
-        img.save(page_path, quality=95)
-        page_paths.append(page_path)
+        elif block.kind == "number":
+            p = doc.add_paragraph()
+            p.paragraph_format.left_indent = Inches(0.25)
+            p.paragraph_format.space_after = Pt(4)
+            add_rich_text_runs(p, block.text, size_pt=11, color_rgb=NAVY)
 
-    return page_paths
+        elif block.kind == "term":
+            head, tail = block.text.split(": ", 1)
+            p_head = doc.add_paragraph()
+            p_head.paragraph_format.space_before = Pt(10)
+            p_head.paragraph_format.space_after = Pt(2)
+            p_head.paragraph_format.keep_with_next = True
+            add_rich_text_runs(p_head, f"• {head}", size_pt=11, color_rgb=NAVY)
+            p_head.runs[0].bold = True
+            
+            p_tail = doc.add_paragraph()
+            p_tail.paragraph_format.left_indent = Inches(0.25)
+            p_tail.paragraph_format.space_after = Pt(10)
+            p_tail.paragraph_format.line_spacing = 1.2
+            add_rich_text_runs(p_tail, tail, size_pt=11, color_rgb=NAVY)
 
-def build_docx(page_paths: list[Path]) -> None:
-    doc = Document()
-    section = doc.sections[0]
-    section.page_width = Mm(210)
-    section.page_height = Mm(297)
-    section.top_margin = Mm(0)
-    section.bottom_margin = Mm(0)
-    section.left_margin = Mm(0)
-    section.right_margin = Mm(0)
+        elif block.kind == "formula":
+            # Display inside a nice native single-cell table (Callout style)
+            table = doc.add_table(rows=1, cols=1)
+            table.autofit = False
+            table.columns[0].width = Inches(6.5)
+            cell = table.cell(0, 0)
+            set_cell_background(cell, "F0F4F8") # Light blue-gray shade
+            set_cell_margins(cell, top=140, bottom=140, left=200, right=200)
+            set_cell_border(cell, left={"sz": 24, "val": "single", "color": "285AD2", "space": "0"}) # Thick blue left border
+            
+            p = cell.paragraphs[0]
+            p.paragraph_format.space_after = Pt(0)
+            add_rich_text_runs(p, block.text, size_pt=11, color_rgb=NAVY)
 
-    image_width = Mm(210)
-    for page_path in page_paths:
-        paragraph = doc.add_paragraph()
-        paragraph.paragraph_format.space_before = Mm(0)
-        paragraph.paragraph_format.space_after = Mm(0)
-        run = paragraph.add_run()
-        run.add_picture(str(page_path), width=image_width)
+        elif block.kind in ["question", "answer"]:
+            # Display inside a nice native single-cell table
+            table = doc.add_table(rows=1, cols=1)
+            table.autofit = False
+            table.columns[0].width = Inches(6.5)
+            cell = table.cell(0, 0)
+            
+            is_q = block.kind == "question"
+            bg_color = "F5F9FD" if is_q else "F2FAF4"
+            border_color = "285AD2" if is_q else "008474"
+            
+            set_cell_background(cell, bg_color)
+            set_cell_margins(cell, top=140, bottom=140, left=200, right=200)
+            set_cell_border(cell, left={"sz": 24, "val": "single", "color": border_color, "space": "0"})
+            
+            p = cell.paragraphs[0]
+            p.paragraph_format.space_after = Pt(0)
+            prefix = "Q. " if is_q else "A. "
+            add_rich_text_runs(p, f"{prefix}{block.text}", size_pt=11, color_rgb=NAVY)
+            p.runs[0].bold = True
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     doc.save(OUTPUT_PATH)
 
 def main() -> None:
     blocks = content_blocks()
-    page_paths = render_pages(blocks)
-    build_docx(page_paths)
+    build_editable_docx(blocks)
     print(OUTPUT_PATH)
 
 if __name__ == "__main__":
